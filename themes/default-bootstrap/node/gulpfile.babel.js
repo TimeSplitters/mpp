@@ -25,12 +25,11 @@ const jsDesktopSources = [
 ];
 
 var cssDesktopCommon = [
-
+    '../css/addresses.css'
 ];
 
 var scssDesktopPages = [
-
-
+    '../sass/addresses.scss'
 ];
 
 var CONFIG;

@@ -37,11 +37,6 @@
 <div itemscope itemtype="https://schema.org/Product">
 	<meta itemprop="url" content="{$link->getProductLink($product)}">
 	<div class="primary_block row">
-		{if !$content_only}
-			<div class="container">
-				<div class="top-hr"></div>
-			</div>
-		{/if}
 		{if isset($adminActionDisplay) && $adminActionDisplay}
 			<div id="admin-action" class="container">
 				<p class="alert alert-info">{l s='This product is not visible to your customers.'}

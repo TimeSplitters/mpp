@@ -6,7 +6,7 @@
 #header .shopping_cart {
 	position: relative;
 	float: right;
-	padding-top: 50px;
+	padding: 20px 0;
 	> a:first-child {
 		&:after {
 			content: "\f0d7";
@@ -14,19 +14,21 @@
 			display: inline-block;
 			float: right;
 			font-size: 18px;
-			color: #686666;
-			padding: 6px 0 0 0;
+			color: $light-text-color;
+			padding: 0;
+			line-height: 22px;
 		}
 	}
 	> a:first-child:hover {
 		&:after {
 			content: "\f0d8";
-			padding: 4px 0px 2px 0px;
+			padding: 0;
+			line-height: 22px;
 		}
 	}
 }
 .shopping_cart {
-	width: 270px;
+	width: 200px;
 	@media (max-width: $screen-xs) {
 		padding-top: 20px;
 	}
@@ -36,12 +38,10 @@
 		width: 100%;
 	}
 	> a:first-child {
-		padding: 7px 10px 14px 16px;
+		padding: 7px 15px;
 		background: $dark-background;
 		display: block;
-		font-weight: bold;
-		color: #777777;
-		text-shadow: 1px 1px rgba(0,0,0,0.2);
+		color: $light-text-color;
 		overflow: hidden;
 		span.ajax_cart_product_txt, span.ajax_cart_product_txt_s {
 			@media (min-width: $screen-sm) and (max-width: $screen-sm-max) { // min 768px max 991px
@@ -50,15 +50,15 @@
 		}
 		b {
 			color: $light-text-color;
-			font: 600 18px/22px $font-custom;
+			font: 100 14px/22px $font-family;
 			padding-right: 5px;
 		}
 		&:before {
 			content: "\f07a";
 			font-family: $font-icon;
 			display: inline-block;
-			font-size: 23px;
-			line-height: 23px;
+			font-size: 16px;
+			line-height: 22px;
 			color: $light-text-color;
 			padding-right: 15px;
 		}

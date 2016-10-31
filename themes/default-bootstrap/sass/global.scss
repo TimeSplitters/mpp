@@ -7,41 +7,36 @@
 @import "bootstrap";
 @import "font-awesome/font-awesome";
 @import "icons";
+@import "types";
 
 a:hover {
 	text-decoration: none;
+	transition: all 0.6s;
 }
 
-@media only screen and (min-width: 1200px) {
-	.container {
-		padding-left: 0;
-		padding-right: 0;
-	}
-}
-
-body {
-	min-width: 320px;
-	height: 100%;
-	line-height: 18px;
-	font-size: 13px;
-	color: $base-body-color;
-	&.content_only {
-		background: none;
-		min-width: 0px;
-	}
-}
 
 textarea {
 	resize: none;
 }
 
+body, html {
+	font: $font;
+}
+
 //structure
 #header {
 	z-index: 5003;
-}
+	box-shadow: 0 2px 7px $base-border-color;
+	border-top: 2px solid $base-border-color;
+	background: $light-background url('../img/bg_white_alpha.png') center bottom no-repeat;
 
-.columns-container {
-	background: $light-background;
+	&:after {
+		content: "";
+		display: block;
+		background: url("../img/bg_white_alpha.png") center bottom repeat-y;
+		width: 100%;
+		height: 2px;
+	}
 }
 
 #columns {
@@ -61,7 +56,6 @@ header {
 	z-index: 1;
 	position: relative;
 	background: $light-background;
-	padding-bottom: 15px;
 	.banner {
 		background: black;
 		max-height: 100%;
@@ -84,8 +78,9 @@ header {
 			position: relative;
 		}
 		#header_logo {
-			padding-top: 15px;
-			@extend .col-sm-4;
+			padding: 20px 0;
+			width: auto;
+			//@extend .col-sm-4;
 			@media (max-width: $screen-md) {
 				padding-top: 40px;
 			}
@@ -105,7 +100,7 @@ header {
 }
 
 .ie8 #header #header_logo {
-	width: 350px;
+	width: 300px;
 }
 
 //title
@@ -549,8 +544,12 @@ span.exclusive {
 
 //form
 .form-control {
-	padding: 3px 5px;
-	height: 27px;
+	height: 37px;
+	background: $dark-background;
+	border: 1px solid $dark-background;
+	color: #fff;
+	font-size: ceil($font-size-base * 0.9);
+	padding: 10px 43px 10px 12px;
 	@include box-shadow(none);
 	&.grey {
 		background: $base-box-bg;
@@ -937,8 +936,6 @@ table.table_block td {
 .block {
 	.title_block,
 	h4 {
-		font: 600 18px / 22px $font-custom;
-		color: $base-heading-color;
 		background: #f6f6f6;
 		border-top: 5px solid $dark-border-color;
 		text-transform: uppercase;
@@ -1058,7 +1055,6 @@ table.table_block td {
 }
 
 .page-heading {
-	font: 600 18px / 22px $font-custom;
 	color: $base-heading-color;
 	text-transform: uppercase;
 	padding: 0px 0px 17px 0px;
@@ -1066,7 +1062,6 @@ table.table_block td {
 	border-bottom: 1px solid $base-border-color;
 	overflow: hidden;
 	span.heading-counter {
-		font: bold 13px / 22px $font-family;
 		float: right;
 		color: $base-text-color;
 		text-transform: none;
@@ -1636,9 +1631,8 @@ div.star a:hover {
 .breadcrumb {
 	display: inline-block;
 	padding: 0 11px;
-	border: 1px solid $base-border-color;
-	font-weight: bold;
-	font-size: 12px;
+	text-transform: uppercase;
+	font-size: 10px;
 	line-height: 24px;
 	min-height: 6px;
 	@include border-radius(3px);
@@ -1646,6 +1640,7 @@ div.star a:hover {
 	margin-bottom: 16px;
 	position: relative;
 	z-index: 1;
+	background-color: $light-background;
 	.navigation-pipe {
 		width: 18px;
 		display: inline-block;
@@ -1685,8 +1680,8 @@ div.star a:hover {
 			position: absolute;
 			right: -10px;
 			top: 3px;
-			width: 18px;
-			height: 18px;
+			width: 19px;
+			height: 19px;
 			background: $light-background;
 			border-right: 1px solid $base-border-color;
 			border-top: 1px solid $base-border-color;
@@ -1731,16 +1726,10 @@ div.star a:hover {
 
 // FOOTER
 .footer-container {
-	background-color: $dark-background;
-	// min 768px
-	@media (min-width: $screen-sm) {
-		background: url(../img/footer-bg.png) repeat-x $dark-background;
-	}
-	.container {
-		padding-bottom: 100px;
-	}
+	border-top: 1px solid $base-border-color;
+	background: $light-background;
 	#footer {
-		color: #777777;
+		color: $base-text-color;
 		.row {
 			position: relative;
 		}
@@ -1761,11 +1750,8 @@ div.star a:hover {
 			}
 		}
 		h4 {
-			font: 600 18px / 22px $font-custom;
-			color: $light-text-color;
 			margin: 0 0 13px 0;
 			cursor: pointer;
-			// max 767px
 			@media (max-width: $screen-xs-max) {
 				position: relative;
 				margin-bottom: 0;
@@ -2167,13 +2153,11 @@ a.price_discount_delete {
 			}
 			&.total_price_container {
 				span {
-					font: 600 18px / 22px $font-custom;
 					color: #555454;
 					text-transform: uppercase;
 				}
 			}
 			&#total_price_container {
-				font: 600 21px / 25px $font-custom;
 				color: $product-price-color;
 				background: $light-background;
 			}
@@ -3550,3 +3534,18 @@ div.star.star_hover {
 .pointer-box {
   cursor: pointer;
 }
+
+
+.row {
+	[class^="col-"]:first-child {
+		//padding-left: 0;
+	}
+	[class^="col-"]:last-child {
+		//padding-right: 0;
+	}
+}
+
+@import "modules/blockcart/blockcart";
+@import "modules/blocktopmenu/css/blocktopmenu";
+@import "modules/blocktopmenu/css/superfish-modified";
+@import "modules/blocknewsletter/blocknewsletter";

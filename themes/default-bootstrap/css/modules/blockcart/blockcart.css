@@ -1,21 +1,24 @@
+/*
+POT POURRI STYLES
+*/
 /*******************************************************************
 					Cart Block Styles
 ********************************************************************/
 #header .shopping_cart {
   position: relative;
   float: right;
-  padding-top: 50px; }
+  padding: 20px 0; }
   #header .shopping_cart > a:first-child:after {
     content: "\f0d7";
     font-family: "FontAwesome";
     display: inline-block;
     float: right;
     font-size: 18px;
-    color: #686666;
-    padding: 6px 0 0 0; }
+    color: #fff;
+    padding: 2px 0 0 0; }
   #header .shopping_cart > a:first-child:hover:after {
     content: "\f0d8";
-    padding: 4px 0px 2px 0px; }
+    padding: 2px 0 0 0; }
 
 .shopping_cart {
   width: 270px; }
@@ -28,26 +31,25 @@
       float: none;
       width: 100%; } }
   .shopping_cart > a:first-child {
-    padding: 7px 10px 14px 16px;
-    background: #333;
+    padding: 7px 15px 4px 15px;
+    background: #008b94;
     display: block;
     font-weight: bold;
-    color: #777777;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+    color: #fff;
     overflow: hidden; }
     @media (min-width: 768px) and (max-width: 991px) {
       .shopping_cart > a:first-child span.ajax_cart_product_txt, .shopping_cart > a:first-child span.ajax_cart_product_txt_s {
         display: none !important; } }
     .shopping_cart > a:first-child b {
       color: #fff;
-      font: 600 18px/22px "Open Sans", sans-serif;
+      font: 100 14px/18px "Caviar Dreams", "Open Sans", sans-serif;
       padding-right: 5px; }
     .shopping_cart > a:first-child:before {
       content: "\f07a";
       font-family: "FontAwesome";
       display: inline-block;
-      font-size: 23px;
-      line-height: 23px;
+      font-size: 20px;
+      line-height: 20px;
       color: #fff;
       padding-right: 15px; }
   .shopping_cart .ajax_cart_total {
@@ -70,7 +72,7 @@
   top: 19px; }
 .cart_block .cart_block_list .remove_link a,
 .cart_block .cart_block_list .ajax_cart_block_remove_link {
-  color: #777;
+  color: #00737a;
   display: block;
   width: 100%;
   height: 100%; }
@@ -83,7 +85,7 @@
     line-height: 18px; }
   .cart_block .cart_block_list .remove_link a:hover,
   .cart_block .cart_block_list .ajax_cart_block_remove_link:hover {
-    color: #515151; }
+    color: #008b94; }
 .cart_block .cart-images {
   float: left;
   margin-right: 20px; }
@@ -114,7 +116,7 @@
 .cart_block dd {
   position: relative; }
   .cart_block dd .cart_block_customizations {
-    border-top: 1px dashed #333; }
+    border-top: 1px dashed #008b94; }
     .cart_block dd .cart_block_customizations li {
       padding: 10px 20px; }
       .cart_block dd .cart_block_customizations li .deleteCustomizableProduct {
@@ -205,7 +207,7 @@
     border: none;
     background: url(../../../img/cart-shadow.png) repeat-x #3d3d3d; }
   #header .cart_block .cart-buttons {
-    background: url(../../../img/cart-shadow.png) repeat-x #333; }
+    background: url(../../../img/cart-shadow.png) repeat-x #008b94; }
 #header .block_content {
   margin-bottom: 0; }
 
@@ -277,7 +279,7 @@
     position: static; }
     #layer_cart .layer_cart_product .title {
       display: block;
-      font: 400 23px/29px Arial, Helvetica, sans-serif;
+      font: 400 23px/29px "Open Sans", sans-serif;
       color: #46a74e;
       margin-bottom: 22px; }
       @media (max-width: 767px) {
@@ -337,8 +339,8 @@
         border-top: 1px solid #d6d4d4; } }
     #layer_cart .layer_cart_cart .title {
       display: block;
-      font: 400 23px/29px Arial, Helvetica, sans-serif;
-      color: #333;
+      font: 400 23px/29px "Open Sans", sans-serif;
+      color: #353535;
       border-bottom: 1px solid #d6d4d4;
       padding-bottom: 13px;
       margin-bottom: 17px; }
@@ -367,7 +369,7 @@
     width: 25px;
     height: 25px;
     cursor: pointer;
-    color: #333;
+    color: #353535;
     z-index: 2; }
     #layer_cart .cross:before {
       content: "\f057";
@@ -376,7 +378,7 @@
       font-size: 25px;
       line-height: 25px; }
     #layer_cart .cross:hover {
-      color: #515151; }
+      color: #008b94; }
   #layer_cart .continue {
     cursor: pointer; }
   #layer_cart p {
@@ -390,8 +392,8 @@
   padding: 26px 30px 40px 30px;
   position: relative; }
 #layer_cart .crossseling h2 {
-  font: 400 23px/26px Arial, Helvetica, sans-serif;
-  color: #333;
+  font: 400 23px/26px "Open Sans", sans-serif;
+  color: #353535;
   margin-bottom: 25px; }
 #layer_cart .crossseling #blockcart_list {
   max-width: 773px;
@@ -424,7 +426,7 @@
     line-height: 20px;
     width: 20px;
     height: 20px;
-    color: #333;
+    color: #353535;
     text-indent: -5000px;
     position: absolute;
     top: 45%;

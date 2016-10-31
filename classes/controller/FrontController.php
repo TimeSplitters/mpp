@@ -698,6 +698,18 @@ class FrontControllerCore extends Controller
             }
         }
 
+        $no_css_display = array(
+            '/themes/default-bootstrap/css/modules/blocktopmenu/css/superfish-modified.css',
+            '/themes/default-bootstrap/css/modules/blocktopmenu/css/blocktopmenu.css',
+            '/themes/default-bootstrap/css/modules/blockcart/blockcart.css',
+            '/themes/default-bootstrap/css/modules/blocknewsletter/blocknewsletter.css'
+            );
+        foreach($this->css_files as $css_link => $css_display) {
+            if(in_array($css_link, $no_css_display)) {
+                unset($this->css_files[$css_link]);
+            }
+        }
+
         $this->context->smarty->assign(array(
             'css_files'      => $this->css_files,
             'js_files'       => ($this->getLayout() && (bool)Configuration::get('PS_JS_DEFER')) ? array() : $this->js_files,

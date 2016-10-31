@@ -20,7 +20,6 @@ html {
 }
 
 body {
-  font-family: $font-family-base;
   font-size: $font-size-base;
   line-height: $line-height-base;
   color: $text-color;
@@ -71,6 +70,7 @@ a {
 
 img {
   vertical-align: middle;
+  width: 100%;
 }
 
 // Responsive images (ensure images don't scale beyond their parents)
