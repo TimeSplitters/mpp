@@ -53,7 +53,6 @@ function desktopInit()
 	mCategoryGrover.removeClass('active');
 	$('.sf-menu > li > ul').removeClass('menu-mobile').parent().find('.menu-mobile-grover').remove();
 	$('.sf-menu').removeAttr('style');
-	categoryMenu.superfish('init');
 	//add class for width define
 	$('.sf-menu > li > ul').addClass('submenu-container clearfix');
 	 // loop through each sublist under each top list item
@@ -74,8 +73,6 @@ function desktopInit()
 
 function mobileInit()
 {
-
-	categoryMenu.superfish('destroy');
 	$('.sf-menu').removeAttr('style');
 
 	mCategoryGrover.on('click', function(e){

@@ -117,7 +117,7 @@ class CrossSelling extends Module
         }
         $this->context->controller->addCSS(($this->_path).'css/crossselling.css', 'all');
         $this->context->controller->addJS(($this->_path).'js/crossselling.js');
-        $this->context->controller->addJqueryPlugin(array('scrollTo', 'serialScroll', 'bxslider'));
+        $this->context->controller->addJqueryPlugin(array('scrollTo', 'serialScroll'));
     }
 
     /**

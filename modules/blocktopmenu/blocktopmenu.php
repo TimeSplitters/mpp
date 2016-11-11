@@ -713,11 +713,11 @@ class Blocktopmenu extends Module
 
     public function hookHeader()
     {
-        $this->context->controller->addJS($this->_path.'js/hoverIntent.js');
+        $this->context->controller->addCSS($this->_path.'css/blocktopmenu.css');
+        /*$this->context->controller->addJS($this->_path.'js/hoverIntent.js');
         $this->context->controller->addJS($this->_path.'js/superfish-modified.js');
         $this->context->controller->addJS($this->_path.'js/blocktopmenu.js');
-        $this->context->controller->addCSS($this->_path.'css/blocktopmenu.css');
-        $this->context->controller->addCSS($this->_path.'css/superfish-modified.css');
+        $this->context->controller->addCSS($this->_path.'css/superfish-modified.css');*/
     }
 
     public function hookDisplayTop($param)
