@@ -57,7 +57,7 @@ $_MODULE['<{blocknewsletter}prestashop>blocknewsletter_d0da5609e4aebc5d532de9751
 $_MODULE['<{blocknewsletter}prestashop>blocknewsletter_6395c19dc5a1cef9ca125b9736358dc7'] = 'Abonnés aux partenaires';
 $_MODULE['<{blocknewsletter}prestashop>blocknewsletter_498bed86a7c58dcf1125dd21f40a6482'] = 'Filtre les clients selon s\'ils ont accepté ou pas de recevoir les offres de vos partenaires.';
 $_MODULE['<{blocknewsletter}prestashop>blocknewsletter_e72237358bd145d6dba764c39e53bba5'] = 'Les "abonnés aux partenaires" ont accepté de recevoir les offres de vos partenaires.';
-$_MODULE['<{blocknewsletter}prestashop>blocknewsletter_85d02b888be056b290282ab2021341dc'] = 'Non-abonnés aux partenaires';
+$_MODULE['<{blocknewsletter}prestashop>blocknewsletter_85d02b888be056b290282ab2021341dc'] = 'Non-inscrits aux offres partenaires';
 $_MODULE['<{blocknewsletter}prestashop>blocknewsletter_dbb392a2dc9b38722e69f6032faea73e'] = 'Exporte un fichier CSV';
 $_MODULE['<{blocknewsletter}prestashop>blocknewsletter_f6df4ad6dc4798f26d1f2460eef4f2e9'] = 'Rechercher des adresses';
 $_MODULE['<{blocknewsletter}prestashop>blocknewsletter_375afa60efcc1d48300bd339cb8154b0'] = 'Adresse e-mail à rechercher';

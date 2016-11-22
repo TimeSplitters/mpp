@@ -1,20 +1,22 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-10-16 21:10:09
+<?php /* Smarty version Smarty-3.1.19, created on 2016-11-22 21:52:56
          compiled from "/Users/christopheabillama/Documents/workspace/potpourri/themes/default-bootstrap/modules/blockcart/blockcart.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1447598135803d0916c7978-42566390%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1636203492582dd7c44ae918-01888203%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'a0e1652069a43708600c01369929186a64550fbd' => 
     array (
       0 => '/Users/christopheabillama/Documents/workspace/potpourri/themes/default-bootstrap/modules/blockcart/blockcart.tpl',
-      1 => 1473167114,
+      1 => 1479847944,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1447598135803d0916c7978-42566390',
+  'nocache_hash' => '1636203492582dd7c44ae918-01888203',
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_582dd7c8af7762_79869890',
   'variables' => 
   array (
     'blockcart_top' => 0,
@@ -54,17 +56,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'img_dir' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5803d091d91519_56976552',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5803d091d91519_56976552')) {function content_5803d091d91519_56976552($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_replace')) include '/Users/christopheabillama/Documents/workspace/potpourri/tools/smarty/plugins/modifier.replace.php';
+<?php if ($_valid && !is_callable('content_582dd7c8af7762_79869890')) {function content_582dd7c8af7762_79869890($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_replace')) include '/Users/christopheabillama/Documents/workspace/potpourri/tools/smarty/plugins/modifier.replace.php';
 if (!is_callable('smarty_function_counter')) include '/Users/christopheabillama/Documents/workspace/potpourri/tools/smarty/plugins/function.counter.php';
-?>
-<!-- MODULE Block cart -->
-<?php if (isset($_smarty_tpl->tpl_vars['blockcart_top']->value)&&$_smarty_tpl->tpl_vars['blockcart_top']->value) {?>
-<div class="col-sm-4 clearfix<?php if ($_smarty_tpl->tpl_vars['PS_CATALOG_MODE']->value) {?> header_user_catalog<?php }?>">
+?><?php if (isset($_smarty_tpl->tpl_vars['blockcart_top']->value)&&$_smarty_tpl->tpl_vars['blockcart_top']->value) {?>
+<div class="push-md-right<?php if ($_smarty_tpl->tpl_vars['PS_CATALOG_MODE']->value) {?> header_user_catalog<?php }?>">
 <?php }?>
-	<div class="shopping_cart">
+	<div class="shopping_cart pull-right">
 		<a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['link']->value->getPageLink($_smarty_tpl->tpl_vars['order_process']->value,true), ENT_QUOTES, 'UTF-8', true);?>
 " title="<?php echo smartyTranslate(array('s'=>'View my shopping cart','mod'=>'blockcart'),$_smarty_tpl);?>
 " rel="nofollow">

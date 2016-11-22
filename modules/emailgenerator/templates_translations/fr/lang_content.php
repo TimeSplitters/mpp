@@ -28,7 +28,7 @@ $_LANGMAIL['Account owner:'] = 'Titulaire du compte :';
 $_LANGMAIL['Account details:'] = 'Détails du compte :';
 $_LANGMAIL['Bank address:'] = 'Adresse de la banque :';
 $_LANGMAIL['You can review your order and download your invoice from the <a href="{history_url}">"Order history"</a> section of your customer account by clicking <a href="{my_account_url}">"My account"</a> on our shop.'] = 'Vous pouvez accéder à tout moment au suivi de votre commande et télécharger votre facture dans <a href="{history_url}">"Historique des commandes"</a> de la rubrique <a href="{my_account_url}">"Mon compte"</a> sur notre site.';
-$_LANGMAIL['If you have a guest account, you can follow your order via the <a href="{guest_tracking_url}">"Guest Tracking"</a> section on our shop.'] = 'Si vous avez un compte invité, vous pouvez suivre votre commande via la section <a href="{guest_tracking_url}">"Guest Tracking"</a> sur notre boutique.';
+$_LANGMAIL['If you have a guest account, you can follow your order via the <a href="{guest_tracking_url}">"Guest Tracking"</a> section on our shop.'] = 'Si vous avez un compte invité, vous pouvez suivre votre commande via la section <a href="{guest_tracking_url}">"Suivi invité"</a> sur notre boutique.';
 $_LANGMAIL['Awaiting check payment'] = 'En attente du paiement par chèque';
 $_LANGMAIL['You have selected to pay by check.'] = 'Vous avez choisi de payer par chèque.';
 $_LANGMAIL['Here are the bank details for your check:'] = 'Voici les informations dont vous avez besoin pour effectuer le paiement :';

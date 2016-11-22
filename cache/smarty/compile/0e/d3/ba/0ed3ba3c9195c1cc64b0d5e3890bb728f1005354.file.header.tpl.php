@@ -1,20 +1,22 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-10-16 21:10:09
+<?php /* Smarty version Smarty-3.1.19, created on 2016-11-22 21:52:56
          compiled from "/Users/christopheabillama/Documents/workspace/potpourri/themes/default-bootstrap/header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:16294992645803d091f12708-94681349%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1035691463582dd7c99c0941-89218803%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '0ed3ba3c9195c1cc64b0d5e3890bb728f1005354' => 
     array (
       0 => '/Users/christopheabillama/Documents/workspace/potpourri/themes/default-bootstrap/header.tpl',
-      1 => 1473167114,
+      1 => 1479847916,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '16294992645803d091f12708-94681349',
+  'nocache_hash' => '1035691463582dd7c99c0941-89218803',
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_582dd7ca58f563_94577358',
   'variables' => 
   array (
     'language_code' => 0,
@@ -57,12 +59,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'cols' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5803d092209b00_97109554',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5803d092209b00_97109554')) {function content_5803d092209b00_97109554($_smarty_tpl) {?><?php if (!is_callable('smarty_function_implode')) include '/Users/christopheabillama/Documents/workspace/potpourri/tools/smarty/plugins/function.implode.php';
-?>
-<!DOCTYPE HTML>
+<?php if ($_valid && !is_callable('content_582dd7ca58f563_94577358')) {function content_582dd7ca58f563_94577358($_smarty_tpl) {?><?php if (!is_callable('smarty_function_implode')) include '/Users/christopheabillama/Documents/workspace/potpourri/tools/smarty/plugins/function.implode.php';
+?><!DOCTYPE HTML>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"<?php if (isset($_smarty_tpl->tpl_vars['language_code']->value)&&$_smarty_tpl->tpl_vars['language_code']->value) {?> lang="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['language_code']->value, ENT_QUOTES, 'UTF-8', true);?>
 "<?php }?>><![endif]-->
 <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8 ie7"<?php if (isset($_smarty_tpl->tpl_vars['language_code']->value)&&$_smarty_tpl->tpl_vars['language_code']->value) {?> lang="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['language_code']->value, ENT_QUOTES, 'UTF-8', true);?>
@@ -197,20 +196,24 @@ if (!empty($_capture_buffer)) {
 					<div>
 						<div class="container">
 							<div class="row">
-								<div id="header_logo">
-									<a href="<?php if (isset($_smarty_tpl->tpl_vars['force_ssl']->value)&&$_smarty_tpl->tpl_vars['force_ssl']->value) {?><?php echo $_smarty_tpl->tpl_vars['base_dir_ssl']->value;?>
+								<div class="col-md-2">
+									<div id="header_logo">
+										<a href="<?php if (isset($_smarty_tpl->tpl_vars['force_ssl']->value)&&$_smarty_tpl->tpl_vars['force_ssl']->value) {?><?php echo $_smarty_tpl->tpl_vars['base_dir_ssl']->value;?>
 <?php } else { ?><?php echo $_smarty_tpl->tpl_vars['base_dir']->value;?>
 <?php }?>" title="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['shop_name']->value, ENT_QUOTES, 'UTF-8', true);?>
 ">
-										<img class="logo img-responsive" src="<?php echo $_smarty_tpl->tpl_vars['logo_url']->value;?>
+											<img class="logo img-responsive" src="<?php echo $_smarty_tpl->tpl_vars['logo_url']->value;?>
 " alt="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['shop_name']->value, ENT_QUOTES, 'UTF-8', true);?>
 "<?php if (isset($_smarty_tpl->tpl_vars['logo_image_width']->value)&&$_smarty_tpl->tpl_vars['logo_image_width']->value) {?> width="<?php echo $_smarty_tpl->tpl_vars['logo_image_width']->value;?>
 "<?php }?><?php if (isset($_smarty_tpl->tpl_vars['logo_image_height']->value)&&$_smarty_tpl->tpl_vars['logo_image_height']->value) {?> height="<?php echo $_smarty_tpl->tpl_vars['logo_image_height']->value;?>
 "<?php }?>/>
-									</a>
+										</a>
+									</div>
 								</div>
+								<div class="col-md-10">
 								<?php if (isset($_smarty_tpl->tpl_vars['HOOK_TOP']->value)) {?><?php echo $_smarty_tpl->tpl_vars['HOOK_TOP']->value;?>
 <?php }?>
+								</div>
 							</div>
 						</div>
 					</div>

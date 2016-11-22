@@ -1,3 +1,4 @@
+@import "compass";
 @import "theme_variables";
 #my-account {
 	.addresses-lists {
@@ -18,6 +19,7 @@
 				position: relative;
 				border: 1px solid;
 				border-color: #cacaca #b7b7b7 #9a9a9a #b7b7b7;
+				@include background-image(linear-gradient(rgb(247,247,247), rgb(237,237,237)));
 				@include border-radius(4px);
 				i {
 					font-size: 25px;

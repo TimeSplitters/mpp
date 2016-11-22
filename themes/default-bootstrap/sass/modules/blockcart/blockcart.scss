@@ -1,3 +1,4 @@
+@import "compass";
 @import "theme_variables";
 /*******************************************************************
 					Cart Block Styles
@@ -30,6 +31,11 @@
 	width: 200px;
 	@media (max-width: $screen-xs) {
 		padding-top: 20px;
+	}
+	@media (max-width: $screen-lg){
+		margin: 0 auto;
+		float: none;
+		width: 100%;
 	}
 	> a:first-child {
 		padding: 7px 15px;
@@ -214,6 +220,9 @@
 		color: $light-text-color;
 		width: 270px;
 		@media (max-width: $screen-xs) {
+			width: 100%;
+		}
+		@media (max-width: $screen-lg){
 			width: 100%;
 		}
 		a {

@@ -211,7 +211,7 @@ class ProductsCategory extends Module
 			return;
 		$this->context->controller->addCSS($this->_path.'css/productscategory.css', 'all');
 		$this->context->controller->addJS($this->_path.'js/productscategory.js');
-		$this->context->controller->addJqueryPlugin(array('scrollTo', 'serialScroll'));
+		$this->context->controller->addJqueryPlugin(array('scrollTo', 'serialScroll', 'bxslider'));
 	}
 
 	public function hookAddProduct($params)

@@ -1,4 +1,6 @@
+@import "compass";
 @import "theme_variables";
+
 /* product desc */
 /* primary_block ***************************************************************************** */
 .primary_block {
@@ -1216,5 +1218,14 @@ Quick View Styles
 	}
 	.box-security {
 		filter: none;
+	}
+}
+
+.product_choice {
+	> div {
+		background: $gray-light;
+		h3 {
+			padding: .1rem;
+		}
 	}
 }

@@ -36,6 +36,15 @@
 	{/if}
 <div itemscope itemtype="https://schema.org/Product">
 	<meta itemprop="url" content="{$link->getProductLink($product)}">
+
+	<div class="product_choice row gutter-10">
+		<div class="col-sm-6">
+			<h3>Je remplis le questionnaire</h3>
+		</div>
+		<div class="col-sm-6">
+			<h3>Je choisis moi-même le livre</h3>
+		</div>
+	</div>
 	<div class="primary_block row">
 		{if isset($adminActionDisplay) && $adminActionDisplay}
 			<div id="admin-action" class="container">

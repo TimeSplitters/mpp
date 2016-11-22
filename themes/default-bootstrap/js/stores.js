@@ -136,6 +136,9 @@ function clearLocations(n)
 	}
 	locationSelect.appendChild(option);
 
+	if (!!$.prototype.uniform)
+		$("select#locationSelect").uniform();
+
 	$('#stores-table tr.node').remove();
 }
 
