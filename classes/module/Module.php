@@ -2306,6 +2306,11 @@ abstract class ModuleCore
                 Tools::enableCache();
             }
 
+            $context = Context::getContext();
+            if($context->isMobile() && !$context->isTablet() && Tools::file_exists_cache(_PS_THEME_DIR_.'modules/'.basename($file, '.php').'/mobile/'.$template)) {
+                $template = 'mobile/'.$template;
+            }
+
             $result = $this->getCurrentSubTemplate($template, $cache_id, $compile_id)->fetch();
 
             if ($cache_id !== null) {
