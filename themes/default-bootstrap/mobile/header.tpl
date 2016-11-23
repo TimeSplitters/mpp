@@ -100,61 +100,25 @@
     {/if}
 
     {if Context::getContext()->shop->domain == 'www.monpotpourri.com'}
-        <script>
-            {literal}
-            (function (i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] || function () {
-                            (i[r].q = i[r].q || []).push(arguments)
-                        }, i[r].l = 1 * new Date();
-                a = s.createElement(o),
-                        m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-            {/literal}
+        {if Context::getContext()->shop->domain == 'www.monpotpourri.com'}
+            <script>
+                {literal}
+                (function (i, s, o, g, r, a, m) {
+                    i['GoogleAnalyticsObject'] = r;
+                    i[r] = i[r] || function () {
+                                (i[r].q = i[r].q || []).push(arguments)
+                            }, i[r].l = 1 * new Date();
+                    a = s.createElement(o),
+                            m = s.getElementsByTagName(o)[0];
+                    a.async = 1;
+                    a.src = g;
+                    m.parentNode.insertBefore(a, m)
+                })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+                {/literal}
 
-            ga('create', 'UA-68079494-1', 'auto');
-        </script>
-        <!-- Facebook Pixel Code -->
-        <script>
-            {literal}
-            !function (f, b, e, v, n, t, s) {
-                if (f.fbq)return;
-                n = f.fbq = function () {
-                    n.callMethod ?
-                            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-                };
-                if (!f._fbq)f._fbq = n;
-                n.push = n;
-                n.loaded = !0;
-                n.version = '2.0';
-                n.queue = [];
-                t = b.createElement(e);
-                t.async = !0;
-                t.src = v;
-                s = b.getElementsByTagName(e)[0];
-                s.parentNode.insertBefore(t, s)
-            }(window,
-                    document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-            {/literal}
-
-            fbq('init', '1132570130157141');
-            fbq('track', 'PageView');
-            {if $page_name == 'order-confirmation' || $page_name == 'module-paypal-submit'}
-            fbq('track', 'Confirmation de commande');
-            {/if}
-        </script>
-        <noscript><img height="1" width="1" style="display:none"
-                       src="https://www.facebook.com/tr?id=1132570130157141&ev=PageView&noscript=1"
-            /></noscript>
-        <!-- DO NOT MODIFY -->
-        <!-- End Facebook Pixel Code -->
-        {literal}
-            <script type="text/javascript">window._trackJs = { token: 'f6d0477351be411799e9a130a57a956b' };</script>
-        {/literal}
-        <script type="text/javascript" src="https://cdn.trackjs.com/releases/current/tracker.js"></script>
+                ga('create', 'UA-87303241-1', 'auto');
+            </script>
+        {/if}
     {/if}
     {$HOOK_MOBILE_HEADER}
 </head>
