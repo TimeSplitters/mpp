@@ -1,0 +1,120 @@
+// Button variants
+// -------------------------
+// Easily pump out default styles, as well as :hover, :focus, :active,
+// and disabled options for all buttons
+@mixin button-nv($color, $background, $border,$hover_color,$hover_bgcolor,$hover_bordercolor) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: $hover_color;
+    background-color: $hover_bgcolor;
+        border-color: $hover_bordercolor;
+  }
+  .open & { &.dropdown-toggle {
+    color: $color;
+    background-color: $hover_bgcolor;
+        border-color: $hover_bordercolor;
+  } }
+  &:active,
+  &.active {
+    background-image: none;
+  }
+  .open & { &.dropdown-toggle {
+    background-image: none;
+  } }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background-color: $hover_bgcolor;
+          border-color: $hover_bordercolor
+    }
+  }
+}
+
+// Input variants
+// -------------------------
+// Easily pump out default styles, as well as :hover, :focus, :active,
+// and disabled options for all input
+@mixin input-nv($color, $background, $border,$hover_color,$hover_bgcolor,$hover_bordercolor) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: $hover_color;
+    background-color: $hover_bgcolor;
+        border-color: $hover_bordercolor;
+        -moz-box-shadow: $hover_bordercolor 0px 0px 0px;
+   -webkit-box-shadow: $hover_bordercolor 0px 0px 0px;
+   box-shadow: $hover_bordercolor 0px 0px 0px;
+  }
+  .open & { &.dropdown-toggle {
+    color: $color;
+    background-color: $hover_bgcolor;
+        border-color: $hover_bordercolor;
+  } }
+  &:active,
+  &.active {
+    background-image: none;
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background-color: $hover_bgcolor;
+          border-color: $hover_bordercolor
+    }
+  }
+}
+
+
+// Webkit-style focus
+@mixin tab-focus-nv() {
+  // Default
+  outline: none;
+}
+
+// Sass Mixin 
+// Named Breakpoints are phone, tablet-portrait, tablet-landscape-desktop, large-desktop, non-retina, retina
+@mixin respond-to($media) {
+    /* Landscape phones and down */
+    @if $media == xs {
+        @media (max-width: ($screen-sm)-1) { @content; }
+    }
+    /* Landscape phone to portrait tablet */
+    @else if $media == sm {
+        @media (min-width: $screen-sm) and (max-width: ($screen-md)-1) {@content; }
+    }
+    /* Portrait tablet to landscape and desktop */
+    @else if $media == md {
+        @media (min-width:$screen-md) and (max-width: ($screen-lg)-1) { @content; }
+    }
+    /* desktop and large desktop */
+    @else if $media == lg {
+        @media (min-width: $screen-lg) { @content; }
+    }
+}
+
+@mixin respondto($media...) {
+    @each $mediatype in $media {
+        @include respond-to($mediatype) {@content;}
+    }
+}

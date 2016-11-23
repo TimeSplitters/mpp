@@ -1,0 +1,14 @@
+.product_list {
+	.card {
+		margin: 20px;
+		.card-img-overlay {
+			pointer-events: none;
+			padding: 0;
+		}
+
+		.product-name {
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+	}
+}

@@ -100,7 +100,17 @@
   border-bottom-left-radius: $radius;
      border-top-left-radius: $radius;
 }
-
+@mixin border-radius($topLeft, $topRight: null, $bottomRight: null, $bottomLeft: null) {
+  @if $topRight != null {
+    @include border-top-left-radius($topLeft);
+    @include border-top-right-radius($topRight);
+    @include border-bottom-right-radius($bottomRight);
+    @include border-bottom-left-radius($bottomLeft);
+  } @else {
+    -webkit-border-radius: $topLeft;
+    border-radius: $topLeft;
+  }
+}
 // Drop shadows
 @mixin box-shadow($shadow...) {
   -webkit-box-shadow: $shadow; // iOS <4.3 & Android <4.1

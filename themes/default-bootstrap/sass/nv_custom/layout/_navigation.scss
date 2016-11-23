@@ -1,0 +1,114 @@
+#block_top_menu .sf-menu .sf-hover-block a img {
+    margin: 0 6px 6px 0;
+    height: 150px;
+   @include respondto(xs,sm) {
+        height: 100px;
+   }
+}
+#header {
+  z-index: 5003;
+}
+
+header {
+  z-index: 1;
+  position: relative;
+  background: #fff;
+  padding-bottom: 15px;
+
+  .banner {
+    background: black;
+    max-height: 100%;
+  }
+
+  .banner .row {
+    margin: 0px;
+  }
+
+  .nav {
+    background: #353535;
+  }
+
+  .nav .row {
+    margin: 0px;
+  }
+
+  .nav nav {
+    width: 100%;
+  }
+
+  .row {
+    position: relative;
+  }
+
+  .row > .container {
+    position: relative;
+  }
+}
+
+nav {
+  font-size: 90%;
+}
+
+nav, nav a {
+  font-family: "Open Sans";
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+nav a {
+  padding: 6px 10px;
+  display: block;
+  line-height: 170%;
+  @include respondto('xs', 'sm') {
+    padding: 10px 15px;
+  }
+}
+
+html {
+  @include respondto('md', 'lg', 'xl') {
+    font-size: 12px;
+  }
+  @include respondto('sm') {
+    font-size: 13px;
+  }
+  @include respondto('xs') {
+    font-size: 14px;
+  }
+}
+
+
+#cookieLaw {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #353535;
+  color: #fff;
+  z-index: 9999;
+  padding: 0.5%;
+  text-align: center;
+}
+
+.content_only {
+  #cookieLaw, #restricted-country {
+    display: none !important;
+  }
+}
+
+#restricted-country {
+  display: none;
+  padding: 0;
+  background: $gray;
+  color: $white;
+  border-bottom: 1px solid $gray-light;
+  > div {
+    padding: 10px;
+    a, button {
+      color: $gold;
+      padding: 0;
+      background: none;
+      border: none;
+    }
+  }
+}

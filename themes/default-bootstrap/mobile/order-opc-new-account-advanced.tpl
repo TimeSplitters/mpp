@@ -18,9 +18,9 @@
                     <input class="form-control validate" type="password" id="login_passwd" name="login_passwd" data-validate="isPasswd" />
                 </p>
                 <a href="{$link->getPageLink('password', true)|escape:'html':'UTF-8'}" class="lost_password">{l s='Forgot your password?'}</a>
-                <p class="submit">
+                <p>
                     {if isset($back)}<input type="hidden" class="hidden" name="back" value="{$back|escape:'html':'UTF-8'}" />{/if}
-                    <button type="submit" id="SubmitLogin" name="SubmitLogin" data-adv-api="1" class="button btn btn-default button-medium"><span><i class="icon-lock left"></i>{l s='Sign in'}</span></button>
+                    <button type="submit" id="SubmitLogin" name="SubmitLogin" data-adv-api="1" class="btn btn-default"><span><i class="icon-lock left"></i>{l s='Sign in'}</span></button>
                 </p>
             </div>
         </fieldset>
@@ -380,11 +380,11 @@
                         <input type="hidden" name="alias_invoice" id="alias_invoice" value="{l s='My Invoice address'}" />
                     </div>
                     {$HOOK_CREATE_ACCOUNT_FORM}
-                    <div class="submit opc-add-save clearfix">
+                    <div class="opc-add-save clearfix">
                         <p class="required opc-required pull-right">
                             <sup>*</sup>{l s='Required field'}
                         </p>
-                        <button type="submit" name="submitAccount" id="submitAccount" data-adv-api="1" class="btn btn-default button button-medium"><span>{l s='Save'}<i class="icon-chevron-right right"></i></span></button>
+                        <button type="submit" name="submitAccount" id="submitAccount" data-adv-api="1" class="btn btn-default"><span>{l s='Save'}<i class="icon-chevron-right right"></i></span></button>
 
                     </div>
                     <div style="display: none;" id="opc_account_saved" class="alert alert-success">

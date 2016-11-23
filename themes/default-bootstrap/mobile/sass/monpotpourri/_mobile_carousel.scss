@@ -1,0 +1,28 @@
+.carousel-indicators {
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0;
+  .active {
+    background-color: $gray-dark;
+  }
+  li {
+    border: none;
+    background: $gray-light;
+  }
+  li,.active {
+    width: 0.6rem;
+    height: 0.6rem;
+    margin: 0.4rem;
+  }
+}
+
+.carrousel {
+  margin-top: 1.5rem;
+
+  h3 {
+    text-transform: uppercase;
+
+  }
+}

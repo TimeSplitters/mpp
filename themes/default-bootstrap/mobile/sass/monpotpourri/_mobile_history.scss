@@ -1,0 +1,8 @@
+.statuses [class^="icon-"]:before {
+  font-size: 0.7rem;
+}
+
+.clickable-row {
+  border-bottom: 1px solid $gray-lighter;
+  padding: 0.5rem 0;
+}

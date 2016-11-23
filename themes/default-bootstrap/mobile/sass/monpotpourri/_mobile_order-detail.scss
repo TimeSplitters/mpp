@@ -1,0 +1,19 @@
+#order-detail {
+  .item {
+    border-bottom: 1px solid $gray-lighter;
+  }
+
+  ul.statuses li {
+    display: inline-block;
+    &.active-state span.icon-stack {
+      background: $gold;
+    }
+    span.icon-stack {
+      border-radius: 50%;
+      background: $gray-lighter;
+    }
+    &.current-state span.icon-stack {
+      background: $gray;
+    }
+  }
+}

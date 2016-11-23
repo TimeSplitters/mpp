@@ -1,0 +1,26 @@
+@import "_style_toblog";
+
+#order-confirmation {
+  .style_toblog {
+    //padding-top:50px;
+  }
+
+  .block_express_delivery {
+    display: none;
+  }
+
+  .card-text {
+    display: none;
+  }
+}
+
+#order-confirmation, #module-paypal-submit {
+  #googleForm {
+    position: relative;
+
+    #googleFormClose, #googleFormClose {
+      position: absolute;
+      right: 0;
+    }
+  }
+}

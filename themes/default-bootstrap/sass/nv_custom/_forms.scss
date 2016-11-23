@@ -1,0 +1,214 @@
+/**
+   Form inputs
+   => SCSS
+**/
+
+input[type="radio"], input[type="checkbox"] {
+  display:none;
+  &+label {
+    color: #353535;
+    font-family: "Open Sans";
+    font-size: 12px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-weight: 100;
+    text-align: left;
+    span {
+      display:inline-block;
+      width:16px;
+      height:16px;
+      margin:-3px 4px 0 0;
+      vertical-align:middle;
+      cursor:pointer;
+      -moz-border-radius: 0%;
+      border-radius: 0%;
+      background-color: #fff;
+      border: 1px solid #cecece;
+      color: #fff;
+    }
+  }
+  &:checked {
+    &+label {
+      span:before {
+        content: "X";
+        font-family: "Open Sans";
+        color: #353535;
+        padding-left: 3px;
+        position: absolute;
+        font-size: 11px;
+        line-height: 16px;
+      }
+    }
+  }
+}
+
+input[type="radio"] + label span,
+input[type="radio"]:checked + label span,
+input[type="checkbox"] + label span,
+input[type="checkbox"]:checked + label span {
+  -webkit-transition: all 0.4s linear;
+  -o-transition:all 0.4s linear;
+  -moz-transition:all 0.4s linear;
+  transition:all 0.4s linear;
+}
+
+.form-group {
+    fieldset {
+        border: 1px solid #CCCCCC;
+        position: relative;
+    }
+}
+
+.fieldset_form {
+  .form-group {
+    margin: 5px 0;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    .form-control {
+      max-width: 100%;
+      width: 100%;
+      background: none;
+      height: 30px;
+      padding: 7px 30px 0px 15px;
+      box-shadow: none;
+      border: none;
+    }
+  }
+  .form-control {
+    &:active, &:focus {
+      background: none;
+      text-decoration: none;
+      color: #000000;
+      outline-style: none;
+      box-shadow: none;
+      border: none;
+    }
+  }
+  legend {
+    margin-top: 3px;
+    position: absolute; 
+  }
+  .form-group label {
+    color: #353535;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    padding: 0 7px;
+    font-family: "Open Sans";
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-top: 5px;
+    position: absolute;
+    line-height: 20px;
+  }
+  .label-active label {
+    margin-top: -15px;
+    color: #CDB877;
+    background: #f8f8f8;
+  }
+  .form-group {
+    .form-error, .form-ok {
+      position: relative;
+    }
+    .form-error:before {
+      content: "\f00d";
+      font-family: FontAwesome;
+      color: #a3a3a3;
+      font-size: 18px;
+      right: 4px;
+      width: 20px;
+      position: absolute;
+      height: 20px;
+      display: none;
+      top: calc(50% - 9px);
+    }
+    .form-ok:before {
+      content: "\f00c";
+      font-family: FontAwesome;
+      color: #a3a3a3;
+      font-size: 18px;
+      right: 4px;
+      width: 20px;
+      position: absolute;
+      height: 20px;
+      display: none;
+      top: calc(50% - 9px);
+    }
+    .form-error .form-control, .form-ok .form-control {
+      padding-right: 30px;
+    }
+  }
+  fieldset {
+    margin: 5px auto auto auto !important;
+    width: 100%;
+    &.label-active {
+      border: 1px solid #cdb877;
+    }
+  }
+  legend {
+    margin-left: 10px !important;
+  }
+}
+
+legend + * {
+  -webkit-margin-top-collapse: separate;
+}
+
+.fieldset_form label {
+  display: inline;
+  margin-bottom: 10px;
+  font-family: "Open Sans";
+  font-size: 12Px;
+}
+
+fieldset.form_global_fieldset {
+  padding: 10px;
+  min-height: 350px;
+  border: 1px solid #cecece;
+}
+
+.form_global_fieldset > {
+  legend {
+    font-family: "Open Sans";
+    font-size: 15px;
+    padding: 10px;
+    width: auto;
+  }
+  form {
+    margin: 0 20px;
+  }
+}
+
+.form_info::before {
+  content: "\f05a";
+  font-family: "FontAwesome";
+  font-size: 11px;
+  margin-left: 5px;
+}
+
+.fieldset_form {
+  .postal_code_fieldset {
+    width: 35% !important;
+  }
+  .country_fieldset {
+    width: calc(65% - 10px) !important;
+    margin-right: 0 !important;
+  }
+  .postal_code_fieldset, .country_fieldset {
+    display: inline-block;
+  }
+  .postal_code_fieldset {
+    margin-right: 6px;
+  }
+}
+
+.ui-tooltip {
+    font-size: 11px !important;
+}
+
+/** END FORMS **/

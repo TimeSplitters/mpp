@@ -1,0 +1,28 @@
+#my-account {
+  .myaccount-link-list {
+    &>div {
+      margin-top: 1rem;
+    }
+    a {
+      margin-top: 1rem;
+      color: $gray;
+      position: relative;
+      text-align: center;
+      span {
+        background: rgba(255,255,255,0.74);
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+#collapseEspaceClient {
+  padding: 0 0 1rem 1rem;
+}

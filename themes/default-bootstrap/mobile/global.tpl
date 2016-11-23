@@ -1,5 +1,5 @@
 {*
-* 2007-2016 PrestaShop
+* 2007-2015 PrestaShop
 *
 * NOTICE OF LICENSE
 *
@@ -18,7 +18,7 @@
 * needs please refer to http://www.prestashop.com for more information.
 *
 *  @author PrestaShop SA <contact@prestashop.com>
-*  @copyright  2007-2016 PrestaShop SA
+*  @copyright  2007-2015 PrestaShop SA
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
@@ -51,5 +51,6 @@
 {addJsDef instantsearch=Configuration::get('PS_INSTANT_SEARCH')|boolval}
 {addJsDef quickView=$quick_view|boolval}
 {addJsDef displayList=Configuration::get('PS_GRID_PRODUCT')|boolval}
-{addJsDef highDPI=Configuration::get('PS_HIGHT_DPI')|boolval}
+{addJsDef cookieLawAccept=!$cookie->cookieLawAccept}
+{addJsDef cookieRestrictedCountry=!$cookie->cookieRestrictedCountry}
 {/strip}

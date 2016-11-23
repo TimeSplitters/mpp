@@ -1,0 +1,96 @@
+
+// Global values
+// --------------------------------------------------
+$white:					#fff;
+// Grays
+// -------------------------
+
+$gray-darker:            lighten(#000, 13.5%) !default; // #222
+$gray-dark:              lighten(#000, 20%) !default;   // #333
+$gray:                   #353535; // #555
+$gray-light:             #D6D4D4;   
+$gray-lighter:           #f5f5f5;
+$gold:                   #cfba79;
+
+// Brand colors
+// -------------------------
+
+$brand-primary:         #CFBA79;
+//$brand-success:         #14C3A2;
+$brand-success:         #18b003;
+$brand-warning:         #F46066;
+$brand-danger:          #F46066;
+$brand-info:            #FFFFFF;
+$brand-hightlight:      #FCFF00;
+
+// Tables
+// -------------------------
+$table-bg-active:				$gray-lighter;
+
+// Buttons
+// -------------------------
+
+$btn-default-color:              $white;
+$btn-default-bg:                 $gray;
+$btn-default-border:             $gray;
+
+$btn-primary-color:              #fff !default;
+$btn-primary-bg:                 $brand-primary !default;
+$btn-primary-border:             darken($btn-primary-bg, 5%) !default;
+
+$btn-success-color:              #fff !default;
+$btn-success-bg:                 $brand-success !default;
+$btn-success-border:             darken($btn-success-bg, 5%) !default;
+
+$btn-warning-color:              #fff !default;
+$btn-warning-bg:                 $brand-warning !default;
+$btn-warning-border:             darken($btn-warning-bg, 5%) !default;
+
+$btn-danger-color:               #fff !default;
+$btn-danger-bg:                  $brand-danger !default;
+$btn-danger-border:              darken($btn-danger-bg, 5%) !default;
+
+$btn-info-color:                 #000;
+$btn-info-bg:                    #fff;
+$btn-info-border:                #000;
+$btn-info-hover-color:           #FFF;
+$btn-info-hover-bgcolor:         #000;
+$btn-info-hover-bordercolor:     #000;
+
+// INPUTS
+// -------------------------
+
+$input-info-color:                 #000;
+$input-info-bg:                    #fff;
+$input-info-border:                #000;
+$input-info-hover-color:           #000;
+$input-info-hover-bgcolor:         #fff;
+$input-info-hover-bordercolor:     #000;
+
+// Type
+// ------------------------
+$text-muted:                  $gray-light;
+$abbr-border-color:           $gray-light;
+$headings-small-color:        $gray-light;
+$blockquote-small-color:      $gray-light;
+$blockquote-border-color:     $gray-lighter;
+$page-header-border-color:    $gray-lighter;
+
+// Form states and alerts
+// -------------------------
+
+$state-warning-text:             #fff !default;
+$state-warning-bg:               #fe9126 !default;
+$state-warning-border:           #e4752b !default;
+
+$state-danger-text:              #fff !default;
+$state-danger-bg:                #f3515c !default;
+$state-danger-border:            #d4323d !default;
+
+$state-success-text:             $brand-success;
+$state-success-bg:               #fff ;
+$state-success-border:           $brand-success;
+
+$state-info-text:                #fff !default;
+$state-info-bg:                  #5192f3 !default;
+$state-info-border:              #4b80c3 !default;

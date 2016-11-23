@@ -1,0 +1,22 @@
+#header_logo {
+  width: 100%;
+  text-align: center;
+  a {
+    display: inline-block;
+  }
+  .logo {
+    padding: 15px;
+    width: 250px;
+    height: 60px;
+    display: inline-block;
+  }
+}
+
+.img img {
+  height: 100%;
+  width: 100%;
+}
+
+.media.thumb_cart {
+  max-width: $thumb_cart_width;
+}

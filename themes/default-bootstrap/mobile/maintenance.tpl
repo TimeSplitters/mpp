@@ -1,5 +1,5 @@
 {*
-* 2007-2016 PrestaShop
+* 2007-2015 PrestaShop
 *
 * NOTICE OF LICENSE
 *
@@ -18,7 +18,7 @@
 * needs please refer to http://www.prestashop.com for more information.
 *
 *  @author PrestaShop SA <contact@prestashop.com>
-*  @copyright  2007-2016 PrestaShop SA
+*  @copyright  2007-2015 PrestaShop SA
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
@@ -27,6 +27,7 @@
 <html lang="{$language_code|escape:'html':'UTF-8'}">
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="refresh" content="0; url=http://monpotpourri.com/" />
 	<title>{$meta_title|escape:'html':'UTF-8'}</title>
 {if isset($meta_description)}
 	<meta name="description" content="{$meta_description|escape:'html':'UTF-8'}">

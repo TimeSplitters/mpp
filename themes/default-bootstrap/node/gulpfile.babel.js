@@ -17,7 +17,37 @@ const $ = plugins();
 const PRODUCTION = !!(yargs.argv.production);
 
 const jsMobileSources = [
+    '../mobile/js/jquery-2.2.4.min.js',
+    '../mobile/js/jquery.mobile.custom.min.js',
 
+    '../mobile/js/jquery.touchSwipe.min.js',
+    '../mobile/js/jquery.panzoom.min.js',
+    '../mobile/js/jquery.idTabs.js',
+    '../mobile/js/jquery.fancybox.js',
+    '../mobile/js/jquery.formatter.min.js',
+    '../mobile/js/jquery.bxslider.js',
+    '../../../js/jquery/ui/jquery.ui.core.min.js',
+    '../../../js/jquery/ui/jquery.ui.widget.min.js',
+    '../../../js/jquery/ui/jquery.effects.core.min.js',
+    '../../../js/jquery/ui/jquery.effects.highlight.min.js',
+    '../../../js/jquery/ui/jquery.ui.effect.min.js',
+    '../../../js/jquery/ui/jquery.ui.effect-highlight.min.js',
+    '../../../js/jquery/ui/jquery.ui.position.min.js',
+    '../../../js/jquery/ui/jquery.ui.menu.min.js',
+    '../../../js/jquery/ui/jquery.ui.autocomplete.min.js',
+    '../../../js/jquery/plugins/autocomplete/jquery.autocomplete.js',
+    '../../../js/jquery/jquery-migrate-1.2.1.min.js',
+
+    '../mobile/js/tether.min.js',
+    '../mobile/js/bootstrap.min.js',
+    '../mobile/js/bootstrap.offcanvas.min.js',
+
+    '../js/modules/blocksearch/blocksearch.js',
+    '../mobile/js/tools.js',
+    '../mobile/js/validate.js',
+    '../mobile/js/nvgallery.js',
+    '../mobile/js/ajax-wishlist.js',
+    '../mobile/js/nvgallery.js'
 ];
 
 const jsDesktopSources = [
@@ -90,7 +120,7 @@ function compressCss() {
 
 function sassDesktopFiles(f) {
     util.log(f);
-    return gulp.src('../sass/app.scss')
+    return gulp.src(f)
         //.pipe($.if(!PRODUCTION, $.sourcemaps.init()))
         .pipe($.sass({
             includePaths: ['node_modules/bootstrap/scss']

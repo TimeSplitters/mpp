@@ -1,5 +1,5 @@
 {*
-* 2007-2016 PrestaShop
+* 2007-2015 PrestaShop
 *
 * NOTICE OF LICENSE
 *
@@ -18,7 +18,7 @@
 * needs please refer to http://www.prestashop.com for more information.
 *
 *  @author PrestaShop SA <contact@prestashop.com>
-*  @copyright  2007-2016 PrestaShop SA
+*  @copyright  2007-2015 PrestaShop SA
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
@@ -156,6 +156,13 @@
                             {if $voucherAllowed}
                                 <td colspan="2" id="cart_voucher" class="cart_voucher">
                                     <div id="cart_voucher" class="table_block">
+                                        {if isset($errors_discount) && $errors_discount}
+                                            <ul class="alert alert-danger">
+                                                {foreach from=$errors_discount key=k item=error}
+                                                    <li>{$error|escape:'html':'UTF-8'}</li>
+                                                {/foreach}
+                                            </ul>
+                                        {/if}
                                         {if $voucherAllowed}
                                             <form action="{if $opc}{$link->getPageLink('order-opc', true)}{else}{$link->getPageLink('order', true)}{/if}" method="post" id="voucher">
                                                 <fieldset>

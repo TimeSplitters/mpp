@@ -1,0 +1,15 @@
+#category #columns .row {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+#category #left_column, #category #center_column {
+   display: table-cell !important;
+   vertical-align: top;
+}
+
+#category #left_column {
+    position: relative;
+    height: inherit;
+}

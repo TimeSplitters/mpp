@@ -1,0 +1,83 @@
+.panel {
+  a {
+    color: #353535;
+    line-height: 1.8rem;
+  }
+  .panel-heading {
+    border-top: 1px solid $gray-light;
+    h4 {
+      line-height: 0.9rem;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    .panel-title {
+      padding: 0 1.5rem;
+      margin: 0;
+      a {
+        font-size: 1rem;
+        display: block;
+        position: relative;
+        padding: 0.5rem 0;
+        &:after, &.collapsed:after {
+          font-family: $font-icon;
+          color: #353535;
+          position: absolute;
+          margin-left: 1rem;
+        }
+        &:after {
+          content: "\f106";
+        }
+        &.collapsed:after {
+          content: "\f107";
+        }
+        &#subcategory_parent {
+          display: inline-block;
+          &:after {
+            content: "";
+          }
+        }
+      }
+    }
+    &.panel-heading-force-open {
+      h4 {
+        padding: 0.9rem 1.5rem;
+      }
+      h2 {
+        line-height: 2.8rem;
+      }
+    }
+  }
+
+  p {
+    padding: 0.3rem 2rem;
+  }
+
+  .panel-collapse.collapse.in {
+    padding-bottom: 0.5rem;
+  }
+}
+
+.panel-espace-client {
+  .panel {
+    .panel-title {
+      padding: 0;
+    }
+    .panel-heading {
+      border: none;
+    }
+  }
+}
+
+input#cardNumberField {
+  font-size: 12px;
+}
+
+#no_wallet_management_body form#captureCardForm #cardNumberField {
+  width: 100%;
+}
+
+#no_wallet_management_body form#captureCardForm p#no_virtualnumpad_p {
+  margin: 0 0 12px 0;
+  display: block;
+  float: none;
+}

@@ -1,0 +1,121 @@
+.breadcrumb {
+  background-color: $white;
+  border-radius: 0px;
+  > {
+    li {
+      display: inline-block;
+      + li:before {
+        content: "/\00a0";
+        padding: 0 5px;
+        color: #333;
+      }
+    }
+    .active {
+      color: #333;
+    }
+  }
+  display: inline-block;
+  line-height: 24px;
+  min-height: 6px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  color: $gray;
+  font-family: lato;
+  font-size: 11px;
+  text-transform: uppercase;
+  border-radius: 0;
+  list-style: outside none none;
+  margin-bottom: 5px;
+  padding: 0 0 0 5px;
+  font-weight: normal;
+  .navigation-pipe {
+    width: 18px;
+    display: inline-block;
+    text-indent: -5000px;
+  }
+  a {
+    display: inline-block;
+    background: $white;
+    padding: 0 15px 0 22px;
+    margin-left: -26px;
+    position: relative;
+    z-index: 2;
+    color: #333;
+    font-weight: normal;
+    &.home {
+      font-size: 17px;
+      color: #353535;
+      width: 38px;
+      text-align: center;
+      padding: 0;
+      margin: 0 0 0 -10px;
+      -moz-border-radius-topleft: 3px;
+      -webkit-border-top-left-radius: 3px;
+      border-top-left-radius: 3px;
+      -moz-border-radius-bottomleft: 3px;
+      -webkit-border-bottom-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+      z-index: 99;
+      line-height: 22px;
+      display: inline-block;
+      height: 25px;
+      i {
+        vertical-align: -1px;
+      }
+      &:before {
+        border: none;
+      }
+    }
+    &:after {
+      background: #fff none repeat scroll 0 0;
+      border-radius: 2px;
+      border-right: 1px solid $gray-light;
+      border-top: 1px solid $gray-light;
+      content: ".";
+      display: inline-block;
+      height: 10px;
+      position: absolute;
+      right: -7px;
+      text-indent: -5000px;
+      top: 7px;
+      width: 10px;
+      z-index: -1;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+    &:before {
+      display: none;
+      background: #fff none repeat scroll 0 0;
+      border-radius: 2px;
+      border-right: 1px solid $gray-light;
+      border-top: 1px solid $gray-light;
+      content: ".";
+      display: inline-block;
+      height: 10px;
+      position: absolute;
+      left: 0;
+      text-indent: -5000px;
+      top: 7px;
+      width: 10px;
+      z-index: -1;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+    &:hover {
+      color:$gray;
+    }
+  }
+}
+
+.ie8 .breadcrumb {
+  min-height: 1px;
+  a:after {
+    display: none;
+  }
+  .navigation-pipe {
+    width: 20px;
+  }
+}

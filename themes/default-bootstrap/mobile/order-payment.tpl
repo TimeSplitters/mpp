@@ -1,53 +1,31 @@
-{*
-* 2007-2016 PrestaShop
-*
-* NOTICE OF LICENSE
-*
-* This source file is subject to the Academic Free License (AFL 3.0)
-* that is bundled with this package in the file LICENSE.txt.
-* It is also available through the world-wide-web at this URL:
-* http://opensource.org/licenses/afl-3.0.php
-* If you did not receive a copy of the license and are unable to
-* obtain it through the world-wide-web, please send an email
-* to license@prestashop.com so we can send you a copy immediately.
-*
-* DISCLAIMER
-*
-* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
-* versions in the future. If you wish to customize PrestaShop for your
-* needs please refer to http://www.prestashop.com for more information.
-*
-*  @author PrestaShop SA <contact@prestashop.com>
-*  @copyright  2007-2016 PrestaShop SA
-*  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
-*  International Registered Trademark & Property of PrestaShop SA
-*}
-{if !$opc}
-	{addJsDefL name=txtProduct}{l s='product' js=1}{/addJsDefL}
-	{addJsDefL name=txtProducts}{l s='products' js=1}{/addJsDefL}
-	{capture name=path}{l s='Your payment method'}{/capture}
-	<h1 class="page-heading">{l s='Please choose your payment method'}
-		{if !isset($empty) && !$PS_CATALOG_MODE}
-			<span class="heading-counter">{l s='Your shopping cart contains:'}
-				<span id="summary_products_quantity">{$productNumber} {if $productNumber == 1}{l s='product'}{else}{l s='products'}{/if}</span>
+{addJsDefL name=txtProduct}{l s='product' js=1}{/addJsDefL}
+{addJsDefL name=txtProducts}{l s='products' js=1}{/addJsDefL}
+{capture name=path}{l s='Your payment method'}{/capture}
+{*if !isset($empty) && !$PS_CATALOG_MODE}
+    <span class="heading-counter">{l s='Your shopping cart contains:'}
+        <span id="summary_products_quantity">{$productNumber} {if $productNumber == 1}{l s='product'}{else}{l s='products'}{/if}</span>
 			</span>
-		{/if}
-	</h1>
-{else}
-	<h1 class="page-heading step-num"><span>3</span> {l s='Please choose your payment method'}</h1>
-{/if}
+{/if*}
 
-{if !$opc}
-	{assign var='current_step' value='payment'}
-	{include file="$tpl_dir./order-steps.tpl"}
-	{include file="$tpl_dir./errors.tpl"}
-{else}
-	<div id="opc_payment_methods" class="opc-main-block">
-		<div id="opc_payment_methods-overlay" class="opc-overlay" style="display: none;"></div>
-{/if}
+{assign var='current_step' value='payment'}
 
-{if $advanced_payment_api}
-    {include file="$tpl_dir./order-payment-advanced.tpl"}
-{else}
-    {include file = "$tpl_dir./order-payment-classic.tpl"}
-{/if}
+<div id="order_payment_tabs">
+    <div class="row gutter-10">
+        <div class="col-xs-6 col-sm-6 valign-middle tabActive">
+            <div data-payment="payment_credit_card" class="btn btn-primary btn-block">
+                <span class="icon-credit-card icon-white"></span> {l s='Credit Card'}
+            </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 valign-middle tabInactive">
+            <div data-payment="payment_paypal" class="btn btn-default btn-block">
+                <span class="icon-paypal icon-white"></span> {l s='Paypal'}
+            </div>
+        </div>
+    </div>
+    
+    {$HOOK_PAYMENT}
+</div>
+<div class="text-right order_cgv">
+    <small><em>{l s='En validant votre commande, vous acceptez l\'intégralité de nos'} <a href="/nous-connaitre/17-conditions-generales-de-ventes" target="_blank">{l s='Conditions générales de vente'}</a> {l s='ainsi que notre'} <a href="/nous-connaitre/15-politique-confidentialite" target="_blank">{l s='politique de gestion de vos informations personnelles'}</a>.
+    </em></small>
+</div>

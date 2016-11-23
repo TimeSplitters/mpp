@@ -1,0 +1,256 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @for $i from 1 through $grid-columns {
+    .gutter-10 .col-#{$breakpoint}-#{$i} {
+      flex-basis: calc(#{$i}/12*100% - 5px);
+      padding: 0;
+    }
+  }
+}
+
+.container {
+  padding: 0;
+}
+
+p {
+  padding: 0.5rem 2rem;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 1rem 1.2rem;
+  margin: 0;
+}
+
+*:focus, *:active, *:visited {
+  outline: 0 !important;
+  text-decoration: none;
+}
+
+a {
+  color: $gray-dark;
+  &:active {
+    color: $gray;
+  }
+
+  &:hover {
+  text-decoration: none;
+  }
+}
+
+.unvisible, .hidden {
+  display: none !important;
+}
+
+header {
+  border-bottom: 1px solid $gray-light;
+  padding-bottom: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+#index header {
+  margin-bottom: 0;
+}
+
+body > .container-fluid {
+  padding: 0;
+}
+
+body {
+  cursor: pointer;
+}
+
+.row {
+  margin: 0;
+}
+
+.row.gutter-10 {
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+.row > .vcenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/**
+
+<div class="tooltip bs-tether-element bs-tether-element-attached-top bs-tether-element-attached-center bs-tether-target-attached-bottom bs-tether-target-attached-center fade bs-tether-enabled in" role="tooltip" id="tooltip594249" style="top: 0px;opacity: 1;left: 0px;position: absolute;transform: translateX(35px) translateY(79px) translateZ(0px);">
+  <div class="tooltip-arrow"></div>
+  <div class="tooltip-inner">Rendez-vous sur votre ordinateur pour vous connecter</div>
+</div>
+
+*/
+.tooltip {
+  &.in {
+    opacity: 1;
+    z-index: 999999;
+    .tooltip-inner {
+      background: #fff;
+      border: none;
+      color: #353535;
+      font-size: 0.7rem;
+      padding: 3px 7px;
+      font-family: "Open Sans";
+    }
+  }
+  &.tooltip-bottom .tooltip-arrow,
+  &.bs-tether-element-attached-top .tooltip-arrow {
+    border-bottom-color: #fff;
+    border-width: 0px 11px 9px 11px;
+    top: -2px;
+  }
+}
+
+.tooltip-inner {
+  background: #fff;
+}
+
+#center_column img, .thumb_cart {
+  width: 100%;
+}
+
+p:empty {
+  display: none;
+}
+
+.alert-info {
+  background-color: $gray-lighter;
+  border-color: $gray-dark;
+  border-width: 0 0 0 1px;
+  color: #999999;
+}
+.alert-info>*:before {
+  font-family: "FontAwesome";
+  content: "\f05a";
+  font-size: 12px;
+  vertical-align: -2px;
+  padding-right: 7px;
+  float: left;
+  color: #999999;
+}
+
+.table {
+  margin: 0;
+  caption {
+    background: $gray-lighter;
+    padding: 5px 8px;
+    color: $gray;
+    font-weight: bold;
+    text-transform: uppercase;
+    caption-side: top;
+  }
+
+  th {
+    border-top: none;
+  }
+}
+
+ul {
+  margin: 0;
+}
+
+h6 {
+  font-size: 0.6rem;
+  background: $gray-lighter;
+  font-weight: 600;
+  margin: 0;
+
+  &+blockquote {
+    padding: 0.3rem 1rem;
+    margin: 0;
+  }
+}
+
+.icon-inverse {
+  color: #fff;
+}
+
+.icon-stack {
+  position: relative;
+  display: inline-block;
+  width: 1.6em;
+  height: 1.6em;
+  line-height: 1.6em;
+  vertical-align: middle;
+}
+
+.icon-stack-1x, .icon-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+hr {
+  margin: 0.5rem 1.2rem;
+  &.full {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.valign-top {
+  align-items: flex-start;
+  vertical-align: top;
+  [class^="icon-"]:before {
+    align-items: flex-start;
+    vertical-align: top;
+  }
+}
+
+.valign-middle {
+  align-items: center;
+  vertical-align: middle;
+  [class^="icon-"]:before {
+    align-items: center;
+    vertical-align: middle;
+  }
+}
+
+.valign-bottom {
+  align-items: baseline;
+  vertical-align: baseline;
+  [class^="icon-"]:before {
+    align-items: baseline;
+    vertical-align: baseline;
+  }
+}
+
+.margin-bottom-s {
+  margin-bottom: 0.5rem;
+}
+
+.highlight {
+  background: $highlight;
+  padding: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+small {
+  font-size: 85%;
+}
+
+.alert-warning {
+  border: 1px solid $warning;
+  background: $warning;
+}
+
+#instafeed {
+  ul {
+    padding: 0;
+    li {
+      list-style: none;
+      width: 50%;
+      padding: 0.2rem;
+    }
+  }
+  .bx-prev, .bx-next {
+    display: none;
+  }
+}

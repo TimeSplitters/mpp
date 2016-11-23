@@ -1,5 +1,5 @@
 {*
-* 2007-2016 PrestaShop
+* 2007-2015 PrestaShop
 *
 * NOTICE OF LICENSE
 *
@@ -18,7 +18,7 @@
 * needs please refer to http://www.prestashop.com for more information.
 *
 *  @author PrestaShop SA <contact@prestashop.com>
-*  @copyright  2007-2016 PrestaShop SA
+*  @copyright  2007-2015 PrestaShop SA
 *  @version  Release: $Revision$
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
@@ -61,8 +61,8 @@
             </ul>
         </div>
 	</div>
-	<p class="address_add submit">
-		<a href="{$link->getPageLink('address', true, NULL, "back={$back_order_page}?step=1{'&multi-shipping=1'|urlencode}{if $back}&mod={$back|urlencode}{/if}")|escape:'html':'UTF-8'}" title="{l s='Add'}" class="button button-small btn btn-default"><span>{l s='Add a new address'}<i class="icon-chevron-right right"></i></span></a>
+	<p class="address_add">
+		<a href="{$link->getPageLink('address', true, NULL, "back={$back_order_page}?step=1{'&multi-shipping=1'|urlencode}{if $back}&mod={$back|urlencode}{/if}")|escape:'html':'UTF-8'}" title="{l s='Add'}" class="btn btn-default"><span>{l s='Add a new address'}<i class="icon-chevron-right right"></i></span></a>
 	</p>
 	{if !$opc}
 	<div id="ordermsg" class="form-group">

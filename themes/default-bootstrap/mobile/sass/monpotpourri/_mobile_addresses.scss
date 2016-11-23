@@ -1,0 +1,8 @@
+#addresses {
+  .address_update a {
+    color: $gray;
+    .icon-pencil:before {
+      font-size: 0.9rem;
+    }
+  }
+}

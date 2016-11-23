@@ -1,0 +1,167 @@
+/*
+	HOME CAROUSEL
+*/
+.carousel-item {
+    img {
+		margin: 0 auto;
+	}
+	a:hover {
+		text-decoration: none;
+	}
+}
+
+.carousel-item {
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	color: #353535;
+	font-size: 0.8rem;
+	font-family: Lato;
+	font-weight: 100;
+}
+
+.carousel-caption {
+	position: relative;
+	background: rgba(255,255,255,0.5);
+	color: #353535;
+	text-shadow: none;
+	left: 0;
+	margin-top: -5.3rem;
+	margin-bottom: -2rem;
+	padding-top: 10px;
+	p {
+		margin: 0;
+	}
+}
+
+.homeslider-description {
+	h3 {
+		font-size: 4.5rem;
+		font-family: "CrystalSky";
+		line-height: 1.2;
+		text-transform: capitalize;
+		margin: 0;
+	}
+}
+
+#home_pics {
+	border-bottom: 1px solid #353535;
+	.carousel-caption {
+		p {
+			padding: 0;
+			letter-spacing: 1px;
+			font-size: 0.75rem;
+		}
+	}
+}
+/* END CAROUSEL */
+
+/*
+	HOME CATEGORIES
+*/
+#home_categories  {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 1rem 0.6rem;
+	a {
+		flex: 1 0 calc(50% - 0.5rem);
+		min-width: calc(50% - 0.5rem);
+	}
+	.btn {
+		margin: 0.2rem;
+		padding: $padding-base-vertical 0;
+	}
+}
+/* END CATEGORIES */
+
+/*
+	HOME CARDS
+*/
+#home_img_cards, #home_cards {
+	margin-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	.card {
+		flex: auto;
+		margin: 0 3rem;
+		min-width:$card-img-min-width;
+		text-align: center;
+		.card-img-overlay {
+			background: $white;
+			margin: 0rem 1rem -1rem 1rem;
+			bottom: auto;
+			top: auto;
+			color:$gray;
+			position: relative;
+			transform: translate(0, -50%);
+			.card-text {
+				font-size: 0.8rem;
+			}
+			.card-title,.card-text {
+				color:$gray;
+				text-align: center;
+				padding: 0;
+			}
+		}
+		.card-title {
+			font-size: 0.9rem;
+			text-transform: uppercase;
+			font-family: "Lato";
+			margin: 0.1rem;
+		}
+	}
+}
+
+#home_cards {
+	&:before, &:after {
+		font-size: 3rem;
+		left: 50%;
+		font-family: FontAwesome;
+		color: $gray-lighter;
+		position: absolute;
+		transform: translate(-50%,0);
+		line-height: 20px;
+	}
+	&:before {
+		content: "\f0d8";
+		top: -16px;
+	}
+	&:after {
+		content:"\f0d7";
+		bottom: -14px;
+	}
+	background: $gray-lighter;
+	align-items: center;
+	flex-direction: column;
+	padding: 1.5rem;
+	font-size: 0.9rem;
+	position: relative;
+	h2 {
+		font-size: 1.2rem;
+		font-weight: bold;
+		letter-spacing: 0;
+		margin: 0;
+		&+.baseline {
+			font-size: 0.9rem;
+			text-align: center;
+			padding: 0;
+			&:first-line {
+				font-size: 0.9rem;
+			}
+		}
+	}
+	.card {
+		margin: 1rem;
+		justify-content: flex-start;
+		align-items: stretch;
+		align-content: stretch;
+		.card-title {
+			margin-bottom: 0.3rem;
+		}
+		.card-text {
+			font-size: 0.8rem;
+		}
+	}
+}
+
+/* END CARDS */

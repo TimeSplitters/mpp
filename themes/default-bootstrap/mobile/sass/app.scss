@@ -1,0 +1,12 @@
+// // monpotpourri DEFAULT
+@import "nv_custom/colors";
+@import "nv_custom/mixins";
+// // monpotpourri MOBILE DEFAULT
+@import "monpotpourri/mobile_variables";
+
+
+// vérifier intégrité mobile
+@import "bootstrap";
+@import "bootstrap_lib/mixins";
+@import "monpotpourri/mobile_variables_adjust";
+@import "monpotpourri/monpotpourri";

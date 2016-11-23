@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("/themes/default-bootstrap/fonts/fontawesome-webfont.eot?v=4.3.0");
+  src: url("/themes/default-bootstrap/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"), url("/themes/default-bootstrap/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"), url("/themes/default-bootstrap/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"), url("/themes/default-bootstrap/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"), url("/themes/default-bootstrap/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+	font-family: "Open Sans";
+}
+// Contextual emphasis
+.text-muted          { color: $text-muted; }
+.text-primary        { color: $brand-primary; }
+.text-warning        { color: $state-warning-text; }
+.text-danger         { color: $state-danger-text; }
+.text-success        { color: $state-success-text; }
+.text-info           { color: $state-info-text; }
+.uppercase {
+    text-transform: uppercase;
+}
+// Alignment
+.text-left           { text-align: left; }
+.text-right          { text-align: right; }
+.text-center         { text-align: center; }

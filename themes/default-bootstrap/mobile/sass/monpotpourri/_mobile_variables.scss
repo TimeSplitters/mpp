@@ -1,0 +1,91 @@
+$enable-flex : true;
+
+$navigation-height:10px;
+
+// Bootstrap vars
+$screen-xs-max:                   767px;
+$navbar-default-link-color:       #777;
+$navbar-padding-vertical:         10px;
+$navbar-padding-horizontal:       2px;
+$navbar-default-bg:               $gray;
+$navbar-inverse-bg:               $gray-light;
+
+
+
+// Border radius
+// -------------------------
+
+$border-radius:          0;
+$border-radius-lg:       0;
+$border-radius-sm:       0;
+$card-border-radius: 	 0;
+$card-border-radius-inner : 0;
+
+// Components
+// -------------------------
+// Based on 14px font-size and 1.428 line-height (~20px to start)
+
+$padding-base-vertical:          .6rem !default;
+$padding-base-horizontal:        1.2rem !default;
+
+$padding-large-vertical:         1rem !default;
+$padding-large-horizontal:       1.6rem !default;
+
+$padding-small-vertical:         .5rem !default;
+$padding-small-horizontal:       1rem !default;
+$line-height-base:			  	1.2rem;
+$line-height-computed:			 1.2rem;
+$line-height-large:              1.33 !default;
+$line-height-small:              1.5 !default;
+
+$border-radius-base:             0 !default;
+$border-radius-large:            .6rem !default;
+$border-radius-small:            .3rem !default;
+
+$component-active-bg:            $brand-primary !default;
+
+$caret-width-base:               .4rem !default;
+$caret-width-large:              .5rem !default;
+// Offcanvas vars
+$offcanvas-width:                 250px !default;
+$offcanvas-animation-time:        .15s !default;
+$offcanvas-toggle-bars-color:     #000 !default;
+$offcanvas-media:                 $screen-xs-max!default;
+
+// Buttons
+// -------------------------
+
+$btn-font-weight:                100 !default;
+$btn-font-size : 				 "12px";
+
+$padding-base-vertical:          0.4rem;
+$padding-base-horizontal:        0.5rem;
+
+$border-radius-large : 0;
+$border-radius-small : 0;
+
+// Cards
+// -------------------------
+$card-img-min-width : 205px;
+$card-border-color : $white;
+$card-border-width : 0;
+$font-icon : "FontAwesome";
+
+$font-size-base:             0.8rem !default;
+// TITLES
+$font-size-h1:               1.4rem !default;
+$font-size-h2:               1rem !default;
+$font-size-h3:               0.9rem !default;
+$font-size-h4:               0.9rem !default;
+$font-size-h5:               0.9rem !default;
+$font-size-h6:               0.8rem !default;
+
+$gray:                      #353535 !default;
+$gray-light:                #d6D4D4 !default;
+$gray-lighter:              #fafafa !default;
+$error_msg:                 #f13340;
+$success_msg:               #18b003;
+$payment_btn:               #14c3a2;
+$gold:                      #cfba79;
+$highlight:                 #ffff00;
+$warning:                 #ffa500;

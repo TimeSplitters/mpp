@@ -1,5 +1,5 @@
 {*
-* 2007-2016 PrestaShop
+* 2007-2015 PrestaShop
 *
 * NOTICE OF LICENSE
 *
@@ -18,7 +18,7 @@
 * needs please refer to http://www.prestashop.com for more information.
 *
 *  @author PrestaShop SA <contact@prestashop.com>
-*  @copyright  2007-2016 PrestaShop SA
+*  @copyright  2007-2015 PrestaShop SA
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
@@ -48,27 +48,21 @@
 					<td class="discount_description">{$discountDetail.name}</td>
 					<td data-value="{$discountDetail.quantity_for_user}" class="discount_quantity">{$discountDetail.quantity_for_user}</td>
 					<td class="discount_value">
-						{if $discountDetail.reduction_percent > 0}
-							{$discountDetail.reduction_percent|escape:'html':'UTF-8'}%
-						{/if}
-						{if $discountDetail.reduction_amount > 0}
-							{if $discountDetail.reduction_percent > 0} + {/if}
-							{convertPrice price=$discountDetail.reduction_amount} ({if $discountDetail.reduction_tax == 1}{l s='Tax included'}{else}{l s='Tax excluded'}{/if})
-						{/if}
-						{if $discountDetail.free_shipping}
-							{if $discountDetail.reduction_percent > 0 || $discountDetail.reduction_amount > 0} + {/if}
+						{if $discountDetail.id_discount_type == 1}
+							{$discountDetail.value|escape:'html':'UTF-8'}%
+						{elseif $discountDetail.id_discount_type == 2}
+							{convertPrice price=$discountDetail.value} ({if $discountDetail.reduction_tax == 1}{l s='Tax included'}{else}{l s='Tax excluded'}{/if})
+						{elseif $discountDetail.id_discount_type == 3}
 							{l s='Free shipping'}
-						{/if}
-						{if $discountDetail.gift_product > 0}
-							{if $discountDetail.reduction_percent > 0 || $discountDetail.reduction_amount > 0 || $discountDetail.gift_product} + {/if}
-							{$discountDetail.gift_product_name} {l s='Free %s!' sprintf=$discountDetail.gift_product_name}!
+						{else}
+							-
 						{/if}
 					</td>
 					<td class="discount_minimum" data-value="{if $discountDetail.minimal == 0}0{else}{$discountDetail.minimal}{/if}">
 						{if $discountDetail.minimal == 0}
 							{l s='None'}
 						{else}
-							{convertPrice price=$discountDetail.minimal} ({if $discountDetail.minimum_amount_tax == 1}{l s='Tax included'}{else}{l s='Tax excluded'}{/if})
+							{convertPrice price=$discountDetail.minimal}
 						{/if}
 					</td>
 					<td class="discount_cumulative">

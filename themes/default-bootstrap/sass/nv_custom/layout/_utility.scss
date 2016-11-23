@@ -1,0 +1,27 @@
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.nofloat {
+ float: none;
+}
+
+.bottom-align-text {
+    position: absolute;
+    right:0;
+    bottom: 0;
+}
+
+.bottom-center-align-text {
+    position: absolute;
+    right:0;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}

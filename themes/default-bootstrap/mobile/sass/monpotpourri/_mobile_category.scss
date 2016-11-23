@@ -1,0 +1,22 @@
+#category {
+  #category_subcategories {
+    .panel {
+      border-bottom: 1px solid $gray-light;
+      .panel-heading {
+        border: none;
+        .panel-title {
+          a:after {
+            right: auto;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+
+    #subcategories {
+      li {
+        list-style: none;
+      }
+    }
+  }
+}

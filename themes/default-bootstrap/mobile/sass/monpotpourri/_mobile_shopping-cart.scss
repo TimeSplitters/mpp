@@ -1,0 +1,153 @@
+#order {
+  .cart_quantity_input {
+    border: none;
+    text-align: center;
+    width: 1.2rem;
+  }
+
+  .cart_item {
+    border-bottom: 1px solid $gray-lighter;
+  }
+
+  #create-account_form {
+    display: none;
+  }
+
+  #got_account {
+    display: none;
+  }
+
+  #got_account, #no_account {
+    background: none;
+    border: none;
+    box-shadow: none;
+    color: $gold;
+  }
+
+  .order-step {
+    background: $gray-lighter;
+    padding: 0.8rem 1rem;
+    line-height: 1.6rem;
+
+    button {
+      padding: 0;
+    }
+
+    &>span:first-child {
+      border-radius: 50%;
+      height: 1.6rem;
+      width: 1.6rem;
+      text-align: center;
+      display: inline-block;
+      margin-right: 0.5rem;
+      background: $gray;
+      color: $white;
+      &.step-active {
+        background: $gold;
+        color: $gray;
+      }
+    }
+
+    .icon-valid {
+      color: $success_msg;
+    }
+  }
+
+  #delivery_address_fieldset, #billing_address_fieldset {
+    //display: none;
+  }
+
+  .user_address_blockquote {
+    border: 1px solid $gray-lighter;
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+  }
+
+  .order-edit-button, .new-address-button {
+    border: none;
+    background: none;
+    box-shadow: none;
+    color: $gold;
+    padding: 0.25rem;
+  }
+
+  select {
+    overflow: hidden;
+    width: 100%;
+    color: $gray;
+    background: $white;
+    padding: 0.35rem;
+    border: 1px solid $gold;
+    border-radius: 0px;
+    box-shadow: none;
+    /*line-height: 1.7rem;
+    -webkit-appearance: none;
+
+    &:after {
+      content:"\f0d7";
+      color: $white;
+      font-family: $font-icon;
+      font-size: 1rem;
+    }*/
+  }
+
+  #add_delivery_address_form, #addressStepResume,
+  #add_billing_address_form, #id_address_billing,
+  #id_address_billing_sentence, #update_billing_address,
+  #addressStepEditButton, #shippingStepEditButton {
+    display: none;
+  }
+
+  .opc-main-block {
+    margin-bottom: 2rem;
+    display: none;
+  }
+
+  span.cart_product_quantity {
+    display: inline-block;
+    border: 1px solid $gray;
+    color: $gray;
+    border-radius: 50%;
+    width: 1.4rem;
+    height: 1.4rem;
+    right: 1rem;
+    position: absolute;
+    background: $white;
+    text-align: center;
+  }
+
+  #payment_paypal {
+    display: none;
+  }
+
+  iframe[name="mercanet_iframe"] {
+    border: 1px solid $gray-lighter;
+
+    @media screen and (max-width: 550px) {
+      height: 270px;
+    }
+    padding: 0.5rem 0.5rem;
+    display: none;
+
+  }
+
+  #mercanet-form {
+    margin-top: 1rem;
+    .table {
+      display: block;
+      .table-cell {
+        display: inline-block;
+        margin-right: 1rem;
+        img {
+          height: 2rem;
+        }
+      }
+    }
+  }
+
+  #voucher {
+    input {
+      margin-top: 0;
+    }
+  }
+}

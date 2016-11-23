@@ -1,0 +1,60 @@
+/*  http://codepen.io/Arnique/full/EjGGEK/  */
+.gutter-10.row {
+  margin-right: -5px;
+  margin-left: -5px;
+}
+
+.gutter-10 > [class^="col-"], .gutter-10 > [class^=" col-"] {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.gutter-40.row {
+  margin-right: -20px;
+  margin-left: -20px;
+}
+
+.gutter-40 > [class^="col-"], .gutter-40 > [class^=" col-"] {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+//1/5
+.col-lg-2-4{
+  @include make-lg-column(2.4)
+}
+.col-md-2-4{
+  @include make-md-column(2.4)
+}
+.col-sm-2-4{
+  @include make-sm-column(2.4)
+}
+//2/5
+.col-lg-4-8{
+  @include make-lg-column(4.8)
+}
+.col-md-4-8{
+  @include make-md-column(4.8)
+}
+.col-sm-4-8{
+  @include make-sm-column(4.8)
+}
+//3/5
+.col-lg-7-2{
+  @include make-lg-column(7.2)
+}
+.col-md-7-2{
+  @include make-md-column(7.2)
+}
+.col-sm-7-2{
+  @include make-sm-column(7.2)
+}
+//4/5
+.col-lg-9-6{
+  @include make-lg-column(9.6)
+}
+.col-md-9-6{
+  @include make-md-column(9.6)
+}
+.col-sm-9-6{
+  @include make-sm-column(9.6)
+}
