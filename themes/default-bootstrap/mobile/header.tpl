@@ -160,7 +160,7 @@
                     </button>
                     <span id="header_shortlinks">
                         <a href="{$link->getPageLink('order')}" class="valign-middle">
-                            <span class="icon-shopping-bag"></span> <strong>{$cart_qties}</strong>
+                            <span class="icon-shopping-cart"></span> <strong>{$cart_qties}</strong>
                         </a>
                     </span>
                     {hook h='displayMobileTopSiteMap'}
@@ -185,21 +185,7 @@
                                 <a href="{$link->getPageLink('authentication')|escape:'html':'UTF-8'}">{l s='Se connecter'}</a>
                             {/if}
                         </li>
-                        {assign var=catNames value=Category::getCategoryInformations(array(13, 48, 14, 15, 16, 61), Context::getContext()->language->id)}
-                        <li><a href="{$link->getCategoryLink(13)|escape:'html':'UTF-8'}">{$catNames[13]['name']}</a>
-                        </li>
-                        <li><a href="{$link->getCategoryLink(48)|escape:'html':'UTF-8'}">{$catNames[48]['name']}</a>
-                        </li>
-                        <li><a href="{$link->getCategoryLink(14)|escape:'html':'UTF-8'}">{$catNames[14]['name']}</a>
-                        </li>
-                        <li><a href="{$link->getCategoryLink(15)|escape:'html':'UTF-8'}">{$catNames[15]['name']}</a>
-                        </li>
-                        <li><a href="{$link->getCategoryLink(16)|escape:'html':'UTF-8'}">{$catNames[16]['name']}</a>
-                        </li>
-                        <li><a href="{$link->getCategoryLink(61)|escape:'html':'UTF-8'}">{$catNames[61]['name']}</a>
-                        </li>
-                        <li><a href="{$link->getCMSLink(20, 'nos-inspirations')|escape:'html':'UTF-8'}">Inspirations</a>
-                        </li>
+                        {hook h='displayNav'}
                     </ul>
                     {if $is_logged}
                         <ul class="nav navbar-nav text-uppercase">

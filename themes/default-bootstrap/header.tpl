@@ -84,7 +84,7 @@
 							</div>
 						</div>
 					{/if}
-					{capture name='displayNav'}{hook h='displayNav'}{/capture}
+					{* capture name='displayNav'}{hook h='displayNav'}{/capture}
 					{if $smarty.capture.displayNav}
 						<div class="nav">
 							<div class="container">
@@ -93,7 +93,7 @@
 								</div>
 							</div>
 						</div>
-					{/if}
+					{/if*}
 					<div>
 						<div class="container">
 							<div class="row">
