@@ -1,15 +1,5 @@
-
 h1 {
   font-size: $font-size-h1;
-  &.page-heading {
-    font-size: 4rem;
-    &:before {
-      margin-left: -15%;
-    }
-    &:before, &:after {
-      width: 10%;
-    }
-  }
 }
 
 h2 {

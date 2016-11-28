@@ -57,8 +57,8 @@
         {assign var=product_canonical value="?"|explode:$request}
         <link rel="canonical" href="{$product_canonical[0]}" />
         <script src="/themes/default-bootstrap/mobile/js/product.js?v=20161110"></script>
-        <script src="/themes/default-bootstrap/js/modules/productcomments/js/productcomments.js?v=20161109"></script>
-        <!--<script src="/themes/default-bootstrap/mobile/js/ajax-cart.js"></script>-->
+        {*<script src="/themes/default-bootstrap/js/modules/productcomments/js/productcomments.js?v=20161109"></script>*}
+        {*<script src="/themes/default-bootstrap/mobile/js/ajax-cart.js"></script>*}
     {/if}
     {if $page_name == 'authentication'}
         <script src="/themes/default-bootstrap/mobile/js/authentication.js?v=20161109"></script>
@@ -95,7 +95,7 @@
     {if isset($js_defer) && !$js_defer && isset($js_files) && isset($js_def)}
         {$js_def}
         {foreach from=$js_files item=js_uri}
-            <script type="text/javascript" src="{$js_uri|escape:'html':'UTF-8'}"></script>
+            {*<script type="text/javascript" src="{$js_uri|escape:'html':'UTF-8'}"></script>*}
         {/foreach}
     {/if}
 

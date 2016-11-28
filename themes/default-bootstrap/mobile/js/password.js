@@ -9,15 +9,6 @@ $(document).ready(function () {
       changePassword();
    });
 
-   $('.form_info').tooltip({
-      position: {
-         my: 'left center',
-         at: 'right+10 center',
-         collision: 'none'
-      },
-      tooltipClass: 'right'
-   });
-
    $.each($('input'), function () {
       if ($(this).val() !== '') {
          $('#label_' + $(this).prop('id')).parent().parent().addClass('label-active');

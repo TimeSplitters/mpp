@@ -1,5 +1,5 @@
 {*
-* 2007-2015 PrestaShop
+* 2007-2016 PrestaShop
 *
 * NOTICE OF LICENSE
 *
@@ -18,7 +18,7 @@
 * needs please refer to http://www.prestashop.com for more information.
 *
 *  @author PrestaShop SA <contact@prestashop.com>
-*  @copyright  2007-2015 PrestaShop SA
+*  @copyright  2007-2016 PrestaShop SA
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
@@ -77,13 +77,6 @@
                 <tr class="cart_total_price">
                     <td rowspan="{$rowspan_total}" colspan="3" id="cart_voucher" class="cart_voucher">
                         {if $voucherAllowed}
-                            {if isset($errors_discount) && $errors_discount}
-                                <ul class="alert alert-danger">
-                                    {foreach $errors_discount as $k=>$error}
-                                        <li>{$error|escape:'html':'UTF-8'}</li>
-                                    {/foreach}
-                                </ul>
-                            {/if}
                             <form action="{if $opc}{$link->getPageLink('order-opc', true)}{else}{$link->getPageLink('order', true)}{/if}" method="post" id="voucher">
                                 <fieldset>
                                     <h4>{l s='Vouchers'}</h4>
@@ -109,13 +102,6 @@
                 <tr class="cart_total_price">
                     <td rowspan="{$rowspan_total}" colspan="2" id="cart_voucher" class="cart_voucher">
                         {if $voucherAllowed}
-                            {if isset($errors_discount) && $errors_discount}
-                                <ul class="alert alert-danger">
-                                    {foreach $errors_discount as $k=>$error}
-                                        <li>{$error|escape:'html':'UTF-8'}</li>
-                                    {/foreach}
-                                </ul>
-                            {/if}
                             <form action="{if $opc}{$link->getPageLink('order-opc', true)}{else}{$link->getPageLink('order', true)}{/if}" method="post" id="voucher">
                                 <fieldset>
                                     <h4>{l s='Vouchers'}</h4>
@@ -142,13 +128,6 @@
             <tr class="cart_total_price">
                 <td rowspan="{$rowspan_total}" colspan="2" id="cart_voucher" class="cart_voucher">
                     {if $voucherAllowed}
-                        {if isset($errors_discount) && $errors_discount}
-                            <ul class="alert alert-danger">
-                                {foreach $errors_discount as $k=>$error}
-                                    <li>{$error|escape:'html':'UTF-8'}</li>
-                                {/foreach}
-                            </ul>
-                        {/if}
                         <form action="{if $opc}{$link->getPageLink('order-opc', true)}{else}{$link->getPageLink('order', true)}{/if}" method="post" id="voucher">
                             <fieldset>
                                 <h4>{l s='Vouchers'}</h4>
@@ -280,15 +259,16 @@
             {assign var='productId' value=$product.id_product}
             {assign var='productAttributeId' value=$product.id_product_attribute}
             {assign var='quantityDisplayed' value=0}
+            {assign var='odd' value=($odd+1)%2}
             {assign var='ignoreProductLast' value=isset($customizedDatas.$productId.$productAttributeId) || count($gift_products)}
             {* Display the product line *}
-            {include file="$tpl_dir./shopping-cart-product-line.tpl" productLast=$product@last productFirst=$product@first noDeleteButton=1 cannotModify=1}
+            {include file="$tpl_dir./shopping-cart-product-line.tpl" productLast=$product@last productFirst=$product@first noDeleteButton=0 cannotModify=0}
             {* Then the customized datas ones*}
             {if isset($customizedDatas.$productId.$productAttributeId)}
                 {foreach $customizedDatas.$productId.$productAttributeId[$product.id_address_delivery] as $id_customization=>$customization}
                     <tr
                             id="product_{$product.id_product}_{$product.id_product_attribute}_{$id_customization}_{$product.id_address_delivery|intval}"
-                            class="product_customization_for_{$product.id_product}_{$product.id_product_attribute}_{$product.id_address_delivery|intval} customization alternate_item {if $product@last && $customization@last && !count($gift_products)}last_item{/if}">
+                            class="product_customization_for_{$product.id_product}_{$product.id_product_attribute}_{$product.id_address_delivery|intval}{if $odd} odd{else} even{/if} customization alternate_item {if $product@last && $customization@last && !count($gift_products)}last_item{/if}">
                         <td></td>
                         <td colspan="3">
                             {foreach $customization.datas as $type => $custom_data}
@@ -327,7 +307,7 @@
                 {/foreach}
 
                 {* If it exists also some uncustomized products *}
-                {if $product.quantity-$quantityDisplayed > 0}{include file="$tpl_dir./shopping-cart-product-line.tpl" productLast=$product@last productFirst=$product@first noDeleteButton=1 cannotModify=1}{/if}
+                {if $product.quantity-$quantityDisplayed > 0}{include file="$tpl_dir./shopping-cart-product-line.tpl" productLast=$product@last productFirst=$product@first noDeleteButton=0 cannotModify=0}{/if}
             {/if}
         {/foreach}
         {assign var='last_was_odd' value=$product@iteration%2}
@@ -335,10 +315,11 @@
             {assign var='productId' value=$product.id_product}
             {assign var='productAttributeId' value=$product.id_product_attribute}
             {assign var='quantityDisplayed' value=0}
+            {assign var='odd' value=($product@iteration+$last_was_odd)%2}
             {assign var='ignoreProductLast' value=isset($customizedDatas.$productId.$productAttributeId)}
             {assign var='cannotModify' value=1}
             {* Display the gift product line *}
-            {include file="$tpl_dir./shopping-cart-product-line.tpl" productLast=$product@last productFirst=$product@first noDeleteButton=1 cannotModify=1}
+            {include file="$tpl_dir./shopping-cart-product-line.tpl" productLast=$product@last productFirst=$product@first noDeleteButton=0 cannotModify=0}
         {/foreach}
         </tbody>
         {if sizeof($discounts)}

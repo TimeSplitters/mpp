@@ -1,19 +1,4 @@
 $(document).ready(function () {
-
-    $('input[name=phone]').formatter({
-        'pattern': '{{9999999999}}',
-        'persistent': false
-    });
-
-    $('.discount_error').tooltip({
-        position: {
-            my: 'center top',
-            at: 'center bottom+10',
-            collision: 'none'
-        },
-        tooltipClass: 'bottom'
-    });
-
     $('.order_payment_button_card button').prop('disabled', true);
 
     $('#form_button_payment').html(
@@ -32,15 +17,6 @@ $(document).ready(function () {
                 window.parent.location.reload(false);
             }
         });
-    });
-
-    $('.question-circle').tooltip({
-        position: {
-            my: 'left center',
-            at: 'right+10 center',
-            collision: 'none'
-        },
-        tooltipClass: 'right'
     });
 
     $(document).on('click', '#discount_delete_value span', function () {

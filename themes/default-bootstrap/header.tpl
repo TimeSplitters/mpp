@@ -91,7 +91,7 @@
 								<div class="row">
 									<nav>{$smarty.capture.displayNav}</nav>
 								</div>
-							</div>
+							</div>ss
 						</div>
 					{/if*}
 					<div>

@@ -3,9 +3,6 @@
     {if isset($HOOK_FOOTER)}
         <!-- Footer -->
         <footer id="footer">
-            {if $page_name != 'index'}
-                <div class="block-bottom-caret"></div>
-            {/if}
             <div class="row">
                 {$HOOK_FOOTER}
             </div>

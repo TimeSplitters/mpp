@@ -1,18 +1,4 @@
 $(document).ready(function() {
-
-    $('input[name="country"], input[name="phone"]').tooltip({
-        position: {
-            my: 'left center',
-            at: 'right+10 center',
-            collision: 'none'
-        },
-        tooltipClass: 'right'
-    });
-    $('input[name=phone]').formatter({
-      'pattern': '{{9999999999}}',
-      'persistent': false
-    });
-    
     $('#submitAddress').on('click', function(e) {
         $('#success').hide();
         $('.error_message').hide();
