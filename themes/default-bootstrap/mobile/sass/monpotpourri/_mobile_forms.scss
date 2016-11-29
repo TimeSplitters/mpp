@@ -18,7 +18,7 @@
     background: none;
   }
 
-  label {
+  &>label {
     background: $green;
     color: $white;
     padding: 2px 7px;
@@ -37,6 +37,7 @@
     box-shadow: none;
     border: 1px solid $green;
     transition: all 0.4s;
+    line-height: 1.4rem;
   }
 
   &.form-focused {
@@ -46,5 +47,15 @@
     .form-control {
       border: 1px solid $gray;
     }
+  }
+}
+
+.radio-inline {
+  display: inline-block;
+  padding: 0.5rem 0;
+  margin-right: 1rem;
+
+  input {
+    vertical-align: -2px;
   }
 }
