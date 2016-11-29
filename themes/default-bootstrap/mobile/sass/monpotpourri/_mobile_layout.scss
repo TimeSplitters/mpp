@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: $gray-dark;
+  color: $gray;
   &:active {
     color: $gray;
   }
@@ -43,8 +43,8 @@ a {
 
 header {
   border-bottom: 1px solid $gray-light;
-  padding-bottom: 0.2rem;
-  margin-bottom: 1rem;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 #index header {

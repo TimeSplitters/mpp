@@ -28,35 +28,16 @@ $(function () {
         $('#cookieLaw').hide();
     });
 
-    $('input.form-control, textarea.form-control').each(function () {
-        if ($(this).prop("placeholder") != "") {
-            $(this).wrap('<div class="input-placeholder"></div>')
-                .parent()
-                .prepend('<span class="text-uppercase">' + $(this).attr("placeholder") + '</span>');
-            inputPlaceholder($(this));
-        }
-    });
-
-    $('input.form-control, textarea.form-control').on('focusin', function () {
-        if ($(this).prop("placeholder") != "") {
-            inputPlaceholder($(this), true);
-        }
-    }).on('focusout', function () {
-        inputPlaceholder($(this));
+    $('.form-control').on('focus', function () {
+        $(this).parent().addClass('form-focused').find('.btn-default').removeClass('btn-default').addClass('btn-primary');
+    }).on('blur', function () {
+        $(this).parent().removeClass('form-focused').find('.btn-primary').addClass('btn-default').removeClass('btn-primary');
     });
 });
 
 $.prototype.idTabs = function () {
 
 };
-
-function inputPlaceholder(that, force) {
-    if (that.val() != '' || force == true) {
-        that.parent().find('span').slideDown(400);
-    } else {
-        that.parent().find('span').slideUp(400);
-    }
-}
 
 function userIsLoggedIn() {
     var isLogged = false;

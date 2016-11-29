@@ -59,7 +59,8 @@
 // --------------------------------------------------
 
 .btn-default {
-  @include button-nv($btn-default-color, $btn-default-bg, $btn-default-border,$white,$brand-primary,$brand-primary);
+  @include button-nv($btn-default-color, $btn-default-bg, $btn-default-border,
+                    $white,$brand-primary,$brand-primary);
 }
 .btn-cancel {
   @include button-nv($btn-default-color !important, $gray-light, $gray-light, $white, $gray,$gray);

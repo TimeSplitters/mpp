@@ -209,7 +209,7 @@ body.offcanvas-stop-scrolling {
   > div {
     padding: 10px;
     a, [class^=icon-] {
-      color: $gold;
+      color: $white;
       padding: 0;
     }
     #restricted-country-close {
@@ -229,7 +229,15 @@ body.offcanvas-stop-scrolling {
   right: 3%;
   top: 0.75rem;
 
-  a, a [class^="icon-"] {
+  a {
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    background: #f5f5f5;
+    color: $gray;
+  }
+
+  a [class^="icon-"] {
     color: $gray;
   }
 }

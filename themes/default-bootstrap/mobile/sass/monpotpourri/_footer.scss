@@ -37,7 +37,7 @@
 
         //text-rendering: geometricPrecision;
         &:hover {
-          color: $gold;
+          //color: $gold;
         }
       }
     }
@@ -60,7 +60,7 @@
         padding: 0.5rem;
         line-height: 2rem;
         &:hover {
-          color: $gold;
+          //color: $gold;
         }
       }
     }
@@ -75,7 +75,7 @@
 #footer-copyright {
   background: #353535;
   color: #fff;
-  font-size: 0.8rem;
+  font-size: 11px;
   text-align: center;
   width: 100%;
   padding: 10px;
@@ -83,7 +83,8 @@
     margin: 0;
   }
   a {
-    color: $gold;
+    color: $white;
+    border-bottom: 1px dotted;
   }
 }
 
