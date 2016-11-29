@@ -172,6 +172,7 @@
                 </div>
                 <div class="navbar-offcanvas navbar-offcanvas-touch" id="js-bootstrap-offcanvas">
                     <ul class="nav navbar-nav text-uppercase" role="menu">
+                        {hook h='displayNav'}
                         <li>
                             {if $is_logged}
                                 <a href="{$link->getPageLink('my-account')|escape:'html':'UTF-8'}">
@@ -185,7 +186,6 @@
                                 <a href="{$link->getPageLink('authentication')|escape:'html':'UTF-8'}">{l s='Se connecter'}</a>
                             {/if}
                         </li>
-                        {hook h='displayNav'}
                     </ul>
                     {if $is_logged}
                         <ul class="nav navbar-nav text-uppercase">

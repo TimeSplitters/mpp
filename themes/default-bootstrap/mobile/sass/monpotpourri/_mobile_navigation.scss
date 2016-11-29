@@ -33,6 +33,13 @@
     transition: all $offcanvas-animation-time;
     height: 100%;
 
+    .cat-title {
+      color: #fff;
+      padding: .25rem;
+      font-size: 10px;
+      letter-spacing: 1px;
+    }
+
     &.in {
       box-shadow: 0 0 20px rgba(0, 0, 0, .3);
       left: 0;
@@ -159,9 +166,7 @@ nav.navbar {
 
       }
       &:nth-child(2) {
-        margin-top: 40px;
         padding: 0.8rem 0;
-        background: $gray-darker;
         li {
         }
       }
