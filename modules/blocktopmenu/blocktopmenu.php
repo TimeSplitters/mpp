@@ -483,8 +483,21 @@ class Blocktopmenu extends Module
                 case 'PRD':
                     $selected = ($this->page_name == 'product' && (Tools::getValue('id_product') == $id)) ? ' class="sfHover"' : '';
                     $product = new Product((int)$id, true, (int)$id_lang);
+                    $icon = '';
                     if (!is_null($product->id)) {
-                        $this->_menu .= '<li'.$selected.'><a href="'.Tools::HtmlEntitiesUTF8($product->getLink()).'" title="'.$product->name.'">'.$product->name.'</a></li>'.PHP_EOL;
+                        if($product->id == 8) {
+                            $icon = '<span class="icon-book"></span>';
+                        } elseif($product->id == 10) {
+                            $icon = '<span class="icon-music"></span>';
+                        } elseif($product->id == 9) {
+                            $icon = '<span class="icon-film"></span>';
+                        }
+                        $this->_menu .= '<li'.$selected.'>
+                        <a href="'.Tools::HtmlEntitiesUTF8($product->getLink()).'" title="'.$product->name.'">
+                        '.$icon.'
+                        '.$product->name.'
+                        </a>
+                        </li>'.PHP_EOL;
                     }
                     break;
 
