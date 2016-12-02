@@ -518,30 +518,30 @@
                     {elseif $field_name eq "firstname"}
                         <div class="required form-group">
                             <label for="firstname">{l s='First name'} <sup>*</sup></label>
-                            <input type="text" class="form-control" id="firstname" name="firstname" value="{if isset($smarty.post.firstname)}{$smarty.post.firstname}{/if}" />
+                            <input type="text" class="form-control" id="firstname" name="firstname" value="{if isset($smarty.post.firstname)}{$smarty.post.firstname}{/if}" placeholder="{l s='Entrez votre prénom'}" />
                         </div>
                     {elseif $field_name eq "lastname"}
                         <div class="required form-group">
                             <label for="lastname">{l s='Last name'} <sup>*</sup></label>
-                            <input type="text" class="form-control" id="lastname" name="lastname" value="{if isset($smarty.post.lastname)}{$smarty.post.lastname}{/if}" />
+                            <input type="text" class="form-control" id="lastname" name="lastname" value="{if isset($smarty.post.lastname)}{$smarty.post.lastname}{/if}" placeholder="{l s='Entrez votre nom'}" />
                         </div>
                     {elseif $field_name eq "address1"}
                         <div class="required form-group">
                             <label for="address1">{l s='Address'} <sup>*</sup></label>
-                            <input type="text" class="form-control" name="address1" id="address1" value="{if isset($smarty.post.address1)}{$smarty.post.address1}{/if}" />
+                            <input type="text" class="form-control" name="address1" id="address1" value="{if isset($smarty.post.address1)}{$smarty.post.address1}{/if}" placeholder="{l s='Entrez votre adresse postale'}" />
                             <span class="inline-infos">{l s='Street address, P.O. Box, Company name, etc.'}</span>
                         </div>
                     {elseif $field_name eq "address2"}
                         <div class="form-group is_customer_param">
                             <label for="address2">{l s='Address (Line 2)'}{if in_array($field_name, $required_fields)} <sup>*</sup>{/if}</label>
-                            <input type="text" class="form-control" name="address2" id="address2" value="{if isset($smarty.post.address2)}{$smarty.post.address2}{/if}" />
+                            <input type="text" class="form-control" name="address2" id="address2" value="{if isset($smarty.post.address2)}{$smarty.post.address2}{/if}" placeholder="{l s='Informations complémentaires de livraison'}" />
                             <span class="inline-infos">{l s='Apartment, suite, unit, building, floor, etc...'}</span>
                         </div>
                     {elseif $field_name eq "postcode"}
                         {assign var='postCodeExist' value=true}
                         <div class="required postcode form-group">
                             <label for="postcode">{l s='Zip/Postal Code'} <sup>*</sup></label>
-                            <input type="text" class="validate form-control" name="postcode" id="postcode" data-validate="isPostCode" value="{if isset($smarty.post.postcode)}{$smarty.post.postcode}{/if}"/>
+                            <input type="text" class="validate form-control" name="postcode" id="postcode" data-validate="isPostCode" value="{if isset($smarty.post.postcode)}{$smarty.post.postcode}{/if}" placeholder="{l s='Entrez votre code postal'}" />
                         </div>
                     {elseif $field_name eq "city"}
                         <div class="required form-group">

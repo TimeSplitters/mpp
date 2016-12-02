@@ -118,14 +118,20 @@
                                      alt="{if !empty($cover.legend)}{$cover.legend|escape:'html':'UTF-8'}{else}{$product->name|escape:'html':'UTF-8'}{/if}"/>
 							</a>
 
-                                                        {else}
+
+
+                                                                                                                        {else}
+
+
 
                             <img id="bigpic" itemprop="image"
                                  src="{$link->getImageLink($product->link_rewrite, $cover.id_image, 'home_default')|escape:'html':'UTF-8'}"
                                  title="{if !empty($cover.legend)}{$cover.legend|escape:'html':'UTF-8'}{else}{$product->name|escape:'html':'UTF-8'}{/if}"
                                  alt="{if !empty($cover.legend)}{$cover.legend|escape:'html':'UTF-8'}{else}{$product->name|escape:'html':'UTF-8'}{/if}"/>
 
-                                                            {if !$content_only}
+
+
+                                                                                                                            {if !$content_only}
                             <span class="span_link no-print hidden">{l s='View larger'}</span>
                         {/if}
                         {/if}
@@ -265,6 +271,126 @@
                     <form id="buy_block"{if $PS_CATALOG_MODE && !isset($groups) && $product->quantity > 0} class="hidden"{/if}
                           action="{$link->getPageLink('cart')|escape:'html':'UTF-8'}" method="post">
                         {*  hidden datas  *}
+
+                        <div class="row gutter-10">
+                            <div class="product_choice col-xs-12">
+                                <h4>
+                                    <a href="#product_choice_choisir_livre">
+                                        <span class="icon-caret-down"></span> {l s='Je choisis mon livre'}
+                                    </a>
+                                </h4>
+                                <div id="product_choice_choisir_livre" class="row">
+                                    <div class="form-group col-xs-12">
+                                        <label for="book_name">{l s='Titre du livre'}: </label>
+                                        <input type="text" name="book_name" id="book_name" class="form-control"/>
+                                        {*<button name="book_name_search" class="col-xs-2 btn btn-default">
+                                            <span class="icon-search"></span>
+                                        </button>
+                                    <div id="search_book"></div>*}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_choice col-xs-12">
+                                <h4>
+                                    <a href="#product_choice_surprise">
+                                        <span class="icon-caret-down"></span> {l s='Je vous laisse choisir'}</a>
+                                </h4>
+                                <div id="product_choice_surprise" class="row">
+                                    <div class="col-xs-12">
+                                        <h5>{l s='Vous êtes :'}</h5>
+                                        <input type="radio" name="gender" value="0" id="gender_homme"/> <label
+                                                for="gender_homme">{l s='Un homme'}</label>
+                                        <br/>
+                                        <input type="radio" name="gender" value="1" id="gender_femme"/> <label
+                                                for="gender_femme">{l s='Une femme'}</label>
+
+                                        <h5>{l s='Vous avez entre :'}</h5>
+                                        <input type="radio" name="age_range" value="13-17 ans" id="age_13-17"/> <label
+                                                for="age_13-17">{l s='13-17 ans'}</label>
+                                        <br/>
+                                        <input type="radio" name="age_range" value="18-24 ans" id="age_18-24"/> <label
+                                                for="age_18-24">{l s='18-24 ans'}</label>
+                                        <br/>
+                                        <input type="radio" name="age_range" value="25-34 ans" id="age_25-34"/> <label
+                                                for="age_25-34">{l s='25-34 ans'}</label>
+                                        <br/>
+                                        <input type="radio" name="age_range" value="35-44 ans" id="age_35-44"/> <label
+                                                for="age_35-44">{l s='35-44 ans'}</label>
+                                        <br/>
+                                        <input type="radio" name="age_range" value="45-54 ans" id="age_45-54"/> <label
+                                                for="age_45-54">{l s='45-54 ans'}</label>
+                                        <br/>
+                                        <input type="radio" name="age_range" value="55-64 ans" id="age_55-64"/> <label
+                                                for="age_55-64">{l s='55-64 ans'}</label>
+                                        <br/>
+                                        <input type="radio" name="age_range" value="65+" id="age_65"/> <label
+                                                for="age_65">{l s='65+'}</label>
+
+                                        <h5>{l s='Quel genre souhaitez-vous ?'}</h5>
+                                        <input type="radio" name="genre" value="Littérature française"
+                                               id="litterature_française"/> <label
+                                                for="litterature_française">{l s='Littérature française'}</label>
+                                        <br/>
+                                        <input type="radio" name="genre" value="Policier / Suspense / Thriller / Polar"
+                                               id="policier_suspense"/> <label
+                                                for="policier_suspense">{l s='Policier / Suspense / Thriller / Polar'}</label>
+                                        <br/>
+                                        <input type="radio" name="genre" value="Sentimental" id="sentimental"/> <label
+                                                for="sentimental">{l s='Sentimental'}</label>
+                                        <br/>
+                                        <input type="radio" name="genre" value="Fantasy / Science-Fiction"
+                                               id="fantasy_sf"/> <label
+                                                for="fantasy_sf">{l s='Fantasy / Science-Fiction'}</label>
+                                        <br/>
+                                        <input type="radio" name="genre" value="Biographie / Témoignage" id="bio_temo"/>
+                                        <label for="bio_temo">{l s='Biographie / Témoignage'}</label>
+                                        <br/>
+                                        <input type="radio" name="genre"
+                                               value="Littérature étrangère (VO ou VF à préciser)"
+                                               id="litterature_etrangere"/> <label
+                                                for="litterature_etrangere">{l s='Littérature étrangère (VO ou VF à préciser)'}</label>
+                                        <br/>
+                                        <input type="radio" name="genre" value="BD / Manga" id="bd_manga"/> <label
+                                                for="bd_manga">{l s='BD / Manga'}</label>
+                                        <br/>
+                                        <input type="radio" name="genre" value="Poésie / Théâtre" id="poesie_theatre"/>
+                                        <label for="poesie_theatre">{l s='Poésie / Théâtre'}</label>
+
+
+                                        <h5>{l s='Précisez-nous ce que vous attendez de lire'}</h5>
+                                        <small>{l s='Précision du genre, VO ou VF, thème du livre...'}</small>
+                                        <textarea></textarea>
+
+                                        <br/>
+                                        <h5>{l s='Avez-vous déjà lu des livres dans ce genre-là ?'}</h5>
+                                        <small>{l s='Si oui, le(s)quel(s) et qu\'en avez-vous pensé ?'}</small>
+                                        <textarea></textarea>
+
+                                        <br/>
+                                        <h5>{l s='Voulez-vous que l\'on vous soumette notre choix ?'}</h5>
+                                        <input type="radio" name="soumission_choix"
+                                               value="Oui, je souhaite valider le choix" id="soumission_oui"/>
+                                        <label for="soumission_oui">{l s='Oui, je souhaite valider le choix'}</label>
+
+                                        <br/>
+                                        <input type="radio" name="soumission_choix" value="Non, surprenez-moi !"
+                                               id="soumission_non"/>
+                                        <label for="soumission_non">{l s='Non, surprenez-moi !'}</label>
+
+                                        <br/>
+                                        <h5>{l s='Allez-vous offrir ce Pot Pourri à quelqu\'un ?'}</h5>
+                                        <input type="radio" name="cadeau" value="Oui, je souhaite valider le choix"
+                                               id="cadeau_oui"/>
+                                        <label for="cadeau_oui">{l s='Oui'}</label>
+
+                                        <br/>
+                                        <input type="radio" name="cadeau" value="Non, surprenez-moi !" id="cadeau_non"/>
+                                        <label for="cadeau_non">{l s='Non'}</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <p class="hidden">
                             <input type="hidden" name="token" value="{$static_token}"/>
                             <input type="hidden" name="id_product" value="{$product->id|intval}"
@@ -293,7 +419,7 @@
                                                 {/if}
                                                 {if $priceDisplay >= 0 && $priceDisplay <= 2}
                                                     <strong id="our_price_display" class="price" itemprop="price"
-                                                          content="{$productPrice}">{convertPrice price=$productPrice|floatval}</strong>
+                                                            content="{$productPrice}">{convertPrice price=$productPrice|floatval}</strong>
                                                     {if $tax_enabled  && ((isset($display_tax_label) && $display_tax_label == 1) || !isset($display_tax_label))}
                                                         {if $priceDisplay == 1} {l s='tax excl.'}{else} {l s='tax incl.'}{/if}
                                                     {/if}
@@ -324,8 +450,12 @@
                                             <br/>
                                             <span id="pretaxe_price">{strip}
 
+
+
                                                     <span id="pretaxe_price_display">{convertPrice price=$product->getPrice(false, $smarty.const.NULL)}</span>
-                                                         {l s='tax excl.'}
+
+
+                                                                                                                                                                         {l s='tax excl.'}
 									{/strip}</span>
                                         {/if}
                                     </div>

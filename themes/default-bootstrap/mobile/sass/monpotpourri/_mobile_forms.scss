@@ -59,3 +59,11 @@
     vertical-align: -2px;
   }
 }
+
+textarea {
+  resize: none;
+  border: 1px solid #353535;
+  width: 100%;
+  padding: 5px;
+  font-size: 11px;
+}

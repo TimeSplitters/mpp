@@ -167,3 +167,9 @@ input[type="button"] {
     width: 100%;
   }
 }
+
+.btn.btn-default, .btn.btn-primary {
+  [class^="icon-"] {
+    color: $white;
+  }
+}
