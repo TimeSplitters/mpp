@@ -160,7 +160,7 @@
                     </button>
                     <span id="header_shortlinks">
                         <a href="{$link->getPageLink('order')}" class="valign-middle">
-                            <span class="icon-shopping-cart"></span> <strong>{$cart_qties}</strong>
+                            <span class="icon-shopping-basket"></span> <strong>{$cart_qties}</strong>
                         </a>
                     </span>
                     {hook h='displayMobileTopSiteMap'}
@@ -172,11 +172,17 @@
                     </div>
                 </div>
                 <div class="navbar-offcanvas navbar-offcanvas-touch" id="js-bootstrap-offcanvas">
+                    <div id="navbar_box_decouverte">
+                        <img src="/themes/default-bootstrap/img/box-culturelle-02.jpg" class="img-fluid">
+                        <small>{l s='Le Pot Pourri "Découverte" du mois est arrivé !'}</small>
+                    </div>
+
                     <ul class="nav navbar-nav text-uppercase" role="menu">
                         {hook h='displayNav'}
                         <li>
                             {if $is_logged}
                                 <a href="{$link->getPageLink('my-account')|escape:'html':'UTF-8'}">
+                                    <span class="icon-user"></span>
                                     {if $cookie->customer_firstname != ''}
                                         {l s='Hello, %s !' sprintf=$cookie->customer_firstname}
                                     {else}
@@ -184,7 +190,7 @@
                                     {/if}
                                 </a>
                             {else}
-                                <a href="{$link->getPageLink('authentication')|escape:'html':'UTF-8'}">{l s='Se connecter'}</a>
+                                <a href="{$link->getPageLink('authentication')|escape:'html':'UTF-8'}"><span class="icon-user"></span> {l s='Se connecter'}</a>
                             {/if}
                         </li>
                     </ul>

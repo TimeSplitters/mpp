@@ -7,8 +7,8 @@ $screen-xs-max:                   767px;
 $navbar-default-link-color:       #777;
 $navbar-padding-vertical:         10px;
 $navbar-padding-horizontal:       2px;
-$navbar-default-bg:               $gray;
-$navbar-inverse-bg:               $gray-light;
+$navbar-default-bg:               $gray-light;
+$navbar-inverse-bg:               $gray;
 
 
 
@@ -49,7 +49,7 @@ $caret-width-large:              .5rem !default;
 // Offcanvas vars
 $offcanvas-width:                 250px !default;
 $offcanvas-animation-time:        .15s !default;
-$offcanvas-toggle-bars-color:     #000 !default;
+$offcanvas-toggle-bars-color:     #fff !default;
 $offcanvas-media:                 $screen-xs-max!default;
 
 // Buttons
@@ -73,12 +73,12 @@ $font-icon : "FontAwesome";
 
 $font-size-base:             0.8rem !default;
 // TITLES
-$font-size-h1:               1.4rem !default;
-$font-size-h2:               1.2rem !default;
-$font-size-h3:               1rem !default;
-$font-size-h4:               0.9rem !default;
-$font-size-h5:               0.9rem !default;
-$font-size-h6:               0.8rem !default;
+$font-size-h1:               1.1rem !default;
+$font-size-h2:               1.0rem !default;
+$font-size-h3:               0.9rem !default;
+$font-size-h4:               0.8rem !default;
+$font-size-h5:               0.7rem !default;
+$font-size-h6:               0.7rem !default;
 
 $gray:                      #353535 !default;
 $gray-light:                #fafafa !default;

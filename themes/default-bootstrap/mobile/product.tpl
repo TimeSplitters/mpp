@@ -276,7 +276,7 @@
                             <div class="product_choice col-xs-12">
                                 <h4>
                                     <a href="#product_choice_choisir_livre">
-                                        <span class="icon-caret-down"></span> {l s='Je choisis mon livre'}
+                                        <span class="icon-caret-down pull-xs-right"></span> <span class="icon-hand"></span> {l s='Je choisis mon livre'}
                                     </a>
                                 </h4>
                                 <div id="product_choice_choisir_livre" class="row">
@@ -293,7 +293,7 @@
                             <div class="product_choice col-xs-12">
                                 <h4>
                                     <a href="#product_choice_surprise">
-                                        <span class="icon-caret-down"></span> {l s='Je vous laisse choisir'}</a>
+                                        <span class="icon-caret-down pull-xs-right"></span> <span class="icon-gift"></span> {l s='Je vous laisse choisir'}</a>
                                 </h4>
                                 <div id="product_choice_surprise" class="row">
                                     <div class="col-xs-12">

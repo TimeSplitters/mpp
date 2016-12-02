@@ -16,12 +16,12 @@
 }
 
 p {
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
   margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  padding: 1rem 1.2rem;
+  padding: 1rem;
   margin: 0;
 }
 
@@ -51,7 +51,12 @@ a {
 }
 
 header {
-  border-bottom: 1px solid $gray;
+  background: #00737a;
+  box-shadow: 0 0 4px -1px $gray;
+  border-bottom: 1px solid #fafafa;
+  position: fixed;
+  width: 100%;
+  z-index: 999999;
   padding-bottom: 5px;
   margin-bottom: 10px;
 }
@@ -114,6 +119,10 @@ body {
 
 .tooltip-inner {
   background: #fff;
+}
+
+#center_column {
+  padding-top: 50px;
 }
 
 #center_column img, .thumb_cart {

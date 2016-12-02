@@ -34,15 +34,16 @@
     height: 100%;
 
     .cat-title {
-      color: #fff;
+      color: $gray;
       padding: .25rem;
       font-size: 10px;
       letter-spacing: 1px;
     }
 
     &.in {
-      box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+      box-shadow: 0 0 6px -1px $gray;
       left: 0;
+      border-right: 1px solid $white;
     }
 
     &.navbar-offcanvas-fade {
@@ -96,7 +97,7 @@
 }
 
 .offcanvas-toggle {
-  background: $white;
+  background: none;
   border: none;
   margin-top: .6rem;
 
@@ -137,17 +138,16 @@ nav.navbar {
     pointer-events: none;
     position: absolute;
     width: 100%;
-    left: 0;
-    top: 1px;
-    text-align: center;
+    left: 60px;
+    top: 2px;
     margin: auto;
     margin-top: 0.2rem;
     a {
       pointer-events: all;
-      color: $green;
+      color: $white;
       letter-spacing: 0px;
       line-height: 32px;
-      font-size: 20px;
+      font-size: 18px;
       display: inline-block;
       text-transform: uppercase;
       font-family: "Breamcatcher";
@@ -168,7 +168,8 @@ nav.navbar {
           margin-left: 20px;
           padding: 10px 0;
           display: block;
-          color: $white;
+          color: $gray;
+          font-size: 11px;
         }
 
       }
@@ -238,14 +239,14 @@ body.offcanvas-stop-scrolling {
 
 #header_shortlinks {
   position: absolute;
-  right: 3%;
-  top: 0.75rem;
+  right: 10px;
+  top: 13px;
 
   a {
     border: none;
     border-radius: 3px;
-    padding: 5px;
-    background: #f5f5f5;
+    padding: 4px 8px 5px 5px;
+    background: $gray-light;
     color: $gray;
   }
 
@@ -347,4 +348,11 @@ body.offcanvas-stop-scrolling {
   background: $gray;
   padding: 2px 10px;
   width: 100%;
+}
+
+#navbar_box_decouverte {
+  padding-bottom: .5rem;
+  border-bottom: 1px solid $gray;
+  text-align: center;
+  font-style: italic;
 }
