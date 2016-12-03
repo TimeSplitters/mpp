@@ -267,6 +267,16 @@
             {*  pb-right-column *}
             <div class="pb-right-column col-xs-12">
                 {if ($product->show_price && !isset($restricted_country_mode)) || isset($groups) || $product->reference || (isset($HOOK_PRODUCT_ACTIONS) && $HOOK_PRODUCT_ACTIONS)}
+
+                    {if isset($product) && $product->description}
+                        {*  More info  *}
+                        <section class="page-product-box">
+                            {*  full description  *}
+                            <div class="rte">{$product->description}</div>
+                        </section>
+                        {* end  More info  *}
+                    {/if}
+
                     {*  Commander ma box form *}
                     <form id="buy_block"{if $PS_CATALOG_MODE && !isset($groups) && $product->quantity > 0} class="hidden"{/if}
                           action="{$link->getPageLink('cart')|escape:'html':'UTF-8'}" method="post">
@@ -297,6 +307,7 @@
                                 </h4>
                                 <div id="product_choice_surprise" class="row">
                                     <div class="col-xs-12">
+                                        <div>{l s='Nous choisissons pour vous le meilleur livre selon les critères suivants :'} </div>
                                         <h5>{l s='Vous êtes :'}</h5>
                                         <input type="radio" name="gender" value="0" id="gender_homme"/> <label
                                                 for="gender_homme">{l s='Un homme'}</label>
@@ -386,6 +397,7 @@
                                         <br/>
                                         <input type="radio" name="cadeau" value="Non, surprenez-moi !" id="cadeau_non"/>
                                         <label for="cadeau_non">{l s='Non'}</label>
+                                    <hr />
                                     </div>
                                 </div>
                             </div>
@@ -399,15 +411,27 @@
                             <input type="hidden" name="id_product_attribute" id="idCombination" value=""/>
                         </p>
 
-                        {if isset($product) && $product->description}
-                            {*  More info  *}
-                            <section class="page-product-box">
-                                {*  full description  *}
-                                <div class="rte">{$product->description}</div>
-                            </section>
-                            {* end  More info  *}
-                        {/if}
                         <div class="box-info-product">
+                            <br />
+                            <div class="row text-center">
+                                <div class="col-xs-4">
+                                    <span class="icon-book icon-xl"></span>
+                                    <br />
+                                    <span>Un livre</span>
+                                </div>
+                                <div class="col-xs-4">
+                                    <span class="icon-leaf icon-xl"></span>
+                                    <br />
+                                    <span>Un pot pourri senteur</span>
+                                </div>
+                                <div class="col-xs-4">
+                                    <span class="icon-magic icon-xl"></span>
+                                    <br />
+                                    <span>Des goodies surprise</span>
+                                </div>
+                            </div>
+                            <br />
+
                             <div class="content_prices clearfix">
                                 {if $product->show_price && !isset($restricted_country_mode) && !$PS_CATALOG_MODE}
                                     {*  prices  *}
@@ -578,7 +602,7 @@
                                 <div{if (!$allow_oosp && $product->quantity <= 0) || !$product->available_for_order || (isset($restricted_country_mode) && $restricted_country_mode) || $PS_CATALOG_MODE} class="unvisible"{/if}>
                                     <p id="add_to_cart" class="buttons_bottom_block no-print">
                                         <button type="submit" name="Submit" class="btn btn-default">
-                                            <span>{if $content_only && (isset($product->customization_required) && $product->customization_required)}{l s='Customize'}{else}{l s='Commander ma box'}{/if}</span>
+                                            <span class="icon-shopping-basket"></span> <span>{if $content_only && (isset($product->customization_required) && $product->customization_required)}{l s='Customize'}{else}{l s='Commander'}{/if}</span>
                                         </button>
                                     </p>
                                 </div>

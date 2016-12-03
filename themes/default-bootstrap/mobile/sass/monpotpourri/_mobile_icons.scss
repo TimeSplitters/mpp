@@ -12,6 +12,14 @@ a [class^="icon-"] {
   padding: 0.1rem .35rem;
 }
 
+.icon-xl {
+  font-size: 200%;
+}
+
+.icon-xs {
+  font-size: 50%;
+}
+
 .icon-light {
   color: $gray-light;
 }
@@ -278,4 +286,12 @@ a [class^="icon-"] {
 
 .icon-hand:before {
   content:"\f25a";
+}
+
+.icon-leaf:before {
+  content:"\f06c";
+}
+
+.icon-magic:before {
+  content:"\f0d0";
 }
