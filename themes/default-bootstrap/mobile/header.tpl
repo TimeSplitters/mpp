@@ -166,8 +166,7 @@
                     {hook h='displayMobileTopSiteMap'}
                     <div class="navbar-brand">
                         <a href="{if isset($force_ssl) && $force_ssl}{$base_dir_ssl}{else}{$base_dir}{/if}">
-                            {*<img src="{$logo_url}" alt="{$shop_name|escape:'html':'UTF-8'}"/>*}
-                            Mon Pot Pourri
+                            <img src="/themes/default-bootstrap/img/mpp_logo.png" alt="{$shop_name|escape:'html':'UTF-8'}"/>
                         </a>
                     </div>
                 </div>
