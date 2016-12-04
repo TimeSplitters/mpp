@@ -168,11 +168,6 @@
                         for="hollywood">{l s='Hollywood'}</label>
                 <br/>
 
-                <input type="text" name="origin" placeholder="{l s='Autre'}"
-                       id="autre"/> <label
-                        for="autre">{l s='Autre'}</label>
-                <br/>
-
                 <h5>{l s='Précisez-nous ce que vous attendez de voir'}</h5>
                 <small>{l s='Précision du genre, du style, du pays, un réalisateur ou un acteur préféré... (30 caractères min.)'}</small>
                 <textarea name="description_attentes"></textarea>

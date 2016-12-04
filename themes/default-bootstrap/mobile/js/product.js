@@ -232,7 +232,7 @@ $(document).ready(function () {
         });
     });*/
 
-    $('#book_name').on('keyup', function() {
+    $('#book_name, #film_name, #album_name').on('keyup', function() {
         $('.product_choice_error').addClass('hidden');
         if($('#product_choice_livre').is(':checked') && $(this).val().length > 2) {
             $('#add_to_cart button').prop('disabled', false);
