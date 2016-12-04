@@ -281,8 +281,9 @@ $(document).ready(function () {
         }
     });
 
-    $('#add_to_cart button').on('click', function() {
-
+    $('#add_to_cart button').on('click', function(e) {
+        e.preventDefault();
+        console.log('ok');
         // MPP Book
         if($('input[name="id_product"]').val() == 8) {
             ga('send', 'Ajout au panier Book');
