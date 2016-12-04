@@ -128,8 +128,8 @@
 
 /*customisation*/
 nav.navbar {
-  padding: 0 0.7rem;
-  height: 2.6rem;
+  padding: 2px .7rem;
+  height: 2.8rem;
   .container-fluid {
     padding: 0;
   }
@@ -244,7 +244,7 @@ body.offcanvas-stop-scrolling {
   a {
     border: none;
     border-radius: 3px;
-    padding: 4px 8px 5px 5px;
+    padding: 5px 12px 8px 6px;
     background: $gray-light;
     color: $gray;
   }
