@@ -75,38 +75,50 @@ class CartControllerCore extends FrontController
                 $this->context->cookie->product_choice_livre_titre = Tools::getValue('book_name');
             } else {
                 // Mode Surprise
-                if (Tools::getValue('gender') != ""
-                    && Tools::getValue('age_range') != ""
-                    && Tools::getValue('genre') != ""
-                    && Tools::getValue('soumission_choix') != ""
-                    && Tools::getValue('description_attentes') != ""
-                    && Tools::getValue('description_genre') != "") {
-                    $ch = curl_init();
+                if (Tools::getValue('id_product') == 8) {
+                    if (Tools::getValue('gender') != ""
+                        && Tools::getValue('age_range') != ""
+                        && Tools::getValue('genre') != ""
+                        && Tools::getValue('soumission_choix') != ""
+                        && Tools::getValue('description_attentes') != ""
+                        && Tools::getValue('description_genre') != ""
+                    ) {
+                        $ch = curl_init();
 
-                    // Configuration de l'URL et d'autres options
-                    curl_setopt($ch, CURLOPT_URL, 'https://docs.google.com/forms/d/1f1pnGS129_DsTeN_TIUMyJNXARfHmpHp-QQLO-Yhf2g/formResponse\?ifq\&entry.773488609\='
-                        .rawurlencode(Tools::getValue('gender')).
-                        '&entry.357607404\='.rawurlencode(Tools::getValue('age_range')).
-                        '&entry.1289552786\='.rawurlencode(Tools::getValue('genre')).
-                        '&entry.1795259749\='.rawurlencode(Tools::getValue('description_attentes')).
-                        '&entry.425196228\='.rawurlencode(Tools::getValue('description_genre')).
-                        '&entry.1759291032\='.rawurlencode(Tools::getValue('soumission_choix')).
-                        '&submit=Submit');
-                    curl_setopt($ch, CURLOPT_HEADER, 0);
-                    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-                    curl_setopt($ch, CURLOPT_IPRESOLVE, CURL_IPRESOLVE_V4);
+                        // Configuration de l'URL et d'autres options
+                        curl_setopt($ch, CURLOPT_URL, 'https://docs.google.com/forms/d/1f1pnGS129_DsTeN_TIUMyJNXARfHmpHp-QQLO-Yhf2g/formResponse\?ifq\&entry.773488609\='
+                            . rawurlencode(Tools::getValue('gender')) .
+                            '&entry.357607404\=' . rawurlencode(Tools::getValue('age_range')) .
+                            '&entry.1289552786\=' . rawurlencode(Tools::getValue('genre')) .
+                            '&entry.1795259749\=' . rawurlencode(Tools::getValue('description_attentes')) .
+                            '&entry.425196228\=' . rawurlencode(Tools::getValue('description_genre')) .
+                            '&entry.1759291032\=' . rawurlencode(Tools::getValue('soumission_choix')) .
+                            '&submit=Submit');
+                        curl_setopt($ch, CURLOPT_HEADER, 0);
+                        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                        curl_setopt($ch, CURLOPT_IPRESOLVE, CURL_IPRESOLVE_V4);
 
-                    // Récupération de l'URL et affichage sur le naviguateur
-                    $resp = curl_exec($ch);
-                    ppp($resp);
+                        echo 'https://docs.google.com/forms/d/1f1pnGS129_DsTeN_TIUMyJNXARfHmpHp-QQLO-Yhf2g/formResponse\?ifq\&entry.773488609\='
+                            . rawurlencode(Tools::getValue('gender')) .
+                            '&entry.357607404\=' . rawurlencode(Tools::getValue('age_range')) .
+                            '&entry.1289552786\=' . rawurlencode(Tools::getValue('genre')) .
+                            '&entry.1795259749\=' . rawurlencode(Tools::getValue('description_attentes')) .
+                            '&entry.425196228\=' . rawurlencode(Tools::getValue('description_genre')) .
+                            '&entry.1759291032\=' . rawurlencode(Tools::getValue('soumission_choix')) .
+                            '&submit=Submit';
+                        exit;
+                        // Récupération de l'URL et affichage sur le naviguateur
+                        $resp = curl_exec($ch);
+                        ppp($resp);
 
-                    curl_close($ch);
-                    exit;
+                        curl_close($ch);
+                        exit;
 
-                    /*$sql = 'UPDATE '._DB_PREFIX_.'customer c
-                SET c.order_confirmation_response = "'.Tools::getValue('sondageReponse').'"
-                WHERE c.id_customer = '.(int)$this->context->customer->id;
-                    Db::getInstance()->execute($sql);*/
+                        /*$sql = 'UPDATE '._DB_PREFIX_.'customer c
+                    SET c.order_confirmation_response = "'.Tools::getValue('sondageReponse').'"
+                    WHERE c.id_customer = '.(int)$this->context->customer->id;
+                        Db::getInstance()->execute($sql);*/
+                    }
                 }
             }
 
