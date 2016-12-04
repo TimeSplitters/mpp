@@ -168,7 +168,7 @@
                         for="hollywood">{l s='Hollywood'}</label>
                 <br/>
 
-                <input type="text" name="origin" placeholder="{l s'Autre'}"
+                <input type="text" name="origin" placeholder="{l s='Autre'}"
                        id="autre"/> <label
                         for="autre">{l s='Autre'}</label>
                 <br/>
