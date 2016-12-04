@@ -97,7 +97,9 @@ class CartControllerCore extends FrontController
                     curl_setopt($ch, CURLOPT_IPRESOLVE, CURL_IPRESOLVE_V4);
 
                     // Récupération de l'URL et affichage sur le naviguateur
-                    ppp(curl_exec($ch));
+                    $resp = curl_exec($ch);
+                    ppp($resp);
+
                     curl_close($ch);
                     exit;
 
