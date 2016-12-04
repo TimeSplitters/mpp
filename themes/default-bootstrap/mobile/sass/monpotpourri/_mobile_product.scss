@@ -350,6 +350,26 @@
   }
 }
 
-#product h3 {
-  font-weight: 600;
+#product {
+  h3 {
+    font-weight: 600;
+  }
+
+  .box-info-product {
+    //background: $gray-light;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  #add_to_cart {
+    text-align: center;
+
+    /*button[disabled] {
+      background: $gray-middle;
+      border: 1px solid $gray-light;
+      color: $gray-light;
+    }*/
+  }
 }

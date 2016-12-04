@@ -59,7 +59,16 @@
             {*  end left infos *}
             {*  center infos  *}
             <div class="pb-center-column col-xs-12">
-                <h1 itemprop="name">{$product->name|escape:'html':'UTF-8'}</h1>
+                <h1 itemprop="name">
+                    {if $product->id == 8}
+                        <span class="icon-book"></span>
+                    {elseif $product->id == 9}
+                        <span class="icon-film"></span>
+                    {elseif $product->id == 10}
+                        <span class="icon-music"></span>
+                    {/if}
+                    {$product->name|escape:'html':'UTF-8'}
+                </h1>
 
                 {if $product->description_short || $packItems|@count > 0}
                     <div id="short_description_block">
@@ -120,7 +129,9 @@
 
 
 
-                                                                                                                        {else}
+
+                                                                                                                                                        {else}
+
 
 
 
@@ -131,7 +142,8 @@
 
 
 
-                                                                                                                            {if !$content_only}
+
+                                                                                                                                                            {if !$content_only}
                             <span class="span_link no-print hidden">{l s='View larger'}</span>
                         {/if}
                         {/if}
@@ -286,12 +298,13 @@
                             <div class="product_choice col-xs-12">
                                 <h4>
                                     <a href="#product_choice_choisir_livre">
-                                        <span class="icon-caret-down pull-xs-right"></span> <span class="icon-hand"></span> {l s='Je choisis mon livre'}
+                                        <span class="icon-caret-down pull-xs-right"></span> <span
+                                                class="icon-hand"></span> {l s='Je choisis mon livre'}
                                     </a>
                                 </h4>
                                 <div id="product_choice_choisir_livre" class="row">
                                     <div class="form-group col-xs-12">
-                                        <label for="book_name">{l s='Titre du livre'}: </label>
+                                        <label for="book_name">{l s='Titre du livre souhaité'}: </label>
                                         <input type="text" name="book_name" id="book_name" class="form-control"/>
                                         {*<button name="book_name_search" class="col-xs-2 btn btn-default">
                                             <span class="icon-search"></span>
@@ -303,7 +316,8 @@
                             <div class="product_choice col-xs-12">
                                 <h4>
                                     <a href="#product_choice_surprise">
-                                        <span class="icon-caret-down pull-xs-right"></span> <span class="icon-gift"></span> {l s='Je vous laisse choisir'}</a>
+                                        <span class="icon-caret-down pull-xs-right"></span> <span
+                                                class="icon-gift"></span> {l s='Je vous laisse choisir'}</a>
                                 </h4>
                                 <div id="product_choice_surprise" class="row">
                                     <div class="col-xs-12">
@@ -316,27 +330,37 @@
                                                 for="gender_femme">{l s='Une femme'}</label>
 
                                         <h5>{l s='Vous avez entre :'}</h5>
-                                        <input type="radio" name="age_range" value="13-17 ans" id="age_13-17"/> <label
-                                                for="age_13-17">{l s='13-17 ans'}</label>
-                                        <br/>
-                                        <input type="radio" name="age_range" value="18-24 ans" id="age_18-24"/> <label
-                                                for="age_18-24">{l s='18-24 ans'}</label>
-                                        <br/>
-                                        <input type="radio" name="age_range" value="25-34 ans" id="age_25-34"/> <label
-                                                for="age_25-34">{l s='25-34 ans'}</label>
-                                        <br/>
-                                        <input type="radio" name="age_range" value="35-44 ans" id="age_35-44"/> <label
-                                                for="age_35-44">{l s='35-44 ans'}</label>
-                                        <br/>
-                                        <input type="radio" name="age_range" value="45-54 ans" id="age_45-54"/> <label
-                                                for="age_45-54">{l s='45-54 ans'}</label>
-                                        <br/>
-                                        <input type="radio" name="age_range" value="55-64 ans" id="age_55-64"/> <label
-                                                for="age_55-64">{l s='55-64 ans'}</label>
-                                        <br/>
-                                        <input type="radio" name="age_range" value="65+" id="age_65"/> <label
-                                                for="age_65">{l s='65+'}</label>
-
+                                        <div class="row gutter-10">
+                                            <div class="col-xs-6">
+                                                <input type="radio" name="age_range" value="13-17 ans" id="age_13-17"/>
+                                                <label
+                                                        for="age_13-17">{l s='13-17 ans'}</label>
+                                                <br/>
+                                                <input type="radio" name="age_range" value="18-24 ans" id="age_18-24"/>
+                                                <label
+                                                        for="age_18-24">{l s='18-24 ans'}</label>
+                                                <br/>
+                                                <input type="radio" name="age_range" value="25-34 ans" id="age_25-34"/>
+                                                <label
+                                                        for="age_25-34">{l s='25-34 ans'}</label>
+                                                <br />
+                                                <input type="radio" name="age_range" value="35-44 ans" id="age_35-44"/>
+                                                <label
+                                                        for="age_35-44">{l s='35-44 ans'}</label>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <input type="radio" name="age_range" value="45-54 ans" id="age_45-54"/>
+                                                <label
+                                                        for="age_45-54">{l s='45-54 ans'}</label>
+                                                <br/>
+                                                <input type="radio" name="age_range" value="55-64 ans" id="age_55-64"/>
+                                                <label
+                                                        for="age_55-64">{l s='55-64 ans'}</label>
+                                                <br/>
+                                                <input type="radio" name="age_range" value="65+" id="age_65"/> <label
+                                                        for="age_65">{l s='65+'}</label>
+                                            </div>
+                                        </div>
                                         <h5>{l s='Quel genre souhaitez-vous ?'}</h5>
                                         <input type="radio" name="genre" value="Littérature française"
                                                id="litterature_française"/> <label
@@ -369,13 +393,13 @@
 
 
                                         <h5>{l s='Précisez-nous ce que vous attendez de lire'}</h5>
-                                        <small>{l s='Précision du genre, VO ou VF, thème du livre...'}</small>
-                                        <textarea></textarea>
+                                        <small>{l s='Précision du genre, VO ou VF, thème du livre... (30 caractères min.)'}</small>
+                                        <textarea name="description_attentes"></textarea>
 
                                         <br/>
                                         <h5>{l s='Avez-vous déjà lu des livres dans ce genre-là ?'}</h5>
-                                        <small>{l s='Si oui, le(s)quel(s) et qu\'en avez-vous pensé ?'}</small>
-                                        <textarea></textarea>
+                                        <small>{l s='Si oui, le(s)quel(s) et qu\'en avez-vous pensé ? (30 caractères min.)'}</small>
+                                        <textarea name="description_genre"></textarea>
 
                                         <br/>
                                         <h5>{l s='Voulez-vous que l\'on vous soumette notre choix ?'}</h5>
@@ -394,10 +418,10 @@
                                                id="cadeau_oui"/>
                                         <label for="cadeau_oui">{l s='Oui'}</label>
 
-                                        <br/>
+                                        {*<br/>
                                         <input type="radio" name="cadeau" value="Non, surprenez-moi !" id="cadeau_non"/>
-                                        <label for="cadeau_non">{l s='Non'}</label>
-                                    <hr />
+                                        <label for="cadeau_non">{l s='Non'}</label>*}
+                                        <hr/>
                                     </div>
                                 </div>
                             </div>
@@ -412,25 +436,25 @@
                         </p>
 
                         <div class="box-info-product">
-                            <br />
-                            <div class="row text-center">
+                            <h4 class="text-uppercase text-center">{l s='En résumé'}</h4>
+                            <div class="row text-center gutter-10">
                                 <div class="col-xs-4">
                                     <span class="icon-book icon-xl"></span>
-                                    <br />
+                                    <br/>
                                     <span>Un livre</span>
                                 </div>
                                 <div class="col-xs-4">
                                     <span class="icon-leaf icon-xl"></span>
-                                    <br />
+                                    <br/>
                                     <span>Un pot pourri senteur</span>
                                 </div>
                                 <div class="col-xs-4">
                                     <span class="icon-magic icon-xl"></span>
-                                    <br />
+                                    <br/>
                                     <span>Des goodies surprise</span>
                                 </div>
                             </div>
-                            <br />
+                            <br/>
 
                             <div class="content_prices clearfix">
                                 {if $product->show_price && !isset($restricted_country_mode) && !$PS_CATALOG_MODE}
@@ -476,10 +500,12 @@
 
 
 
+
                                                     <span id="pretaxe_price_display">{convertPrice price=$product->getPrice(false, $smarty.const.NULL)}</span>
 
 
-                                                                                                                                                                         {l s='tax excl.'}
+
+                                                                                                                                                                                                                                 {l s='tax excl.'}
 									{/strip}</span>
                                         {/if}
                                     </div>
@@ -601,8 +627,9 @@
                             <div class="box-cart-bottom text-center">
                                 <div{if (!$allow_oosp && $product->quantity <= 0) || !$product->available_for_order || (isset($restricted_country_mode) && $restricted_country_mode) || $PS_CATALOG_MODE} class="unvisible"{/if}>
                                     <p id="add_to_cart" class="buttons_bottom_block no-print">
-                                        <button type="submit" name="Submit" class="btn btn-default">
-                                            <span class="icon-shopping-basket"></span> <span>{if $content_only && (isset($product->customization_required) && $product->customization_required)}{l s='Customize'}{else}{l s='Commander'}{/if}</span>
+                                        <button type="submit" name="Submit" class="btn btn-default" disabled>
+                                            <span class="icon-shopping-basket"></span>
+                                            <span>{if $content_only && (isset($product->customization_required) && $product->customization_required)}{l s='Customize'}{else}{l s='Commander'}{/if}</span>
                                         </button>
                                     </p>
                                 </div>

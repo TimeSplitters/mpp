@@ -6,6 +6,11 @@ var colors = [];
 var original_url = window.location + '';
 var first_url_check = true;
 var firstTime = true;
+var productChoiceInputs = [];
+var productChoiceTextarea = [];
+var countInputChecked;
+var countTextareaChecked;
+
 /* Retro compat from product.tpl */
 if (typeof customizationFields !== 'undefined' && customizationFields) {
     var customizationFieldsBk = customizationFields;
@@ -178,10 +183,11 @@ $(document).ready(function () {
 
     $('.product_choice h4 a').on('click', function (e) {
         e.preventDefault();
-        if ($($(this).attr('href')).hasClass('hidden')) {
-            $($(this).attr('href')).removeClass('hidden');
-        } else {
-            $('.product_choice > .row').addClass('hidden');
+        var toOpen = $(this).attr('href');
+        var isOpen = !$(toOpen).hasClass('hidden');
+        $('.product_choice > .row').addClass('hidden');
+        if(!isOpen) {
+            $(toOpen).removeClass('hidden');
         }
     });
 
@@ -218,6 +224,41 @@ $(document).ready(function () {
             }
         });
     });*/
+
+    $('#product_choice_surprise input').each(function () {
+        if(productChoiceInputs.indexOf($(this).prop('name')) == -1) {
+            productChoiceInputs.push($(this).prop('name'));
+        }
+    });
+
+    $('#product_choice_surprise textarea').each(function () {
+        if(productChoiceTextarea.indexOf($(this).prop('name')) == -1) {
+            productChoiceTextarea.push($(this).prop('name'));
+        }
+    });
+
+    $('#product_choice_surprise input, #product_choice_surprise textarea').on('change', function () {
+        countInputChecked = 0;
+        $(productChoiceInputs).each(function (i, name) {
+            if($('input[name="'+name+'"]').is(':checked')) {
+                countInputChecked++;
+            }
+        });
+
+        countTextareaChecked = 0;
+        $(productChoiceTextarea).each(function (i, name) {
+            if($('textarea[name="'+name+'"]').val().length > 30) {
+                countTextareaChecked++;
+            }
+        });
+
+        if(countInputChecked == productChoiceInputs.length
+            && countTextareaChecked == productChoiceTextarea.length) {
+            $('#add_to_cart button').prop('disabled', false);
+        } else {
+            $('#add_to_cart button').prop('disabled', true);
+        }
+    });
 });
 
 //find a specific price rule, based on pre calculated dom display array
