@@ -99,7 +99,7 @@
 .offcanvas-toggle {
   background: none;
   border: none;
-  padding-top: .6rem;
+  padding: 0.7rem 1rem;
 
   .icon-bar {
     background: $offcanvas-toggle-bars-color;
@@ -128,7 +128,7 @@
 
 /*customisation*/
 nav.navbar {
-  padding: 2px .7rem;
+  padding: 0;
   height: 2.8rem;
   .container-fluid {
     padding: 0;

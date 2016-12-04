@@ -412,13 +412,13 @@
                                                id="soumission_non"/>
                                         <label for="soumission_non">{l s='Non, surprenez-moi !'}</label>
 
-                                        <br/>
+                                        {*<br/>
                                         <h5>{l s='Allez-vous offrir ce Pot Pourri à quelqu\'un ?'}</h5>
                                         <input type="radio" name="cadeau" value="Oui, je souhaite valider le choix"
                                                id="cadeau_oui"/>
                                         <label for="cadeau_oui">{l s='Oui'}</label>
 
-                                        {*<br/>
+                                        <br/>
                                         <input type="radio" name="cadeau" value="Non, surprenez-moi !" id="cadeau_non"/>
                                         <label for="cadeau_non">{l s='Non'}</label>*}
                                         <hr/>
