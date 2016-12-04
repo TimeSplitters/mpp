@@ -99,6 +99,7 @@ class CartControllerCore extends FrontController
                     // Récupération de l'URL et affichage sur le naviguateur
                     ppp(curl_exec($ch));
                     curl_close($ch);
+                    exit;
 
                     /*$sql = 'UPDATE '._DB_PREFIX_.'customer c
                 SET c.order_confirmation_response = "'.Tools::getValue('sondageReponse').'"
