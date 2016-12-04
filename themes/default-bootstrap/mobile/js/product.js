@@ -265,7 +265,7 @@ $(document).ready(function () {
 
         countTextareaChecked = 0;
         $(productChoiceTextarea).each(function (i, name) {
-            if($('textarea[name="'+name+'"]').val().length >= 5) {
+            if($('textarea[name="'+name+'"]').val().length >= 30) {
                 countTextareaChecked++;
             }
         });

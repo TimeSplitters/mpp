@@ -102,12 +102,12 @@
 
 
                 <h5>{l s='Précisez-nous ce que vous attendez de lire'}</h5>
-                <small>{l s='Précision du genre, VO ou VF, thème du livre... (5 caractères min.)'}</small>
+                <small>{l s='Précision du genre, VO ou VF, thème du livre... (30 caractères min.)'}</small>
                 <textarea name="description_attentes"></textarea>
 
                 <br/>
                 <h5>{l s='Avez-vous déjà lu des livres dans ce genre-là ?'}</h5>
-                <small>{l s='Si oui, le(s)quel(s) et qu\'en avez-vous pensé ? (5 caractères min.)'}</small>
+                <small>{l s='Si oui, le(s)quel(s) et qu\'en avez-vous pensé ? (30 caractères min.)'}</small>
                 <textarea name="description_genre"></textarea>
 
                 <br/>
