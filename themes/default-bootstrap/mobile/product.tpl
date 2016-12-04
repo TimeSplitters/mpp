@@ -302,7 +302,7 @@
                                 <h4>
                                     <a href="#product_choice_choisir_livre">
                                         <span class="icon-caret-down pull-xs-right"></span> <span
-                                                class="icon-hand"></span> <input type="radio" class="hidden" name="product_choice"
+                                                class="icon-hand"></span> <input type="radio" class="hidden" name="product_choice" value="livre"
                                                                                  id="product_choice_livre"> <label
                                                 for="product_choice_livre">{l s='Je choisis mon livre'}</label>
                                     </a>
@@ -322,7 +322,7 @@
                                 <h4>
                                     <a href="#product_choice_surprise">
                                         <span class="icon-caret-down pull-xs-right"></span> <span
-                                                class="icon-gift"></span> <input type="radio" class="hidden" name="product_choice"
+                                                class="icon-gift"></span> <input type="radio" class="hidden" name="product_choice" value="surprise"
                                                                                  id="product_choice_questionnaire"> <label
                                                 for="product_choice_questionnaire">{l s='Je vous laisse choisir'}</label>
                                     </a>
@@ -331,10 +331,10 @@
                                     <div class="col-xs-12">
                                         <div>{l s='Nous choisissons pour vous le meilleur livre selon les critères suivants :'} </div>
                                         <h5>{l s='Vous êtes :'}</h5>
-                                        <input type="radio" name="gender" value="0" id="gender_homme"/> <label
+                                        <input type="radio" name="gender" value="Un homme" id="gender_homme"/> <label
                                                 for="gender_homme">{l s='Un homme'}</label>
                                         <br/>
-                                        <input type="radio" name="gender" value="1" id="gender_femme"/> <label
+                                        <input type="radio" name="gender" value="Une femme" id="gender_femme"/> <label
                                                 for="gender_femme">{l s='Une femme'}</label>
 
                                         <h5>{l s='Vous avez entre :'}</h5>
@@ -401,12 +401,12 @@
 
 
                                         <h5>{l s='Précisez-nous ce que vous attendez de lire'}</h5>
-                                        <small>{l s='Précision du genre, VO ou VF, thème du livre... (30 caractères min.)'}</small>
+                                        <small>{l s='Précision du genre, VO ou VF, thème du livre... (5 caractères min.)'}</small>
                                         <textarea name="description_attentes"></textarea>
 
                                         <br/>
                                         <h5>{l s='Avez-vous déjà lu des livres dans ce genre-là ?'}</h5>
-                                        <small>{l s='Si oui, le(s)quel(s) et qu\'en avez-vous pensé ? (30 caractères min.)'}</small>
+                                        <small>{l s='Si oui, le(s)quel(s) et qu\'en avez-vous pensé ? (5 caractères min.)'}</small>
                                         <textarea name="description_genre"></textarea>
 
                                         <br/>

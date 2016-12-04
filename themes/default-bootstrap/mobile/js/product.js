@@ -265,7 +265,7 @@ $(document).ready(function () {
 
         countTextareaChecked = 0;
         $(productChoiceTextarea).each(function (i, name) {
-            if($('textarea[name="'+name+'"]').val().length > 30) {
+            if($('textarea[name="'+name+'"]').val().length >= 5) {
                 countTextareaChecked++;
             }
         });
@@ -285,7 +285,8 @@ $(document).ready(function () {
         e.preventDefault();
         // MPP Book
         if($('input[name="id_product"]').val() == 8) {
-            ga('send', 'Ajout au panier Book');
+            if(typeof ga != "undefined")
+                ga('send', 'Ajout au panier Book');
         }
         // MPP Film
         else if($('input[name="id_product"]').val() == 9) {
@@ -295,6 +296,7 @@ $(document).ready(function () {
         else if($('input[name="id_product"]').val() == 10) {
             ga('send', 'Ajout au panier Music');
         }
+
         $('#buy_block').trigger('submit');
     });
 });

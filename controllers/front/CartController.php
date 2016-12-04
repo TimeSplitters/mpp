@@ -1,4 +1,5 @@
 <?php
+
 /*
 * 2007-2016 PrestaShop
 *
@@ -69,6 +70,33 @@ class CartControllerCore extends FrontController
     {
         // Update the cart ONLY if $this->cookies are available, in order to avoid ghost carts created by bots
         if ($this->context->cookie->exists() && !$this->errors && !($this->context->customer->isLogged() && !$this->isTokenValid())) {
+            // Mode sélection livre
+            if (Tools::getValue('product_choice') == 'livre') {
+                $this->context->cookie->product_choice_livre_titre = Tools::getValue('book_name');
+            } else {
+                // Mode Surprise
+                if (Tools::getValue('gender') != ""
+                    && Tools::getValue('age_range') != ""
+                    && Tools::getValue('genre') != ""
+                    && Tools::getValue('soumission_choix') != ""
+                    && Tools::getValue('description_attentes') != ""
+                    && Tools::getValue('description_genre') != "") {
+                    shell_exec('curl https://docs.google.com/forms/d/1f1pnGS129_DsTeN_TIUMyJNXARfHmpHp-QQLO-Yhf2g/formResponse\?ifq\&entry.773488609\='
+                        .rawurlencode(Tools::getValue('gender')).
+                        '&entry.357607404\='.rawurlencode(Tools::getValue('age_range')).
+                        '&entry.1289552786\='.rawurlencode(Tools::getValue('genre')).
+                        '&entry.1795259749\='.rawurlencode(Tools::getValue('description_attentes')).
+                        '&entry.425196228\='.rawurlencode(Tools::getValue('description_genre')).
+                        '&entry.1759291032\='.rawurlencode(Tools::getValue('soumission_choix')).
+                        '&submit=Submit');
+
+                    /*$sql = 'UPDATE '._DB_PREFIX_.'customer c
+                SET c.order_confirmation_response = "'.Tools::getValue('sondageReponse').'"
+                WHERE c.id_customer = '.(int)$this->context->customer->id;
+                    Db::getInstance()->execute($sql);*/
+                }
+            }
+
             if (Tools::getIsset('add') || Tools::getIsset('update')) {
                 $this->processChangeProductInCart();
             } elseif (Tools::getIsset('delete')) {
@@ -84,7 +112,7 @@ class CartControllerCore extends FrontController
             if (!$this->errors && !$this->ajax) {
                 $queryString = Tools::safeOutput(Tools::getValue('query', null));
                 if ($queryString && !Configuration::get('PS_CART_REDIRECT')) {
-                    Tools::redirect('index.php?controller=search&search='.$queryString);
+                    Tools::redirect('index.php?controller=search&search=' . $queryString);
                 }
 
                 // Redirect to previous page
@@ -96,7 +124,7 @@ class CartControllerCore extends FrontController
                     }
                 }
 
-                Tools::redirect('index.php?controller=order&'.(isset($this->id_product) ? 'ipa='.$this->id_product : ''));
+                Tools::redirect('index.php?controller=order&' . (isset($this->id_product) ? 'ipa=' . $this->id_product : ''));
             }
         } elseif (!$this->isTokenValid()) {
             Tools::redirect('index.php');
@@ -108,8 +136,8 @@ class CartControllerCore extends FrontController
      */
     protected function processDeleteProductInCart()
     {
-        $customization_product = Db::getInstance()->executeS('SELECT * FROM `'._DB_PREFIX_.'customization`
-		WHERE `id_cart` = '.(int)$this->context->cart->id.' AND `id_product` = '.(int)$this->id_product.' AND `id_customization` != '.(int)$this->customization_id);
+        $customization_product = Db::getInstance()->executeS('SELECT * FROM `' . _DB_PREFIX_ . 'customization`
+		WHERE `id_cart` = ' . (int)$this->context->cart->id . ' AND `id_product` = ' . (int)$this->id_product . ' AND `id_customization` != ' . (int)$this->customization_id);
 
         if (count($customization_product)) {
             $product = new Product((int)$this->id_product);
@@ -126,8 +154,8 @@ class CartControllerCore extends FrontController
 
             if ($total_quantity < $minimal_quantity) {
                 $this->ajaxDie(Tools::jsonEncode(array(
-                        'hasError' => true,
-                        'errors' => array(sprintf(Tools::displayError('You must add %d minimum quantity', !Tools::getValue('ajax')), $minimal_quantity)),
+                    'hasError' => true,
+                    'errors' => array(sprintf(Tools::displayError('You must add %d minimum quantity', !Tools::getValue('ajax')), $minimal_quantity)),
                 )));
             }
         }
@@ -200,11 +228,12 @@ class CartControllerCore extends FrontController
         }
 
         if (!$this->context->cart->duplicateProduct(
-                $this->id_product,
-                $this->id_product_attribute,
-                $this->id_address_delivery,
-                (int)Tools::getValue('new_id_address_delivery')
-            )) {
+            $this->id_product,
+            $this->id_product_attribute,
+            $this->id_address_delivery,
+            (int)Tools::getValue('new_id_address_delivery')
+        )
+        ) {
             //$error_message = $this->l('Error durring product duplication');
             // For the moment no translations
             $error_message = 'Error durring product duplication';
@@ -236,7 +265,8 @@ class CartControllerCore extends FrontController
         if (is_array($cart_products)) {
             foreach ($cart_products as $cart_product) {
                 if ((!isset($this->id_product_attribute) || $cart_product['id_product_attribute'] == $this->id_product_attribute) &&
-                    (isset($this->id_product) && $cart_product['id_product'] == $this->id_product)) {
+                    (isset($this->id_product) && $cart_product['id_product'] == $this->id_product)
+                ) {
                     $qty_to_check = $cart_product['cart_quantity'];
 
                     if (Tools::getValue('op', 'up') == 'down') {
@@ -357,7 +387,7 @@ class CartControllerCore extends FrontController
      */
     public function initContent()
     {
-        $this->setTemplate(_PS_THEME_DIR_.'errors.tpl');
+        $this->setTemplate(_PS_THEME_DIR_ . 'errors.tpl');
         if (!$this->ajax) {
             parent::initContent();
         }
@@ -411,10 +441,9 @@ class CartControllerCore extends FrontController
             $json = '';
             Hook::exec('actionCartListOverride', array('summary' => $result, 'json' => &$json));
             $this->ajaxDie(Tools::jsonEncode(array_merge($result, (array)Tools::jsonDecode($json, true))));
-        }
-        // @todo create a hook
-        elseif (file_exists(_PS_MODULE_DIR_.'/blockcart/blockcart-ajax.php')) {
-            require_once(_PS_MODULE_DIR_.'/blockcart/blockcart-ajax.php');
+        } // @todo create a hook
+        elseif (file_exists(_PS_MODULE_DIR_ . '/blockcart/blockcart-ajax.php')) {
+            require_once(_PS_MODULE_DIR_ . '/blockcart/blockcart-ajax.php');
         }
     }
 }
