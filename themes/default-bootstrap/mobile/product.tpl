@@ -130,7 +130,9 @@
 
 
 
-                                                                                                                                                        {else}
+
+                                                                                                                                                                                        {else}
+
 
 
 
@@ -143,7 +145,8 @@
 
 
 
-                                                                                                                                                            {if !$content_only}
+
+                                                                                                                                                                                            {if !$content_only}
                             <span class="span_link no-print hidden">{l s='View larger'}</span>
                         {/if}
                         {/if}
@@ -299,7 +302,9 @@
                                 <h4>
                                     <a href="#product_choice_choisir_livre">
                                         <span class="icon-caret-down pull-xs-right"></span> <span
-                                                class="icon-hand"></span> {l s='Je choisis mon livre'}
+                                                class="icon-hand"></span> <input type="radio" class="hidden" name="product_choice"
+                                                                                 id="product_choice_livre"> <label
+                                                for="product_choice_livre">{l s='Je choisis mon livre'}</label>
                                     </a>
                                 </h4>
                                 <div id="product_choice_choisir_livre" class="row">
@@ -317,7 +322,10 @@
                                 <h4>
                                     <a href="#product_choice_surprise">
                                         <span class="icon-caret-down pull-xs-right"></span> <span
-                                                class="icon-gift"></span> {l s='Je vous laisse choisir'}</a>
+                                                class="icon-gift"></span> <input type="radio" class="hidden" name="product_choice"
+                                                                                 id="product_choice_questionnaire"> <label
+                                                for="product_choice_questionnaire">{l s='Je vous laisse choisir'}</label>
+                                    </a>
                                 </h4>
                                 <div id="product_choice_surprise" class="row">
                                     <div class="col-xs-12">
@@ -343,7 +351,7 @@
                                                 <input type="radio" name="age_range" value="25-34 ans" id="age_25-34"/>
                                                 <label
                                                         for="age_25-34">{l s='25-34 ans'}</label>
-                                                <br />
+                                                <br/>
                                                 <input type="radio" name="age_range" value="35-44 ans" id="age_35-44"/>
                                                 <label
                                                         for="age_35-44">{l s='35-44 ans'}</label>
@@ -501,11 +509,13 @@
 
 
 
+
                                                     <span id="pretaxe_price_display">{convertPrice price=$product->getPrice(false, $smarty.const.NULL)}</span>
 
 
 
-                                                                                                                                                                                                                                 {l s='tax excl.'}
+
+                                                                                                                                                                                                                                                                                         {l s='tax excl.'}
 									{/strip}</span>
                                         {/if}
                                     </div>
@@ -627,6 +637,8 @@
                             <div class="box-cart-bottom text-center">
                                 <div{if (!$allow_oosp && $product->quantity <= 0) || !$product->available_for_order || (isset($restricted_country_mode) && $restricted_country_mode) || $PS_CATALOG_MODE} class="unvisible"{/if}>
                                     <p id="add_to_cart" class="buttons_bottom_block no-print">
+                                        <strong class="product_choice_surprise product_choice_error hidden">{l s='Vous avez choisi le mode surprise: vous devez répondre à toutes les questions.'}<br /></strong>
+                                        <strong class="product_choice_livre product_choice_error hidden">{l s='Vous devez préciser le titre du livre souhaité.'}<br /></strong>
                                         <button type="submit" name="Submit" class="btn btn-default" disabled>
                                             <span class="icon-shopping-basket"></span>
                                             <span>{if $content_only && (isset($product->customization_required) && $product->customization_required)}{l s='Customize'}{else}{l s='Commander'}{/if}</span>

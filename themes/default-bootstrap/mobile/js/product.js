@@ -185,9 +185,16 @@ $(document).ready(function () {
         e.preventDefault();
         var toOpen = $(this).attr('href');
         var isOpen = !$(toOpen).hasClass('hidden');
+        $(this).find('input').prop('checked', true);
         $('.product_choice > .row').addClass('hidden');
         if(!isOpen) {
             $(toOpen).removeClass('hidden');
+        }
+        if(toOpen == '#product_choice_choisir_livre') {
+            $('#book_name').trigger('keyup');
+        } else {
+            $('#product_choice_surprise input').trigger('change');
+            $('#product_choice_surprise textarea').trigger('keyup');
         }
     });
 
@@ -225,6 +232,17 @@ $(document).ready(function () {
         });
     });*/
 
+    $('#book_name').on('keyup', function() {
+        $('.product_choice_error').addClass('hidden');
+        if($('#product_choice_livre').is(':checked') && $(this).val().length > 2) {
+            $('#add_to_cart button').prop('disabled', false);
+            $('#add_to_cart .product_choice_livre').addClass('hidden');
+        } else {
+            $('#add_to_cart button').prop('disabled', true);
+            $('#add_to_cart .product_choice_livre').removeClass('hidden');
+        }
+    });
+
     $('#product_choice_surprise input').each(function () {
         if(productChoiceInputs.indexOf($(this).prop('name')) == -1) {
             productChoiceInputs.push($(this).prop('name'));
@@ -237,7 +255,7 @@ $(document).ready(function () {
         }
     });
 
-    $('#product_choice_surprise input, #product_choice_surprise textarea').on('change', function () {
+    $('#product_choice_surprise input, #product_choice_surprise textarea').on('change keyup', function () {
         countInputChecked = 0;
         $(productChoiceInputs).each(function (i, name) {
             if($('input[name="'+name+'"]').is(':checked')) {
@@ -252,11 +270,14 @@ $(document).ready(function () {
             }
         });
 
+        $('.product_choice_error').addClass('hidden');
         if(countInputChecked == productChoiceInputs.length
             && countTextareaChecked == productChoiceTextarea.length) {
             $('#add_to_cart button').prop('disabled', false);
+            $('#add_to_cart .product_choice_surprise').addClass('hidden');
         } else {
             $('#add_to_cart button').prop('disabled', true);
+            $('#add_to_cart .product_choice_surprise').removeClass('hidden');
         }
     });
 });
