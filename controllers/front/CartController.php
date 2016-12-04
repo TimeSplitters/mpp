@@ -94,7 +94,7 @@ class CartControllerCore extends FrontController
                         '&submit=Submit');
                     curl_setopt($ch, CURLOPT_HEADER, 0);
                     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-                    //curl_setopt( $handle, CURLOPT_IPRESOLVE, CURL_IPRESOLVE_V4);
+                    curl_setopt($ch, CURLOPT_IPRESOLVE, CURL_IPRESOLVE_V4);
 
                     // Récupération de l'URL et affichage sur le naviguateur
                     curl_exec($ch);
