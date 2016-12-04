@@ -97,7 +97,7 @@ class CartControllerCore extends FrontController
                     curl_setopt($ch, CURLOPT_IPRESOLVE, CURL_IPRESOLVE_V4);
 
                     // Récupération de l'URL et affichage sur le naviguateur
-                    curl_exec($ch);
+                    ppp(curl_exec($ch));
                     curl_close($ch);
 
                     /*$sql = 'UPDATE '._DB_PREFIX_.'customer c
