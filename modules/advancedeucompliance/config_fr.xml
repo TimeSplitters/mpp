@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>advancedeucompliance</name>
+	<displayName><![CDATA[Conformit&eacute; europ&eacute;enne am&eacute;lior&eacute;e]]></displayName>
+	<version><![CDATA[2.0.2]]></version>
+	<description><![CDATA[Ce module aide les commer&ccedil;ants Europ&eacute;ens &agrave; &ecirc;tre en conformit&eacute; avec les derni&egrave;res lois e-commerce.]]></description>
+	<author><![CDATA[PrestaShop]]></author>
+	<tab><![CDATA[administration]]></tab>
+	<confirmUninstall><![CDATA[Êtes-vous sûr de vouloir désinstaller ce module ?]]></confirmUninstall>
+	<is_configurable>1</is_configurable>
+	<need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>
