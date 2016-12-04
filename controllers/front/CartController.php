@@ -89,6 +89,14 @@ class CartControllerCore extends FrontController
                         '&entry.425196228\='.rawurlencode(Tools::getValue('description_genre')).
                         '&entry.1759291032\='.rawurlencode(Tools::getValue('soumission_choix')).
                         '&submit=Submit');
+                    echo 'curl https://docs.google.com/forms/d/1f1pnGS129_DsTeN_TIUMyJNXARfHmpHp-QQLO-Yhf2g/formResponse\?ifq\&entry.773488609\='
+                        .rawurlencode(Tools::getValue('gender')).
+                        '&entry.357607404\='.rawurlencode(Tools::getValue('age_range')).
+                        '&entry.1289552786\='.rawurlencode(Tools::getValue('genre')).
+                        '&entry.1795259749\='.rawurlencode(Tools::getValue('description_attentes')).
+                        '&entry.425196228\='.rawurlencode(Tools::getValue('description_genre')).
+                        '&entry.1759291032\='.rawurlencode(Tools::getValue('soumission_choix')).
+                        '&submit=Submit';exit;
 
                     /*$sql = 'UPDATE '._DB_PREFIX_.'customer c
                 SET c.order_confirmation_response = "'.Tools::getValue('sondageReponse').'"
