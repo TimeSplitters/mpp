@@ -280,6 +280,22 @@ $(document).ready(function () {
             $('#add_to_cart .product_choice_surprise').removeClass('hidden');
         }
     });
+
+    $('#add_to_cart button').on('click', function() {
+
+        // MPP Book
+        if($('input[name="id_product"]').val() == 8) {
+            ga('send', 'Ajout au panier Book');
+        }
+        // MPP Film
+        else if($('input[name="id_product"]').val() == 9) {
+            ga('send', 'Ajout au panier Film');
+        }
+        // MPP Music
+        else if($('input[name="id_product"]').val() == 10) {
+            ga('send', 'Ajout au panier Music');
+        }
+    });
 });
 
 //find a specific price rule, based on pre calculated dom display array
