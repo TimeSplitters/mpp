@@ -169,7 +169,7 @@ nav.navbar {
           padding: 10px 0;
           display: block;
           color: $gray;
-          font-size: 11px;
+          font-size: .8rem;
         }
 
       }
@@ -239,8 +239,8 @@ body.offcanvas-stop-scrolling {
 
 #header_shortlinks {
   position: absolute;
-  right: 10px;
-  top: 13px;
+  right: .9rem;
+  top: .9rem;
 
   a {
     border: none;
