@@ -693,7 +693,7 @@ class FrontControllerCore extends Controller
                 $this->css_files = Media::cccCss($this->css_files);
             }
             //JS compressor management
-            if (Configuration::get('PS_JS_THEME_CACHE')) {
+            if (Configuration::get('PS_JS_THEME_CACHE') && !$this->useMobileTheme()) {
                 $this->js_files = Media::cccJs($this->js_files);
             }
         }
