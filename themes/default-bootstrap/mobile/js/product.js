@@ -187,10 +187,10 @@ $(document).ready(function () {
         var isOpen = !$(toOpen).hasClass('hidden');
         $(this).find('input').prop('checked', true);
         $('.product_choice > .row').addClass('hidden');
-        if(!isOpen) {
+        if (!isOpen) {
             $(toOpen).removeClass('hidden');
         }
-        if(toOpen == '#product_choice_choisir_livre') {
+        if (toOpen == '#product_choice_choisir_livre') {
             $('#book_name').trigger('keyup');
         } else {
             $('#product_choice_surprise input').trigger('change');
@@ -199,42 +199,42 @@ $(document).ready(function () {
     });
 
     /*
-    var searchBook;
-    $('button[name=book_name_search]').on('click', function (e) {
-        e.preventDefault();
-        searchBook = $('input[name=book_name]').val();
-        $.ajax({
-            type: 'get',
-            url: baseUri,
-            async: true,
-            cache: false,
-            dataType: "json",
-            headers: {"cache-control": "no-cache"},
-            data: {
-                ajax: true,
-                controller: 'product',
-                action: 'searchBook',
-                search: searchBook,
-                token: token
-            },
-            success: function (titles) {
-                $('#search_book').html();
-                $(titles).each(function (i, title) {
-                    console.log(title);
-                    //$('#search_book').append('<div class="search_book_result">'+title[0]+'</div>');
-                });
-            },
-            error: function (jqXHR, textStatus, errorThrown) {
-                console.log(jqXHR);
-                console.log(textStatus);
-                console.log(errorThrown);
-            }
-        });
-    });*/
+     var searchBook;
+     $('button[name=book_name_search]').on('click', function (e) {
+     e.preventDefault();
+     searchBook = $('input[name=book_name]').val();
+     $.ajax({
+     type: 'get',
+     url: baseUri,
+     async: true,
+     cache: false,
+     dataType: "json",
+     headers: {"cache-control": "no-cache"},
+     data: {
+     ajax: true,
+     controller: 'product',
+     action: 'searchBook',
+     search: searchBook,
+     token: token
+     },
+     success: function (titles) {
+     $('#search_book').html();
+     $(titles).each(function (i, title) {
+     console.log(title);
+     //$('#search_book').append('<div class="search_book_result">'+title[0]+'</div>');
+     });
+     },
+     error: function (jqXHR, textStatus, errorThrown) {
+     console.log(jqXHR);
+     console.log(textStatus);
+     console.log(errorThrown);
+     }
+     });
+     });*/
 
-    $('#book_name, #film_name, #album_name').on('keyup', function() {
+    $('#book_name, #film_name, #album_name').on('keyup', function () {
         $('.product_choice_error').addClass('hidden');
-        if($('#product_choice_livre').is(':checked') && $(this).val().length > 2) {
+        if ($('#product_choice_livre').is(':checked') && $(this).val().length > 2) {
             $('#add_to_cart button').prop('disabled', false);
             $('#add_to_cart .product_choice_livre').addClass('hidden');
         } else {
@@ -244,13 +244,13 @@ $(document).ready(function () {
     });
 
     $('#product_choice_surprise input').each(function () {
-        if(productChoiceInputs.indexOf($(this).prop('name')) == -1) {
+        if (productChoiceInputs.indexOf($(this).prop('name')) == -1) {
             productChoiceInputs.push($(this).prop('name'));
         }
     });
 
     $('#product_choice_surprise textarea').each(function () {
-        if(productChoiceTextarea.indexOf($(this).prop('name')) == -1) {
+        if (productChoiceTextarea.indexOf($(this).prop('name')) == -1) {
             productChoiceTextarea.push($(this).prop('name'));
         }
     });
@@ -258,20 +258,20 @@ $(document).ready(function () {
     $('#product_choice_surprise input, #product_choice_surprise textarea').on('change keyup', function () {
         countInputChecked = 0;
         $(productChoiceInputs).each(function (i, name) {
-            if($('input[name="'+name+'"]').is(':checked')) {
+            if ($('input[name="' + name + '"]').is(':checked')) {
                 countInputChecked++;
             }
         });
 
         countTextareaChecked = 0;
         $(productChoiceTextarea).each(function (i, name) {
-            if($('textarea[name="'+name+'"]').val().length >= 30) {
+            if ($('textarea[name="' + name + '"]').val().length >= 30) {
                 countTextareaChecked++;
             }
         });
 
         $('.product_choice_error').addClass('hidden');
-        if(countInputChecked == productChoiceInputs.length
+        if (countInputChecked == productChoiceInputs.length
             && countTextareaChecked == productChoiceTextarea.length) {
             $('#add_to_cart button').prop('disabled', false);
             $('#add_to_cart .product_choice_surprise').addClass('hidden');
@@ -281,21 +281,39 @@ $(document).ready(function () {
         }
     });
 
-    $('#add_to_cart button').on('click', function(e) {
+    $('#add_to_cart button').on('click', function (e) {
         e.preventDefault();
         // MPP Book
-        if($('input[name="id_product"]').val() == 8) {
-            if(typeof ga != "undefined")
-                ga('send', 'Ajout au panier Book');
+        if ($('input[name="id_product"]').val() == 8) {
+            if(typeof ga != 'undefined') {
+                ga('send', 'event', 'UX', 'click', 'Add to cart', {
+                    'id_user': 369,
+                    'product': 'Book',
+                    transport: 'beacon'
+                });
+            }
         }
         // MPP Film
-        else if($('input[name="id_product"]').val() == 9) {
-            ga('send', 'Ajout au panier Film');
+        else if ($('input[name="id_product"]').val() == 9) {
+            if(typeof ga != 'undefined') {
+                ga('send', 'event', 'UX', 'click', 'Add to cart', {
+                    'id_user': 532,
+                    'product': 'Film',
+                    transport: 'beacon'
+                });
+            }
         }
         // MPP Music
-        else if($('input[name="id_product"]').val() == 10) {
-            ga('send', 'Ajout au panier Music');
+        else if ($('input[name="id_product"]').val() == 10) {
+            if(typeof ga != 'undefined') {
+                ga('send', 'event', 'UX', 'click', 'Add to cart', {
+                    'id_user': 1211,
+                    'product': 'Music',
+                    transport: 'beacon'
+                });
+            }
         }
+        console.log('ok');
 
         $('#buy_block').trigger('submit');
     });

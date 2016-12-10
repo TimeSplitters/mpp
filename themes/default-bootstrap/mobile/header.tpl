@@ -43,20 +43,15 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="theme-color" content="#000000">
-    {* ON BYPASS TOUTES LES CSS DU THEME DESKTOP ET ON INJECTE PAR GULP *}
-    <!-- inject:css -->
+
     <link rel="stylesheet" href="/themes/default-bootstrap/mobile/css/app.css?v=20161109"/>
-    <!-- endinject -->
-
-    {*<link rel="stylesheet" href="{$css_mobile_dir}/app.css" type="text/css" media="{$media|escape:'html':'UTF-8'}" />*}
-
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,600&amp;subset=latin,latin-ext" type="text/css" media="all" />
 
     <script src="/themes/default-bootstrap/mobile/js/compressed.js?v=20161109"></script>
     {if $page_name == 'product'}
         {assign var=product_canonical value="?"|explode:$request}
         <link rel="canonical" href="{$product_canonical[0]}" />
-        <script src="/themes/default-bootstrap/mobile/js/product.js?v=20161110"></script>
+        {*<script src="/themes/default-bootstrap/mobile/js/product.js?v=20161110"></script>*}
         {*<script src="/themes/default-bootstrap/js/modules/productcomments/js/productcomments.js?v=20161109"></script>*}
         {*<script src="/themes/default-bootstrap/mobile/js/ajax-cart.js"></script>*}
     {/if}
@@ -95,7 +90,7 @@
     {if isset($js_defer) && !$js_defer && isset($js_files) && isset($js_def)}
         {$js_def}
         {foreach from=$js_files item=js_uri}
-            {*<script type="text/javascript" src="{$js_uri|escape:'html':'UTF-8'}"></script>*}
+            <script type="text/javascript" src="{$js_uri|escape:'html':'UTF-8'}"></script>
         {/foreach}
     {/if}
 
@@ -121,6 +116,10 @@
         {/if}
     {/if}
     {$HOOK_MOBILE_HEADER}
+    <!--[if IE 8]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body{if isset($page_name)} id="{$page_name|escape:'html':'UTF-8'}"{/if}
         class="{if isset($page_name)}{$page_name|escape:'html':'UTF-8'}{/if}{if isset($body_classes) && $body_classes|@count} {implode value=$body_classes separator=' '}{/if}{if $hide_left_column} hide-left-column{else} show-left-column{/if}{if $hide_right_column} hide-right-column{else} show-right-column{/if}{if isset($content_only) && $content_only} content_only{/if} lang_{$lang_iso} body-offcanvas">
