@@ -1,5 +1,5 @@
 <?php
-if($_SERVER['SERVER_NAME'] == 'www.monpotpourri.com') {
+if(in_array($_SERVER['SERVER_NAME'], array('www.monpotpourri.com', 'monpotpourri.com'))) {
     define('_DB_SERVER_', 'monpotposi74.mysql.db');
     define('_DB_NAME_', 'monpotposi74');
     define('_DB_USER_', 'monpotposi74');
