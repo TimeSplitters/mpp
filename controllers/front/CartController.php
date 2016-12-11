@@ -112,8 +112,8 @@ class CartControllerCore extends FrontController
                             . rawurlencode(Tools::getValue('gender')) .
                             '\&entry.36037052\=' . rawurlencode(Tools::getValue('age_range')) .
                             '\&entry.1367152334\=' . rawurlencode(Tools::getValue('genre')) .
-                            '\&entry.2001711735\=' . rawurlencode(Tools::getValue('annee_sortie')) .
-                            '\&entry.1566312560\=' . rawurlencode(Tools::getValue('provenance')) .
+                            '\&entry.2001711735\=' . rawurlencode(Tools::getValue('year')) .
+                            '\&entry.1566312560\=' . rawurlencode(Tools::getValue('origin')) .
                             '\&entry.1744868556\=' . rawurlencode(Tools::getValue('description_attentes')) .
                             '\&entry.1582820680\=' . rawurlencode(Tools::getValue('description_genre')) .
                             '\&entry.1854191893\=' . rawurlencode(Tools::getValue('soumission_choix')) .
