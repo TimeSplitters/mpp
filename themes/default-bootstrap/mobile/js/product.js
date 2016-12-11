@@ -313,7 +313,6 @@ $(document).ready(function () {
                 });
             }
         }
-        console.log('ok');
 
         $('#buy_block').trigger('submit');
     });

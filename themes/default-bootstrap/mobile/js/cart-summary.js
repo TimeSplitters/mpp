@@ -1,6 +1,29 @@
-$(document).ready(function(){
-	//scrollLoginForm();
+/*
+* 2007-2016 PrestaShop
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/afl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@prestashop.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+* versions in the future. If you wish to customize PrestaShop for your
+* needs please refer to http://www.prestashop.com for more information.
+*
+*  @author PrestaShop SA <contact@prestashop.com>
+*  @copyright  2007-2016 PrestaShop SA
+*  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*  International Registered Trademark & Property of PrestaShop SA
+*/
 
+$(document).ready(function(){
 	$('.cart_quantity_up').off('click').on('click', function(e){
 		e.preventDefault();
 		upQuantity($(this).attr('id').replace('cart_quantity_up_', ''));
@@ -20,6 +43,12 @@ $(document).ready(function(){
 
 	$(document).on('click', '.voucher_name', function(e){
 		$('#discount_name').val($(this).data('code'));
+	});
+
+	$('.cart_quantity_input').typeWatch({
+		highlight: true, wait: 600, captureLength: 0, callback: function(val){
+			updateQty(val, true, this.el);
+		}
 	});
 
 	cleanSelectAddressDelivery();
@@ -131,8 +160,8 @@ function cleanSelectAddressDelivery()
 
 			// Need at least two address to allow skipping products to multiple address
 			if (address_count < 2)
-				$($(item).find('option[value="-2"]')).remove();
-			else if($($(item).find('option[value="-2"]')).length == 0)
+				$($(item).find('option[value=-2]')).remove();
+			else if($($(item).find('option[value=-2]')).length == 0)
 				$(item).append($('<option value="-2">' + ShipToAnOtherAddress + '</option>'));
 		});
 	}
@@ -456,6 +485,8 @@ function deleteProductFromSummary(id)
 					$('#product_' + id).fadeOut('slow', function() {
 						$(this).remove();
 						cleanSelectAddressDelivery();
+						if (!customizationId)
+							refreshOddRow();
 					});
 					var exist = false;
 					for (i=0;i<jsonData.summary.products.length;i++)
@@ -484,6 +515,7 @@ function deleteProductFromSummary(id)
 								});
 								line.attr('id', line.attr('id').replace(/nocustom/, '0'));
 							}
+							refreshOddRow();
 						});
 				}
 				updateCartSummary(jsonData.summary);
@@ -518,6 +550,29 @@ function deleteProductFromSummary(id)
 			}
 		}
 	});
+}
+
+function refreshOddRow()
+{
+	var odd_class = 'odd';
+	var even_class = 'even';
+	$.each($('.cart_item'), function(i, it)
+	{
+		if (i == 0) // First item
+		{
+			if ($(this).hasClass('even'))
+			{
+				odd_class = 'even';
+				even_class = 'odd';
+			}
+			$(this).addClass('first_item');
+		}
+		if(i % 2)
+			$(this).removeClass(odd_class).addClass(even_class);
+		else
+			$(this).removeClass(even_class).addClass(odd_class);
+	});
+	$('.cart_item:last-child, .customization:last-child').addClass('last_item');
 }
 
 function upQuantity(id, qty)
@@ -668,7 +723,7 @@ function downQuantity(id, qty)
 				+ ((customizationId !== 0) ? '&id_customization='+customizationId : '')
 				+ '&qty='+qty
 				+ '&token='+static_token
-				+ '&allow_refresh=0',
+				+ '&allow_refresh=1',
 			success: function(jsonData)
 			{
 				if (jsonData.hasError)
@@ -815,15 +870,6 @@ function updateCartSummary(json)
 			$('#total_product_price_' + key_for_blockcart).html(formatCurrency(product_customization_total, currencyFormat, currencySign, currencyBlank));
 		else
 			$('#total_product_price_' + key_for_blockcart).html(formatCurrency(product_total, currencyFormat, currencySign, currencyBlank));
-
-		if(formatCurrency((product_list[i].price_without_reduction * product_list[i].cart_quantity), currencyFormat, currencySign, currencyBlank) != formatCurrency(product_total, currencyFormat, currencySign, currencyBlank)) {
-			$('#price_without_reduction_' + key_for_blockcart).html(formatCurrency((product_list[i].price_without_reduction * product_list[i].cart_quantity), currencyFormat, currencySign, currencyBlank));
-		}
-
-		$('#total_prix_constate_save').html(formatCurrency((json.total_prix_constate-json.total_products_wt), currencyFormat, currencySign, currencyBlank));
-
-		$('#total_prix_constate_percent_save').html(parseInt(((json.total_prix_constate-json.total_products_wt)/json.total_prix_constate)*100,10)+'%');
-
 		if (product_list[i].quantity_without_customization != product_list[i].quantity)
 			$('#total_product_price_' + key_for_blockcart_nocustom).html(formatCurrency(product_total, currencyFormat, currencySign, currencyBlank));
 
@@ -832,21 +878,6 @@ function updateCartSummary(json)
 		if (typeof(product_list[i].customizationQuantityTotal) !== 'undefined' && product_list[i].customizationQuantityTotal > 0)
 			$('#cart_quantity_custom_' + key_for_blockcart).html(product_list[i].customizationQuantityTotal);
 		nbrProducts += parseInt(product_list[i].quantity);
-
-		var expDelBlock = $('.delivery_block[rel='+product_list[i].id_product_attribute+']');
-		if(parseInt(product_list[i].cart_quantity) > parseInt(product_list[i].quantity_available)) {
-			if(!expDelBlock.find('.express_delivery_block').hasClass('hidden')) {
-				expDelBlock.find('.express_delivery_block').addClass('hidden');
-				expDelBlock.find('.no_express_delivery_block').removeClass('hidden');
-				expDelBlock.parents('.cart_description').effect('highlight', 800);
-			}
-		} else {
-			if(!expDelBlock.find('.no_express_delivery_block').hasClass('hidden')) {
-				expDelBlock.find('.no_express_delivery_block').addClass('hidden');
-				expDelBlock.find('.express_delivery_block').removeClass('hidden');
-				expDelBlock.parents('.cart_description').effect('highlight', 800);
-			}
-		}
 	}
 
 	// Update discounts
@@ -934,7 +965,6 @@ function updateCartSummary(json)
 		$('#total_product').html(formatCurrency(json.total_products, currencyFormat, currencySign, currencyBlank));
 	else
 		$('#total_product').html(formatCurrency(json.total_products_wt, currencyFormat, currencySign, currencyBlank));
-	
 	$('#total_price').html(formatCurrency(json.total_price, currencyFormat, currencySign, currencyBlank));
 	$('#total_price_without_tax').html(formatCurrency(json.total_price_without_tax, currencyFormat, currencySign, currencyBlank));
 	$('#total_tax').html(formatCurrency(json.total_tax, currencyFormat, currencySign, currencyBlank));
