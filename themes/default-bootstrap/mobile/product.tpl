@@ -315,7 +315,7 @@
 
                         <div class="box-info-product">
                             <h4 class="text-uppercase text-center">{l s='En résumé'}</h4>
-                            <div class="row text-center gutter-10">
+                            <div class="row text-center">
                                 <div class="col-xs-4">
                                     {if $product->id == 8}
                                         <span class="icon-book icon-xl"></span>
