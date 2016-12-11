@@ -102,11 +102,13 @@ class CartControllerCore extends FrontController
                     if (Tools::getValue('gender') != ""
                         && Tools::getValue('age_range') != ""
                         && Tools::getValue('genre') != ""
-                        && Tools::getValue('soumission_choix') != ""
+                        && Tools::getValue('year') != ""
+                        && Tools::getValue('origin') != ""
                         && Tools::getValue('description_attentes') != ""
                         && Tools::getValue('description_genre') != ""
+                        && Tools::getValue('soumission_choix') != ""
                     ) {
-                        shell_exec('curl https://docs.google.com/forms/d/1f1pnGS129_DsTeN_TIUMyJNXARfHmpHp-QQLO-Yhf2g/formResponse\?ifq\&entry.273801023\='
+                        shell_exec('curl https://docs.google.com/forms/d/1gx2M_Kk-F_Sioqvkwges49IgYbE6VGWdlzrMRjSyA24/formResponse\?ifq\&entry.273801023\='
                             . rawurlencode(Tools::getValue('gender')) .
                             '\&entry.36037052\=' . rawurlencode(Tools::getValue('age_range')) .
                             '\&entry.1367152334\=' . rawurlencode(Tools::getValue('genre')) .
@@ -115,7 +117,6 @@ class CartControllerCore extends FrontController
                             '\&entry.1744868556\=' . rawurlencode(Tools::getValue('description_attentes')) .
                             '\&entry.1582820680\=' . rawurlencode(Tools::getValue('description_genre')) .
                             '\&entry.1854191893\=' . rawurlencode(Tools::getValue('soumission_choix')) .
-                            '\&entry.587578933\=' . rawurlencode(Tools::getValue('cadeau')) .
                             '\&submit=Submit');
 
                         /*$sql = 'UPDATE '._DB_PREFIX_.'customer c
@@ -124,22 +125,23 @@ class CartControllerCore extends FrontController
                         Db::getInstance()->execute($sql);*/
                     }
                 } elseif (Tools::getValue('id_product') == 10) {
-                    if (Tools::getValue('gender') != ""
+                    if (
+                        Tools::getValue('gender') != ""
                         && Tools::getValue('age_range') != ""
                         && Tools::getValue('genre') != ""
-                        && Tools::getValue('soumission_choix') != ""
                         && Tools::getValue('description_attentes') != ""
-                        && Tools::getValue('description_genre') != ""
+                        && Tools::getValue('year') != ""
+                        && Tools::getValue('genre_connu') != ""
+                        && Tools::getValue('soumission_choix') != ""
                     ) {
-                        shell_exec('curl https://docs.google.com/forms/d/1f1pnGS129_DsTeN_TIUMyJNXARfHmpHp-QQLO-Yhf2g/formResponse\?ifq\&entry.273801023\='
+                        shell_exec('curl https://docs.google.com/forms/d/1hHIED9jYDf_UwUXVslLzhCDLuEVVjA3wtUluJLqCKyo/formResponse\?ifq\&entry.273801023\='
                             . rawurlencode(Tools::getValue('gender')) .
                             '\&entry.36037052\=' . rawurlencode(Tools::getValue('age_range')) .
                             '\&entry.1367152334\=' . rawurlencode(Tools::getValue('genre')) .
                             '\&entry.1744868556\=' . rawurlencode(Tools::getValue('description_attentes')) .
-                            '\&entry.2001711735\=' . rawurlencode(Tools::getValue('annee_sortie')) .
+                            '\&entry.2001711735\=' . rawurlencode(Tools::getValue('year')) .
                             '\&entry.1582820680\=' . rawurlencode(Tools::getValue('genre_connu')) .
                             '\&entry.2141262967\=' . rawurlencode(Tools::getValue('soumission_choix')) .
-                            '\&entry.587578933\=' . rawurlencode(Tools::getValue('cadeau')) .
                             '\&submit=Submit');
 
                         /*$sql = 'UPDATE '._DB_PREFIX_.'customer c

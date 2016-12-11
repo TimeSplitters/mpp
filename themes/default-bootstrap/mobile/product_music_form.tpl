@@ -159,7 +159,7 @@
 
                 <h5>{l s='Avez-vous déjà écouté des CDs dans ce genre-là ?'}</h5>
                 <small>{l s='Si oui, le(s)quel(s) et qu\'en avez-vous pensé ? (30 caractères min.)'}</small>
-                <textarea name="description_attentes"></textarea>
+                <textarea name="genre_connu"></textarea>
 
                 <br/>
 
