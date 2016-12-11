@@ -2296,15 +2296,9 @@ abstract class ModuleCore
                 $cache_id = null;
             }
 
-            if (!$this->context->isMobile()) {
-                $theme_dir = _PS_THEME_DIR_;
-            } else {
-                $theme_dir = _PS_THEME_MOBILE_DIR_;
-            }
-
             $this->smarty->assign(array(
                 'module_dir' =>    __PS_BASE_URI__.'modules/'.basename($file, '.php').'/',
-                'module_template_dir' => ($overloaded ? $theme_dir : __PS_BASE_URI__).'modules/'.basename($file, '.php').'/',
+                'module_template_dir' => ($overloaded ? _THEME_DIR_ : __PS_BASE_URI__).'modules/'.basename($file, '.php').'/',
                 'allow_push' => $this->allow_push
             ));
 

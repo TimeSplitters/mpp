@@ -1,10 +1,10 @@
 <div id="newsletter_block_left" class="block col-xs-12">
-	<h4>{l s='Newsletter' mod='blocknewsletter'} zer</h4>
+	<h4>{l s='Newsletter' mod='blocknewsletter'}</h4>
 	<div class="block_content">
 		<form action="{$link->getPageLink('index', null, null, null, false, null, true)|escape:'html':'UTF-8'}" method="post">
-			<div class="form-group{if isset($msg) && $msg } {if $nw_error}form-error{else}form-ok{/if}{/if}" >
-				<input class="inputNew form-control newsletter-input" id="newsletter-input" type="text" name="email" size="18" value="{if isset($msg) && $msg}{$msg}{elseif isset($value) && $value}{$value}{else}{l s='Enter your e-mail' mod='blocknewsletter'}{/if}" />
-                <button type="submit" name="submitNewsletter" class="btn btn-default button button-small">
+			<div class="form-group{if isset($msg) && $msg } {if $nw_error}form-error{else}form-ok{/if}{/if} row gutter-10">
+				<input class="inputNew form-control newsletter-input col-xs-10" id="newsletter-input" type="text" name="email" size="18" value="{if isset($msg) && $msg}{$msg}{elseif isset($value) && $value}{$value}{else}{l s='Enter your e-mail' mod='blocknewsletter'}{/if}" />
+                <button type="submit" name="submitNewsletter" class="btn btn-default button button-small col-xs-2">
                     <span>{l s='Ok' mod='blocknewsletter'}</span>
                 </button>
 				<input type="hidden" name="action" value="0" />
