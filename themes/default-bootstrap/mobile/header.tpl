@@ -29,16 +29,17 @@
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="theme-color" content="#000000">
 
-    <link rel="icon" type="image/vnd.microsoft.icon" href="{$favicon_url}?{$img_update_time}" />
-    <link rel="shortcut icon" type="image/x-icon" href="{$favicon_url}?{$img_update_time}" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="{$favicon_url}?{$img_update_time}"/>
+    <link rel="shortcut icon" type="image/x-icon" href="{$favicon_url}?{$img_update_time}"/>
 
     <link rel="stylesheet" href="/themes/default-bootstrap/mobile/css/app.css?v=20161109"/>
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,600&amp;subset=latin,latin-ext" type="text/css" media="all" />
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,600&amp;subset=latin,latin-ext"
+          type="text/css" media="all"/>
 
     <script src="/themes/default-bootstrap/mobile/js/compressed.js?v=20161109"></script>
     {if $page_name == 'product'}
         {assign var=product_canonical value="?"|explode:$request}
-        <link rel="canonical" href="{$product_canonical[0]}" />
+        <link rel="canonical" href="{$product_canonical[0]}"/>
         {*<script src="/themes/default-bootstrap/mobile/js/product.js?v=20161110"></script>*}
         {*<script src="/themes/default-bootstrap/js/modules/productcomments/js/productcomments.js?v=20161109"></script>*}
         {*<script src="/themes/default-bootstrap/mobile/js/ajax-cart.js"></script>*}
@@ -89,10 +90,10 @@
                 (function (i, s, o, g, r, a, m) {
                     i['GoogleAnalyticsObject'] = r;
                     i[r] = i[r] || function () {
-                                (i[r].q = i[r].q || []).push(arguments)
-                            }, i[r].l = 1 * new Date();
+                            (i[r].q = i[r].q || []).push(arguments)
+                        }, i[r].l = 1 * new Date();
                     a = s.createElement(o),
-                            m = s.getElementsByTagName(o)[0];
+                        m = s.getElementsByTagName(o)[0];
                     a.async = 1;
                     a.src = g;
                     m.parentNode.insertBefore(a, m)
@@ -127,7 +128,10 @@
             <button id="restricted-country-close" class="pull-xs-right">
                 <span class="icon-times"></span>
             </button>
-            We <span class="icon-heart"></span> <span class="bold">{$countryObj->country_name|escape:'html':'UTF-8'}</span>. We are shipping worldwide! Contact us per mail with the products you want to order and we provide you with shipping rates: <a href="mailto:hello@monpotpourri.com">hello@monpotpourri.com</a>
+            We <span class="icon-heart"></span> <span
+                    class="bold">{$countryObj->country_name|escape:'html':'UTF-8'}</span>. We are shipping worldwide!
+            Contact us per mail with the products you want to order and we provide you with shipping rates: <a
+                    href="mailto:hello@monpotpourri.com">hello@monpotpourri.com</a>
         </div>
     </div>
 {/if}
@@ -153,7 +157,8 @@
                     {hook h='displayMobileTopSiteMap'}
                     <div class="navbar-brand">
                         <a href="{if isset($force_ssl) && $force_ssl}{$base_dir_ssl}{else}{$base_dir}{/if}">
-                            <img src="/themes/default-bootstrap/img/mpp_logo.png" alt="{$shop_name|escape:'html':'UTF-8'}"/>
+                            <img src="/themes/default-bootstrap/img/mpp_logo.png"
+                                 alt="{$shop_name|escape:'html':'UTF-8'}"/>
                         </a>
                     </div>
                 </div>
@@ -165,8 +170,8 @@
 
                     <ul class="nav navbar-nav text-uppercase" role="menu">
                         {hook h='displayNav'}
-                        <li>
-                            {if $is_logged}
+                        {if $is_logged}
+                            <li>
                                 <a href="{$link->getPageLink('my-account')|escape:'html':'UTF-8'}">
                                     <span class="icon-user"></span>
                                     {if $cookie->customer_firstname != ''}
@@ -175,22 +180,20 @@
                                         {l s='Hello!' sprintf=$cookie->customer_firstname}
                                     {/if}
                                 </a>
-                            {else}
-                                <a href="{$link->getPageLink('authentication')|escape:'html':'UTF-8'}"><span class="icon-user"></span> {l s='Se connecter'}</a>
-                            {/if}
-                        </li>
+                            </li>
+                            <li>
+                                <a href="?mylogout">
+                                    <span class="icon-sign-out"></span> {l s='Fermer ma session'}
+                                </a>
+                            </li>
+                        {else}
+                            <li>
+                                <a href="{$link->getPageLink('authentication')|escape:'html':'UTF-8'}">
+                                    <span class="icon-user"></span> {l s='Se connecter'}
+                                </a>
+                            </li>
+                        {/if}
                     </ul>
-                    {if $is_logged}
-                        <ul class="nav navbar-nav text-uppercase">
-                            <li><a href="{$link->getPageLink('my-account')}">{l s='Mon compte'}</a></li>
-                            <li>
-                                <a href="{$link->getModuleLink('blockwishlist', 'mywishlist', array(), true)|escape:'html':'UTF-8'}">{l s='Ma wishlist'}</a>
-                            </li>
-                            <li>
-                                <a href="?mylogout">{l s='Fermer ma session'}</a>
-                            </li>
-                        </ul>
-                    {/if}
                 </div>
             </div>
         </nav>
@@ -202,7 +205,7 @@
                                 </div>
                             {/if}
     {/if*}
-{else}
+    {else}
     <div class="container-fluid">
         <header class="clearfix">
             <nav class="navbar navbar-default" role="navigation">
