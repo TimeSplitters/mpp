@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>FR - Blog ecommerce par PrestaShop</title>
+	<atom:link href="http://www.prestashop.com/blog/fr/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.prestashop.com/blog/fr</link>
+	<description></description>
+	<lastBuildDate>Thu, 08 Dec 2016 10:28:52 +0000</lastBuildDate>
+	<language>fr-FR</language>
+		<sy:updatePeriod>hourly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.8.1</generator>
+	<item>
+		<title>Infographie : les chiffres clés de l’e-commerce par secteur d’activité</title>
+		<link>https://www.prestashop.com/blog/fr/infographie-les-chiffres-cles-commerce-secteur-dactivite/</link>
+		<comments>https://www.prestashop.com/blog/fr/infographie-les-chiffres-cles-commerce-secteur-dactivite/#comments</comments>
+		<pubDate>Tue, 06 Dec 2016 11:30:32 +0000</pubDate>
+		<dc:creator><![CDATA[Camille Sila]]></dc:creator>
+				<category><![CDATA[Conseils E-commerce]]></category>
+
+		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=20889</guid>
+		<description><![CDATA[<p>Il y a quelques mois nous vous invitions à participer au baromètre de la conversion pour vous permettre d’obtenir une meilleure compréhension de votre marché. Aujourd’hui retrouvez le taux de conversion et le taux de rebond moyen de votre secteur d’activité et bien d’autres chiffres clés dans la nouvelle infographie du #Bacon2016 Télécharger l’étude complète</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/infographie-les-chiffres-cles-commerce-secteur-dactivite/">Infographie : les chiffres clés de l’e-commerce par secteur d’activité</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Il y a quelques mois nous vous invitions à participer au baromètre de la conversion pour vous permettre d’obtenir<strong> une meilleure compréhension de votre marché. </strong></p>
+<p>Aujourd’hui retrouvez le<strong> taux de conversion et le taux de rebond moyen de votre secteur d’activité</strong> et bien d’autres chiffres clés dans la nouvelle infographie du #Bacon2016</p>
+<p><span id="more-20889"></span></p>
+<div class="text-center" style="text-align: center;"><a class="btn" style="background-color: #25b9d7; border: 1px solid #25b9d7; border-bottom: 3px solid #25b9d7; margin: 20px 0 0; color: #fff;" href="https://www.prestashop.com/fr/barometre-conversion-2016" target="_blank">Télécharger l’étude complète</a></div>
+<div class="text-center" style="text-align: center;"></div>
+<div class="text-center" style="text-align: center;"></div>
+<hr />
+<div class="text-center" style="text-align: center;"></div>
+<div class="text-center" style="text-align: center;"></div>
+<div class="text-center" style="text-align: center;"></div>
+<div class="text-center" style="text-align: center;"><a href="https://www.prestashop.com/blog/fr/files/2016/12/INFOGRAPHIE-BACON-NOUVELLE-VERSION-1.png" target="_blank"><img class="aligncenter  wp-image-20892" alt="INFOGRAPHIE-BACON-NOUVELLE-VERSION (1)" src="https://www.prestashop.com/blog/fr/files/2016/12/INFOGRAPHIE-BACON-NOUVELLE-VERSION-1.png" width="998" height="5000" /></a></div>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/infographie-les-chiffres-cles-commerce-secteur-dactivite/">Infographie : les chiffres clés de l’e-commerce par secteur d’activité</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.prestashop.com/blog/fr/infographie-les-chiffres-cles-commerce-secteur-dactivite/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>“Sell Faster”: optimiser l’expérience utilisateur au quotidien</title>
+		<link>https://www.prestashop.com/blog/fr/sell-faster-optimiser-lexperience-utilisateur-au-quotidien/</link>
+		<comments>https://www.prestashop.com/blog/fr/sell-faster-optimiser-lexperience-utilisateur-au-quotidien/#comments</comments>
+		<pubDate>Tue, 06 Dec 2016 10:38:16 +0000</pubDate>
+		<dc:creator><![CDATA[Sebastien Levaillant]]></dc:creator>
+				<category><![CDATA[Actualités PrestaShop]]></category>
+
+		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=20877</guid>
+		<description><![CDATA[<p>« Code Better ; Create Easier ; Sell Faster » ; PrestaShop 1.7 présente de réelles avancées pour chaque cœur de métier impliqué dans la création d’une boutique en ligne: développeur, designer de thèmes et marchand. “Sell Faster” s’adresse à nos utilisateurs, les marchands. L’équipe produit s’est ainsi attelée à l’amélioration de leur quotidien. On [...]</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/sell-faster-optimiser-lexperience-utilisateur-au-quotidien/">“Sell Faster”: optimiser l’expérience utilisateur au quotidien</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>« Code Better ; Create Easier ; Sell Faster » ; <a href="https://www.prestashop.com/fr/1.7" target="_blank">PrestaShop 1.7</a> présente de réelles avancées pour chaque cœur de métier impliqué dans la création d’une boutique en ligne: développeur, designer de thèmes et marchand.<span id="more-20877"></span></p>
+<p><strong>“Sell Faster” s’adresse à nos utilisateurs, les marchands.</strong></p>
+<p>L’équipe produit s’est ainsi attelée à l’amélioration de leur quotidien. On appelle cela le design centré utilisateur.</p>
+<p>Quand un marchand choisit PrestaShop, c’est pour une simple et unique raison : être capable de vendre ses produits ou services. </p>
+<p>Cela vous semble sûrement évident mais la conséquence directe est pourtant essentielle : ils ne doivent pas être confrontés immédiatement à la richesse fonctionnelle du logiciel car elle les paralyserait sans aucun doute.</p>
+<p>Le marché de l’e-commerce se démocratise et de nouveaux marchands moins expérimentés rejoignent l’aventure. On a souhaité leur faciliter la prise en main du logiciel et les accompagner dans la réalisation des premières étapes incontournables pour devenir un e-marchand.</p>
+<p>Nous nous sommes donc concentrés sur certaines activités incontournables à la création d’une boutique en ligne, avec pour seul objectif de les rendre plus intuitives et plus simples.  Avec cette approche, les fonctionnalités n’ont donc pas été envisagées comme une fin en soi mais plutôt comme un “simple” support à la réalisation de ces activités.</p>
+<p>Cette volonté de simplifier l’utilisation du logiciel correspond également aux demandes des utilisateurs plus expérimentés, des entreprises qui après plusieurs années d’expérience dans l’e-commerce souhaitent avoir accès à un logiciel puissant mais simple, capable de les accompagner dans leur développement.</p>
+<p>La version 1.7.0 est le résultat de l’analyse des données d’usage de plusieurs dizaines de milliers de boutiques ainsi que de nombreux entretiens, enquêtes et tests utilisateurs.</p>
+<p>Le résultat est que nous avons repensé le parcours et l’interface utilisateur pour : </p>
+<ul>
+<li>La prise en main de PrestaShop :<br />
+Nous avons clairement indiqué les 6 étapes incontournables pour créer votre boutique en ligne. Ce parcours de prise en main simplifiée n’est pas obligatoire, c’est simplement un guide qui est à votre disposition.</li>
+<li>La création de produits :<br />
+Nous avons réduit le temps nécessaire à la création d’un produit simple en passant d’une quinzaine de minutes à moins de cinq. C’est évidemment clé puisque si vous n’avez pas de produits&#8230;vous n’aurez pas de commandes. </li>
+</ul>
+<p>Nous avons également amélioré l’ajout de produits en masse en permettant l’utilisation de nouveaux formats de fichiers.</p>
+<p><strong>La gestion de votre boutique dans le backoffice est plus rapide et efficace, et le temps de mise en ligne des produits est réduit de façon drastique. Deux avancées clés qui permettront un Time to Market très court, notamment lorsqu’il s’agit de diriger une période de ventes clé ou un déploiement à l’international.</strong><br />
+Nous avons interrogé notre club utilisateurs et avons visité des dizaines de marchands pour avoir leurs retours sur l’amélioration de ces parcours. Si vous souhaitez également prendre part à nos tests produits, inscrivez-vous à notre <a href="http://www.prestashop.com/club/" target="_blank">club</a> !</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/sell-faster-optimiser-lexperience-utilisateur-au-quotidien/">“Sell Faster”: optimiser l’expérience utilisateur au quotidien</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.prestashop.com/blog/fr/sell-faster-optimiser-lexperience-utilisateur-au-quotidien/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Fêtes de Noël : tendances et perspectives e-commerce 2015-2016</title>
+		<link>https://www.prestashop.com/blog/fr/fetes-noel-tendances-perspectives-e-commerce-2015-2016/</link>
+		<comments>https://www.prestashop.com/blog/fr/fetes-noel-tendances-perspectives-e-commerce-2015-2016/#comments</comments>
+		<pubDate>Tue, 06 Dec 2016 10:00:57 +0000</pubDate>
+		<dc:creator><![CDATA[Cindy Deguingand]]></dc:creator>
+				<category><![CDATA[Tendances E-commerce]]></category>
+
+		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=20860</guid>
+		<description><![CDATA[<p>E-commerçants de la communauté PrestaShop, vous avez été nombreux à participer à notre enquête sur les préparatifs des fêtes de fin d’année de votre boutique en ligne, en France et dans le monde entier*. Chose promise, chose due ! Nous avons évalué leur impact sur votre activité et vos habitudes en ce qui concerne la préparation [...]</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/fetes-noel-tendances-perspectives-e-commerce-2015-2016/">Fêtes de Noël : tendances et perspectives e-commerce 2015-2016</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>E-commerçants de la communauté PrestaShop, vous avez été nombreux à participer à notre enquête sur les préparatifs des fêtes de fin d’année de votre boutique en ligne, en France et dans le monde entier*.</p>
+<p>Chose promise, chose due ! Nous avons évalué leur impact sur votre activité et vos habitudes en ce qui concerne la préparation de ce moment crucial de pic de ventes que constitue la période des fêtes.</p>
+<p>Découvrez les tendances et perspectives e-commerce 2015-2016.<span id="more-20860"></span></p>
+<p><span style="color: #251b5b; font-family: Bitter, Georgia, serif; font-size: 30px; font-weight: bold;">Bilan e-commerce 2015 des fêtes de fin d’années</span></p>
+<p>Les fêtes de Noël représentent une période clé pour les e-commerçants.</p>
+<p>Cette année, plus d’un tiers des e-commerçants sondés estime que les fêtes de Noël représentent de 10 à 25 % de leur chiffre d’affaires, et 17 % estiment qu’il en représente plus de 25 %.</p>
+<p>En revanche, et c’est un chiffre non négligeable, près de la moitié d’entre eux estiment qu’il représente moins de 10 % de leur chiffre d’affaires (<a href="http://s1.edi-static.fr/Img/INFOGRAPHIE/2015/11/262027/Black-Friday-Cyber-Monday-commer-ants-fran-ais-plus-plus-F.jpg" target="_blank">contre un tiers l’an dernier</a>). Par conséquent, la part du chiffre d’affaires des fêtes de Noël diminue, et les e-commerçants arrivent à mieux lisser leur chiffre d’affaires sur l’année. Ceci s’explique par la multiplication des périodes promotionnelles et des marronniers tout au long de l’année: Black Friday, Cyber Monday, soldes, Saint-Valentin, fête des mères, fête des pères&#8230; N&rsquo;hésitez pas à vous rendre sur notre <a href="http://addons.prestashop.com/fr/11541-calendrier-e-commerce-france.html" target="_blank">calendrier e-commerce.</a></p>
+<h2 style="color: #251b5b; font-weight: bold;">Perspectives pour la saison 2016</h2>
+<p>Bonne nouvelle, les e-commerçants sont plutôt optimistes sur les ventes qu’ils vont réaliser cette année : 66 % estiment qu’ils réaliseront un chiffre d’affaires supérieur à celui de l’an passé en France, pour 70 % en moyenne en Europe.</p>
+<p><strong>Embauches</strong> &#8211; En France, en revanche, seules 7 % des boutiques e-commerce envisagent d’embaucher spécifiquement pour les fêtes. Cela peut s’expliquer par le profil majoritaire de TPE et PME ayant répondu à l’enquête (93 % de 0 à 30 employés).</p>
+<p>Parmi ceux qui vont embaucher pour cette période de fêtes, les profils les plus recherchés sont en majorité des <strong>personnes dédiées à la prise de commandes et aux retours colis (77 %)</strong>. Les <strong>web designers (31 %)</strong> et <strong>développeurs (15 %)</strong> viennent ensuite.</p>
+<h2 style="color: #251b5b; font-weight: bold;">Les préparatifs des fêtes de Noël</h2>
+<p>73 % des e-commerçants français déclarent préparer leur boutique en ligne pour les fêtes de Noël. Parmi eux, 90 % s’en occupent de <strong>1 à 3 mois à l’avance</strong>. C’est donc <strong>à partir d&rsquo;octobre</strong> que les principaux plans d’actions des e-commerçants pour les fêtes de Noël sont déterminés.</p>
+<p><strong>Leurs 3 principales préoccupations pour ces fêtes?</strong></p>
+<p><strong>1/</strong> La <strong>préparation de leur boutique en ligne</strong> – design festif, ajout de fiches produits, offres promotionnelles… d’où l’objectif important d’embauche de web designer ou de développeur.</p>
+<p><strong>2/</strong> Un <strong>approvisionnement optimal des stocks</strong> : ni trop, ni pas assez, il faut trouver le juste milieu pour éviter d’une part les stocks invendus après les fêtes, et d’autre part la rupture de stocks, qui fait perdre immédiatement la vente.</p>
+<p><strong>3/ La préparation de campagnes e-mailing promotionnelles</strong> ciblées pour booster le nombre de commandes et le panier moyen.</p>
+<h2 style="color: #251b5b; font-weight: bold;">La part du mobile dans le chiffre d’affaires e-commerce de fin d’année</h2>
+<p>Pour les e-commerçants qui sont capables de le citer (78 % des répondants), <strong>la part du chiffre d’affaires réalisé sur mobile pendant les fêtes représente 15 %</strong> en moyenne.</p>
+<p>En revanche, près de 30 % des répondants n’avaient aucune idée du poids du mobile dans son chiffre d’affaires.</p>
+<p>On peut en déduire qu’il existe encore une grande marge de manœuvre pour l’optimisation de sites e-commerce pour appareils mobiles. La mise en place de mesures simples pour évaluer l’importance de son chiffre d’affaires sur mobile est possible via <a href="https://www.google.com/intl/fr/analytics/features/mobile-site-traffic.html" target="_blank">Google Analytics</a>. Vous pouvez ainsi identifier les plates-formes mobiles les plus efficaces pour votre site e-commerce.</p>
+<h2 style="color: #251b5b; font-weight: bold;">L’importance des réseaux sociaux dans la stratégie marketing e-commerce</h2>
+<p>En France, les réseaux sociaux sont considérés comme importants mais pas forcément essentiels dans la stratégie marketing des e-commerçants : 31 % les considèrent cruciaux dans leur communication autour des fêtes de Noël et 45 % les considèrent assez importants.</p>
+<p>Chiffre qui contraste par rapport à l’Europe qui estime en majorité (57 %) que les réseaux sociaux sont essentiels dans leur stratégie marketing.</p>
+<p>Il ne nous reste plus qu&rsquo;à attendre les résultats des ventes de 2016 pour pouvoir analyser les tendances de cette fin d&rsquo;année; fin d&rsquo;année que nous souhaitons prospère pour tous les e-commerçants!</p>
+<p>&nbsp;</p>
+<p>* Échantillon des sondés : <strong>324</strong> e-commerçants en activité en France, <strong>1305</strong> en Europe et <strong>1898</strong> dans le monde entier.</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/fetes-noel-tendances-perspectives-e-commerce-2015-2016/">Fêtes de Noël : tendances et perspectives e-commerce 2015-2016</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.prestashop.com/blog/fr/fetes-noel-tendances-perspectives-e-commerce-2015-2016/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>7 astuces vraiment utiles pour faire des réclamations une expérience client exceptionnelle</title>
+		<link>https://www.prestashop.com/blog/fr/7-astuces-vraiment-utiles-faire-reclamations-experience-client-exceptionnelle/</link>
+		<comments>https://www.prestashop.com/blog/fr/7-astuces-vraiment-utiles-faire-reclamations-experience-client-exceptionnelle/#comments</comments>
+		<pubDate>Tue, 06 Dec 2016 07:00:41 +0000</pubDate>
+		<dc:creator><![CDATA[mvalenza]]></dc:creator>
+				<category><![CDATA[Conseils E-commerce]]></category>
+
+		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=20853</guid>
+		<description><![CDATA[<p>Le saviez-vous ? Près de 66 % de clients mécontents déclarent refuser d&#8217;avoir de nouveau affaire avec une entreprise suite à une mauvaise expérience. Effrayant, non ? Dans la vidéo d&#8217;aujourd&#8217;hui, Jeremy Tree, responsable du développement métier pour Youstice, présente 7 façons d&#8217;éviter de froisser davantage les clients lors de la gestion des retours négatifs. [...]</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/7-astuces-vraiment-utiles-faire-reclamations-experience-client-exceptionnelle/">7 astuces vraiment utiles pour faire des réclamations une expérience client exceptionnelle</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Le saviez-vous ? Près de 66 % de clients mécontents déclarent refuser d&rsquo;avoir de nouveau affaire avec une entreprise suite à une mauvaise expérience. Effrayant, non ?<span id="more-20853"></span> </p>
+<p>Dans la vidéo d&rsquo;aujourd&rsquo;hui, Jeremy Tree, responsable du développement métier pour Youstice, présente 7 façons d&rsquo;éviter de froisser davantage les clients lors de la gestion des retours négatifs. Ses conseils clairs et simples vont vous permettre de transformer en un rien de temps vos réclamations en conversations.</p>
+<div class="g-ytsubscribe col-centered text-center" data-channelid="UCqDSbqSbkboMBARlYrhNa7g" data-layout="full" data-count="default"></div>
+<p><iframe width="700" height="394" src="https://www.youtube.com/embed/Am-P4SIfgc4?feature=oembed" frameborder="0" allowfullscreen></iframe></p>
+<div class="text-center"><a class="btn" style="background-color: #cd201f;border: 1px solid #b31217;border-bottom: 3px solid #b31217;margin: 20px 0 0;color: #fff" href="https://www.youtube.com/user/prestashop?utm_source=blog&amp;utm_medium=article&amp;utm_campaign=youtube&amp;utm_content=youstice"> Voir plus de vidéo</a></div>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/7-astuces-vraiment-utiles-faire-reclamations-experience-client-exceptionnelle/">7 astuces vraiment utiles pour faire des réclamations une expérience client exceptionnelle</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.prestashop.com/blog/fr/7-astuces-vraiment-utiles-faire-reclamations-experience-client-exceptionnelle/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>L’Arrondi en ligne : fidéliser ses clients en soutenant de grandes causes</title>
+		<link>https://www.prestashop.com/blog/fr/larrondi-en-ligne-fideliser-ses-clients-en-soutenant-grandes-causes/</link>
+		<comments>https://www.prestashop.com/blog/fr/larrondi-en-ligne-fideliser-ses-clients-en-soutenant-grandes-causes/#comments</comments>
+		<pubDate>Thu, 01 Dec 2016 17:13:35 +0000</pubDate>
+		<dc:creator><![CDATA[Les amis de Preston]]></dc:creator>
+				<category><![CDATA[Conseils E-commerce]]></category>
+
+		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=20849</guid>
+		<description><![CDATA[<p>L’Arrondi en ligne : un outil de satisfaction et de fidélisation client Le paiement est le dernier contact avec vos clients sur votre site e-commerce. C’est un moment délicat où l’acheteur pense avant tout à la sécurité de sa transaction. Il s’agit également du dernier sentiment qu’emporte un client avec lui en quittant votre boutique [...]</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/larrondi-en-ligne-fideliser-ses-clients-en-soutenant-grandes-causes/">L’Arrondi en ligne : fidéliser ses clients en soutenant de grandes causes</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><strong>L’Arrondi en ligne : un outil de satisfaction et de fidélisation client<br />
+</strong></p>
+<p>Le paiement est le dernier contact avec vos clients sur votre site e-commerce. C’est un moment délicat où l’acheteur pense avant tout à la sécurité de sa transaction. Il s’agit également du dernier sentiment qu’emporte un client avec lui en quittant votre boutique ; le meilleur moment pour donner une valeur supplémentaire aux achats en ligne de vos clients.<br />
+<span id="more-20849"></span><br />
+Proposer à vos clients d’Arrondir leurs achats au profit d’associations soutenues par votre enseigne directement sur votre page de paiement s’avère très gratifiant pour votre site e-commerce tout autant que pour les acheteurs.</p>
+<p>Cette simple proposition, vous permet aussi d’améliorer votre image de marque en associant votre enseigne à des associations d’utilité publique en mettant votre engagement en avant sur votre site internet.</p>
+<p>Fédérer vos clients autour de projets porteurs de sens et de vos valeurs. </p>
+<p><strong>Quel est le principe de l’Arrondi en ligne ?<br />
+</strong></p>
+<p>Le principe est le même en caisse que lors d’un achat en ligne. </p>
+<p>Vous choisissez en amont auprès de quelles associations il sera possible pour vos clients d’Arrondir leurs achats.<br />
+Après avoir rempli son panier, le client passe en caisse. </p>
+<p>Lors du paiement en carte bancaire, l’opérateur de paiement proposera directement à vos clients depuis le terminal de paiement ou sur une page de paiement en ligne, d’Arrondir  leur achat à l’€ supérieur au profit d’une bonne cause.</p>
+<p>100 % de ce don revient à l’association.</p>
+<p><strong>Quel est l’intérêt pour ma boutique en ligne :<br />
+</strong></p>
+<p><strong>-	Engagement client<br />
+</strong><br />
+Fidéliser en donnant du sens à l’acte d’achat. Donner le sentiment à vos clients que leur petit geste participe à une grande cause dont ils sont les acteurs. Chacun choisit le montant de son Arrondi. Chacun participe selon ses moyens.<br />
+<strong>-	Image<br />
+</strong><br />
+Rendre votre engagement visible et concret sur tout votre site e-commerce en vous associant à  l’image des associations que vous choisirez de soutenir. Vous pourrez aussi intégrer à vos supports de communication les causes que vous soutenez.<br />
+<strong>-	Impact Social<br />
+</strong><br />
+Faire de votre site e-commerce un lieu de vie et de solidarité. Devenez l’ambassadeur des associations préférées de vos clients!</p>
+<p><strong>Un concept d’ores et déjà adopté par la grande distribution<br />
+</strong></p>
+<p>L’Arrondi est proposé dans des centaines de magasins partout en France au profit de dizaines d’associations parmi lesquelles Géant Casino, Casino, Franprix, Adidas, Sephora, Bonobo Jeans, Biocoop ou encore Nature &amp; Découvertes. Ils proposent tous à leurs clients en caisse l’Arrondi au profit d’associations en accord avec les valeurs de leur marque.<br />
+Ils mettent ainsi leurs engagements en avant dans leur magasin, visibles de tous et permettent aux clients qui le souhaitent de participer.</p>
+<p>En 2016 en France, 3 000 000 d’Arrondis ont été réalisés pour plus de 350 associations.<br />
+Les opérateurs de paiement Français qui le permettent sont Ingenico, leader mondial des terminaux de paiement physique ; et PayGreen, spécialiste des paiements en ligne depuis 2010 et seul opérateur labellisé Entreprise Solidaire d’Utilité Sociale.</p>
+<p><strong>A l’étranger, l’Arrondi fait partie du quotidien<br />
+</strong></p>
+<p>A l’étranger le concept rencontre déjà depuis plusieurs années un vif succès : au Mexique, l’Arrondi représente près de 100 millions de pesos récoltés chaque année ; en Angleterre 1 million de £ sont récoltés avec 4 millions de demandes d’Arrondi par an. Plus récemment en Allemagne le dispositif qui a été lancé en 2012 dans 15 enseignes et 12000 points de vente a fait l’objet de 18 millions de demandes d’Arrondi.</p>
+<p><strong>Téléchargez dès maintenant le <a href="http://addons.prestashop.com/fr/19176-paygreen-solution-de-paiement.html">Module PayGreen</a><br />
+</strong></p>
+<p>A propos de PayGreen :<br />
+Référence du paiement en ligne depuis 2010, PayGreen est une société française spécialiste du paiement pour PME et Grandes Enseignes. Plus de 1000 boutiques en gestion sont gérées par un support commercial et technique totalement internalisé. Entreprise Solidaire et Sociale depuis 2013, PayGreen assure que 100 % des dons sont reversés aux associations par l’intermédiaire du Fonds De Dotation le Reflexe Solidaire dont PayGreen est membre du conseil d’administration depuis 2016.</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/larrondi-en-ligne-fideliser-ses-clients-en-soutenant-grandes-causes/">L’Arrondi en ligne : fidéliser ses clients en soutenant de grandes causes</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.prestashop.com/blog/fr/larrondi-en-ligne-fideliser-ses-clients-en-soutenant-grandes-causes/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Comment piloter efficacement l&#8217;activité commerciale de son e-commerce</title>
+		<link>https://www.prestashop.com/blog/fr/comment-piloter-efficacement-lactivite-commerciale-e-commerce/</link>
+		<comments>https://www.prestashop.com/blog/fr/comment-piloter-efficacement-lactivite-commerciale-e-commerce/#comments</comments>
+		<pubDate>Thu, 01 Dec 2016 14:30:31 +0000</pubDate>
+		<dc:creator><![CDATA[Les amis de Preston]]></dc:creator>
+				<category><![CDATA[Conseils E-commerce]]></category>
+
+		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=20799</guid>
+		<description><![CDATA[<p>Le pilotage de son site e-commerce n’est pas une mince affaire et peut vite devenir compliqué si on n’y consacre pas un tant soit peu de méthode. E-commerçant depuis plusieurs années, j’ai affiné mon besoin d’autant plus que de nombreuses données (insoupçonnées) sont à notre disposition. La difficulté réside plus dans leur facilité d’accès, le [...]</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/comment-piloter-efficacement-lactivite-commerciale-e-commerce/">Comment piloter efficacement l&rsquo;activité commerciale de son e-commerce</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Le pilotage de son site e-commerce n’est pas une mince affaire et peut vite devenir compliqué si on n’y consacre pas un tant soit peu de méthode.</p>
+<p>E-commerçant depuis plusieurs années, j’ai affiné mon besoin d’autant plus que de nombreuses données (insoupçonnées) sont à notre disposition. La difficulté réside plus dans leur facilité d’accès, le nombre de sources et donc la complexité à les croiser.</p>
+<p><span id="more-20799"></span>En partant de ce constat, j’en suis venu aux questions suivantes :</p>
+<ul>
+<li>Quels sont les indicateurs du quotidien qui me permettent de prendre des décisions rapides ?</li>
+<li>A quel rythme et quels sont les domaines que je dois approfondir ?</li>
+</ul>
+<h2><span style="color: #00ccff;"><b>Pourquoi approfondir l’analyse de la performance commerciale de son e-commerce ?</b></span></h2>
+<p>La concurrence s’est développée et chaque jour, nous nous battons pour capter chaque commande. Les canaux se sont de leur côté diversifiés, complexifiés et peuvent représenter un budget important.</p>
+<p>Mes enjeux d’e-commerçant désormais portent sur :</p>
+<ul>
+<li>Capter des nouveaux clients</li>
+<li>Augmenter leur fidélité</li>
+<li>Diversifier son périmètre produit</li>
+<li>Augmenter son panier moyen</li>
+</ul>
+<p>C’est une liste non-exhaustive de challenges que vous pouvez vous fixer.</p>
+<p>A chaque domaine, il vous faut définir ses métriques, pouvoir les suivre et actionner des points d’amélioration. Appuyer fort sur ce qui marche, comme une campagne d’acquisition qui enregistre une très bonne rentabilité ; et éviter les dérives le plus rapidement possible comme la baisse de votre taux de conversion pour une des « dizaines » de raisons existantes.</p>
+<p>L’analyse de la performance commerciale de son site est donc stratégique et permet d’avancer sereinement.</p>
+<h2><b><span style="color: #00ccff;">Et comment s’assurer que les éléments que j’analyse sont pertinents ?</span></b></h2>
+<p>Le schéma du Life Cycleloop réalisé par les équipes d’Hubspot, donne un  bon cadre et du sens à ce qui doit être maîtrisé et analysé dans la chaîne de valeur E-commerce.</p>
+<p style="text-align: center;"><a href="https://www.prestashop.com/blog/fr/files/2016/11/inbound-commerce.png" target="_blank"><img class="aligncenter  wp-image-20840" alt="inbound-commerce" src="https://www.prestashop.com/blog/fr/files/2016/11/inbound-commerce.png" width="2340" height="1911" /></a></p>
+<p>Je m’explique : si vous restez dans la vision « j’ai des visiteurs et j’attends donc des ventes », le prisme précédemment évoqué « trafic &#8211; CA &#8211; taux de conversion &#8211; panier moyen&#8230; » est un réflexe naturel. Mais il peut vous faire passer à côté de l’essentiel ou vous induire en erreur : une commande avec un panier beaucoup plus haut que d’habitude aura pour conséquence d’augmenter la moyenne de votre panier moyen. Pouvez vous en tirer un enseignement alors que c’est un cas isolé ?</p>
+<p>Votre objectif est de transformer vos prospects en clients, de les rendre fidèles et non plus en simples clients. J’identifie ainsi différentes phases qui ont chacun leur indicateurs, leurs propres champs d’analyse :</p>
+<ul>
+<li>phase d’attraction</li>
+<li>phase d’attention</li>
+<li>phase d’achat</li>
+<li>phase de fidélisation</li>
+</ul>
+<p>J’espère que vous êtes encore avec moi car les choses intéressantes commencent maintenant.</p>
+<h3><span style="color: #000080;">Phase d’attraction</span></h3>
+<p>Je vais chercher du trafic payant ou naturel, je surveille le budget comme le lait sur le feu et je réagis au plus vite.</p>
+<p><span style="text-decoration: underline;">Mes indicateurs stars :</span></p>
+<p>&gt; Déterminer la qualité de votre trafic avec évidemment le fameux taux de rebond</p>
+<p>&gt; Le coût d’acquisition ou CPA par campagne = Budget Investi / Nombre de commandes générées</p>
+<p>&gt; La rentabilité de mes opérations = (CA généré HT &#8211; Prix d’achat HT des produits vendus &#8211; Coût de la campagne) / CA généré HT</p>
+<p>&gt; Le nombre de lead acquis et transformés en client</p>
+<p>&gt; Le nombre d’interaction avant d’arriver à une commande, le web est ainsi fait que les points de contact sont très nombreux. Un post Facebook peut démarrer la relation, se poursuivre par une recherche naturelle et la transaction se réaliser après une newsletter par exemple</p>
+<p>&gt; La répartition par type de device : tablette, desktop ou encore mobile à l’origine des conversions</p>
+<h3><span style="color: #000080;">Phase d’attention</span></h3>
+<p>Cette phase, correspond à l&rsquo;ensemble des processus qui accompagnent vos visiteurs jusqu’à la conception d’un panier. Elle prépare la phase d’achat qui se situe dans le tunnel de paiement.</p>
+<p>Il existe une multitude d’étapes qu’il est bon de mettre en avant afin de mieux comprendre les fuites et agir en fonction.</p>
+<p><span style="text-decoration: underline;">Mes indicateurs stars / analyses clés :</span></p>
+<p>&gt; Les produits qui génèrent du trafic entrant car ils sont souvent bien référencés ou bien sélectionnés dans mes campagnes d’acquisitions. Ils sont censés avoir un taux de conversion fort et donc à suivre avec beaucoup « d’attention ».</p>
+<p>A l’inverse, les pages avec un fort taux de sortie doivent être corrigées.</p>
+<p>&gt; Les produits influenceurs qui captent du trafic et ont par contre la particularité de le redistribuer sur d’autres produits. Intéressants dans votre stratégie de content marketing.</p>
+<p>&gt; Le nombre de mise au panier vs le nombre de commande.  L’intention est là, mais cela n’a pas suffi. Un point qui s’actionne facilement grâce aux outils de performances existant sur le marché.</p>
+<h3><span style="color: #000080;">Phase d’achat</span></h3>
+<p>C’est celle que vous préférez peut-être,  en tout cas c’est la mienne ;-).<br />
+Le fameux tunnel de paiement qui lui aussi enregistre un très grand nombre de fuite entre la phase d’ajout et les 3 étapes restantes avant le sésame du « checkout confirmation ».</p>
+<p>Mais une fois l’achat effectué, il serait dommage de se priver d’une petite analyse de ses meilleures ventes et de la répartition de son cross sell.</p>
+<p><span style="text-decoration: underline;">Mes indicateurs stars / analyses clés :<br />
+</span><br />
+&gt; Décomposition du tunnel d’achat avec les étapes 1. Mise au panier / 2. Compte Client / 3. Choix du transport / 4. Choix du paiement / 5. Validation<br />
+Mettre en avant les pertes de trafic jusqu’à l’étape 5. Il y en aura toujours, donc pas de panique ! Le tout est de suivre les ratios, les mettre sous contrôle et les optimiser.</p>
+<p>&gt; Répartition de mon top ventes<br />
+L’historique que vous bâtissez dès le début de votre activité est essentiel pour le planning de vos opérations commerciales à venir. Vous connaissez la suite : bannières sur la home page, encarts pub pour votre réseau social préféré, programmation des newsletters, bref tout un programme.</p>
+<p>&gt; L’analyse de mon cross sell.<br />
+Vous savez cette technique qui permet de faire ajouter plus de produits à votre visiteur dans son panier.</p>
+<p style="text-align: center;"><a href="https://www.prestashop.com/blog/fr/files/2016/11/brainify.png" target="_blank"><img class="aligncenter  wp-image-20800" alt="brainify" src="https://www.prestashop.com/blog/fr/files/2016/11/brainify.png" width="1440" height="671" /></a></p>
+<p>La question est surtout de comprendre les produits qui influencent la vente des « copains ».<br />
+Très efficace pour réaliser des offres packagées dans vos newsletters.</p>
+<h3><span style="color: #000080;">Phase de fidélité</span></h3>
+<p>Vous vous souvenez ?  Nous avons évoqué le sujet de passer d’une acquisition de clients à des clients fidèles.</p>
+<p>Le plus dur a été fait : un illustre inconnu vous faisant assez confiance pour acheter chez vous.</p>
+<p>C’est ici que vous commencez à réellement gagner de l’argent. Je pousse un peu le trait, mais cela vous permet de réellement rentabiliser vos opérations d’acquisitions.</p>
+<p>Prenez donc bien soin de vos clients, de la livraison aux prises de contacts futurs pour les relancer.</p>
+<p><span style="text-decoration: underline;">Mes indicateurs stars / analyses clés :</span></p>
+<p>&gt; Segmenter ses clients en groupe de nombre de commande avec un délai moyen entre les 2 dernières commandes, plus pratique pour savoir quand relancer ses clients.</p>
+<p style="text-align: left;">Période d’analyse sur les 13 derniers mois, qui permet de conserver sur une année 2015, la période Décembre 2014 qui génère une acquisition importante.</p>
+<p style="text-align: left;">Nbre de client / Délai moyens entre les 2 dernières commandes</p>
+<table width="642" border="1" cellspacing="0" cellpadding="0">
+<thead>
+<tr>
+<td valign="top" width="214"></td>
+<td valign="top" width="214">
+<p align="center">Nbre de client</p>
+</td>
+<td valign="top" width="214">
+<p align="center">Délais moyens entre les 2 dernières commandes</p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td valign="top" width="214">
+<p align="center">1 commande</p>
+</td>
+<td valign="top" width="214">
+<p align="center">10 000</p>
+</td>
+<td valign="top" width="214"></td>
+</tr>
+<tr>
+<td valign="top" width="214">
+<p align="center">2 commandes</p>
+</td>
+<td valign="top" width="214">
+<p align="center">3 500</p>
+</td>
+<td valign="top" width="214">
+<p align="center">33 jours</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="214">
+<p align="center">3 commandes</p>
+</td>
+<td valign="top" width="214">
+<p align="center">1 500</p>
+</td>
+<td valign="top" width="214">
+<p align="center">25 jours</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="214">
+<p align="center">4 commandes</p>
+</td>
+<td valign="top" width="214">
+<p align="center">500</p>
+</td>
+<td valign="top" width="214">
+<p align="center">30 jours</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&gt; La valeur vie client ou « customer lifetime value » qui est la somme des profits actualisés attendus en moyenne sur la durée de vie d’un client type.<br />
+Indicateur indispensable car il permet de déterminer la fourchette haute de votre coût d’acquisition.</p>
+<p>&gt; Analyse de la cohorte, pour vérifier que vos clients acquis sont fidèles dans le temps.<br />
+Dans l’exemple ci dessous, vous constatez rapidement que les clients acquis sur le mois de Juin 2015, consomme dans le temps avec un fort rendement en chiffre d’affaires par rapport aux autres mois.</p>
+<p style="text-align: center;"><a href="https://www.prestashop.com/blog/fr/files/2016/11/brainify-2.png" target="_blank"><img class="aligncenter  wp-image-20803" alt="brainify 2" src="https://www.prestashop.com/blog/fr/files/2016/11/brainify-2.png" width="1270" height="800" /></a></p>
+<h2><span style="color: #00ccff;"><b>Les outils pour aller vers ce niveau d’analyse</b></span></h2>
+<p>Forcément je vais vous parler de Google Analytics, pour une bonne partie de ces informations, à la condition qu’il soit correctement paramétré ce qui peut être fastidieux.</p>
+<p>Il vous reste aussi la possibilité de rapprocher des informations visites / clients / ventes depuis différentes sources (PrestaShop, Analytics…) et créer de très beaux tableaux croisés dynamiques sous Excel. Là encore, cela demande une bonne maîtrise de ces outils.</p>
+<p>Enfin il reste des solutions payantes ou gratuites et je ne peux pas passer à côté de la nôtre « <a href="http://addons.prestashop.com/fr/20283-brainify-analytics.html" target="_blank">Brainify Analytics</a> » qui est là pour vous aider à gérer votre performance e-commerce grâce à des rapports dédiés en temps réel et de manière automatisée.</p>
+<h2><span style="color: #00ccff;"><b>C’est ma lettre au Papa Noël pour moi « petit » Webmarketeur !</b></span></h2>
+<p>En conclusion, l’analyse de la performance commerciale de son e-commerce est hautement stratégique et puissante une fois que les outils nécessaires sont correctement mis en place pour la suivre.</p>
+<p>Après c’est aussi un « sport » qui doit se pratiquer régulièrement en fonction de votre timing d’e-commerçants très pressés.  Prendre le pouls de son site est une obligation quotidienne, les autres sujets dépendent de la facilité avec laquelle vous avez accès à vos statistiques, mais un point mensuel reste le minimum pour un pilotage au top.</p>
+<h3> A propos de l&rsquo;auteur</h3>
+<div>Pawel, est un e-commerçant de la première heure, il a cofondé HAmalin.com, site de vente privée nouvelle génération en 2005 et s&rsquo;est occupé de la direction webmarketing pour Bivea.fr et Mydesign.com entre 2008 et 2014.</div>
+<div>Aujourd&rsquo;hui en charge du marketing pour la startup <a href="http://addons.prestashop.com/fr/20283-brainify-analytics.html" target="_blank">Brainify</a>, l&rsquo;analytics dédié aux E-commerçants, il continue de les conseiller dans leur stratégie webmarketing.</div>
+<p>&nbsp;</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/comment-piloter-efficacement-lactivite-commerciale-e-commerce/">Comment piloter efficacement l&rsquo;activité commerciale de son e-commerce</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.prestashop.com/blog/fr/comment-piloter-efficacement-lactivite-commerciale-e-commerce/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Comment PrestaShop 1.7 facilite le travail des designers de thèmes</title>
+		<link>https://www.prestashop.com/blog/fr/comment-prestashop-1-7-facilite-travail-designers-themes/</link>
+		<comments>https://www.prestashop.com/blog/fr/comment-prestashop-1-7-facilite-travail-designers-themes/#comments</comments>
+		<pubDate>Thu, 01 Dec 2016 14:16:00 +0000</pubDate>
+		<dc:creator><![CDATA[guillaume_b]]></dc:creator>
+				<category><![CDATA[Actualités PrestaShop]]></category>
+
+		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=20793</guid>
+		<description><![CDATA[<p>« Il semble que la perfection soit atteinte non quand il n&#8217;y a plus rien à ajouter, mais quand il n&#8217;y a plus rien à retrancher. » Antoine de Saint-Exupéry Voilà une citation qui reflète parfaitement l’une des principales optimisations de PrestaShop 1.7 : la gestion des thèmes. Dans les versions précédentes de notre solution, [...]</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/comment-prestashop-1-7-facilite-travail-designers-themes/">Comment PrestaShop 1.7 facilite le travail des designers de thèmes</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><em>« Il semble que la perfection soit atteinte non quand il n&rsquo;y a plus rien à ajouter, mais quand il n&rsquo;y a plus rien à retrancher. »</em><br />
+Antoine de Saint-Exupéry<span id="more-20793"></span></p>
+<p>Voilà une citation qui reflète parfaitement l’une des principales optimisations de PrestaShop 1.7 : la gestion des thèmes. Dans les versions précédentes de notre solution, la création de thèmes requérait l’expertise d’un développeur aux compétences variées (HTML, CSS, Smarty et, bien sûr, PrestaShop). De plus, la logique interne des thèmes était souvent difficile à saisir. Par conséquent, les thèmes personnalisés étaient tous développés à partir du thème par défaut.</p>
+<p>Mais tout cela, c’est du passé. Avec cette nouvelle version, vous pouvez dès aujourd’hui choisir soit le thème de démarrage, soit le nouveau thème par défaut. Notre objectif ? Permettre à chaque utilisateur initié aux bases HTML et CSS de développer son propre thème deux fois plus rapidement que sous PrestaShop 1.6.</p>
+<p>Le <a href="http://build.prestashop.com/news/starter-theme-news-2/" target="_blank">thème de démarrage</a> à l’influence minimaliste contient toutes les fonctionnalités requises, sans aucun décor, ce qui facilite considérablement le travail des créateurs ! Ils bénéficient ainsi d&rsquo;une base exploitable et fonctionnelle pour développer leurs thèmes à partir de n’importe quelle technologie front-end.</p>
+<p>Le nouveau thème par défaut « <a href="http://build.prestashop.com/news/new-theme-1-7-introduction/" target="_blank">Classique</a> » est un thème gratuit que vous pouvez utiliser pour vous lancer sans attendre. Élégant et performant, ce design basé sur notre thème de démarrage est doté d’un framework Bootstrap 4 et d’un visuel neutre et épuré, tout en respectant <a href="http://build.prestashop.com/news/Designing-the-new-PrestaShop-default-theme/" target="_blank">les meilleures pratiques e-commerce et Web d’aujourd’hui</a>. Ce thème est évidemment responsive et peut être entièrement ajusté et personnalisé pour refléter l’identité de marque de chaque commerçant. Le thème Classique propose en particulier un <a href="http://build.prestashop.com/news/starter-theme-news-3/" target="_blank">système de paiement en une page</a> par défaut : ainsi, il est très facile de modifier le contenu du panier, qui reste d’ailleurs affiché en permanence, ce qui facilite le processus de paiement pour le client. Toutes ces améliorations apportées à l’expérience utilisateur se traduiront par un meilleur taux de conversion.</p>
+<p>Enfin, vous pouvez désormais aussi créer des relations <a href="http://developers.prestashop.com/themes/smarty/parent-child-feature.html" target="_blank">parent/enfant héritées</a> et éditer ainsi facilement vos thèmes sans avoir à modifier le fichier source. Vous pouvez donc corriger les bugs et mettre à jour votre sécurité sans affecter les éléments que vous aviez personnalisés.</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/comment-prestashop-1-7-facilite-travail-designers-themes/">Comment PrestaShop 1.7 facilite le travail des designers de thèmes</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.prestashop.com/blog/fr/comment-prestashop-1-7-facilite-travail-designers-themes/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Le DIY et l’e-commerce : Comment revisiter un marché traditionnel avec succès</title>
+		<link>https://www.prestashop.com/blog/fr/diy-commerce-comment-revisiter-marche-traditionnel-succes/</link>
+		<comments>https://www.prestashop.com/blog/fr/diy-commerce-comment-revisiter-marche-traditionnel-succes/#comments</comments>
+		<pubDate>Tue, 29 Nov 2016 10:11:05 +0000</pubDate>
+		<dc:creator><![CDATA[mvalenza]]></dc:creator>
+				<category><![CDATA[Success Story]]></category>
+
+		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=20819</guid>
+		<description><![CDATA[<p>Revisiter un produit traditionnel et largement commercialisé, c’est ce qu’a réussi à faire la société espagnole, Selfpackaging, avec sa gamme complète de packaging entièrement personnalisable et à monter facilement soi-même. Fondée en 2009, Selfpackaging connait aujourd’hui un succès qui traverse les frontières, grâce à son concept DIY unique adressé tant aux entreprises qu’aux particuliers à [...]</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/diy-commerce-comment-revisiter-marche-traditionnel-succes/">Le DIY et l’e-commerce : Comment revisiter un marché traditionnel avec succès</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Revisiter un produit traditionnel et largement commercialisé, c’est ce qu’a réussi à faire la société espagnole, Selfpackaging, avec sa gamme complète de packaging entièrement personnalisable et à monter facilement soi-même.<span id="more-20819"></span></p>
+<p>Fondée en 2009, <a href="http://selfpackaging.fr/" target="_blank">Selfpackaging</a> connait aujourd’hui un succès qui traverse les frontières, grâce à son concept DIY unique adressé tant aux entreprises qu’aux particuliers à des prix compétitifs.</p>
+<p>Dans cette vidéo, le fondateur Josep Maria Garrofé et David Rodriguez, CEO de l’agence web WebImpacto qui a développé la dernière version du site Ecommerce, vous donnent les clés du succès de ce business très spécifique.</p>
+<p>Profitez de leur expertise et leurs conseils pour le développement de votre site Ecommerce !</p>
+<div class="g-ytsubscribe col-centered text-center" data-channelid="UCqDSbqSbkboMBARlYrhNa7g" data-layout="full" data-count="default"></div>
+<p><iframe width="700" height="394" src="https://www.youtube.com/embed/E9N4isW8TSI?feature=oembed" frameborder="0" allowfullscreen></iframe></p>
+<div class="text-center"><a class="btn" style="background-color: #cd201f;border: 1px solid #b31217;border-bottom: 3px solid #b31217;margin: 20px 0 0;color: #fff" href="https://www.youtube.com/user/prestashop?utm_source=blog&amp;utm_medium=article&amp;utm_campaign=youtube&amp;utm_content=leslipfrancais">Voir plus de vidéo</a></div>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/diy-commerce-comment-revisiter-marche-traditionnel-succes/">Le DIY et l’e-commerce : Comment revisiter un marché traditionnel avec succès</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.prestashop.com/blog/fr/diy-commerce-comment-revisiter-marche-traditionnel-succes/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>La checklist pour optimiser votre boutique et booster vos ventes à Noël</title>
+		<link>https://www.prestashop.com/blog/fr/checklist-optimiser-boutique-booster-vos-ventes-noel/</link>
+		<comments>https://www.prestashop.com/blog/fr/checklist-optimiser-boutique-booster-vos-ventes-noel/#comments</comments>
+		<pubDate>Thu, 24 Nov 2016 09:06:19 +0000</pubDate>
+		<dc:creator><![CDATA[Camille Sila]]></dc:creator>
+				<category><![CDATA[Conseils E-commerce]]></category>
+
+		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=20772</guid>
+		<description><![CDATA[<p>Faire ses achats en ligne permet d’éviter la cohue des magasins et ses désagréments : réussir à se garer, faire la queue, ou encore apprendre qu’il n’y a plus de papier cadeau quand c’est justement votre tour. Cependant, le shopping en ligne peut également sembler rébarbatif, surtout pour les clients qui ont une longue liste [...]</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/checklist-optimiser-boutique-booster-vos-ventes-noel/">La checklist pour optimiser votre boutique et booster vos ventes à Noël</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Faire ses achats en ligne permet d’éviter la cohue des magasins et ses désagréments : réussir à se garer, faire la queue, ou encore apprendre qu’il n’y a plus de papier cadeau quand c’est justement votre tour.</p>
+<p>Cependant, le shopping en ligne peut également sembler rébarbatif, surtout pour les clients qui ont une longue liste de noms et aucune idée de quoi acheter. Essayez certaines de ces idées pour simplifier le processus d’achat et offrir à vos clients, nouveaux ou fidèles, une expérience d’achat en ligne agréable et festive.</p>
+<p><span id="more-20772"></span></p>
+<hr />
+<h1 style="text-align: center;"><b><span style="color: #00ccff;">LA CHECKLIST DESIGN</span></b></h1>
+<p><b><a href="https://www.prestashop.com/blog/fr/files/2016/11/Checklist_designTips_FR_V2-copie.jpg" target="_blank"><img class="aligncenter  wp-image-20773" alt="Checklist design ecommerce" src="https://www.prestashop.com/blog/fr/files/2016/11/Checklist_designTips_FR_V2-copie.jpg" width="1200" height="2245" /></a></b></p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/checklist-optimiser-boutique-booster-vos-ventes-noel/">La checklist pour optimiser votre boutique et booster vos ventes à Noël</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.prestashop.com/blog/fr/checklist-optimiser-boutique-booster-vos-ventes-noel/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Instagram : quelle stratégie adopter pour booster vos ventes ?</title>
+		<link>https://www.prestashop.com/blog/fr/instagram-quelle-strategie-adopter-booster-vos-ventes/</link>
+		<comments>https://www.prestashop.com/blog/fr/instagram-quelle-strategie-adopter-booster-vos-ventes/#comments</comments>
+		<pubDate>Tue, 22 Nov 2016 16:01:16 +0000</pubDate>
+		<dc:creator><![CDATA[Les amis de Preston]]></dc:creator>
+				<category><![CDATA[Conseils E-commerce]]></category>
+
+		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=20780</guid>
+		<description><![CDATA[<p>2016 est l&#8217;année d&#8217;Instagram ! L’appli compte maintenant plus de 500 millions d&#8217;utilisateurs par mois (plus que Twitter !) dont 60 % des utilisateurs se connectent tous les jours. C’est donc aujourd’hui le réseau social le plus actif derrière Facebook. Instagram s&#8217;est en effet vite imposé dans le paysage des marques. Cette nouvelle source de [...]</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/instagram-quelle-strategie-adopter-booster-vos-ventes/">Instagram : quelle stratégie adopter pour booster vos ventes ?</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>2016 est l&rsquo;année d&rsquo;Instagram ! L’appli compte maintenant plus de <a href="https://www.instagram.com/press/?hl=fr" target="_blank">500 millions d&rsquo;utilisateurs par mois </a>(plus que Twitter !) dont 60 % des utilisateurs se connectent tous les jours. C’est donc aujourd’hui le réseau social le plus actif derrière Facebook.</p>
+<p><span id="more-20780"></span></p>
+<p>Instagram s&rsquo;est en effet vite imposé dans le paysage des marques. Cette nouvelle source de diffusion est notamment très impactante pour les sites de e-commerce. 70 % des utilisateurs disent qu’ils ont déjà <a href="http://blog.iconosquare.com/instagram-2015-study-unleash-power-instagram/" target="_blank">recherché une marque sur la plateforme</a> et les plus grands marques enregistrent un <a href="http://blogs.forrester.com/nate_elliott/14-04-29-instagram_is_the_king_of_social_engagement" target="_blank">taux d’engagement de 4,21 %</a> (qui a poussé Forrester à surnommer Instagram « le roi de l’interaction sociale »).</p>
+<p>Statistiques d’autant plus importante pour les e-commerçants, selon <a href="http://business.financialpost.com/investing/trading-desk/how-instagram-is-becoming-a-must-have-for-retailers?__lsa=6904-3bfd" target="_blank">une étude récente par centre de recherche L2</a>, Instagram détiendrait le taux de conversions de “visiteur” à “acheteur” le plus élevé de tous les réseaux sociaux.</p>
+<p>C&rsquo;est donc le moment de prendre ce nouveau levier un peu plus au sérieux ! A ce jour, très peu d&rsquo;entreprises françaises y ont encore investi du temps. Découvrez sur cette page quelques chiffres et données d’Instagram, ainsi que des astuces concernant la stratégie marketing à adopter.</p>
+<h2><span style="color: #00ccff;">1.  Mettre en valeur votre catalogue produit </span></h2>
+<p>La créativité est au coeur d&rsquo;Instagram, vous avez donc la possibilité de mettre en valeur vos produits d&rsquo;une façon unique et originale. Evitez d&rsquo;être trop commercial ! Les utilisateurs réagissent fortement aux photos leur permettant de découvrir et évaluer l’identité visuelle d’une entreprise, sans la mise en avant évidente d’arguments de ventes.</p>
+<p>Bien qu’il soit plus facile pour des certains secteurs comme la mode et la beauté de poster des belles images, Instagram joue un rôle de plus en plus important pour tous types de business, ainsi des entreprises telles que <a href="https://www.instagram.com/leroymerlin/" target="_blank">Leroy Merlin</a> et <a href="https://www.instagram.com/officedepot/" target="_blank">Office Depot </a>ont créé des stratégies inventives pour communiquer sur leurs produits et éveiller la curiosité des utilisateurs :</p>
+<p style="text-align: center;"><a href="https://www.prestashop.com/blog/fr/files/2016/11/leroy-merlin.jpg" target="_blank"><img class="aligncenter  wp-image-20783" alt="leroy merlin" src="https://www.prestashop.com/blog/fr/files/2016/11/leroy-merlin.jpg" width="1462" height="924" /></a></p>
+<p style="text-align: center;"><a href="https://www.prestashop.com/blog/fr/files/2016/11/office-depot.jpg" target="_blank"><img class="aligncenter  wp-image-20784" alt="office depot" src="https://www.prestashop.com/blog/fr/files/2016/11/office-depot.jpg" width="1438" height="921" /></a></p>
+<h2><span style="color: #00ccff;">2. Créer la personnalité de votre marque et inspirer vos followers</span></h2>
+<p>L&rsquo;engagement sur Instagram avec des marques est <a href="https://www.brandwatch.com/blog/37-instagram-stats-2016/" target="_blank">10 fois plus important</a> que sur Facebook. Il est possible d’explorer une foule d’opportunités pour développer une identité de marque cohérente et reconnaissable.</p>
+<p>En plus des photos de vos produits, vous pouvez tester des formats innovants tels que : vidéos, citations et statistiques ou organiser des concours pour gagner des cadeaux. Au travers de ces tests il vous faudra par la suite comprendre quels sont les postes auxquels vos followers réagissent le mieux.</p>
+<p>Également, postez des images, des vidéos de secrets de fabrication de vos produits ou encore de la vie quotidienne de votre entreprise. Ces visuels pourront aussi vous aider à trouver des nouveaux employés qui apprécient le style et votre culture d&rsquo;entreprise.</p>
+<p>Enfin une autre astuce, en particulier destinée aux PME et aux artisans est de publier des photos de votre propre quartier à l&rsquo;aide des &laquo;&nbsp;<a href="https://fr.wikipedia.org/wiki/G%C3%A9otag" target="_blank">geotags</a>&nbsp;&raquo; pour vous localiser et attirer toujours plus de followers et de visites de nouveaux clients.</p>
+<p style="text-align: center;"><a href="https://www.prestashop.com/blog/fr/files/2016/11/scoop.jpg" target="_blank"><img class="aligncenter  wp-image-20786" alt="scoop" src="https://www.prestashop.com/blog/fr/files/2016/11/scoop.jpg" width="1467" height="924" /></a></p>
+<h2><span style="color: #00ccff;">3. Booster vos ventes </span></h2>
+<p>A présent que vous avez constitué une première communauté de followers, comment convertir celle-ci en chiffre d’affaires pour votre entreprise? Il se peut que vous constatiez déjà des résultats, si vous prenez en compte que 78% des acheteurs font des<a href="http://www.socialmediatoday.com/marketing/masroor/2015-05-28/social-media-biggest-influencer-buying-decisions" target="_blank"> achats influencés par les médias sociaux des marques</a>.</p>
+<p>Cependant, si vous cherchez une méthode plus sûre et mesurable pour booster vos ventes, il faut investir dans les campagnes publicitaires. Selon une étude récente, <a href="https://www.elegantthemes.com/blog/resources/5-social-commerce-trends-to-watch-out-for-in-2016" target="_blank">le panier moyen de commandes</a> passées sur Instagram est de $65, comparé à $55 pour Facebook et $46.29 sur Twitter.</p>
+<p>Les publicités sont constituées d&rsquo;une photo ou d&rsquo;une vidéo avec des boutons d&rsquo;incitation à une action précise telle que : &laquo;&nbsp;Shop Now&nbsp;&raquo; (Acheter Maintenant), &laquo;&nbsp;Install Now&nbsp;&raquo; (Installer Maintenant) ou &laquo;&nbsp;Sign Up&nbsp;&raquo; (S’inscrire). Pour le moment, les acheteurs sont redirigés vers votre site directement mais Instagram travaille actuellement à une nouvelle version permettant <a href="https://www.zonebourse.com/FACEBOOK-INC-10547141/actualite/Facebook-Instagram-permet-de-vendre-directement-dans-son-application-23333485/" target="_blank">un achat instantané à l&rsquo;intérieur même de l&rsquo;application</a>, ce qui aura certainement un impact encore plus positif sur le taux de conversion.</p>
+<p style="text-align: center;"><a href="http://blog.business.instagram.com/post/128686033016/150909-advertisinglaunch" target="_blank"><img class="aligncenter  wp-image-20787" alt="Instagram ads" src="https://www.prestashop.com/blog/fr/files/2016/11/Instagram-ads.jpg" width="1200" height="525" /></a></p>
+<p>Voici 3 bonnes raisons d&rsquo;intégrer Instagram dans votre stratégie d’entreprise !</p>
+<p><i><strong>SteerFox</strong> est une solution d’acquisition de trafic 100% automatisée qui propose aux e-commerçants d’améliorer leurs performances publicitaires sur des sources tels que Instagram, Facebook, Google Adwords et Google Shopping. </i><a href="http://addons.prestashop.com/fr/22636-ads-by-steerfox-automatisation-des-achats-de-trafic.html" target="_blank"><i>Découvrez notre module PrestaShop pour avoir plus d’informations. </i></a></p>
+<p>&nbsp;</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/instagram-quelle-strategie-adopter-booster-vos-ventes/">Instagram : quelle stratégie adopter pour booster vos ventes ?</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.prestashop.com/blog/fr/instagram-quelle-strategie-adopter-booster-vos-ventes/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,8 @@
+architecture.md
+CONTRIBUTING.md
+CONTRIBUTORS.md
+README.md
+.idea/
+cache/
+#config/xml
+upload/
