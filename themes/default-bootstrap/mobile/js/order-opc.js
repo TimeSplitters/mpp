@@ -350,6 +350,7 @@ function updateAddressSelection(is_adv_api)
 	var idAddress_delivery = ($('#opc_id_address_delivery').length == 1 ? $('#opc_id_address_delivery').val() : $('#id_address_delivery').val());
 	var idAddress_invoice = ($('#opc_id_address_invoice').length == 1 ? $('#opc_id_address_invoice').val() : ($('#addressesAreEquals:checked').length == 1 ? idAddress_delivery : ($('#id_address_invoice').length == 1 ? $('#id_address_invoice').val() : idAddress_delivery)));
 
+
 	$('#opc_account-overlay').fadeIn('slow');
 	$('#opc_delivery_methods-overlay').fadeIn('slow');
 	$('#opc_payment_methods-overlay').fadeIn('slow');

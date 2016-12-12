@@ -919,6 +919,7 @@ class FrontControllerCore extends Controller
         if (!file_exists($this->getThemeDir().'js/autoload/')) {
             $this->addJS(_THEME_MOBILE_JS_DIR_.'jquery.mobile-1.3.0.min.js');
             $this->addJS(_THEME_MOBILE_JS_DIR_.'jqm-docs.js');
+            $this->addJS(_THEME_JS_DIR_.'autoload/15-jquery.uniform-modified.js');
             $this->addJS(_PS_JS_DIR_.'tools.js');
             $this->addJS(_THEME_MOBILE_JS_DIR_.'global.js');
             $this->addJqueryPlugin('fancybox');
