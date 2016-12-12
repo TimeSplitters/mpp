@@ -2,6 +2,11 @@
   @for $i from 1 through $grid-columns {
     .gutter-10 > .col-#{$breakpoint}-#{$i} {
       @if #{$i} == 12 {
+        width: 100%;
+        } else {
+        width: calc(#{$i}/12*100% - 5px);
+      }
+      @if #{$i} == 12 {
         flex-basis: 100%;
       } else {
         flex-basis: calc(#{$i}/12*100% - 5px);
