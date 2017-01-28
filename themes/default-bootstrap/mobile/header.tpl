@@ -21,7 +21,6 @@
     {if isset($meta_keywords) AND $meta_keywords}
         <meta name="keywords" content="{$meta_keywords|escape:'html':'UTF-8'}"/>
     {/if}
-    <meta name="generator" content="PrestaShop"/>
     <meta name="robots" content="{if isset($nobots)}no{/if}index,{if isset($nofollow) && $nofollow}no{/if}follow"/>
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
@@ -32,48 +31,46 @@
     <link rel="icon" type="image/vnd.microsoft.icon" href="{$favicon_url}?{$img_update_time}"/>
     <link rel="shortcut icon" type="image/x-icon" href="{$favicon_url}?{$img_update_time}"/>
 
-    <link rel="stylesheet" href="/themes/default-bootstrap/mobile/css/app.css?v=20161109"/>
+    <link rel="stylesheet" href="/themes/default-bootstrap/mobile/css/app.css?v={filemtime("./themes/default-bootstrap/mobile/css/app.css")}"/>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,600&amp;subset=latin,latin-ext"
           type="text/css" media="all"/>
 
-    <script src="/themes/default-bootstrap/mobile/js/compressed.js?v=20161109"></script>
+    <script src="/themes/default-bootstrap/mobile/js/compressed.js?v={filemtime("./themes/default-bootstrap/mobile/js/compressed.js")}"></script>
     {if $page_name == 'product'}
-        {assign var=product_canonical value="?"|explode:$request}
-        <link rel="canonical" href="{$product_canonical[0]}"/>
         {*<script src="/themes/default-bootstrap/mobile/js/product.js?v=20161110"></script>*}
-        {*<script src="/themes/default-bootstrap/js/modules/productcomments/js/productcomments.js?v=20161109"></script>*}
+        {*<script src="/themes/default-bootstrap/js/modules/productcomments/js/productcomments.js?v={filemtime("./themes/default-bootstrap/mobile/js/productcomments.js")}"></script>*}
         {*<script src="/themes/default-bootstrap/mobile/js/ajax-cart.js"></script>*}
     {/if}
     {if $page_name == 'authentication'}
-        <script src="/themes/default-bootstrap/mobile/js/authentication.js?v=20161109"></script>
+        <script src="/themes/default-bootstrap/mobile/js/authentication.js?v={filemtime("./themes/default-bootstrap/mobile/js/authentication.js")}"></script>
     {/if}
     {if $page_name == 'password'}
-        <script src="/themes/default-bootstrap/mobile/js/password.js?v=20161109"></script>
+        <script src="/themes/default-bootstrap/mobile/js/password.js?v={filemtime("./themes/default-bootstrap/mobile/js/password.js")}"></script>
     {/if}
     {if $page_name == 'contact'}
-        <script src="/themes/default-bootstrap/mobile/js/contact-form.js?v=20161109"></script>
+        <script src="/themes/default-bootstrap/mobile/js/contact-form.js?v={filemtime("./themes/default-bootstrap/mobile/js/contact-form.js")}"></script>
     {/if}
     {if $page_name == 'history'}
-        <script src="/themes/default-bootstrap/mobile/js/history.js?v=20161109"></script>
+        <script src="/themes/default-bootstrap/mobile/js/history.js?v={filemtime("./themes/default-bootstrap/mobile/js/history.js")}"></script>
     {/if}
     {if $page_name == 'order-detail'}
-        <script src="/themes/default-bootstrap/mobile/js/order-detail.js?v=20161109"></script>
+        <script src="/themes/default-bootstrap/mobile/js/order-detail.js?v={filemtime("./themes/default-bootstrap/mobile/js/order-detail.js")}"></script>
     {/if}
     {if $page_name == 'identity'}
-        <script src="/themes/default-bootstrap/mobile/js/identity.js?v=20161109"></script>
+        <script src="/themes/default-bootstrap/mobile/js/identity.js?v={filemtime("./themes/default-bootstrap/mobile/js/identity.js")}"></script>
     {/if}
     {if $page_name == 'order'}
-        <script src="/themes/default-bootstrap/mobile/js/cart-summary.js?v=20161109"></script>
-        <script src="/themes/default-bootstrap/mobile/js/order-address.js?v=20161109"></script>
-        <script src="/themes/default-bootstrap/mobile/js/authentication.js?v=20161109"></script>
-        <script src="/themes/default-bootstrap/mobile/js/order.js?v=20161109"></script>
+        <script src="/themes/default-bootstrap/mobile/js/cart-summary.js?v={filemtime("./themes/default-bootstrap/mobile/js/cart-summary.js")}"></script>
+        <script src="/themes/default-bootstrap/mobile/js/order-address.js?v={filemtime("./themes/default-bootstrap/mobile/js/order-address.js")}"></script>
+        <script src="/themes/default-bootstrap/mobile/js/authentication.js?v={filemtime("./themes/default-bootstrap/mobile/js/authentication.js")}"></script>
+        <script src="/themes/default-bootstrap/mobile/js/order.js?v={filemtime("./themes/default-bootstrap/mobile/js/order.js")}"></script>
     {/if}
     {if $page_name == 'address'}
-        <script src="/themes/default-bootstrap/mobile/js/address.js?v=20161109"></script>
-        <script src="/themes/default-bootstrap/mobile/js/statesManagement.js?v=20161109"></script>
+        <script src="/themes/default-bootstrap/mobile/js/address.js?v={filemtime("./themes/default-bootstrap/mobile/js/address.js")}"></script>
+        <script src="/themes/default-bootstrap/mobile/js/statesManagement.js?v={filemtime("./themes/default-bootstrap/mobile/js/statesManagement.js")}"></script>
     {/if}
     {if $page_name == 'order-confirmation' || $page_name == 'module-paypal-submit'}
-        <script src="/themes/default-bootstrap/mobile/js/order-confirmation.js?v=20161109"></script>
+        <script src="/themes/default-bootstrap/mobile/js/order-confirmation.js?v={filemtime("./themes/default-bootstrap/mobile/js/order-confirmation.js")}"></script>
     {/if}
 
     {if isset($js_defer) && !$js_defer && isset($js_files) && isset($js_def)}

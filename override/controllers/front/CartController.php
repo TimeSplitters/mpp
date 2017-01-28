@@ -53,10 +53,10 @@ class CartController extends CartControllerCore
                             '\&entry.1759291032\=' . rawurlencode(Tools::getValue('soumission_choix')) .
                             '\&submit=Submit');
 
-                        /*$sql = 'UPDATE '._DB_PREFIX_.'customer c
+                        $sql = 'UPDATE '._DB_PREFIX_.'customer c
                                 SET c.order_confirmation_response = "'.Tools::getValue('sondageReponse').'"
                                 WHERE c.id_customer = '.(int)$this->context->customer->id;
-                        Db::getInstance()->execute($sql);*/
+                        Db::getInstance()->execute($sql);
                     }
                 } elseif (Tools::getValue('id_product') == 9) {
                     // FILM
