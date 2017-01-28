@@ -6,7 +6,6 @@ class ModuleFrontController extends ModuleFrontControllerCore
 
     public function __construct()
     {
-        echo 'okkk';exit;
         $this->module = Module::getInstanceByName(Tools::getValue('module'));
         if (!$this->module->active) {
             Tools::redirect('index');
@@ -58,6 +57,7 @@ class ModuleFrontController extends ModuleFrontControllerCore
             $module_dir = _PS_MODULE_DIR_;
         }
 
+        echo 'ok';exit;
         if (Tools::file_exists_cache($theme_dir.'modules/'.$this->module->name.'/'.$template)) {
             return $theme_dir.'modules/'.$this->module->name.'/'.$template;
         } elseif (Tools::file_exists_cache($theme_dir.'modules/'.$this->module->name.'/views/templates/front/'.$template)) {
