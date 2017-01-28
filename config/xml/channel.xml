@@ -21,12 +21,12 @@
 		</branch>
 		<branch name="1.6" available="1" >
 			<name>1.6.1 stable</name>
-			<num>1.6.1.10</num>
+			<num>1.6.1.11</num>
 			<download>
-				<link>http://www.prestashop.com/download/releases/prestashop_1.6.1.10.zip</link>
-				<md5>b4fbc1e486d01bd0b389a112d85c9497</md5>
+				<link>http://www.prestashop.com/download/releases/prestashop_1.6.1.11.zip</link>
+				<md5>f3c03e198e6f1c5a3466356745bbb6c8</md5>
 			</download>
-			<changelog>http://www.prestashop.com/download/changelog_1.6.1.10.txt</changelog>
+			<changelog>http://www.prestashop.com/download/changelog_1.6.1.11.txt</changelog>
 		</branch>
 	</channel>
 	<channel name="rc" available="1" >
