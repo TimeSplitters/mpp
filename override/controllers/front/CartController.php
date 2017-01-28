@@ -143,7 +143,14 @@ class CartController extends CartControllerCore
                 Tools::redirect('index.php?controller=order&' . (isset($this->id_product) ? 'ipa=' . $this->id_product : ''));
             }
         } elseif (!$this->isTokenValid()) {
-            Tools::redirect('index.php');
+            if (Tools::getValue('ajax')) {
+                $this->ajaxDie(Tools::jsonEncode(array(
+                    'hasError' => true,
+                    'errors' => array(Tools::displayError('Impossible to add the product to the cart. Please refresh page.')),
+                )));
+            } else {
+                Tools::redirect('index.php');
+            }
         }
     }
 }

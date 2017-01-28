@@ -79,34 +79,6 @@ class ProductControllerCore extends FrontController
      */
     public function init()
     {
-        if(Tools::getValue('ajax') == true && Tools::getValue('action') == 'searchBook') {
-            // Création d'une nouvelle ressource cURL
-            $ch = curl_init();
-
-            // Configuration de l'URL et d'autres options
-            curl_setopt($ch, CURLOPT_URL, "http://www.goodreads.com/search.xml?key=VkFImYL4Bnje9wABnGkYw&q=".urlencode(Tools::getValue('search')));
-            curl_setopt($ch, CURLOPT_HEADER, 0);
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-            //$_SESSION['curl_searchbook_time'] = time();
-
-            // Récupération de l'URL et affichage sur le naviguateur
-            $results = curl_exec($ch);
-
-            // Fermeture de la session cURL
-            curl_close($ch);
-
-            $xml = new SimpleXMLElement($results);
-            $titles_list = array();
-            foreach($xml->search->results as $works) {
-                foreach($works as $work) {
-                    $titles_list[] = $work->best_book->title;
-                }
-            }
-            //header("HTTP/1.1 200 OK");
-            $this->ajaxDie(Tools::jsonEncode($titles_list));
-            return true;
-        }
-
         parent::init();
 
         if ($id_product = (int)Tools::getValue('id_product')) {
@@ -197,7 +169,6 @@ class ProductControllerCore extends FrontController
      */
     public function initContent()
     {
-
         parent::initContent();
 
         if (!$this->errors) {

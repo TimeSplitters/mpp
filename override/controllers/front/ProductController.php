@@ -26,6 +26,10 @@
 
 class ProductController extends ProductControllerCore
 {
+    /**
+     * Initialize product controller
+     * @see FrontController::init()
+     */
     public function init()
     {
         if(Tools::getValue('ajax') == true && Tools::getValue('action') == 'searchBook') {
@@ -89,19 +93,19 @@ class ProductController extends ProductControllerCore
                             header('HTTP/1.1 301 Moved Permanently');
                             header('Location: '.$this->context->link->getProductLink($this->product->id_product_redirected));
                             exit;
-                        break;
+                            break;
                         case '302':
                             header('HTTP/1.1 302 Moved Temporarily');
                             header('Cache-Control: no-cache');
                             header('Location: '.$this->context->link->getProductLink($this->product->id_product_redirected));
                             exit;
-                        break;
+                            break;
                         case '404':
                         default:
                             header('HTTP/1.1 404 Not Found');
                             header('Status: 404 Not Found');
                             $this->errors[] = Tools::displayError('This product is no longer available.');
-                        break;
+                            break;
                     }
                 }
             } elseif (!$this->product->checkAccess(isset($this->context->customer->id) && $this->context->customer->id ? (int)$this->context->customer->id : 0)) {
