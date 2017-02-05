@@ -30,13 +30,14 @@ class CartController extends CartControllerCore
     public function postProcess()
     {
         // Update the cart ONLY if $this->cookies are available, in order to avoid ghost carts created by bots
-        if ($this->context->cookie->exists() && !$this->errors && !($this->context->customer->isLogged() && !$this->isTokenValid())) {
+        if ($this->context->cookie->exists() && !$this->errors && $this->isTokenValid()) {
             // Mode sélection livre
             if (Tools::getValue('product_choice') == 'livre') {
                 $this->context->cookie->product_choice_livre_titre = Tools::getValue('book_name');
             } else {
                 // Mode Surprise
                 if (Tools::getValue('id_product') == 8) {
+                    // BOOK
                     if (Tools::getValue('gender') != ""
                         && Tools::getValue('age_range') != ""
                         && Tools::getValue('genre') != ""
@@ -53,10 +54,16 @@ class CartController extends CartControllerCore
                             '\&entry.1759291032\=' . rawurlencode(Tools::getValue('soumission_choix')) .
                             '\&submit=Submit');
 
-                        $sql = 'UPDATE '._DB_PREFIX_.'customer c
-                                SET c.order_confirmation_response = "'.Tools::getValue('sondageReponse').'"
-                                WHERE c.id_customer = '.(int)$this->context->customer->id;
-                        Db::getInstance()->execute($sql);
+                        $product_choice_book_surprise = array(
+                            'gender' => (Tools::getValue('gender')),
+                            'age_range' => (Tools::getValue('age_range')),
+                            'genre' => (Tools::getValue('genre')),
+                            'description_attentes' => (Tools::getValue('description_attentes')),
+                            'description_genre' => (Tools::getValue('description_genre')),
+                            'soumission_choix' => (Tools::getValue('soumission_choix'))
+                        );
+
+                        $this->context->cookie->product_choice_book_surprise = json_encode($product_choice_book_surprise);
                     }
                 } elseif (Tools::getValue('id_product') == 9) {
                     // FILM
@@ -86,6 +93,7 @@ class CartController extends CartControllerCore
                         Db::getInstance()->execute($sql);*/
                     }
                 } elseif (Tools::getValue('id_product') == 10) {
+                    // MUSIC
                     if (
                         Tools::getValue('gender') != ""
                         && Tools::getValue('age_range') != ""

@@ -375,6 +375,11 @@
 
   .product_choice_error {
     font-size: 0.8rem;
-    color: darkred;
+    color: $red;
+  }
+
+
+  .textareaError {
+    border: 1px solid $red;
   }
 }

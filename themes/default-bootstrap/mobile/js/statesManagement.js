@@ -69,7 +69,7 @@ function bindCheckbox()
 		$('#opc_invoice_address').slideDown('slow');
 		if ($('#company_invoice').val() == '')
 			$('#vat_number_block_invoice').hide();
-		bindUniform();
+		//bindUniform();
 	}
 	else
 		$('#opc_invoice_address').slideUp('slow');
@@ -134,7 +134,7 @@ function updateState(suffix)
 		});
 
 		$('.id_state' + (typeof suffix !== 'undefined' ? '_' + suffix : '') + ':hidden').fadeIn('slow');
-		$('#id_state, #id_state_invoice').uniform();
+		//$('#id_state, #id_state_invoice').uniform();
 	}
 	else
 		$('.id_state' + (typeof suffix !== 'undefined' ? '_' + suffix : '')).fadeOut('fast');
@@ -146,7 +146,7 @@ function updateNeedIDNumber(suffix)
 	if (in_array(id_country, countriesNeedIDNumber))
 	{
 		$('.dni' + (typeof suffix !== 'undefined' ? '_' + suffix : '') + ':hidden').fadeIn('slow');
-		$('#dni').uniform();
+		//$('#dni').uniform();
 	}
 	else
 		$('.dni' + (typeof suffix !== 'undefined' ? '_' + suffix : '')).fadeOut('fast');
@@ -158,7 +158,7 @@ function updateZipCode(suffix)
 	if (typeof countriesNeedZipCode[id_country] !== 'undefined')
 	{
 		$('.postcode' + (typeof suffix !== 'undefined' ? '_' + suffix : '') + ':hidden').fadeIn('slow');
-		$('#postcode').uniform();
+		//$('#postcode').uniform();
 	}
 	else
 		$('.postcode'+(typeof suffix !== 'undefined' ? '_' + suffix : '')).fadeOut('fast');

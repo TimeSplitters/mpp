@@ -255,6 +255,14 @@ $(document).ready(function () {
         }
     });
 
+    $('#product_choice_surprise textarea').on('change', function () {
+        if($(this).val().length < 30) {
+            $(this).addClass('textareaError');
+        } else {
+            $(this).removeClass('textareaError');
+        }
+    });
+
     $('#product_choice_surprise input, #product_choice_surprise textarea').on('change keyup', function () {
         countInputChecked = 0;
         $(productChoiceInputs).each(function (i, name) {

@@ -37,21 +37,21 @@
 	{if $productNumber}
 		<!-- Shopping Cart -->
 
-		{include file="$tpl_dir./shopping-cart.tpl"}
+		{include file="$tpl_dir./mobile/shopping-cart.tpl"}
 		<!-- End Shopping Cart -->
 		{if $is_logged AND !$is_guest}
-			{include file="$tpl_dir./order-address.tpl"}
+			{include file="$tpl_dir./mobile/order-address.tpl"}
 		{else}
 			<!-- Create account / Guest account / Login block -->
-			{include file="$tpl_dir./order-opc-new-account.tpl"}
+			{include file="$tpl_dir./mobile/order-opc-new-account.tpl"}
 			<!-- END Create account / Guest account / Login block -->
 		{/if}
 		<!-- Carrier -->
-		{include file="$tpl_dir./order-carrier.tpl"}
+		{include file="$tpl_dir./mobile/order-carrier.tpl"}
 		<!-- END Carrier -->
 	
 		<!-- Payment -->
-		{include file="$tpl_dir./order-payment.tpl"}
+		{include file="$tpl_dir./mobile/order-payment.tpl"}
 		<!-- END Payment -->
 	{else}
 		{capture name=path}{l s='Your shopping cart'}{/capture}
