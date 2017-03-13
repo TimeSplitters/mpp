@@ -117,28 +117,18 @@ label span.description{display:block;padding-left:16px}
   .inforeturn .alert-danger.alert-link {
     color: #e6e6e6; }
 
-.bootstrap .conf{
-  background: url("../../../../img/admin/ok2.png") no-repeat 10px;
-  padding-left: 40px !important;
-}
-
-.bootstrap .warning_paypal{
-  background: url("../../../../img/admin/warning.gif") no-repeat 10px;
-  padding-left: 40px !important;
-}
-
 .braintree-row-payment {
-  padding:5px;
+  padding:5px 5px 5px 10px;
   border:solid 1px #d6d4d4;
   border-radius: 4px;
-  margin:0px;
-  padding-left:10px;
+  margin:0 0 10px 0;
 }
 
 .braintree-row-payment .block_field{
   width: 46%;
   display: block;
   margin-top: 10px;
+  margin-right:1%;
   float: left;
 }
 
@@ -161,7 +151,7 @@ label span.description{display:block;padding-left:16px}
 }
 
 .braintree-row-payment .hosted_field {
-  width: 250px;
+  /*width: 250px;*/
   height: 34px;
   padding: 6px 12px 6px 12px;
   border: 1px solid #cccccc;
@@ -219,6 +209,14 @@ label span.description{display:block;padding-left:16px}
     color:#000;
 }
 
+.braintree_error{
+    background-color: #F11;
+    color: white;
+    padding: 5px;
+    opacity: 0.5;
+    border: solid 3px red;
+}
+
 #paypal-wrapper .bo_paypal_help{
     border-radius:50%;
     border: 2px solid #036;
@@ -237,4 +235,8 @@ label span.description{display:block;padding-left:16px}
 .paypal_title_pay_card{
     font-size:17px;
     color:#333;
+}
+
+#error_version_php {
+    margin-left : 23px;
 }

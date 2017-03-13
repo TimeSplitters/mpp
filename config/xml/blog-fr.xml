@@ -13,12 +13,428 @@
 	<atom:link href="http://www.prestashop.com/blog/fr/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.prestashop.com/blog/fr</link>
 	<description></description>
-	<lastBuildDate>Fri, 27 Jan 2017 08:00:56 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 23 Feb 2017 15:24:53 +0000</lastBuildDate>
 	<language>fr-FR</language>
 		<sy:updatePeriod>hourly</sy:updatePeriod>
 		<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>http://wordpress.org/?v=3.8.1</generator>
 	<item>
+		<title>Comment proposer des abonnements sur votre boutique PrestaShop</title>
+		<link>https://www.prestashop.com/blog/fr/comment-proposer-abonnements-boutique-prestashop/</link>
+		<comments>https://www.prestashop.com/blog/fr/comment-proposer-abonnements-boutique-prestashop/#comments</comments>
+		<pubDate>Wed, 22 Feb 2017 14:38:18 +0000</pubDate>
+		<dc:creator><![CDATA[Cécile Dubouis]]></dc:creator>
+				<category><![CDATA[Conseils E-commerce]]></category>
+
+		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=21221</guid>
+		<description><![CDATA[<p>La stratégie d&#8217;abonnements devrait faire partie de la roadmap des e-commerçants. Les abonnements peuvent porter sur des produits physiques, des produits virtuels, sur la livraison des produits (livraison “Premium”) et également sur des services. Proposer à vos clients des abonnements ou des box de vos produits vous permet d’augmenter vos revenus mensuels et de fidéliser [...]</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/comment-proposer-abonnements-boutique-prestashop/">Comment proposer des abonnements sur votre boutique PrestaShop</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>La stratégie d&rsquo;abonnements devrait faire partie de la roadmap des e-commerçants. Les abonnements peuvent porter sur des produits physiques, des produits virtuels, sur la livraison des produits (livraison “Premium”) et également sur des services.</p>
+<p>Proposer à vos clients des abonnements ou des box de vos produits vous permet d’augmenter vos revenus mensuels et de fidéliser vos clients.</p>
+<p>Découvrez comment proposer différents abonnements à vos produits et également des abonnements à la livraison (“livraison Premium”) sur votre boutique PrestaShop.</p>
+<p><span id="more-21221"></span></p>
+<h2 style="color: #1e4848">Les avantages des différents abonnements</h2>
+<p>Pour l’e-commerçant, les abonnements sont un moyen facile pour s’<b>assurer un chiffre d’affaires récurrent chaque mois, sans dépendre de l’acquisition de nouveaux clients</b>. Et ces revenus sont rapidement exponentiels ! C’est l’un des moyens les plus sûrs d’arriver rapidement à l’objectif de chiffre d’affaires fixé et de prévoir facilement d’un mois à l’autre le revenu qui sera généré.<br />
+C’est un moyen simple pour<b> fidéliser vos clients</b>, mais aussi pour <b>faciliter la gestion de vos stocks et augmenter le taux de conversion de votre boutique</b>.</p>
+<p>En fonction des produits que vous vendez et également en fonction des attentes de vos visiteurs, vous pouvez proposer différents types d’abonnement.</p>
+<h2 style="color: #1e4848">Les “box”</h2>
+<p>Il existe une multitude de sites de box ! Toujours en vogue, les box se déclinent pour les produits de beauté, bébé, le vin, les fleurs (telle que les boutiques <a href="http://www.blooms.fr/" target="_blank">Blooms</a> et <a href="http://www.tiniloo.com/" target="_blank">Tiniloo</a> sous PrestaShop), la déco, les bijoux, les paniers gourmands, les objets geeks…</p>
+<p>Les inscrits attendent impatiemment chaque mois (ou à la fréquence souhaitée) le “cadeau” auquel ils se sont inscrits. La magie de la box réside dans le fait que les inscrits ne savent pas exactement ce que contiendra leur box cette fois-ci… Cet effet de “surprise” fait de l’abonnement &#8211; pour lequel ils sont prélevés &#8211; un véritable cadeau.<br />
+Vous pouvez proposer certains produits en box, et d’autres à l’achat classique. Vous pouvez également proposer uniquement des box (de différentes tailles et prix) ou même… une seule box pour faciliter encore la préparation de vos expéditions !</p>
+<h3 style="color: #1e4848">Avantages pour l’e-commerçant : </h3>
+<ul>
+<li>revenus récurrents</li>
+<li>stocks gérables très facilement</li>
+<li>prévision simplifiée du chiffre d’affaires à venir</li>
+<li>fidélisation des clients</li>
+<li>commandes identiques à préparer</li>
+</ul>
+<h3 style="color: #1e4848">Avantages pour le client : </h3>
+<ul>
+<li>un seul processus d’achat, une surprise reçue tous les mois (ou autre rythme)</li>
+<li>création d’un lien touchant à l’affect avec votre boutique, les clients considérant la box comme un réel “cadeau” (et oubliant presque qu’ils payent chaque mois pour cela).</li>
+</ul>
+<h3 style="color: #1e4848">Fonctionnalité nécessaire pour le site : </h3>
+<ul>
+<li><a href="https://addons.prestashop.com/fr/529-vendre-par-abonnement-box" target="_blank">un module d’abonnement avec paiement récurrent</a> à choisir dans la sélection proposée.</li>
+</ul>
+<h2 style="color: #1e4848">Les abonnements à des produits physiques :</h2>
+<p>Les plus grands sites e-commerce le proposent, et les internautes en raffolent ! Présentés avec une offre commerciale (<i>“économisez 10% en vous abonnant”</i>), ils augmentent rapidement leur taux de conversion.<br />
+Amazon Dash button permet à ses clients de ne jamais être à court de leurs produits du quotidien. Vous pouvez proposer la même chose à vos clients en leur permettant de souscrire à un produit avec abonnement. Les jeunes parents sont ravis de recevoir, à la fréquence souhaitée, le paquet de couches pour leur enfant, sans avoir à sortir et avant même de se retrouver en rupture de stock. Cela se décline pour tout, et même en B2B !<br />
+Vous pouvez proposer des abonnements sur l’ensemble de votre catalogue ou seulement sur certains produits.</p>
+<p>Exemple avec <a href="https://www.abonnement-cafe.com/abonnement-capsule-nespresso/16-100-capsules-ristretto-nespresso-compatible-8058454036092.html" target="_blank">abonnement-café</a> qui propose à ses clients de recevoir chaque mois des capsules de café à prix incitatif :</p>
+<p><img class="aligncenter size-large wp-image-21223" alt="Les abonnements à des produits physiques : " src="https://www.prestashop.com/blog/fr/files/2017/02/screen-2-1024x534.png" width="700" height="365" /></p>
+<h3 style="color: #1e4848">Avantages pour l’e-commerçant : </h3>
+<ul>
+<li>revenus récurrents</li>
+<li>stocks gérables facilement</li>
+<li>fidélisation des clients</li>
+<li>augmentation du taux de conversion</li>
+</ul>
+<h3 style="color: #1e4848">Avantages pour le client : </h3>
+<ul>
+<li>facilite le quotidien en leur faisant gagner du temps, en recevant ce produit à domicile au moment où ils en ont besoin, en leur évitant le stress d’être en rupture</li>
+<li>un seul processus d’achat</li>
+<li>satisfaction d’économiser (soit sur le prix total soit sur la livraison) en s’abonnant plutôt qu’en rachetant régulièrement le même produit à prix fort, avec les frais de port.</li>
+</ul>
+<h3 style="color: #1e4848">Fonctionnalité nécessaire pour le site : </h3>
+<ul>
+<li><a href="https://addons.prestashop.com/fr/529-vendre-par-abonnement-box">un module d’abonnement avec paiement récurrent</a> à choisir dans la sélection proposée.</li>
+</ul>
+<h2>Les abonnements à des services et produits virtuels :</h2>
+<p>Aide à domicile, massage, théâtre… les abonnements se déclinent également sur les services, et bien évidemment sur les produits virtuels : MOOC (formations en ligne), contenu, vidéo, musique…<br />
+Exemple : <a href="https://shop.quotidiano.net/">Shop Quotidiano.net</a> en Italie qui permet l’abonnement à des journaux en ligne</p>
+<p><img class="aligncenter size-large wp-image-21224" alt="Les abonnements à des services et produits virtuels : " src="https://www.prestashop.com/blog/fr/files/2017/02/screen-3-1024x629.png" width="700" height="429" /></p>
+<p><b>Avantages pour l’e-commerçant : </b></p>
+<ul>
+<li>revenus récurrents</li>
+<li>prévision simplifiée du chiffre d’affaires à venir</li>
+<li>fidélisation des clients</li>
+</ul>
+<h3 style="color: #1e4848">Avantages pour le client : </h3>
+<ul>
+<li>un seul processus d’achat</li>
+<li>l’accès facilité et privilégié à des produits dont seuls les abonnés peuvent profiter</li>
+</ul>
+<h3 style="color: #1e4848">Fonctionnalité nécessaire pour le site : </h3>
+<ul>
+<li><a href="https://addons.prestashop.com/fr/529-vendre-par-abonnement-box" target="_blank">un module d’abonnement avec paiement récurrent</a> à choisir dans la sélection proposée.</li>
+</ul>
+<h2 style="color: #1e4848">Les abonnements la livraison (Livraison Premium) :</h2>
+<p>Les frais de livraison causent près de 50% des abandons de paniers, et en revanche, la rentabilité est en forte baisse si vous proposez les frais de port gratuits… On a la solution ! Vous pouvez dès maintenant proposer à vos clients un <b>abonnement Premium à la livraison</b>, comme le font Amazon et les plus grands sites e-commerce.</p>
+<p>Vos clients paient leur abonnement à la livraison puis profitent de frais d&rsquo;expédition gratuits ou à prix très avantageux pendant toute la durée de validité de leur abonnement Premium.</p>
+<h3 style="color: #1e4848">Avantages pour l’e-commerçant : </h3>
+<ul>
+<li>fidélisation des clients</li>
+<li>augmentation du taux de conversion</li>
+<li>réduction des paniers abandonnés</li>
+</ul>
+<h3 style="color: #1e4848">Avantages pour le client : </h3>
+<ul>
+<li>satisfaction “d’économiser” les frais de livraison lors de chaque commande, et d’être livré en priorité.</li>
+<li>incitation à revenir sur le site sur lequel il s’est abonné à la livraison</li>
+</ul>
+<h3 style="color: #1e4848">Fonctionnalité nécessaire pour le site : </h3>
+<ul>
+<li><a href="https://addons.prestashop.com/fr/frais-de-port/24876-tarif-forfaitaire-des-frais-d-expedition-premium.html" target="_blank">un module d’abonnement Premium à la livraison</a></li>
+</ul>
+<h2 style="color: #1e4848">Last but not least</h2>
+<p>Dernière chose, lorsque vous mettez en place un abonnement sur votre boutique, pensez bien à :</p>
+<ul>
+<li>mettre à jour vos CGV (conditions générales de vente)</li>
+<li>vérifier que le client peut facilement se désabonner, et lui indiquer clairement dans la communication établie autour des abonnements “désabonnement en un clic”, “vous pouvez suspendre votre abonnement à tout moment”&#8230;</li>
+</ul>
+<p>Cela le rassurera de le lire et augmentera le taux de conversion de vos abonnements.</p>
+<p>Bonnes ventes !</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/comment-proposer-abonnements-boutique-prestashop/">Comment proposer des abonnements sur votre boutique PrestaShop</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.prestashop.com/blog/fr/comment-proposer-abonnements-boutique-prestashop/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Frais de port offerts : quelle stratégie adopter ?</title>
+		<link>https://www.prestashop.com/blog/fr/frais-port-offerts-quelle-strategie-adopter/</link>
+		<comments>https://www.prestashop.com/blog/fr/frais-port-offerts-quelle-strategie-adopter/#comments</comments>
+		<pubDate>Wed, 22 Feb 2017 09:05:54 +0000</pubDate>
+		<dc:creator><![CDATA[Les amis de Preston]]></dc:creator>
+				<category><![CDATA[Conseils E-commerce]]></category>
+
+		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=21209</guid>
+		<description><![CDATA[<p>Par Boxtal Les frais de port offerts sont une excellente manière d’acquérir mais également de fidéliser de nouveaux clients. Les grandes enseignes e-commerce comme Amazon ou Cdiscount peuvent se permettre de les offrir sans condition. Cependant, tout le monde ne s’appelle pas comme ces deux géants… Alors quelle stratégie adopter ? Ce qu&#8217;il faut savoir avant de vous lancer [...]</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/frais-port-offerts-quelle-strategie-adopter/">Frais de port offerts : quelle stratégie adopter ?</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><a title="Boxtal module PresaShop" href="https://addons.prestashop.com/fr/transporteurs/1755-expeditions-envoimoinscher-relais-domicile-express.html">Par Boxtal</a></p>
+<p>Les frais de port offerts sont <b>une excellente manière d’acquérir</b> mais également de<b> fidéliser de nouveaux clients</b>. Les grandes enseignes e-commerce comme Amazon ou Cdiscount peuvent se permettre de les offrir sans condition. Cependant, tout le monde ne s’appelle pas comme ces deux géants… <b>Alors quelle stratégie adopter ?</b></p>
+<p><span id="more-21209"></span></p>
+<h2><span style="color: #25b9d7">Ce qu&rsquo;il faut savoir avant de vous lancer dans une stratégie de frais de port offerts</span></h2>
+<p>Avant de vous lancer dans une stratégie de frais de port offerts, vous devez d’abord <b>savoir comment se construisent les frais d’expédition</b>. Pour cela, quatre choses sont à prendre en compte :</p>
+<ul>
+<li>Le temps de préparation de la commande</li>
+<li>Le coût de l’emballage</li>
+<li>Le coût du transport</li>
+<li>Les potentiels frais de retour</li>
+</ul>
+<p>Sachez dans un deuxième temps que<b> les frais de port peuvent être un véritable frein à l’achat</b> ! C’est le cas pour 55%(1) des internautes. Pire encore, 44%(2) ne valident pas leur commande à cause de frais d’expédition trop élevés.</p>
+<p>Les <b>frais de port offerts sont un véritable investissement</b>. Comme tout investissement, il faut avoir les moyens de le réaliser. Si votre e-commerce en est à ses débuts, commencez par facturer les frais de port au tarif réel. Rien de plus simple avec le <a href="https://addons.prestashop.com/fr/transporteurs/1755-expeditions-envoimoinscher-relais-domicile-express.html">module Boxtal</a> qui calcule le tarif réel de la livraison par défaut.</p>
+<p>Vous verrez ainsi <b>comment se construit votre chiffres d’affaires</b> : panier moyen, nombre de produits par panier, produits les plus vendus.</p>
+<p>Ensuite, vous pourrez commencer à tester l’impact de la livraison gratuite en définissant la meilleure stratégie pour votre enseigne.</p>
+<h2><span style="color: #25b9d7">4 stratégies de frais de port offerts qui ont déjà fait leurs preuves</span></h2>
+<ul>
+<li>Offrez-les à <b>la prochaine commande</b> : une manière de fidéliser votre client et de le pousser à revenir sur votre boutique. 90%(3) des acheteurs déclarent que les frais de port offerts sont un critère majeur de réachat.</li>
+<li>Offrez-les à partir d’<b>un minimum d’achat</b> : le saviez-vous ? 43%(4) des acheteurs ajoutent un article à leur panier pour ne pas avoir de frais de port. C’est l’occasion d’augmenter votre panier moyen avec cette stratégie.</li>
+<li>Offrez-les sur <b>une période donnée</b> : un moyen pour attirer et acquérir de nouveaux clients.</li>
+<li>Offrez-les sur<b> un produit</b> : une bonne façon pour écouler un stock.</li>
+</ul>
+<h3></h3>
+<p>Une fois votre stratégie établie, <b>communiquez</b> sur cette dernière ! <b>Les frais de port offerts apportent une véritable plus-value</b> et sont un <b>argument concurrentiel</b> de taille, alors faites le savoir.</p>
+<p><strong> Auteur :</strong> Julien Callaou, expert livraison et plume de Boxtal</p>
+<p>&nbsp;</p>
+<h2><span style="color: #25b9d7">À propos de Boxtal</span></h2>
+<p><a href="https://www.prestashop.com/blog/fr/files/2017/02/400_carré.png"><img class="alignnone  wp-image-21210" alt="400_carré" src="https://www.prestashop.com/blog/fr/files/2017/02/400_carré.png" width="168" height="168" /></a></p>
+<ul>
+<li><strong>Avec plus de 60 000 clients professionnels dont 5 000 e-commerçants, Boxtal (anciennement EnvoiMoinsCher.com) est le numéro 1 de la livraison de colis multi-transporteurs.</strong></li>
+<li><strong>Grâce au module Boxtal, vous bénéficiez de tarifs négociés jusqu’à -75% chez les meilleurs transporteurs (Mondial Relay, Relais Colis, Colissimo, Chronopost, TNT, DHL…) sans contrat à signer, ni obligation de volume. La livraison devient simple : vous générez vos bordereaux d’expédition en 1 clic et suivez vos expéditions depuis votre back-office Prestashop.</strong></li>
+</ul>
+<p><a href="http://ecommerce.envoimoinscher.com/contact-blogprestashop)">En savoir plus</a></p>
+<p><strong><em>Sources : </em></strong></p>
+<p>1 : Sondage Ifop-Generix : “Les Français et la livraison des achats sur Internet”, 2012</p>
+<p>2 : Forrester Research 2013</p>
+<p>3 : Étude européenne “L’e-commerce et la livraison”, 2013</p>
+<p>4: Étude UPS / Com Score “Pulse of the Online Shopper”, 2013</p>
+<p>&nbsp;</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/frais-port-offerts-quelle-strategie-adopter/">Frais de port offerts : quelle stratégie adopter ?</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.prestashop.com/blog/fr/frais-port-offerts-quelle-strategie-adopter/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Comment booster le trafic de votre site Ecommerce grâce au contenu</title>
+		<link>https://www.prestashop.com/blog/fr/comment-booster-trafic-site-ecommerce-grace-au-contenu/</link>
+		<comments>https://www.prestashop.com/blog/fr/comment-booster-trafic-site-ecommerce-grace-au-contenu/#comments</comments>
+		<pubDate>Wed, 15 Feb 2017 10:41:51 +0000</pubDate>
+		<dc:creator><![CDATA[mvalenza]]></dc:creator>
+				<category><![CDATA[Conseils E-commerce]]></category>
+
+		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=21193</guid>
+		<description><![CDATA[<p>Blog posts, publications sur les réseaux sociaux, newsletters… Autant de moyens d’atteindre votre cible et les inciter à visiter votre boutique en ligne. Pour arriver à ce résultat, il s’agit avant tout de pousser un contenu pertinent et différent ! Pour se faire, vous devez vous intéresser à votre cible, qui est avant-tout une communauté [...]</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/comment-booster-trafic-site-ecommerce-grace-au-contenu/">Comment booster le trafic de votre site Ecommerce grâce au contenu</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Blog posts, publications sur les réseaux sociaux, newsletters… Autant de moyens d’atteindre votre cible et les inciter à visiter votre boutique en ligne. Pour arriver à ce résultat, il s’agit avant tout de pousser un contenu pertinent et différent ! <span id="more-21193"></span></p>
+<p>Pour se faire, vous devez vous intéresser à votre cible, qui est avant-tout une communauté rassemblée autour de centres d’intérêts, et veiller à respecter plusieurs bonnes pratiques afin que votre contenu soit visible et partagé.</p>
+<p>Dans cette vidéo, Nicolas, CEO d’Ecommerce Nation, 1ère Communauté d’Ecommerce en France, vous donnera plusieurs astuces pour réussir votre contenu et générer le plus de trafic sur votre site Ecommerce :</p>
+<div class="g-ytsubscribe col-centered text-center" data-channelid="UCqDSbqSbkboMBARlYrhNa7g" data-layout="full" data-count="default"></div>
+<p><iframe width="700" height="394" src="https://www.youtube.com/embed/I8BlN8nmBps?feature=oembed" frameborder="0" allowfullscreen></iframe></p>
+<div class="text-center"><a class="btn" style="background-color: #cd201f;border: 1px solid #b31217;border-bottom: 3px solid #b31217;margin: 20px 0 0;color: #fff" href="https://www.youtube.com/user/prestashop?utm_source=blog&amp;utm_medium=article&amp;utm_campaign=youtube&amp;utm_content=axome">Voir plus de vidéos</a></div>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/comment-booster-trafic-site-ecommerce-grace-au-contenu/">Comment booster le trafic de votre site Ecommerce grâce au contenu</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.prestashop.com/blog/fr/comment-booster-trafic-site-ecommerce-grace-au-contenu/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Comment améliorer les performances de vos campagnes e-mailing grâce à une base de prospects efficace !</title>
+		<link>https://www.prestashop.com/blog/fr/comment-ameliorer-les-performances-vos-campagnes-e-mailing-grace-base-prospects-efficace/</link>
+		<comments>https://www.prestashop.com/blog/fr/comment-ameliorer-les-performances-vos-campagnes-e-mailing-grace-base-prospects-efficace/#comments</comments>
+		<pubDate>Mon, 13 Feb 2017 07:06:53 +0000</pubDate>
+		<dc:creator><![CDATA[mvalenza]]></dc:creator>
+				<category><![CDATA[Conseils E-commerce]]></category>
+
+		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=21183</guid>
+		<description><![CDATA[<p>Envoyer des emails le plus souvent et au plus grand nombre de clients ! Un réflexe toujours ancré qui pourtant fait baisser les taux d’ouvertures et les taux de clics ! La première règle d’or pour booster les résultats de vos campagnes, et de collecter une base de prospects de qualité, et de la qualifier [...]</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/comment-ameliorer-les-performances-vos-campagnes-e-mailing-grace-base-prospects-efficace/">Comment améliorer les performances de vos campagnes e-mailing grâce à une base de prospects efficace !</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Envoyer des emails le plus souvent et au plus grand nombre de clients ! Un réflexe toujours ancré qui pourtant fait baisser les taux d’ouvertures et les taux de clics !<br />
+La première règle d’or pour booster les résultats de vos campagnes, et de collecter une base de prospects de qualité, et de la qualifier aussi souvent que possible ! <span id="more-21183"></span></p>
+<p>Et pour cela, notre expert en emailing, SendinBlue, vous détaille aujourd’hui les 5 clés suivantes pour construire et entretenir efficacement votre base de prospects, et ainsi booster vos ventes : </p>
+<ul>
+<li>Conseil n° 1 : partez de vos clients</li>
+<li>Conseil n° 2 : attirez vos futurs clients</li>
+<li>Conseil n° 3 : pour qualifier vos contacts, optez pour le double opt-in</li>
+<li>Conseil n° 4 : rationalisez le processus</li>
+<li>Conseil n° 5 : ne vous reposez pas sur vos lauriers</li>
+<ul>
+<div class="g-ytsubscribe col-centered text-center" data-channelid="UCqDSbqSbkboMBARlYrhNa7g" data-layout="full" data-count="default"></div>
+<p><iframe width="700" height="394" src="https://www.youtube.com/embed/_jyNkqzLrw0?feature=oembed" frameborder="0" allowfullscreen></iframe></p>
+<div class="text-center"><a class="btn" style="background-color: #cd201f;border: 1px solid #b31217;border-bottom: 3px solid #b31217;margin: 20px 0 0;color: #fff" href="https://www.youtube.com/user/prestashop?utm_source=blog&amp;utm_medium=article&amp;utm_campaign=youtube&amp;utm_content=sendinblue">Voir plus de vidéos</a></div>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/comment-ameliorer-les-performances-vos-campagnes-e-mailing-grace-base-prospects-efficace/">Comment améliorer les performances de vos campagnes e-mailing grâce à une base de prospects efficace !</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.prestashop.com/blog/fr/comment-ameliorer-les-performances-vos-campagnes-e-mailing-grace-base-prospects-efficace/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Pourquoi devriez-vous connecter votre ERP à votre e-commerce ?</title>
+		<link>https://www.prestashop.com/blog/fr/devriez-connecter-erp-e-commerce/</link>
+		<comments>https://www.prestashop.com/blog/fr/devriez-connecter-erp-e-commerce/#comments</comments>
+		<pubDate>Thu, 09 Feb 2017 17:16:05 +0000</pubDate>
+		<dc:creator><![CDATA[Les amis de Preston]]></dc:creator>
+				<category><![CDATA[Conseils E-commerce]]></category>
+
+		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=21152</guid>
+		<description><![CDATA[<p>Avec l’essor des ERP (*Enterprise ressource Planning ou PGI en français ) sur le cloud mais aussi en open source, la gestion d’entreprise informatisée se démocratise. Aujourd’hui, 1 marchand sur 2 déclare avoir une solution de gestion pour administrer sa comptabilité, ses stocks, sa logistique ou encore son parc client. Mais rares sont ceux qui [...]</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/devriez-connecter-erp-e-commerce/">Pourquoi devriez-vous connecter votre ERP à votre e-commerce ?</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Avec l’essor des ERP (*<em>Enterprise ressource Planning ou PGI en français</em> ) sur le cloud mais aussi en open source, la gestion d’entreprise informatisée se démocratise. Aujourd’hui, 1 marchand sur 2 déclare avoir une solution de gestion pour administrer sa comptabilité, ses stocks, sa logistique ou encore son parc client. Mais rares sont ceux qui savent qu’il est possible de connecter leur ERP à leur boutique en ligne, et surtout quels bénéfices en retirer. Voici en résumé 5 avantages à connecter votre logiciel de gestion à votre boutique PrestaShop.<span id="more-21152"></span></p>
+<h2 style="color: black;">1 – Sécurisez vos informations</h2>
+<p>En tant que marchand, les informations recueillies sont essentielles car elles sont votre base de travail : tarifs, données clients, pièces comptables etc. Or, malgré tout le soin apporté à votre inventaire par exemple, l’erreur de saisie ou la perte d’information est toujours possible.</p>
+<p>Pourtant, en connectant votre ERP à votre boutique PrestaShop, il est possible de faire communiquer automatiquement vos informations, comme par exemple les stocks. Un produit est vendu sur votre boutique ? Les stocks sont automatiquement impactés dans votre ERP. En temps réel, vous suivez vos stocks et repassez commande auprès de vos fournisseurs si besoin.</p>
+<p>Ajoutez ou modifiez une information dans votre logiciel de gestion et votre plateforme e-commerce est automatiquement mise à jour : prix, promotion, stock, etc.</p>
+<p>Avec une passerelle entre votre ERP et votre boutique PrestaShop, vos flux de données sont tracés et sécurisés. Vous ne perdez pas d’informations. Il n’y a plus d’erreur de re-saisie possible.</p>
+<h2 style="color: black;">2- Automatisez la gestion des produits et des commandes</h2>
+<p>Les commandes passées sur le site marchand sont instantanément intégrées dans l’ERP pour être traitées. Une fois les commandes expédiées, les factures sont générées automatiquement en PDF et poussées sur le compte client de la plate-forme e-commerce.</p>
+<p>De la même façon, l&rsquo;ensemble du catalogue produits est synchronisé entre votre boutique PrestaShop et votre ERP. Ainsi, si vous créez 100 produits dans votre ERP, ils remontent automatiquement dans votre boutique PrestaShop.</p>
+<h2 style="color: black;">3- Des outils dissociés en cas de mises à jour</h2>
+<p>Lors d’une mise à jour importante d’une des solutions, les autres solutions connectées ne sont pas impactées, seule la configuration de la gestion des flux sera modifiée. L’indisponibilité de l’un n’affecte pas l’autre.</p>
+<h2 style="color: black;">4- Gagnez du temps et concentrez-vous sur l’essentiel : le client.</h2>
+<p>En évitant la ressaisie mais aussi les nombreuses vérifications collatérales, vos équipes gagnent en efficacité. Ils peuvent se concentrer sur l’essentiel : satisfaire et fidéliser vos clients. Ainsi, vous allez pouvoir dégager du temps pour analyser vos statistiques et fixer des axes d’amélioration pour votre boutique (ventes flash, cross selling, relance paniers etc).</p>
+<h2 style="color: black;">5- Générez plus de marge</h2>
+<p>Comme nous l’avons vu plus haut, connecter votre ERP à votre boutique PrestaShop c’est automatiser des flux et gagner du temps sur des tâches chronophages et rébarbatives. Et cela, au profit d’autres tâches qui nécessitent toute votre attention. Des tâches essentielles à la longévité de votre activité : calculer la rentabilité de vos frais de transports, calculer le prix de revient de vos produits, renégocier votre contrat VAD auprès de votre banque etc.</p>
+<p>Conclusion<br />
+Avec une activité exigeante, un e-commerçant a besoin de fonctionnalités de gestion de plus en plus poussées (stocks, préparation des commandes, comptabilité, réapprovisionnement…). A partir d’une trentaine de commandes par jour et/ou la gestion de plus de 200 produits, le couplage boutique PrestaShop et ERP devient plus que légitime.</p>
+<div>
+<h2>Biographie</h2>
+<h3 style="color: black;">Eve LEFORT</h3>
+<p><img class="alignleft size-thumbnail wp-image-21158" alt="Eve LEFORT" src="https://www.prestashop.com/blog/fr/files/2017/02/eve-150x150.png" width="80" height="80" /></p>
+<ul style="text-align: left;">
+<li>Chef de projet sénior chez <a href="https://www.prestashop.com/fr/agences-web-partenaires/or/agence-123" target="_blank">l’agence123</a> avec plus de 10 années d’expérience dans le web et les projets ERP.</li>
+<li>Chasseuse de tendances digitales sous toutes ses formes, dingo du SEO, addict à son mobile.</li>
+</ul>
+</div>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/devriez-connecter-erp-e-commerce/">Pourquoi devriez-vous connecter votre ERP à votre e-commerce ?</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.prestashop.com/blog/fr/devriez-connecter-erp-e-commerce/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>5 modules pour optimiser vos ventes</title>
+		<link>https://www.prestashop.com/blog/fr/5-modules-optimiser-vos-ventes/</link>
+		<comments>https://www.prestashop.com/blog/fr/5-modules-optimiser-vos-ventes/#comments</comments>
+		<pubDate>Tue, 07 Feb 2017 13:48:09 +0000</pubDate>
+		<dc:creator><![CDATA[Cécile Dubouis]]></dc:creator>
+				<category><![CDATA[Conseils E-commerce]]></category>
+
+		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=21142</guid>
+		<description><![CDATA[<p>Vous avez créé votre boutique avec PrestaShop, vous proposez déjà un moyen de paiement rassurant et populaire à vos clients, vous avez également mis à disposition de vos acheteurs des services de livraison correspondants à leurs profils, des plus économes aux plus pressés, le design de votre boutique est adapté à l’univers de vos produits [...]</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/5-modules-optimiser-vos-ventes/">5 modules pour optimiser vos ventes</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Vous avez créé votre boutique avec PrestaShop, vous proposez déjà un <a href="https://addons.prestashop.com/fr/content/35-les-modes-de-paiement-en-ligne-preferes-par-pays" target="_blank">moyen de paiement rassurant</a> et populaire à vos clients, vous avez également mis à disposition de vos acheteurs des <a href="https://addons.prestashop.com/fr/518-livraison-logistique" target="_blank">services de livraison</a> correspondants à leurs profils, des plus économes aux plus pressés, le <a href="https://addons.prestashop.com/fr/3-themes-prestashop" target="_blank">design de votre boutique</a> est adapté à l’univers de vos produits ?<br />
+Félicitations, vous êtes prêt à accélérer les ventes de votre boutique en ligne !</p>
+<p>Découvrez maintenant les 5 astuces pour maximiser vos ventes, avec des modules efficaces et simples d’utilisation.</p>
+<h2><span id="more-21142"></span>1. Faire connaître ma boutique et augmenter mon trafic</h2>
+<p>Avec 100 000 milliards de requêtes d’internautes par mois, Google est incontestablement le moyen le plus efficace pour faire connaître votre boutique.<br />
+Pendant que vous optimisez le référencement naturel de votre site, <a href="https://addons.prestashop.com/fr/comparateurs-prix/23831-google-shopping.html" target="_blank">indexez votre catalogue sur Google Shopping</a> afin que <b>les visuels de vos produits apparaissent directement sur le plus populaire des moteurs de recherche</b>. En un clic, les internautes arrivent sur votre boutique et vous ne payez que le coût par clic sur vos campagnes en ligne.</p>
+<h2>2. Augmenter rapidement le panier moyen des clients</h2>
+<p>Vous pouvez pour cela <a href="https://addons.prestashop.com/fr/ventes-croisees-packs-produits/11345-promotion-panier-upselling.html" target="_blank"><b>suggérer un produit directement dans le récapitulatif panier</b></a>, comme on le voit en boutique avec les bonbons proposés à la caisse. N’hésitez pas à mettre ce produit à prix barré pour le rendre encore plus incitatif ! Un bon moyen également pour déstocker vos invendus.</p>
+<h2>3. Faciliter le passage de commande</h2>
+<p>Facilitez la création de compte sur votre boutique : <b>40 % des internautes préfèrent commander en utilisant un login existant</b> (Facebook, PayPal, Amazon, Google, Twitter…) plutôt que de saisir un énième formulaire de création de compte. En proposant à vos clients de <a href="http://addons.prestashop.com/fr/boutons-login-connect/8204-connect-pour-facebook-paypal-amazon-google-twitter.html" target="_blank">se connecter via un Social Login</a>, leur compte est créé sur votre boutique en un seul clic et le taux de conversion s’améliore instantanément.</p>
+<h2>4. Rassurer les visiteurs pour les transformer en clients</h2>
+<p><b>Les avis clients ont un double avantage : ils rassurent vos nouveaux visiteurs </b>(pour optimiser vos conversions) d’une part, et d’autre part grâce aux “rich snippets”, <b>ils vous font gagner en visibilité sur les moteurs de recherche.</b> Les notes de satisfaction de vos produits apparaissent directement sur les pages de résultats. <a href="https://addons.prestashop.com/fr/avis-clients/17896-avis-boutique-avis-produits-google-rich-snippets.html" target="_blank">Une astuce indispensable pour gagner en trafic et en conversions</a>.</p>
+<h2>5. Mieux convertir mes clients “chauds”</h2>
+<p>En moyenne, 7 visiteurs sur 10 qui créent un panier sur une boutique en ligne ne finalisent pas le processus d&rsquo;achat.<br />
+Aucun problème, vous pouvez désormais rattraper ces potentiels clients grâce aux<b> </b><a href="https://addons.prestashop.com/fr/remarketing-paniers-abandonnes/16535-paniers-abandonnes-pro.html" target="_blank"><b>relances de paniers abandonnés automatiques </b></a>sur lesquelles vous pouvez ajouter un bon de réduction éphémère pour rendre l’offre encore plus incitative.</p>
+<p>Dernière astuce en guise de conclusion, et pas des moindres. Faites en sorte de redécouvrir votre site régulièrement et mettez-vous dans les bottes d’un nouveau client. “<i>Pourquoi les clients achèteraient chez moi plutôt que chez mes concurrents ?</i>” Vérifiez que tout fonctionne parfaitement, que le parcours client est fluide, que le ton de votre boutique est cohérent avec votre univers depuis la page d’accueil jusqu’aux e-mails de confirmation de commande.</p>
+<p>Listez vos principaux atouts (qualité, service, proximité, marque forte…) et rappelez-les dans votre communication pour en faire une vraie force.<br />
+N’hésitez pas à télécharger le <a href="https://www.prestashop.com/fr/ux-guide?utm_source=internal-linking&amp;utm_medium=blog&amp;utm_campaign=UxGuide" target="_blank">Guide UX de PrestaShop</a> qui vous donnera toutes les clés pour optimiser le parcours client et convertir les visites en vente.</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/5-modules-optimiser-vos-ventes/">5 modules pour optimiser vos ventes</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.prestashop.com/blog/fr/5-modules-optimiser-vos-ventes/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Comment tirer profit des marketplaces pour booster votre e-commerce ?</title>
+		<link>https://www.prestashop.com/blog/fr/comment-tirer-profit-marketplaces-booster-e-commerce/</link>
+		<comments>https://www.prestashop.com/blog/fr/comment-tirer-profit-marketplaces-booster-e-commerce/#comments</comments>
+		<pubDate>Tue, 07 Feb 2017 09:06:21 +0000</pubDate>
+		<dc:creator><![CDATA[Les amis de Preston]]></dc:creator>
+				<category><![CDATA[Conseils E-commerce]]></category>
+
+		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=21120</guid>
+		<description><![CDATA[<p>Les places de marché sont devenues des leviers marketing très puissants et surtout à privilégier pour les marchands car elles permettent de générer un large trafic. Un canal de distribution supplémentaire avec de nombreux atouts ! Découvrez dans cet article quelques bonnes pratiques pour réussir dès demain sur les places de marché. Pourquoi un si [...]</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/comment-tirer-profit-marketplaces-booster-e-commerce/">Comment tirer profit des marketplaces pour booster votre e-commerce ?</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Les places de marché sont devenues des leviers marketing très puissants et surtout à privilégier pour les marchands car elles permettent de générer un large trafic. Un canal de distribution supplémentaire avec de nombreux atouts ! Découvrez dans cet article quelques bonnes pratiques pour réussir dès demain sur les places de marché.<span id="more-21120"></span></p>
+<h2>Pourquoi un si grand engouement pour les places de marché ?</h2>
+<p>Les places de marché représentent aujourd’hui plus de 37 % du total des transactions réalisées en ligne (source : Mirakl). Les internautes sont de plus en plus nombreux à acheter sur ces plateformes car elles sont pour eux des tiers de confiance, qui en cas de litige avec le marchand, règleront le conflit à leur avantage. Les achats sur les places de marché ont autant de succès car ils permettent de régler en une seule fois les frais de port pour des biens provenant de marchands différents ;</p>
+<p>Parmi ces places de marché certaines sont de vrais mastodontes comme Amazon, eBay, Rakuten,… Amazon dépassait par exemple les 100 milliards de dollars de chiffre d’affaires en 2015 et comptait plus de 300 millions de clients dans le monde (source : JDN). Ces marketplaces sont omniprésentes sur les moteurs de recherche et votre site e-commerce ne peut pas rivaliser. Alors autant en tirer parti !</p>
+<p>Notez également que de nombreux sites e-commerces transforment leur plateforme de vente en ligne en marketplace. Des sites comme Nature et Découvertes, Darty,… ne vendent plus seulement leurs propres produits. Ils ont ouvert leur site web à d’autres marchands qui peuvent ainsi compléter l’offre proposée. Le business model « marketplaces » Connaît un véritable essor. Nombre de places de marchés sont spécialisées sur un domaine particulier. Par exemple, Mano-Mano et Monechelle.com sont des plateformes e-commerce dédiées au bricolage.</p>
+<p>Marketplaces généraliste ou bien spécialiste, elles fleurissent sur le web ! A vous de choisir celles qui sont en adéquation avec votre business. Rien ne sert de vendre tous vos produits sur toutes les marketplaces possibles et inimaginables. Votre présence sur les places de marché doit être travaillée et optimisée en fonction des produits qui fonctionnent le mieux. Pour cela, dans cet article, vous sont proposés divers conseils afin de vous aider à lancer vos ventes sur ces supports.</p>
+<h2>Choisir sa marketplace</h2>
+<p>Vous allez devoir tenir compte de plusieurs critères avant de choisir les places de marché sur lesquelles vous allez diffuser votre catalogue produit :</p>
+<h3>1. Le bon référencement de la place de marché sur les moteurs de recherche</h3>
+<p>Si vous souhaitez bénéficier du bon positionnement des places de marché, vérifiez que ces dernières ont une bonne visibilité. C’est en partie de cette façon que vous assurerez que vos produits apparaissent en tête des résultats de recherche sur Google.<br />
+Certaines marketplaces bénéficient d’un meilleur référencement que d’autres. Il est évident que des supports comme Amazon, eBay, Rakuten, etc bénéficient d’un positionnement optimal dans les moteurs de recherche. Toutefois, sur ces places de marché généralistes, la concurrence est rude. Un conseil ? Faites des tests de mots-clés sur les plateformes e-commerce qui vous intéressent afin de voir quelles sont les entreprises qui remontent dans Google via la place de marché.</p>
+<h3>2. Les coûts de la marketplace</h3>
+<p>Vendre sur les places de marché n’est pas gratuit. Afin de pouvoir proposer vos produits à la vente sur les marketplaces, vous devez payer un abonnement mensuel. En plus de cet abonnement mensuel, des frais de commission viendront s’ajouter. Avec les marketplaces vous ne payez de commission que si vous vendez. En d’autres termes, lorsqu’un internaute réalise un achat, un pourcentage de la vente réalisée est prélevé par la place de marché. Notez qu’habituellement les commissions sont comprises entre 9% et 20% (calculées sur le prix de vente). Chaque marketplace a sa propre stratégie de prix. A vous d’en tenir compte lorsque vous vous lancez sur ces canaux de distribution.</p>
+<h3>3. La facilité d’utilisation et la sécurité des paiements proposés par la marketplace</h3>
+<p>Les places de marché proposent toutes différents modes de paiements tels que la carte bancaire ou Paypal. Parfois même, elles peuvent proposer un paiement en plusieurs fois ou bien d’autres services. Prenez en compte tous les services proposés par les places de marché car ce sont autant d’avantages proposés aux clients. Ces derniers sont très friands de services additionnels gratuits. C’est peut-être cela qui les pousseront à acheter chez vous plus que chez votre concurrent.</p>
+<h3>4. Votre univers et vos catégories de produits</h3>
+<p>Comme indiqué précédemment, certaines places de marché sont généralistes et regroupent donc de très nombreuses catégories de produits. Si vous vendez des produits spécifiques faisant partie d’un marché de niche, la bonne idée est de plutôt se diriger vers des places de marché spécialistes sur votre secteur d’activité. De cette façon, vous ciblez plus facilement des prospects hautement qualifiés. Dans tous les cas, tout dépend de votre stratégie de vente. Voulez-vous toucher un très large trafic ou un trafic plus restreint mais avec de potentiels acheteurs mieux qualifiés ?</p>
+<h2>Choisir quels produits vendre sur les marketplaces</h2>
+<h3>Quels produits diffuser sur les places de marché ?</h3>
+<p>Nombreux sont les marchands qui évitent de vendre leurs meilleurs produits et leurs meilleures ventes sur les marketplaces. Vos TOP produits doivent être vendus sur votre site e-commerce en propre ! C’est grâce à ces produits que vous pourrez acquérir un trafic nouveau ou bien fidéliser une clientèle déjà acquise.</p>
+<p>Mettez en vente sur les places de marché tout le « reste » de votre catalogue produit, c’est-à-dire vos produits qui ne sont pas les best-sellers. Déstockez les produits que vous avez depuis longtemps et qui ne partent pas facilement. Vous pouvez aussi mettre en vente sur les places de marché les produits sur lesquels vous margez le plus. De cette façon, vous pouvez sacrifier un peu de marge mais augmenter vos volumes de vente. L’objectif étant de faire des économies d’échelle.</p>
+<h3>Quel contenu technique transmettre aux marketplaces ?</h3>
+<p>L’étape suivante est de fournir aux marketplaces un flux produit adéquat. Ce flux est un élément technique qui renferme de nombreuses informations sur vos produits (prix, description, titre, catégorie,…). Il doit être en accord avec toutes les exigences des places de marché. A noter que chacune d’entre elle a ses propres exigences. Si vous souhaitez gagner du temps dans la création de vos flux produits pour les places de marché, <a href="http://addons.prestashop.com/fr/4897-iziflux.html" target="_blank">faites appel à un gestionnaire de flux comme Iziflux</a>. Ce-dernier crée tous les flux dont vous avez besoin pour toutes les marketpaces sur lesquelles vous souhaitez vendre. Vous gagnez du temps sur cette phase très chronophage! Une solution de gestion de flux vous permet aussi de gérer via un seul back-office l’ensemble des commandes réalisées sur toutes les marketplaces. Vous n’avez pas besoin de vous connecter à plusieurs interfaces. Une seule suffit !</p>
+<h2>Les bonnes pratiques pour vendre sur les marketplaces</h2>
+<h3>1. Travaillez votre flux pour éviter le contenu dupliqué</h3>
+<p>Lorsque vous <a href="http://www.iziflux.com/solutions-compatibles/module-export-marketplaces-catalogue-produits-prestashop/" target="_blank">exportez votre catalogue produit sur les places de marché</a>, vous générez un flux produit qui comprend les titres, descriptions, images, prix, et toutes les caractéristiques de chacune de vos offres. En d’autres termes, vous copiez le contenu de votre site intégralement pour l’envoyer vers la marketplace. Si vous décidez de vendre sur plusieurs places de marché, ce contenu est encore dupliqué sur chacun des supports. Vous vous retrouvez alors avec un même contenu diffusé sur de nombreuses marketplaces. Google ne va pas apprécier et vous risquez d’être pénalisé.</p>
+<p>Google pénalisera le site qui a le moins d’autorité à ses yeux, et votre site, comparé aux marketplaces a moins d’autorité. A vous d’optimiser chacune de vos fiches produits sur les places de marché. Lorsque vous transmettez votre flux produit aux places de marché, attention donc à ne pas dupliquer tous vos contenus (ceux issus de votre site e-commerce). Google considère cela comme du <em>duplicate content</em> et accusera votre site de plagiat.</p>
+<p>La bonne pratique à suivre ? Créez un flux spécifique avec des titres et des descriptions différents de ceux que vous utilisez sur votre propre site e-commerce. C’est un travail long si l’on a de nombreux produits à la vente sur les places de marché, mais c’est réellement nécessaire afin de ne pas cannibaliser vos propres canaux de distribution online.</p>
+<h3>2. Optimisez tous les critères pour devancer vos concurrents</h3>
+<p>Nombreux sont les marchands sur les marketplaces. Certains vendent la même chose que vous, c’est certain. Afin d’être visible sur ces supports et de reléguer vos concurrents au second plan soyez vigilant sur tous les critères.</p>
+<p>Vérifiez la catégorisation de vos produits : celle de la marketplace n’est peut-être pas la même que la vôtre. Optimisez les critères de filtre : prix, avis, … Faites en sorte de toujours être le mieux placé. Pensez aussi à proposer plusieurs types de livraison. Enfin, vous pouvez aussi miser sur les liens sponsorisés de la marketplace Amazon (rémunérés au CPC) afin de remonter dans les résultats (un peu comme Adwords mais sur Amazon). Choisissez aussi de <a href="http://www.sonuts.fr/client-portfolio/" target="_blank">personnaliser votre boutique sur les places de marché</a> en installant par exemple un template qui vous permet de recréer l’univers de votre site e-commerce facilement et rapidement. Ce template vous permet de customiser les couleurs, le logo, les types de menu, etc. Le consommateur est alors ravi de reconnaitre votre environnement sur les places de marché. Un gage de professionnalisme, c’est certain !</p>
+<h3>3. Utilisez des techniques pour fidéliser</h3>
+<p>Les marketplaces sont largement plébiscitées par les internautes car elles permettent de trouver des produits à des prix plus intéressants, d’avoir des produits tout le temps en stock et de bénéficier d’un large choix. Les cyberacheteurs font aussi confiance à ces sites web qui privilégient à tout moment l’expérience et la satisfaction client.</p>
+<p>Comme tout marchand, si votre objectif n’est pas seulement la vente à un instant T, utilisez les marketplaces afin d’acquérir un large trafic, puis faites en sorte que les clients viennent commander sur votre site en propre. Pour cela, pensez par exemple à glisser un coupon de réduction pour la prochaine commande sur votre site dans le colis à destination des acheteurs.</p>
+<p><strong>Enfin, si vous souhaitez que vos produits soient connus et que les internautes viennent vous rendre visite sur votre site e-commerce pour vous découvrir, soyez parfait sur le processus de livraison. Évitez les litiges, les retards, les ruptures, les erreurs, les délais de réponse trop longs, etc… Optimisez le parcours client de A à Z afin d’être certain de récolter des avis positifs et de fidéliser les internautes petit à petit. A vous de jouer !<br />
+</strong></p>
+<p><strong>Auteur :</strong> Guilhem GLEIZES, fondateur de la solution iziflux et expert en stratégie marketplaces</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/comment-tirer-profit-marketplaces-booster-e-commerce/">Comment tirer profit des marketplaces pour booster votre e-commerce ?</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.prestashop.com/blog/fr/comment-tirer-profit-marketplaces-booster-e-commerce/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Comment réussir sa stratégie omnicanal &#8211; Interview de Faguo</title>
+		<link>https://www.prestashop.com/blog/fr/comment-reussir-strategie-omnicanal-interview-faguo/</link>
+		<comments>https://www.prestashop.com/blog/fr/comment-reussir-strategie-omnicanal-interview-faguo/#comments</comments>
+		<pubDate>Thu, 02 Feb 2017 17:27:57 +0000</pubDate>
+		<dc:creator><![CDATA[mvalenza]]></dc:creator>
+				<category><![CDATA[Success Story]]></category>
+
+		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=21110</guid>
+		<description><![CDATA[<p>L’omnicanal est devenu un pilier de développement pour les entrepreneurs ambitieux et connectés. L’objectif : vendre via différents canaux de distribution en toute synergie, afin de toucher plus largement et plus efficacement sa cible, tout en limitant les contraintes opérationnelles. C’est ce qu’a réussi à faire l’entreprise française Faguo, à la réussite internationale. Elle bénéficie [...]</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/comment-reussir-strategie-omnicanal-interview-faguo/">Comment réussir sa stratégie omnicanal &#8211; Interview de Faguo</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>L’omnicanal est devenu un pilier de développement pour les entrepreneurs ambitieux et connectés. L’objectif : vendre via différents canaux de distribution en toute synergie, afin de toucher plus largement et plus efficacement sa cible, tout en limitant les contraintes opérationnelles.<span id="more-21110"></span></p>
+<p>C’est ce qu’a réussi à faire l’entreprise française Faguo, à la réussite internationale. Elle bénéficie aujourd’hui d’un réseau de boutiques physiques et d’une présence en ligne, grâce à son site Ecommerce et aux réseaux sociaux, qui lui permet de se faire connaître et de distribuer rapidement en France et dans 24 pays.</p>
+<p>Dans cette vidéo, Nicolas, co-fondateur de Faguo et Anne-Charlotte, Responsable Ecommerce de la marque, vous explique comment s’est construite cette stratégie omnicanal et vous donneront leur conseils pour réussir à développer votre business.</p>
+<div class="g-ytsubscribe col-centered text-center" data-channelid="UCqDSbqSbkboMBARlYrhNa7g" data-layout="full" data-count="default"></div>
+<p><iframe width="700" height="394" src="https://www.youtube.com/embed/lOf5uMyGcIg?feature=oembed" frameborder="0" allowfullscreen></iframe></p>
+<div class="text-center"><a class="btn" style="background-color: #cd201f;border: 1px solid #b31217;border-bottom: 3px solid #b31217;margin: 20px 0 0;color: #fff" href="https://www.youtube.com/user/prestashop?utm_source=blog&amp;utm_medium=article&amp;utm_campaign=youtube&amp;utm_content=faguo">Voir plus de vidéos</a></div>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/comment-reussir-strategie-omnicanal-interview-faguo/">Comment réussir sa stratégie omnicanal &#8211; Interview de Faguo</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.prestashop.com/blog/fr/comment-reussir-strategie-omnicanal-interview-faguo/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Marketing social et mobile : les tendances incontournables pour le secteur de la mode</title>
+		<link>https://www.prestashop.com/blog/fr/marketing-social-mobile-les-tendances-incontournables-secteur-mode/</link>
+		<comments>https://www.prestashop.com/blog/fr/marketing-social-mobile-les-tendances-incontournables-secteur-mode/#comments</comments>
+		<pubDate>Wed, 01 Feb 2017 17:45:46 +0000</pubDate>
+		<dc:creator><![CDATA[Eva Lacalle]]></dc:creator>
+				<category><![CDATA[Conseils E-commerce]]></category>
+
+		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=21115</guid>
+		<description><![CDATA[<p>Nous utilisons de plus en plus le téléphone portable.. Que ce soit pour consulter les réseaux sociaux, effectuer des recherches, regarder des vidéos et faire des achats en ligne, tout se fait depuis notre smartphone. Cette tendance résulte du changement de mentalité des acheteurs et des vendeurs désireux de s’adapter aux nouveaux comportements favorisés par [...]</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/marketing-social-mobile-les-tendances-incontournables-secteur-mode/">Marketing social et mobile : les tendances incontournables pour le secteur de la mode</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><strong>Nous utilisons de plus en plus le téléphone portable.</strong>. Que ce soit pour consulter les réseaux sociaux, effectuer des recherches, regarder des vidéos et faire des achats en ligne, tout se fait depuis notre smartphone. Cette tendance résulte du <strong>changement de mentalité des acheteurs et des vendeurs désireux de s’adapter aux nouveaux comportements</strong> favorisés par la technologie.  </p>
+<p>Les réseaux sociaux et la popularisation des achats à partir du téléphone portable ont joué un rôle clé dans ce changement de comportement. Et si, de nos jours, le marketing social et le m-commerce constituent une tendance importante sur Internet, <strong>ils sont encore plus présents dans l’univers de la mode</strong>, un des principaux secteurs du commerce électronique.<span id="more-21115"></span></p>
+<p>En effet, <strong>la mode est l’un des secteurs les plus avancés en termes de techniques de marketing sur les réseaux sociaux et les appareils mobiles</strong>. Si vous travaillez dans la mode, voici les tendances que vous pouvez intégrer à votre stratégie marketing et les erreurs de base à éviter.</p>
+<h4 style="color:#ff1378">Créez un canal de communication entre les réseaux sociaux et votre marque</h4>
+<p>De nombreuses marques de mode sont obnubilées par le fait d’avoir une grande communauté sur leurs réseaux sociaux. Pourtant, quand elles y parviennent, elles ne l’exploitent pas pour servir l’objectif principal de tout e-commerce : vendre. Vous avez à coup sûr déjà commis cette erreur : publier un contenu sur les réseaux sociaux, utiliser les meilleurs hashtags et ensuite… <strong>oublier de mettre le lien vers la fiche produit</strong>.</p>
+<p>Vous devez garder à l’esprit que les réseaux sociaux sont essentiellement utilisés à partir du téléphone portable et que la recherche de produits depuis un smartphone n’est pas aussi simple que depuis un ordinateur. Donc, règle n° 1 : simplifiez la recherche. Autrement, <strong>à quoi bon avoir une grande communauté si finalement personne ne visite votre boutique ?</strong></p>
+<p>Certes, certains réseaux sociaux, comme Instagram, ne sont pas spécialement conçus pour cela, mais il existe bien d’autres options qui le sont et que vous pouvez exploiter. Dans ce cas, <strong>n’affichez pas l’URL en entier</strong>, utilisez le contenu prévisualisé que proposent les réseaux sociaux comme Facebook ou utilisez un outil pour raccourcir les URLs.</p>
+<h4 style="color:#ff1378">Gare à la taille des images</h4>
+<p><strong>La taille des images</strong> est aussi la source de nombreuses erreurs, <strong>que ce soit pour le format responsive ou sur les réseaux sociaux</strong>. Bien que pour apporter des changements à votre boutique en ligne ou sur les réseaux sociaux, vous utilisiez généralement un ordinateur, vous devez prendre en compte les différents appareils à partir desquels vos consommateurs potentiels les visualiseront.</p>
+<p>Pour le format responsive, étudiez comment votre thème affiche les images lorsqu’elles sont visualisées depuis un téléphone portable et adaptez-les au contenu affiché. Concernant les publications sur les réseaux sociaux, appliquez la taille utilisée, il suffit ensuite de prendre les images de votre site Web et de les adapter aux dimensions de chaque réseau social. <strong>Dans l’univers de la mode, l’image est primordiale pour la vente alors&#8230; prenez-en soin !</strong></p>
+<h4 style="color:#ff1378">Humanisez votre marque</h4>
+<p>L’une des plus grandes erreurs commises par la majorité des marques est de transformer leurs réseaux sociaux en un <strong>canal d’auto-promotion</strong> qui s&rsquo;apparente à du télé-achat en continu. Or nous connaissons tous le peu d’enthousiasme que suscite ce genre de programme. </p>
+<p>Par exemple, si vous vendez votre propre marque, expliquez qui vous êtes et comment vous travaillez, racontez votre histoire, présentez votre équipe, parlez des talents cachés derrière la marque. Montrez que, derrière l’écran, toute une équipe travaille pour satisfaire vos consommateurs.</p>
+<h4 style="color:#ff1378">Intégrez de nouveaux réseaux sociaux</h4>
+<p>Les boutiques de mode ont (presque) toutes accepté le fait que les réseaux sociaux sont incontournables dans le monde virtuel, mais elles se limitent au strict minimum : Facebook.</p>
+<p>Néanmoins, elles oublient l’opportunité que peuvent représenter pour elles <strong>les nouveaux réseaux sociaux</strong> qui sont <strong>très visuels</strong> et parfaits pour un secteur comme la mode où, comme nous l’avons déjà souligné, l’image revêt une grande importance. Instagram, Snapchat ou le plus ancien YouTube incarnent une alternative à prendre en considération si votre e-commerce est lié au secteur de la mode.</p>
+<p>De plus, <strong>ce sont de formidables canaux pour humaniser la marque et toucher vos clients potentiels</strong> en un clic, surtout les consommateurs qui réclament moins de texte et plus d’images.</p>
+<h4 style="color:#ff1378">Pariez sur la vidéo</h4>
+<p>Il y a quelques années, de nombreux e-commerce de mode se sont rendu compte que les ventes augmentaient si, en plus d’exposer les vêtements sur un fond, ils les présentaient sur un mannequin. Aujourd’hui, nous vous assurons que si vous pariez sur la vidéo, en plus de la photo, vous ne le regretterez pas.</p>
+<p>En effet, <strong>il y a une grande différence entre voir un vêtement sur une image et le voir en mouvement</strong> : le tombé, la coupe ou le changement de couleur en fonction de la luminosité sont autant d’éléments difficilement perceptibles sur une image et clairement visibles sur une vidéo. Les vidéos participent à éliminer l’inévitable barrière du commerce électronique : ne pas pouvoir toucher ce que l’on achète. Elles peuvent influencer les clients comme aucun autre format audiovisuel. </p>
+<p>De plus, <strong>les vidéos sont un contenu parfait pour les réseaux sociaux</strong>. D’une part, parce qu’elles améliorent la visibilité des publications (et par conséquent, de vos produits). Pensez à votre propre comportement sur les réseaux sociaux : n’est-il pas vrai que vous aussi vous cliquez sur le bouton Lecture lorsque vous êtes devant une vidéo ? D’autre part, parce que la vidéo est un contenu qui peut être partagé facilement.</p>
+<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/marketing-social-mobile-les-tendances-incontournables-secteur-mode/">Marketing social et mobile : les tendances incontournables pour le secteur de la mode</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.prestashop.com/blog/fr/marketing-social-mobile-les-tendances-incontournables-secteur-mode/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
 		<title>Les notifications SMS PrestaShop  pour booster vos ventes</title>
 		<link>https://www.prestashop.com/blog/fr/les-notifications-sms-prestashop-booster-vos-ventes/</link>
 		<comments>https://www.prestashop.com/blog/fr/les-notifications-sms-prestashop-booster-vos-ventes/#comments</comments>
@@ -72,368 +488,6 @@ Directement synchronisé avec vos clients PrestaShop, vous pourrez facilement se
 <p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/les-notifications-sms-prestashop-booster-vos-ventes/">Les notifications SMS PrestaShop  pour booster vos ventes</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
 ]]></content:encoded>
 			<wfw:commentRss>https://www.prestashop.com/blog/fr/les-notifications-sms-prestashop-booster-vos-ventes/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
-		<item>
-		<title>Pourquoi le service client est (encore) plus important pour le e-commerce</title>
-		<link>https://www.prestashop.com/blog/fr/service-client-encore-important-e-commerce/</link>
-		<comments>https://www.prestashop.com/blog/fr/service-client-encore-important-e-commerce/#comments</comments>
-		<pubDate>Thu, 26 Jan 2017 08:00:30 +0000</pubDate>
-		<dc:creator><![CDATA[Eva Lacalle]]></dc:creator>
-				<category><![CDATA[Conseils E-commerce]]></category>
-
-		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=21080</guid>
-		<description><![CDATA[<p>Le service client est l’un des services clés des ventes, quel que soit le type de canal. Dans le monde numérique, il est encore plus important, car il vous permet de vendre vos produits et de fidéliser les utilisateurs. Selon les dernières études, jusqu’à 65 % des clients ont déjà abandonné leur panier d’achat car [...]</p>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/service-client-encore-important-e-commerce/">Pourquoi le service client est (encore) plus important pour le e-commerce</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
-]]></description>
-				<content:encoded><![CDATA[<p>Le service client est l’un des <strong>services clés des ventes</strong>, quel que soit le type de canal. Dans le monde numérique, il est encore plus important, car il vous permet de <strong>vendre vos produits et de fidéliser les utilisateurs</strong>. Selon les dernières études, jusqu’à 65 % des clients ont déjà abandonné leur panier d’achat car leurs doutes n’avaient pas été dissipés.</p>
-<p>Voilà l’un des obstacles auxquels le commerce électronique a toujours dû faire face : contrairement au commerce traditionnel, il n’y a personne pour répondre aux doutes des clients pendant le processus d’achat. Cependant, si l’on tient compte du <strong>nombre d’abandons de paniers</strong> et du fait <strong>qu’une grande majorité d’utilisateurs serait disposée à dépenser plus dans une boutique en ligne</strong> si elle bénéficiait d’un service client de qualité, on se rend compte que le service client mérite toute notre attention. <span id="more-21080"></span></p>
-<h2 style="color: #23135a;"><strong>Quel est l’état du service client aujourd’hui ?</strong></h2>
-<p>Information pendant le processus d’achat, résolution de problèmes et service après-vente sont des aspects essentiels du service client. Les techniques les plus utilisées par les boutiques en ligne sont :</p>
-<ul>
-<li><strong>Les e-mails ou formulaires de contact</strong>, pour neuf entreprises sur dix.</li>
-<li><strong>L’assistance téléphonique</strong>, pour plus de 80 % des entreprises.</li>
-<li>Une rubrique consacrée aux questions fréquentes (<strong>FAQ</strong>), pour deux tiers des boutiques, bien qu’il s’agisse d’une option plus utilisée que l’assistance téléphonique en Espagne.</li>
-<li><strong>Le chat</strong>, pour deux boutiques en ligne sur dix.</li>
-<li><strong>Les forums</strong>, qui sont anecdotiques dans certains pays, mais qui constituent l’une des options préférées pour les boutiques en ligne dans notre pays.</li>
-</ul>
-<h2 style="color: #23135a;"><strong>Pourquoi le service client est-il si important ?</strong></h2>
-<p>Il n’existe pas de seconde chance pour faire une première impression. C’est d’autant plus vrai sur Internet, <strong>car les clients retiendront davantage une expérience négative</strong>, ce qui entraîne des pertes considérables.</p>
-<p>Et ce n’est pas tout. Une fois que le client a vécu une mauvaise expérience, on estime que dix à douze expériences positives sont nécessaires pour lui faire oublier cette mauvaise impression. <strong>Des opportunités que tous les utilisateurs ne sont pas prêts à offrir</strong>.</p>
-<p>En outre, <strong>il est rare qu’un client revienne dans votre boutique en ligne après une mauvaise expérience</strong>. C’est encore plus vrai si vous travaillez dans le luxe, car le client exige un service personnalisé.</p>
-<h2 style="color: #23135a;"><strong>Et après une mauvaise expérience ?</strong></h2>
-<p>Que se passe-t-il si nous avons déjà commis une erreur ? Devons-nous considérer que nous avons perdu l’acheteur ? En premier lieu, ne minimisez jamais l’importance d’une mauvaise expérience.</p>
-<p>La première chose à faire est <strong>de comprendre le problème qu’a eu l’utilisateur</strong>. Vous pouvez automatiser certaines tâches dans votre boutique en ligne, mais d’autres, comme celle-ci, doivent être personnalisées, car vous devez vous adapter à chaque problème. Peu importe que le client ait besoin de plus d’informations sur un produit ou qu’il ait rencontré un problème lors du processus de livraison.</p>
-<p>Autre aspect à prendre en compte : <strong>la rapidité de la réponse</strong>. Si un client a un doute, vous devez prendre contact avec lui le plus rapidement possible pour qu’il se sente écouté. Si vous avez opté pour les e-mails ou les formulaires de contact, répondez rapidement et, si vous le pouvez, proposez d’autres canaux pour apporter une réponse immédiate, comme le téléphone ou le chat.</p>
-<p>Enfin, selon l’erreur, étudiez les <strong>éventuelles indemnisations pour la mauvaise expérience vécue</strong>. La plupart des gens sont conscients que des erreurs peuvent se produire, mais si vous agissez rapidement et que l’utilisateur se sent écouté et reçoit une indemnisation, il sera plus facile de lui faire oublier sa mauvaise expérience.</p>
-<p>Nous vous conseillons également de réaliser <strong>un suivi du problème</strong> pour vérifier que le client est satisfait après l’incident. Cela vous permettra non seulement de savoir si le problème a été résolu, mais aussi de communiquer directement avec l’utilisateur dans un climat plus positif : le client se sentira écouté jusqu’au bout.</p>
-<p>N’oubliez pas qu’un client satisfait recommandera votre boutique. Selon plusieurs études, il la recommandera à quatre ou six personnes, tandis qu’un client insatisfait partagera sa mauvaise expérience avec neuf à quinze personnes.</p>
-<h2 style="color: #23135a;"><strong>Quels sont les principaux problèmes ?</strong></h2>
-<p>Nous vous conseillons de prêter particulièrement attention à certains points pour éviter tout problème dans le service client.</p>
-<h4 style="color: #23135a;">Le manque de préparation du personnel</h4>
-<p>L’une des principales erreurs est que les personnes chargées du service client ne sont pas des spécialistes. Si nécessaire, <strong>formez une équipe</strong> dans laquelle chaque membre est <strong>spécialisé</strong> dans un domaine précis : informations sur le produit, résolution de problèmes techniques, etc. En outre, il est important d’avoir des connaissances en <strong>intelligence émotionnelle</strong> pour savoir faire preuve d’empathie.</p>
-<p>Vous devez bien sûr fournir les <strong>outils appropriés pour résoudre le problème</strong>, qu’il s’agisse d’outils techniques ou de la capacité à prendre des décisions.</p>
-<h4 style="color: #23135a;">L’impossibilité de faire face à la demande</h4>
-<p>De nombreuses entreprises se retrouvent confrontées à ce problème pendant certaines périodes, notamment à Noël, car <strong>si la demande est très importante, elle peut dépasser leur capacité</strong>. Dans ce cas, une mauvaise planification peut conduire au désastre. Évaluez votre croissance et envisagez de recruter davantage de personnel pendant ces périodes chargées.</p>
-<h4 style="color: #23135a;">L’absence de plan d’action pour répondre aux réclamations</h4>
-<p>Personne n’aime faire face à un client mécontent, et nombreux sont ceux qui ne savent pas quoi faire dans une telle situation. Préparez un <strong>plan d’action pour orienter le personnel chargé du service client</strong>. Il saura ainsi comment réagir dans les situations les plus courantes. Ceci est particulièrement utile si vous avez de nouvelles recrues.</p>
-<h4 style="color: #23135a;">Les erreurs commises par des tiers</h4>
-<p>Parfois, l’erreur est causée par le service d’un fournisseur ou la société de transport. Expliquez la situation au client, mais <strong>n’ignorez pas le problème</strong>. Même si l’erreur n’est pas le fait de votre entreprise, c’est dans votre boutique que le client ne remettra plus les pieds. C’est pourquoi vous devez vous impliquer et surtout faire comprendre au client que vous mettez tout en œuvre pour trouver une solution au problème.</p>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/service-client-encore-important-e-commerce/">Pourquoi le service client est (encore) plus important pour le e-commerce</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
-]]></content:encoded>
-			<wfw:commentRss>https://www.prestashop.com/blog/fr/service-client-encore-important-e-commerce/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
-		<item>
-		<title>Pourquoi vendre en ligne avec PrestaShop?</title>
-		<link>https://www.prestashop.com/blog/fr/keep-calm-and-sell-online-with-prestashop/</link>
-		<comments>https://www.prestashop.com/blog/fr/keep-calm-and-sell-online-with-prestashop/#comments</comments>
-		<pubDate>Wed, 25 Jan 2017 07:00:13 +0000</pubDate>
-		<dc:creator><![CDATA[Sandra Fernandes]]></dc:creator>
-				<category><![CDATA[Actualités PrestaShop]]></category>
-
-		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=21074</guid>
-		<description><![CDATA[<p>Keep Calm and Sell Online with PrestaShop. Vendre en ligne avec PrestaShop, c’est donner la possibilité aux commerçants de se surpasser et de saisir toutes les belles opportunités du web. En tout cas, tel est le challenge que s’est fixé PrestaShop il y a bientôt de cela 10 ans. Une solution simple, performante, puissante, internationale, [...]</p>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/keep-calm-and-sell-online-with-prestashop/">Pourquoi vendre en ligne avec PrestaShop?</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
-]]></description>
-				<content:encoded><![CDATA[<p>Keep Calm and Sell Online with PrestaShop. <strong>Vendre en ligne avec PrestaShop</strong>, c’est donner la possibilité aux commerçants de se surpasser et de saisir toutes les belles opportunités du web. En tout cas, tel est le challenge que s’est fixé PrestaShop il y a bientôt de cela 10 ans.<br />
-<span id="more-21074"></span></p>
-<p>Une solution simple, performante, puissante, internationale, prête à faire de votre produit, votre idée, votre projet, votre magasin, votre <em>startup</em>, le prochain succès <strong>e-commerce</strong> dans les régions du monde que vous aurez choisies. Car le soleil ne se couche jamais sur l’écosystème PrestaShop ; une aubaine pour les marchands de France et de Navarre qui veulent saisir tout le potentiel de développement du web en Europe et ailleurs!</p>
-<p>Les 15 raisons listées ci-dessous, pour ne citer qu’elles, retracent justement les valeurs ajoutées de 10 années de développement open source et de collaboration avec un écosystème d’experts au service de marchands passionnés et ambitieux des quatre coins du monde.</p>
-<h2>Les raisons pour lesquelles vous devez faire le choix de PrestaShop</h2>
-<p>1. C’est des <em>startups </em>du web français que rien n’arrête comme Sessun, Bobbies ou encore Monsieur Moustache ;</p>
-<p>2. C’est un logiciel accessible et simple d’utilisation grâce à une ergonomie pensée pour des utilisateurs novices et exigeants, expérimentés ou qui démarrent dans le web;</p>
-<p>3. C’est un logiciel hors du commun sur lequel se basent des retailers mode de renom comme Eric Bompard, Manoush ou encore Ba&amp;sh.</p>
-<p>4. C’est un hub auquel est connecté un écosystème d&rsquo;experts du commerce digital (développeurs, responsables e-commerce, chefs de projets) en France et à l’international;</p>
-<p>5. C’est une communauté de plus d&rsquo;un million de membres dans plus de 195 pays qui soutient les entrepreneurs ambitieux à vivre de leurs passions aux quatre coins du monde;</p>
-<p>6. C’est un logiciel gratuit doté de plus de 500 fonctionnalités qui permet de gérer son catalogue, ses commandes et ses clients, tout en vendant ses produits, via un site mobile responsive. Tout cela dans le but de développer son activité commerciale en ligne et en magasin;</p>
-<p>7. C’est une solution « scalable » qui permet rapidement le développement de sa boutique au marché européen et aux 6 continents de la planète en quelques clics ;</p>
-<p>8. C’est la caution de 250 000 sites e-commerce actifs partout dans le monde ;</p>
-<p>9. C’est vendre des savons organiques en Normandie, des cartes Pokémon au Japon, des articles de sport en République Démocratique du Congo, des produits de beauté naturels en Malaisie ou des T-Shirts en Colombie;</p>
-<p>10. C’est 5000 modules et thèmes disponibles sur la <a href="https://addons.prestashop.com/fr/">Marketplace PrestaShop Addons</a> assurant un accompagnement dans chaque phase de développement de sa boutique en ligne ;</p>
-<p>11. C’est une solution open-source accessible et versatile qui offre une très grande flexibilité et transparence de développement. On ajoute à cela un coût de développement et de maintenance deux fois moins élevés que d&rsquo;autres solutions open-source du marché ;</p>
-<p>12. C’est des Pure-Players, des entreprises championnes du digital, qui ont réussi leur développement en s’appuyant sur PrestaShop : Le Slip Français, Décathlon, Envie de Fraises, Private Sport Shop, Brico-Privé, etc.</p>
-<p>13. C’est des spécialistes de l&rsquo;hébergement qui vous permettent de gérer la performance de sites à très forte volumétrie ;</p>
-<p>14. C’est des sites e-commerce qui tournent et qui génèrent des dizaines de millions d’euros de CA via des modèles de vente très variés (vente directe, ventes privées, Marketplace, réseaux sociaux)</p>
-<p>15. C’est une équipe surmotivée, sur le terrain, experte et exigeante pour faire de votre boutique la prochaine success story e-commerce ;</p>
-<p>Pour en savoir plus, nous vous invitons à vous rapprocher de nos <a href="https://www.prestashop.com/fr/agences-web-partenaires">agences partenaires</a> ou tout simplement à <a href="https://www.prestashop.com/fr/telechargement">télécharger </a>le logiciel PrestaShop.</p>
-<p><strong>Bonne année e-commerce à tous !</strong></p>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/keep-calm-and-sell-online-with-prestashop/">Pourquoi vendre en ligne avec PrestaShop?</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
-]]></content:encoded>
-			<wfw:commentRss>https://www.prestashop.com/blog/fr/keep-calm-and-sell-online-with-prestashop/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
-		<item>
-		<title>3 pièges à éviter pour optimiser l&#8217;expérience utilisateur de votre site ecommerce</title>
-		<link>https://www.prestashop.com/blog/fr/3-pieges-eviter-optimiser-lexperience-utilisateur-site-ecommerce/</link>
-		<comments>https://www.prestashop.com/blog/fr/3-pieges-eviter-optimiser-lexperience-utilisateur-site-ecommerce/#comments</comments>
-		<pubDate>Tue, 24 Jan 2017 09:35:00 +0000</pubDate>
-		<dc:creator><![CDATA[mvalenza]]></dc:creator>
-				<category><![CDATA[Conseils E-commerce]]></category>
-
-		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=21094</guid>
-		<description><![CDATA[<p>On parle de plus en plus de l’expérience utilisateur en Ecommerce, mais il est pourtant encore difficile d’en saisir le sens, et surtout d’arriver à l’optimiser pour ainsi booster la conversion de son site Ecommerce. Alors l’expérience utilisateur c’est quoi ? Plus communément appelé UX, l’expérience utilisateur correspond au parcours que réalise les visiteurs de [...]</p>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/3-pieges-eviter-optimiser-lexperience-utilisateur-site-ecommerce/">3 pièges à éviter pour optimiser l&rsquo;expérience utilisateur de votre site ecommerce</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
-]]></description>
-				<content:encoded><![CDATA[<p>On parle de plus en plus de l’expérience utilisateur en Ecommerce, mais il est pourtant encore difficile d’en saisir le sens, et surtout d’arriver à l’optimiser pour ainsi booster la conversion de son site Ecommerce. </p>
-<p>Alors l’expérience utilisateur c’est quoi ? Plus communément appelé UX, l’expérience utilisateur correspond au parcours que réalise les visiteurs de votre site Ecommerce avant l’acte d’achat, c’est-à-dire vos prospects. <span id="more-21094"></span></p>
-<p>Il est donc impératif de leur offrir une expérience utilisateur optimale, afin de les retenir sur votre site et donc de maximiser vos chances de conversion. </p>
-<p>Même si vous êtes-vous aussi client de sites Ecommerce, que vous connaissez votre offre mieux que personne, il vous faudra éviter certains pièges pour bien optimiser l’expérience utilisateur de votre site Ecommerce. </p>
-<p><a href="https://fr.linkedin.com/in/leadesign" target="_blank">Léa Mendès</a>, UX Designer chez PrestaShop, vous donne les clés pour éviter 3 principaux pièges pour une expérience utilisateur réussie !</p>
-<div class="g-ytsubscribe col-centered text-center" data-channelid="UCqDSbqSbkboMBARlYrhNa7g" data-layout="full" data-count="default"></div>
-<p><iframe width="700" height="394" src="https://www.youtube.com/embed/Lr0ekGR_Je4?feature=oembed" frameborder="0" allowfullscreen></iframe></p>
-<div class="text-center"><a class="btn" style="background-color: #cd201f;border: 1px solid #b31217;border-bottom: 3px solid #b31217;margin: 20px 0 0;color: #fff" href="https://www.youtube.com/user/prestashop?utm_source=blog&#038;utm_medium=article&#038;utm_campaign=youtube&#038;utm_content=uxprestashop">Voir plus de vidéos</a></div>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/3-pieges-eviter-optimiser-lexperience-utilisateur-site-ecommerce/">3 pièges à éviter pour optimiser l&rsquo;expérience utilisateur de votre site ecommerce</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
-]]></content:encoded>
-			<wfw:commentRss>https://www.prestashop.com/blog/fr/3-pieges-eviter-optimiser-lexperience-utilisateur-site-ecommerce/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
-		<item>
-		<title>UX Design : les erreurs les plus fréquentes des designers et leurs solutions</title>
-		<link>https://www.prestashop.com/blog/fr/ux-design-les-erreurs-les-frequentes-designers-leurs-solutions/</link>
-		<comments>https://www.prestashop.com/blog/fr/ux-design-les-erreurs-les-frequentes-designers-leurs-solutions/#comments</comments>
-		<pubDate>Wed, 18 Jan 2017 08:00:03 +0000</pubDate>
-		<dc:creator><![CDATA[Eva Lacalle]]></dc:creator>
-				<category><![CDATA[Uncategorized]]></category>
-
-		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=21041</guid>
-		<description><![CDATA[<p>Nous donnons déjà des conseils pour améliorer l&#8217;expérience utilisateur sur le blog de PrestaShop, notamment dans cet article, qui explique comment augmenter les conversions. Aujourd&#8217;hui, nous allons de nouveau nous intéresser à l&#8217;amélioration de l&#8217;expérience utilisateur, mais du point de vue du design, car certaines erreurs courantes peuvent nuire à la qualité de votre boutique [...]</p>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/ux-design-les-erreurs-les-frequentes-designers-leurs-solutions/">UX Design : les erreurs les plus fréquentes des designers et leurs solutions</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
-]]></description>
-				<content:encoded><![CDATA[<p>Nous donnons déjà des conseils pour <strong>améliorer l&rsquo;expérience utilisateur</strong> sur le blog de PrestaShop, notamment dans <a href="https://www.prestashop.com/blog/fr/comment-ameliorer-lexperience-client-booster-les-conversions/">cet article, qui explique comment augmenter les conversions.</a> Aujourd&rsquo;hui, nous allons de nouveau nous intéresser à l&rsquo;amélioration de l&rsquo;expérience utilisateur, mais du point de vue du design, car certaines erreurs courantes peuvent nuire à la qualité de votre boutique en ligne.<span id="more-21041"></span></p>
-<p>Pour créer une bonne expérience utilisateur, il faut tenir compte de tous les<strong> facteurs qui interagissent avec les utilisateurs de votre site Web</strong>. L&rsquo;expérience utilisateur sera influencée par le <strong>design</strong> (facilité d&rsquo;utilisation, accessibilité, design graphique…), mais aussi par des <strong>aspects psychologiques</strong>, comme les émotions que suscitent votre marque et vos produits.</p>
-<p>Aujourd&rsquo;hui, nous allons nous pencher sur les erreurs de design courantes que nous pouvons rencontrer dans tout type de projet. Que l&rsquo;erreur apparaisse sur l&rsquo;interface lors de la demande de données ou lors de la présentation des différentes options, le design est l&rsquo;un des éléments clés pour obtenir un site Web élégant et facile d&rsquo;utilisation.</p>
-<p>Plus concrètement, nous allons voir <strong>les erreurs les plus fréquentes associées à la création des formulaires</strong>. Les formulaires sont des éléments essentiels de la vente en ligne et c&rsquo;est au moment de les remplir que l&rsquo;on compte le plus d&rsquo;abandons de paniers. Il y a bien sûr des exceptions aux conseils que nous vous donnons ici, mais ce petit guide vous aidera à améliorer le design de votre boutique en ligne.</p>
-<h2 style="color:#251b5b">Affichez la liste dans une colonne</h2>
-<p>Pour faciliter la saisie des données, il est préférable que la liste s&rsquo;affiche dans <strong>une seule colonne</strong>, car nous lisons généralement ce type de questionnaire de haut en bas.<br />
-<img src="https://www.prestashop.com/blog/fr/files/2017/01/1.jpg" alt="1" width="1000" height="402" class="alignnone size-full wp-image-21042" /><br />
-Autre possibilité : <strong>regrouper les données en fonction de leurs caractéristiques de base</strong> et les présenter séparément, c&rsquo;est-à-dire créer une colonne pour les données personnelles, une autre pour les méthodes de paiement et une dernière pour la livraison. Toutefois, pour une meilleure interaction avec l&rsquo;utilisateur, les données que vous demandez pour chacune de ces caractéristiques doivent figurer dans une seule colonne.</p>
-<h2 style="color:#251b5b">Alignez les étiquettes dans la partie supérieure</h2>
-<p>Les utilisateurs remplissent plus vite les formulaires lorsque <strong>les étiquettes sont affichées dans la partie supérieure</strong>, et non sur la gauche. Toutefois, il y a une exception à cette règle : si vous disposez d&rsquo;une grande liste de champs à remplir avec différentes options, mieux vaut placer les étiquettes sur la gauche, car cela réduit la hauteur totale du formulaire tout en facilitant la lecture : les étiquettes sont mises en avant, pour une utilisation optimale.<br />
-<img src="https://www.prestashop.com/blog/fr/files/2017/01/2.jpg" alt="2" width="1000" height="429" class="alignnone size-full wp-image-21043" /></p>
-<h2 style="color:#251b5b">Regroupez les étiquettes et leur champ de saisie</h2>
-<p>Si vous laissez exactement la même distance entre les options et leurs étiquettes, l&rsquo;utilisateur risque d&rsquo;être dérouté. <strong>Regroupez les étiquettes</strong> pour que l&rsquo;utilisateur sache immédiatement quelles informations il doit saisir.</p>
-<p>C&rsquo;est essentiel si vous avez de nombreux champs, car l&rsquo;utilisateur risque d&rsquo;oublier à quel champ appartient telle ou telle étiquette.<br />
-<img src="https://www.prestashop.com/blog/fr/files/2017/01/3.jpg" alt="3" width="1000" height="429" class="alignnone size-full wp-image-21044" /></p>
-<h2 style="color:#251b5b">N&rsquo;utilisez pas de majuscules</h2>
-<p>Vous devez <strong>bannir les majuscules</strong>, car, dans le monde numérique, les majuscules signifient que l&rsquo;on crie. Or, aucun client n&rsquo;aime qu&rsquo;on lui crie dessus. Les majuscules sont également plus difficiles à lire. Ceci dit, à part pour des questions de style (le style devant être identique sur toute la page Web), n&rsquo;écrivez pas non plus tout en minuscule.<br />
-<img src="https://www.prestashop.com/blog/fr/files/2017/01/4.jpg" alt="4" width="1000" height="429" class="alignnone size-full wp-image-21045" /></p>
-<h2 style="color:#251b5b">N&rsquo;utilisez pas les champs de saisie pour vos étiquettes</h2>
-<p>Bien que cette méthode ait été très à la mode il y a quelque temps et qu&rsquo;elle économise de l&rsquo;espace visuellement (motif pour lequel certains designers l&rsquo;utilisent encore), elle <strong>génère des problèmes d&rsquo;utilisation</strong>.<br />
-<img src="https://www.prestashop.com/blog/fr/files/2017/01/5.jpg" alt="5" width="1000" height="429" class="alignnone size-full wp-image-21046" /></p>
-<p>Une fois le curseur placé dans le champ, l&rsquo;étiquette d&rsquo;information disparaît et l&rsquo;utilisateur risque d&rsquo;oublier ce qu&rsquo;il devait écrire dans le champ. Il ne peut pas non plus vérifier que toutes les données sont correctes avant d&rsquo;appuyer sur le bouton pour confirmer l&rsquo;achat ou lorsque le système détecte une erreur. En outre, les champs à remplir sont moins bien visibles en une seule fois.</p>
-<h2 style="color:#251b5b">Indiquez où se situe l&rsquo;erreur</h2>
-<p>Si, au moment de remplir les différents champs, l&rsquo;utilisateur a fait une erreur, <strong>indiquez-lui exactement où se situent cette erreur</strong> et, si possible, <strong>son motif</strong>. Plus votre formulaire contient de rubriques, plus ce point est important, car l&rsquo;utilisateur peut quitter le site s&rsquo;il ne trouve pas facilement l&rsquo;erreur. En indiquant où elle se situe, vous améliorerez l&rsquo;interaction avec l&rsquo;utilisateur.<br />
-<img src="https://www.prestashop.com/blog/fr/files/2017/01/6.jpg" alt="6" width="1000" height="362" class="alignnone size-full wp-image-21047" /></p>
-<h2 style="color:#251b5b">Ne masquez pas l&rsquo;aide de base</h2>
-<p>Il est parfois possible <strong>de proposer une aide de base à l&rsquo;utilisateur lorsqu&rsquo;il remplit le questionnaire</strong>. Si vous le pouvez, laissez-la à la vue de l&rsquo;utilisateur pour l&rsquo;aider à terminer le processus le plus vite possible.<br />
-<img src="https://www.prestashop.com/blog/fr/files/2017/01/7.jpg" alt="7" width="1000" height="362" class="alignnone size-full wp-image-21048" /></p>
-<p>Si vous masquez cette aide, il est possible que l&rsquo;utilisateur saisisse un mot de passe incorrect qui ne comprend pas assez de caractères : une erreur s&rsquo;affiche et l&rsquo;utilisateur revient en arrière pour trouver son erreur, place le curseur sur le point d&rsquo;interrogation, se rend compte qu&rsquo;il fallait saisir au moins 5 caractères et rentre un mot de passe valide. En rendant les explications visibles, vous simplifiez l&rsquo;expérience de l&rsquo;utilisateur.</p>
-<h2 style="color:#251b5b">Faites ressortir les boutons d&rsquo;action</h2>
-<p>Si vous proposez deux options, <strong>faites ressortir celle qui dirigera l&rsquo;utilisateur vers l&rsquo;action qui vous intéresse le plus</strong>. Pour ce faire, vous pouvez opter pour une taille plus grande ou une couleur voyante. L&rsquo;objectif final est de diriger l&rsquo;attention de l&rsquo;utilisateur. Si vous considérez que la deuxième option est pratiquement inutile, supprimez-la. Cela permet non seulement d&rsquo;améliorer l&rsquo;expérience de l&rsquo;utilisateur en lui indiquant l&rsquo;option la plus logique, mais aussi de faire ressortir les actions les plus avantageuses pour vous.<br />
-<img src="https://www.prestashop.com/blog/fr/files/2017/01/8.jpg" alt="8" width="1000" height="362" class="alignnone size-full wp-image-21049" /></p>
-<h2 style="color:#251b5b">Réfléchissez à tout ce qui est inutile</h2>
-<p>Il n&rsquo;est pas rare de demander des informations qui ne sont absolument pas nécessaires pour le processus d&rsquo;achat. Le client qui se retrouve face à un formulaire d&rsquo;achat interminable a tendance à abandonner le processus. L&rsquo;expérience d&rsquo;achat est tellement lente et ennuyeuse que cet utilisateur n&rsquo;achètera sans doute jamais rien dans votre boutique, même si le produit est bon.</p>
-<p>Réfléchissez aux données indispensables, à celles qui sont facultatives et à celles dont vous pouvez tout bonnement vous passer. Personne n&rsquo;a envie de passer des heures à saisir des données pour réaliser un achat. Vous devez donc <strong>faciliter au maximum ce processus</strong> et le rendre aussi agréable que possible pour améliorer l&rsquo;expérience utilisateur. Vous verrez la différence dans vos taux de conversion !</p>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/ux-design-les-erreurs-les-frequentes-designers-leurs-solutions/">UX Design : les erreurs les plus fréquentes des designers et leurs solutions</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
-]]></content:encoded>
-			<wfw:commentRss>https://www.prestashop.com/blog/fr/ux-design-les-erreurs-les-frequentes-designers-leurs-solutions/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
-		<item>
-		<title>nailmatic : un projet PrestaShop alliant image de marque et e-commerce</title>
-		<link>https://www.prestashop.com/blog/fr/nailmatic-projet-prestashop-alliant-image-marque-e-commerce/</link>
-		<comments>https://www.prestashop.com/blog/fr/nailmatic-projet-prestashop-alliant-image-marque-e-commerce/#comments</comments>
-		<pubDate>Tue, 17 Jan 2017 09:09:51 +0000</pubDate>
-		<dc:creator><![CDATA[Les amis de Preston]]></dc:creator>
-				<category><![CDATA[Conseils E-commerce]]></category>
-		<category><![CDATA[Success Story]]></category>
-
-		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=20807</guid>
-		<description><![CDATA[<p>Avec son esprit fonceur et créatif et ses idées de génie, nailmatic agite le monde du beauty business ! Distributeur automatique de vernis, coffrets vernis, ligne Kids avec des vernis à l’eau&#8230; la marque ose et inspire des looks colorés empreints de bonne humeur. Une identité forte que le site, lancé sous PrestaShop, doit exprimer [...]</p>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/nailmatic-projet-prestashop-alliant-image-marque-e-commerce/">nailmatic : un projet PrestaShop alliant image de marque et e-commerce</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
-]]></description>
-				<content:encoded><![CDATA[<p dir="ltr">Avec son esprit fonceur et créatif et ses idées de génie, nailmatic agite le monde du beauty business ! <strong>Distributeur automatique de vernis, coffrets vernis, ligne Kids avec des vernis à l’eau&#8230;</strong> la marque ose et inspire des looks colorés empreints de bonne humeur. Une identité forte que le site, lancé sous PrestaShop, doit exprimer à tous les niveaux : du graphisme aux fonctionnalités.</p>
-<p dir="ltr"><span id="more-20807"></span></p>
-<h2 dir="ltr"><span style="color: #00ccff;">Esprit de marque</span></h2>
-<p dir="ltr">nailmatic, c’est une collection de vernis fun, féminins et résolument modernes. Boris et Lilian, les créateurs de la marque, ont savamment apporté une valeur ajoutée à ces produits en leur construisant une personnalité. Le vernis change au gré des looks et s’autorise des teintes insolites. Un sentiment d’insouciance renforcé par les p<strong>rix attractifs et la production 100 % française</strong> : il n’y a vraiment pas de quoi se priver !</p>
-<h2><span style="color: #00ccff;">Qualité graphique</span></h2>
-<p dir="ltr">nailmatic.com reflète au premier coup d’oeil l’esprit de liberté de la marque : <strong>un design novateur et dynamique</strong>, qui laisse la part belle aux visuels pour mettre les produits en valeur. L’univers de la marque se décline à mesure que la home se déroule. C’est frais, c’est clair et ça va à l’essentiel !</p>
-<h2 dir="ltr"><span style="color: #00ccff;">Une boutique propulsée par PrestaShop</span></h2>
-<p dir="ltr">Pour la création de sa boutique sur PrestaShop 1.6, la nailmaTeam a travaillé avec <a href="https://www.prestashop.com/fr/agences-web-partenaires/platinum/axome" target="_blank"><strong>l’agence certifiée Axome.</strong></a> Elle a ainsi pu s’appuyer sur différentes fonctionnalités et modules approuvés par la communauté PrestaShop.</p>
-<p dir="ltr">nailmatic met notamment à disposition<strong> sa liste des points de vente via le Store Locator</strong> de PrestaShop : une fonctionnalité agrémentée par un développement spécifique permettant à nailmatic de <strong>définir les gammes de leur produit disponibles dans chaque magasin.</strong></p>
-<p dir="ltr">La rubrique Journal est alimentée via le module Prestablog, qui a été adapté pour coller aux besoin de la marque et ses mises en page graphiques.</p>
-<div dir="ltr"> <a href="http://www.nailmatic.com/fr/points-de-vente" target="_blank"><img alt="Capture du 2016-11-16 15-35-21.png" src="https://lh3.googleusercontent.com/Wo4Y7XazQcOHEY0Gt7-4TLgChooZPhholhJLYJXjKI3BHaYOjCTDp3X30GWMB3FNUdQ3xSzP_0tpXH-Gig9JDBJnXPMtqow0PivT6qPJ_qhNeGwdZiOBbim_LgxQM5pHXyWnAq6N" width="602" height="572" /></a></div>
-<div dir="ltr"></div>
-<div dir="ltr"></div>
-<h2><span style="color: #00ccff;"> Configurateur</span></h2>
-<p dir="ltr">Le configurateur, c’est l’exemple d’une <strong>fonctionnalité technique au service de l’identité de marque.</strong> nailmatic a lancé le concept du coffret cadeau en 2013. En 2016, la marque va plus loin sur son site avec le configurateur. Ce service inédit permet de <strong>composer son propre coffret en choisissant le nombre de flacons, les couleurs avec la possibilité d’ajouter un message personnalisé &#8211; tout en visualisant le coffret.</strong> nailmatic invente encore une nouvelle façon d’acheter du vernis à ongle. Techniquement, l’outil s’appuie sur la fonctionnalité des packs de PrestaShop pour générer ces coffrets à la demande.</p>
-<p dir="ltr"><a href="http://www.nailmatic.com/fr/coffret-personnalise" target="_blank"><img alt="Capture du 2016-11-16 15-36-46.png" src="https://lh5.googleusercontent.com/xqB-q3r13sBawMGcGChAj9zIwTQImxUWXGJ3J2ey2EkAesrpRyeeZ4xeFmCVrYGRXI79H0gJkzZCbOreVJGRMZMCL85_dn8vgvA6QwY-jMozw8DlAjWXsmTJJB91DrJAVe-lrE6F" width="602" height="767" /></a></p>
-<h2 dir="ltr"><span style="color: #00ccff;">Responsive</span></h2>
-<p dir="ltr">Avec l’irrésistible ascension de la navigation mobile, le responsive est devenu indispensable. Pour nailmatic, c’est aussi une question de positionnement. Quand la marque imagine son distributeur automatique de vernis en 2013, elle mise sur l’achat spontané. Avec son site responsive, elle est accessible à tout moment et facilite l’achat “petit plaisir” qu’elle revendique depuis toujours.</p>
-<p>&nbsp;</p>
-<p style="text-align: center;"><img class="aligncenter" alt="Capture du 2016-11-16 15-38-45.png" src="https://lh5.googleusercontent.com/Xc_3gWkLKvXcYpxeoQWTcs0cFkBnf-UF_gXvBz57F7FPMHj1mjQBuhsg1ssdUgialf4JwnX7aRqJoupUzNUFVDslTsaVq4sgJZHHbY43O4ivVIGht362MjQ2m1pm-SB98pTxp7H_" width="328" height="586" /></p>
-<h2 dir="ltr"><span style="color: #00ccff;">Des outils pour mieux convertir</span></h2>
-<p dir="ltr">Une fois son site lancé, l’entreprise a pu profiter des nombreux <a href="http://addons.prestashop.com/fr/" target="_blank">Addons</a> pour développer son chiffre d’affaires et recruter de nouveaux clients, comme notamment <a href="http://addons.prestashop.com/fr/18349-nostotagging.html" target="_blank">Nosto</a> pour le retargeting sur Facebook.</p>
-<h3><span style="color: #888888;"><b>Le mot d&rsquo;Axome</b></span></h3>
-<div><a href="http://www.axome.com/" target="_blank"><strong>Axome</strong></a> est la marque e-commerce de l&rsquo;agence de communication Trenta. Notre métier est de créer de la valeur pour les marques via le développement de stratégies BtoB et BtoC.</div>
-<p>&nbsp;</p>
-<div dir="ltr"></div>
-<p>&nbsp;</p>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/nailmatic-projet-prestashop-alliant-image-marque-e-commerce/">nailmatic : un projet PrestaShop alliant image de marque et e-commerce</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
-]]></content:encoded>
-			<wfw:commentRss>https://www.prestashop.com/blog/fr/nailmatic-projet-prestashop-alliant-image-marque-e-commerce/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
-		<item>
-		<title>5 conseils pour obtenir un maximum d’avis clients positifs pour votre site Ecommerce</title>
-		<link>https://www.prestashop.com/blog/fr/5-conseils-obtenir-maximum-davis-clients-positifs-site-ecommerce/</link>
-		<comments>https://www.prestashop.com/blog/fr/5-conseils-obtenir-maximum-davis-clients-positifs-site-ecommerce/#comments</comments>
-		<pubDate>Tue, 17 Jan 2017 07:00:12 +0000</pubDate>
-		<dc:creator><![CDATA[mvalenza]]></dc:creator>
-				<category><![CDATA[Conseils E-commerce]]></category>
-
-		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=21027</guid>
-		<description><![CDATA[<p>L’Ecommerce est devenu un marché très compétitif où vous pouvez facilement trouver la même offre sur plusieurs sites. Face à ces nombreux acteurs, la confiance est un critère de décision majeur pour les consommateurs, lors de l’acte d’achat. Pour se faire une idée du sérieux d’un site Ecommerce, le consommateur va alors très souvent consulter [...]</p>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/5-conseils-obtenir-maximum-davis-clients-positifs-site-ecommerce/">5 conseils pour obtenir un maximum d’avis clients positifs pour votre site Ecommerce</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
-]]></description>
-				<content:encoded><![CDATA[<p>L’Ecommerce est devenu un marché très compétitif où vous pouvez facilement trouver la même offre sur plusieurs sites. Face à ces nombreux acteurs,<strong> la confiance est un critère de décision majeur</strong> pour les consommateurs, lors de l’acte d’achat.</p>
-<p>Pour se faire une idée du sérieux d’un site Ecommerce, le consommateur va alors très souvent consulter les avis clients disponibles.<span id="more-21027"></span> </p>
-<p>Il est donc essentiel pour les Ecommerçants de <strong>maximiser les avis clients positifs</strong>, mais également de limiter les avis négatifs, qui sont un frein important à l’achat. </p>
-<p>Dans cette vidéo, Paul Patrick Beyeme, Sales Team Leader chez <a href="http://bit.ly/2hZpwEg" target="_blank">Trusted Shops</a>, vous donne <strong>5 conseils d’expert</strong> pour vous aider dans cette démarche et vous démarquer ainsi de vos concurrents. </p>
-<div class="g-ytsubscribe col-centered text-center" data-channelid="UCqDSbqSbkboMBARlYrhNa7g" data-layout="full" data-count="default"></div>
-<p><iframe width="700" height="394" src="https://www.youtube.com/embed/J8E83n42DuM?feature=oembed" frameborder="0" allowfullscreen></iframe></p>
-<div class="text-center"><a class="btn" style="background-color: #cd201f;border: 1px solid #b31217;border-bottom: 3px solid #b31217;margin: 20px 0 0;color: #fff" href="https://www.youtube.com/user/prestashop?utm_source=blog&amp;utm_medium=article&amp;utm_campaign=youtube&amp;utm_content=trustedshops">Voir plus de vidéos</a></div>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/5-conseils-obtenir-maximum-davis-clients-positifs-site-ecommerce/">5 conseils pour obtenir un maximum d’avis clients positifs pour votre site Ecommerce</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
-]]></content:encoded>
-			<wfw:commentRss>https://www.prestashop.com/blog/fr/5-conseils-obtenir-maximum-davis-clients-positifs-site-ecommerce/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
-		<item>
-		<title>Faire appel aux YouTubeurs : un moyen efficace de booster les ventes de votre site Ecommerce !</title>
-		<link>https://www.prestashop.com/blog/fr/faire-appel-aux-youtubeurs-moyen-efficace-booster-les-ventes-site-ecommerce/</link>
-		<comments>https://www.prestashop.com/blog/fr/faire-appel-aux-youtubeurs-moyen-efficace-booster-les-ventes-site-ecommerce/#comments</comments>
-		<pubDate>Tue, 10 Jan 2017 15:07:28 +0000</pubDate>
-		<dc:creator><![CDATA[mvalenza]]></dc:creator>
-				<category><![CDATA[Conseils E-commerce]]></category>
-
-		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=20995</guid>
-		<description><![CDATA[<p>Les YouTubeurs ! Plus que des stars du Web, ce sont de vrais influenceurs, suivis et écoutés par de plus en plus d’internautes. En effet : YouTube, 2ème moteur de recherche au monde, permet à ces influenceurs de la vidéo d’embarquer dans leur univers, dans leur passion… une communauté allant jusqu’à plusieurs millions d’abonnés. Une [...]</p>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/faire-appel-aux-youtubeurs-moyen-efficace-booster-les-ventes-site-ecommerce/">Faire appel aux YouTubeurs : un moyen efficace de booster les ventes de votre site Ecommerce !</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
-]]></description>
-				<content:encoded><![CDATA[<p>Les YouTubeurs ! Plus que des stars du Web, ce sont de vrais influenceurs, suivis et écoutés par de plus en plus d’internautes.</p>
-<p>En effet : YouTube, <strong>2ème moteur de recherche au monde</strong>, permet à ces influenceurs de la vidéo d’embarquer dans leur univers, dans leur passion… une communauté allant jusqu’à <strong>plusieurs millions d’abonnés.</strong><span id="more-20995"></span></p>
-<p>Une cible potentielle très qualifiée pour les sites Ecommerce, qui sollicitent de plus en plus les YouTubeurs pour faire parler de leur offre !</p>
-<p>Dans la vidéo d’aujourd’hui, Elodie, de l’agence <a href="http://bit.ly/2hHGjNQ" target="_blank">Envergure Digitale</a>, et YouTubeuse avec la chaîne <a href="http://bit.ly/2hHIWPW" target="_blank">Lecoindelodie</a>, comptant plus de <strong>200 000 abonnés</strong>, vous explique pourquoi et comment travailler efficacement avec un YouTubeur pour <strong>acquérir de nouveaux clients&nbsp;!</strong></p>
-<div class="g-ytsubscribe col-centered text-center" data-channelid="UCqDSbqSbkboMBARlYrhNa7g" data-layout="full" data-count="default"></div>
-<p><iframe width="700" height="394" src="https://www.youtube.com/embed/ybFO7hQ2QNo?feature=oembed" frameborder="0" allowfullscreen></iframe></p>
-<div class="text-center"><a class="btn" style="background-color: #cd201f;border: 1px solid #b31217;border-bottom: 3px solid #b31217;margin: 20px 0 0;color: #fff" href="https://www.youtube.com/user/prestashop?utm_source=blog&amp;utm_medium=article&amp;utm_campaign=youtube&amp;utm_content=enverguredigitale">Voir plus de vidéo</a></div>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/faire-appel-aux-youtubeurs-moyen-efficace-booster-les-ventes-site-ecommerce/">Faire appel aux YouTubeurs : un moyen efficace de booster les ventes de votre site Ecommerce !</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
-]]></content:encoded>
-			<wfw:commentRss>https://www.prestashop.com/blog/fr/faire-appel-aux-youtubeurs-moyen-efficace-booster-les-ventes-site-ecommerce/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
-		<item>
-		<title>Comment migrer votre site PrestaShop vers un nouveau serveur</title>
-		<link>https://www.prestashop.com/blog/fr/comment-migrer-site-prestashop-vers-nouveau-serveur/</link>
-		<comments>https://www.prestashop.com/blog/fr/comment-migrer-site-prestashop-vers-nouveau-serveur/#comments</comments>
-		<pubDate>Mon, 09 Jan 2017 11:25:30 +0000</pubDate>
-		<dc:creator><![CDATA[Eva Lacalle]]></dc:creator>
-				<category><![CDATA[Conseils E-commerce]]></category>
-		<category><![CDATA[Developpement / Technique]]></category>
-
-		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=20998</guid>
-		<description><![CDATA[<p>Le transfert de votre boutique PrestaShop vers un nouveau serveur figure parmi les tâches techniques auxquelles tout propriétaire de boutique en ligne peut se trouver confronté. Déplacer la totalité d&#8217;une boutique en ligne vers un nouveau serveur ne présente pas de difficulté particulière, mais il est nécessaire de prendre en compte un ensemble d&#8217;aspects et [...]</p>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/comment-migrer-site-prestashop-vers-nouveau-serveur/">Comment migrer votre site PrestaShop vers un nouveau serveur</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
-]]></description>
-				<content:encoded><![CDATA[<p><strong>Le transfert de votre boutique PrestaShop vers un nouveau serveur</strong> figure parmi les tâches techniques auxquelles tout propriétaire de boutique en ligne peut se trouver confronté. Déplacer la totalité d&rsquo;une boutique en ligne vers un nouveau serveur ne présente pas de difficulté particulière, mais il est nécessaire de prendre en compte un ensemble d&rsquo;aspects et de suivre le processus en respectant un ordre approprié afin d&rsquo;éviter tout problème sur votre site internet. Nous avons créé un petit guide sur le blog de PrestaShop qui vous aidera à <strong>migrer votre site vers un autre hébergeur.</strong><span id="more-20998"></span></p>
-<h4 style="color: #eaad52">Avant de commencer&#8230;</h4>
-<p>Avant toute chose, pour migrer votre site web PrestaShop, vous devez vous assurer de remplir les conditions suivantes :</p>
-<ul>
-<li><strong>Avoir installé sur votre ordinateur le client FTP de votre choix</strong> et pouvoir vous connecter via FTP au nouveau serveur et à l&rsquo;ancien. Si vous rencontrez un problème à ce stade du processus, contactez l&rsquo;assistance de l&rsquo;hébergeur en question pour obtenir les informations dont vous avez besoin.</li>
-<li><strong>Avoir un compte administrateur dans le cPanel de vos boutiques en ligne,</strong> sur le nouveau serveur comme sur l&rsquo;ancien.</li>
-<li><strong>Avoir également un compte administrateur dans le back-office de vos boutiques en ligne PrestaShop.</strong></li>
-</ul>
-<p>Si vous êtes prêts, vous pouvez commencer la migration !</p>
-<h4 style="color: #eaad52">Étape 1 : déterminez la version de PrestaShop sur laquelle se trouve votre boutique en ligne, puis mettez votre site en maintenance</h4>
-<p><strong>Actualisez si nécessaire la version de PrestaShop sur laquelle fonctionne votre site web.</strong> Pour déterminer la version de PrestaShop sur laquelle se trouve votre boutique, il vous suffit de regarder la barre supérieure du back-office de votre boutique si vous êtes sur la version 1.6 et si vous êtes sur la version 1.5 vous la trouverez dans la barre inferieure. De plus, même si cela n&rsquo;est pas obligatoire, <strong>nous vous recommandons de mettre votre boutique en ligne en maintenance.</strong> Ainsi, si quelqu&rsquo;un accède à votre domaine, vous ne perdrez aucune donnée pendant le processus de migration de votre site web PrestaShop. Si votre site web est en local, cette étape n&rsquo;est pas nécessaire puisque votre site web PrestaShop n&rsquo;est pas public.</p>
-<h4 style="color: #eaad52">Étape 2 : créez une copie de sauvegarde sur l&rsquo;ancien serveur avant de faire la migration</h4>
-<p>Pour ce faire, vous devez accéder au panneau de configuration du serveur actuel (c&rsquo;est-à-dire l&rsquo;ancien) en tant qu&rsquo;administrateur et <strong>rechercher le module de backup qui vous permettra de générer rapidement une copie de sauvegarde de votre site web PrestaShop</strong>. Si vous rencontrez un problème à ce stade, contactez l&rsquo;assistance de l&rsquo;hébergeur, qui vous expliquera rapidement la marche à suivre. Une fois la sauvegarde créée, <strong>téléchargez-la sur votre ordinateur</strong>. N&rsquo;effectuez aucune étape de migration de votre boutique en ligne PrestaShop avant d&rsquo;avoir enregistré une copie de sauvegarde. Ainsi, en cas de problème lors du processus, vous ne perdrez pas votre site web.</p>
-<h4 style="color: #eaad52">Étape 3 : téléchargez les fichiers de votre boutique en ligne sur votre ordinateur</h4>
-<p>Commençons la migration : téléchargez tous les fichiers de votre boutique en ligne PrestaShop sur votre ordinateur. Pour ce faire, suivez les étapes ci-dessous : En premier lieu, créez un nouveau dossier sur votre bureau et connectez-vous au client FTP que vous avez choisi. <strong>Connectez-vous ensuite via le FTP au serveur actuel</strong>. Comment savoir si vous avez correctement effectué cette étape ? Si la connexion s&rsquo;est établie avec succès, une liste de dossiers devrait apparaître dans le volet droit. Une fois connecté, vous devez vous rendre sur votre répertoire public, généralement intitulé <strong>public_html</strong> ou htdocs, et l&rsquo;ouvrir. Sachez que si votre boutique en ligne est installée dans un sous-répertoire (c&rsquo;est-à-dire, si elle est installée sur un domaine au format de type : <a href="http://www.tuweb.com/tienda" target="_blank">www.tuweb.com/tienda</a>), vous devrez rechercher le dossier correspondant et l&rsquo;ouvrir. Sélectionnez tous les fichiers (ctrl+A/cmd+A) et glissez-les vers le dossier que vous avez créé sur votre bureau pour qu&rsquo;ils se téléchargent sur votre ordinateur. Ce processus peut durer quelques minutes, en fonction du nombre de fichiers et de leur taille. Une fois tous les fichiers de votre site web PrestaShop téléchargés, un message d&rsquo;avertissement apparaîtra pour vous signaler que le transfert des fichiers est terminé.</p>
-<h4 style="color: #eaad52">Étape 4 : exportez la base de données de votre boutique en ligne</h4>
-<p>Une fois les fichiers transférés sur votre ordinateur, cliquez sur <strong>revenir au cPanel du serveur</strong> actuel et recherchez le <strong>module phpMyAdmin</strong> (<a href="https://www.phpmyadmin.net/" target="_blank">phpMyAdmin</a> est un outil écrit en PHP pour gérer une base de données, qui vous permet de créer, supprimer ou modifier des éléments de bases de données SQL). Lors de l&rsquo;ouverture du module, vous trouverez sur la partie gauche une liste de toutes les bases de données disponibles. <strong>Vous devez sélectionner la base de données de votre boutique en ligne actuelle</strong>. Vous trouverez alors sur la partie droite une liste de tables. <strong>Cliquez sur « exporter »</strong> pour commencer le téléchargement de notre base de données. Laissez telles quelles les options qui apparaissent cochées par défaut et continuez. À ce stade, votre navigateur commencera à télécharger un fichier compressé contenant une copie de la base de données de votre boutique en ligne PrestaShop.</p>
-<h4 style="color: #eaad52">Étape 5 : créez une nouvelle base de données sur le nouveau serveur</h4>
-<p>Accédez au panneau de configuration du nouveau serveur en tant qu&rsquo;administrateur, <strong>recherchez le module MySQLDatabaseWizard</strong> et suivez les étapes afin de créer une nouvelle base de données. Donnez-lui un nom qui se distingue nettement de la base de données de votre précédent site web PrestaShop.</p>
-<h4 style="color: #eaad52">Étape 6 : importez la base de données de l&rsquo;ancienne boutique en ligne sur le nouveau serveur</h4>
-<p><strong>Recherchez à nouveau le module phpMyAdmin</strong> sur le serveur. Lors de l&rsquo;ouverture du module, vous verrez sur le panneau de gauche (dans la liste des bases de données disponibles) la base de données que vous avez créée précédemment. Sélectionnez-la. <strong>Sur le panneau de droite, cliquez sur « Import »</strong> et sélectionnez le fichier que vous avez téléchargé à l&rsquo;étape 4. Lorsque vous aurez correctement importé la base de données de votre site web PrestaShop, un message d&rsquo;avertissement apparaîtra.</p>
-<h4 style="color: #eaad52">Étape 7 : téléchargez les fichiers de votre boutique en ligne sur le nouveau serveur</h4>
-<p><strong>Revenez sur votre client FTP et connectez-vous au serveur</strong> que vous avez choisi. <strong>Naviguez jusqu&rsquo;au dossier public_html</strong>. Si vous souhaitez enregistrer votre boutique en ligne à la racine ou dans un sous-dossier (c&rsquo;est-à-dire <a href="http://www.tuweb.com/tienda" target="_blank">www.tuweb.com/tienda</a>), vous devrez créer le dossier correspondant à l&rsquo;intérieur du répertoire public, puis l&rsquo;ouvrir. <strong>Glissez les fichiers</strong> (que vous avez copiés à l&rsquo;étape 3) depuis votre ordinateur et déposez-les dans le répertoire correspondant du nouveau serveur. Ce processus peut prendre quelques minutes.</p>
-<h4 style="color: #eaad52">Étape 8 : éditez les fichiers config/settings.inc.php de PrestaShop</h4>
-<p><strong>Recherchez dans votre client FTP le fichier config/settings.inc.php</strong>, ouvrez-le et éditez les lignes indiquées ci-après. <img class="alignnone size-full wp-image-21004" alt="configuracion_servidor" src="https://www.prestashop.com/blog/fr/files/2017/01/configuracion_servidor_paso8.jpg" width="669" height="219" /> Vous devez éditer ce fichier PHP avec les informations fournies par l&rsquo;hébergeur, et celles que vous avez choisies au moment de la configuration de votre site web PrestaShop :</p>
-<ul>
-<li>DB_SERVER : serveur de la base de données ;</li>
-<li>DB_NAME : nom de la base de données de l&rsquo;étape 5 ;</li>
-<li>DB_USER : utilisateur associé à la base de données ;</li>
-<li>DB_PASSWD : mot de passe de l&rsquo;utilisateur ;</li>
-</ul>
-<p>Enregistrez le dossier puis téléchargez-le sur le serveur.</p>
-<h4 style="color: #eaad52">Étape 9 : vérifiez les autorisations</h4>
-<p>Avant de vérifier que la nouvelle boutique en ligne fonctionne correctement, <strong>vous devez vous assurer que les fichiers et répertoires détiennent les autorisations requises.</strong> Vous devez toujours consulter l&rsquo;hébergeur que vous avez préalablement choisi, mais en général, la majorité des hébergeurs travaille avec :</p>
-<ul>
-<li>autorisations pour les fichiers : 664</li>
-<li>autorisations pour les répertoires : 755</li>
-</ul>
-<p>Si vous rencontrez le moindre problème avec le téléchargement d&rsquo;images, essayez l&rsquo;autorisation 777.</p>
-<h4 style="color: #eaad52">Étape 10 : videz le cache</h4>
-<p>L&rsquo;idéal serait d&rsquo;effacer le cache de votre page et d&rsquo;<strong>établir une nouvelle réindexation</strong> pour vous assurer que tout fonctionne correctement. Veuillez noter que si vous ne respectez pas cette étape, les données que vous voyez peuvent être celles de l&rsquo;ancienne page enregistrée dans le cache de votre navigateur, et vous pouvez ne pas voir les éventuelles erreurs. Pour vider correctement le cache, effacez le contenu des dossiers /cache/smarty/compile et /chache/smarty/cache, <strong>à l&rsquo;exception du fichier index.php</strong> dans les deux cas.</p>
-<h4 style="color: #eaad52">Étape 11 : quittez le mode maintenance</h4>
-<p>Entrez dans le back-office de votre site web PrestaShop et <strong>désactivez le mode maintenance de votre boutique en ligne</strong>. Vous devez ensuite vous connecter à votre domaine et vérifier que votre site web fonctionne correctement. Si c&rsquo;est le cas, <strong>le processus de migration de votre site web PrestaShop vers un autre hébergeur est terminé</strong>. Votre boutique en ligne est désormais sur votre nouveau serveur.</p>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/comment-migrer-site-prestashop-vers-nouveau-serveur/">Comment migrer votre site PrestaShop vers un nouveau serveur</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
-]]></content:encoded>
-			<wfw:commentRss>https://www.prestashop.com/blog/fr/comment-migrer-site-prestashop-vers-nouveau-serveur/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
-		<item>
-		<title>Calendrier e-commerce 2017 : vos 52 astuces pour réussir</title>
-		<link>https://www.prestashop.com/blog/fr/calendrier-e-commerce-2017-vos-52-astuces-pour-reussir/</link>
-		<comments>https://www.prestashop.com/blog/fr/calendrier-e-commerce-2017-vos-52-astuces-pour-reussir/#comments</comments>
-		<pubDate>Thu, 05 Jan 2017 11:36:09 +0000</pubDate>
-		<dc:creator><![CDATA[Cécile Dubouis]]></dc:creator>
-				<category><![CDATA[Actualités PrestaShop]]></category>
-
-		<guid isPermaLink="false">https://www.prestashop.com/blog/fr/?p=20955</guid>
-		<description><![CDATA[<p>L’année peut commencer, votre calendrier e-commerce 2017 est arrivé ! Des périodes de préparation pour chaque promotion aux dates clés dans votre pays, retrouvez chaque semaine un conseil pour réussir toutes vos opérations commerciales, booster votre trafic, optimiser vos conversions et votre chiffre d’affaires et manager simplement et efficacement votre boutique ! … Et merci [...]</p>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/calendrier-e-commerce-2017-vos-52-astuces-pour-reussir/">Calendrier e-commerce 2017 : vos 52 astuces pour réussir</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
-]]></description>
-				<content:encoded><![CDATA[<p>L’année peut commencer, votre <a href="http://www.prestashop.com/fr/calendrier-ecommerce">calendrier e-commerce</a> 2017 est arrivé !</p>
-<p>Des périodes de préparation pour chaque promotion aux dates clés dans votre pays, <strong>retrouvez chaque semaine un conseil</strong> pour réussir toutes vos opérations commerciales, booster votre trafic, optimiser vos conversions et votre chiffre d’affaires et manager simplement et efficacement votre boutique !<br />
-<span id="more-20955"></span><br />
-… Et merci à <a href="http://www.pagination.com/" target="_blank">Pagination.com</a> pour l’intégration du template et des données <img src="https://www.prestashop.com/blog/fr/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /> </p>
-<h2 style="color:#df0067">12 pages pour vous accompagner tout au long de l’année</h3>
-<p>Vous avez du talent et des idées. On vous aide simplement à vous organiser !</p>
-<p><strong>Les principales périodes d’activité en un coup d’oeil</strong>. Grâce au calendrier circulaire, vous savez <strong>quand et comment vous préparer pour chaque événement commercial majeur</strong> (soldes, Noël, Fête des Mères, Black Friday…) mais aussi pour les événements spécifiques à 2017.</p>
-<p><strong>Chaque semaine, un conseil</strong>. Pour gagner en trafic ou en conversions, une idée pour améliorer l’expérience utilisateur, optimiser votre panier moyen ou fidéliser vos clients sur votre boutique en ligne…</p>
-<p><strong>Les secrets de réussite des autres e-commerçants</strong>. Chaque mois, un e-commerçant PrestaShop partage avec vous l’une de ses astuces. Profitez-en !</p>
-<p><strong>Une sélection d’outils pour vous faciliter le quotidien</strong>. Pour chaque conseil, retrouvez une sélection de modules pour réaliser facilement vos newsletters, créer vos promos en quelques clics, optimiser la gestion de votre boutique…</p>
-<h2 style="color:#df0067">Téléchargé dans le monde entier</h2>
-<p>“Je suis débordé, ce sont les soldes, je ne connaissais pas les dates à l’avance et je n’ai rien préparé encore sur ma boutique&#8230; Cette période est cruciale commercialement et je suis en train de la rater !”.<br />
-Voilà ce que l’on nous confiait il y a 5 ans lors des rencontres ou des audits e-commerce. Il n’existait alors aucun outil pour aider les e-commerçants dans leur organisation quotidienne.<br />
-Quelques semaines plus tard, nous avons créé le calendrier circulaire qui permet en un coup d’œil de savoir quand et comment se préparer pour chaque promotion.<br />
-Depuis, chaque année, notre calendrier e-commerce est téléchargé dans le monde entier et repris par de nombreux sites d’experts de l’e-commerce. Je suis heureuse et touchée que ce calendrier ait pu vous aider dans votre quotidien.</p>
-<p><strong>Où que vous soyez, profitez de conseils adaptés à votre pays !</strong><br />
-Avec l’aide des <a href="https://ambassadors.prestashop.com/" target="_blank">Ambassadeurs PrestaShop</a>, nous avons décliné notre calendrier e-commerce pour davantage de pays cette année afin d’accompagner toujours plus de commerçants dans la réussite de leur activité.<br />
-Le calendrier 2017 est disponible en <strong>8 langues</strong> et personnalisé pour <strong>10 pays</strong> (Allemagne, Argentine, Brésil, Espagne, Etats-Unis, France, Italie, Pays-Bas, Pologne et Royaume Uni).</p>
-<p>Vous avez désormais les clés pour tout anticiper, savoir quand et comment préparer votre site e-commerce pour 2017 !<br />
-… Une dernière chose. <strong>Votre boutique est unique</strong>.<br />
-Aussi, ce calendrier comporte également des cases à remplir. Par vous.<br />
-Car mieux que personne, vous connaissez vos produits, ce qui plaira à vos clients. Ajoutez sur ces cases vides les actions que vous souhaitez mettre en place afin de les anticiper et réussir pleinement cette nouvelle année.<br />
-&laquo;&nbsp;L&rsquo;avenir, c&rsquo;est du passé en préparation&nbsp;&raquo; (Pierre Dac).<br />
-Alors préparons et construisons ensemble une très belle année !</p>
-<p>Téléchargez votre <a href="http://www.prestashop.com/fr/calendrier-ecommerce">calendrier e-commerce 2017</a></p>
-<p>Cet article <a rel="nofollow" href="https://www.prestashop.com/blog/fr/calendrier-e-commerce-2017-vos-52-astuces-pour-reussir/">Calendrier e-commerce 2017 : vos 52 astuces pour réussir</a> est apparu en premier sur <a rel="nofollow" href="https://www.prestashop.com/blog/fr">FR - Blog ecommerce par PrestaShop</a>.</p>
-]]></content:encoded>
-			<wfw:commentRss>https://www.prestashop.com/blog/fr/calendrier-e-commerce-2017-vos-52-astuces-pour-reussir/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 		</item>
 	</channel>

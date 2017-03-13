@@ -1,27 +1,3 @@
-{*
-* 2007-2016 PrestaShop
-*
-* NOTICE OF LICENSE
-*
-* This source file is subject to the Academic Free License (AFL 3.0)
-* that is bundled with this package in the file LICENSE.txt.
-* It is also available through the world-wide-web at this URL:
-* http://opensource.org/licenses/afl-3.0.php
-* If you did not receive a copy of the license and are unable to
-* obtain it through the world-wide-web, please send an email
-* to license@prestashop.com so we can send you a copy immediately.
-*
-* DISCLAIMER
-*
-* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
-* versions in the future. If you wish to customize PrestaShop for your
-* needs please refer to http://www.prestashop.com for more information.
-*
-*  @author PrestaShop SA <contact@prestashop.com>
-*  @copyright  2007-2016 PrestaShop SA
-*  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
-*  International Registered Trademark & Property of PrestaShop SA
-*}
 <div id="product_{$product.id_product}_{$product.id_product_attribute}_{if $quantityDisplayed > 0}nocustom{else}0{/if}_{$product.id_address_delivery|intval}{if !empty($product.gift)}_gift{/if}"
      class="row gutter-10 cart_item{if isset($productLast) && $productLast && (!isset($ignoreProductLast) || !$ignoreProductLast)} last_item{/if}{if isset($productFirst) && $productFirst} first_item{/if}{if isset($customizedDatas.$productId.$productAttributeId) AND $quantityDisplayed == 0} alternate_item{/if} address_{$product.id_address_delivery|intval} {if $odd}odd{else}even{/if}">
     <div class="col-xs-3 cart_product">
@@ -51,10 +27,12 @@
                         <div id="buy_book_details">
                             {l s='Genre'}: {$product_choice_book_surprise->gender|escape}<br />
                             {l s='Tranche d\'âge'}: {$product_choice_book_surprise->age_range}<br />
-                            {l s='Style d\'écriture'}: {$product_choice_book_surprise->genre}<br />
+                            {l s='Style d\'écriture'}: {$product_choice_book_surprise->genre}
                         </div>
                     </div>
                     </div>
+                {else}
+                    <div class="small">{l s='Sélection'} : <strong><span class="icon-hand-pointer"></span> {l s='Surprise'}</strong></div>
                 {/if}
             </div>
             <div class="col-xs-2">

@@ -2,7 +2,7 @@
 <module>
 	<name>dashproducts</name>
 	<displayName><![CDATA[Tableau de bord Produits]]></displayName>
-	<version><![CDATA[0.3.5]]></version>
+	<version><![CDATA[1.0.0]]></version>
 	<description><![CDATA[Ajoute un bloc avec un tableau de vos derni&egrave;res commandes et le classement de vos meilleurs produits]]></description>
 	<author><![CDATA[PrestaShop]]></author>
 	<tab><![CDATA[dashboard]]></tab>

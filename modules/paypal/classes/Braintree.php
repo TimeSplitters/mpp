@@ -1,6 +1,6 @@
 <?php
 /**
- * 2007-2016 PrestaShop
+ * 2007-2017 PrestaShop
  *
  * NOTICE OF LICENSE
  *
@@ -19,7 +19,7 @@
  * needs please refer to http://www.prestashop.com for more information.
  *
  *  @author    PrestaShop SA <contact@prestashop.com>
- *  @copyright 2007-2016 PrestaShop SA
+ *  @copyright 2007-2017 PrestaShop SA
  *  @version  Release: $Revision: 13573 $
  *  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  *  International Registered Trademark & Property of PrestaShop SA
@@ -29,15 +29,18 @@ include_once _PS_MODULE_DIR_.'paypal/api/sdk/braintree/lib/Braintree.php';
 
 class PrestaBraintree{
 
+    public $gateway;
+    public $error;
+
     /**
      * initialize config of braintree
      */
     private function initConfig()
     {
-        Braintree_Configuration::merchantId(Configuration::get('PAYPAL_BRAINTREE_MERCHANT_ID'));
-        Braintree_Configuration::publicKey(Configuration::get('PAYPAL_BRAINTREE_PUBLIC_KEY'));
-        Braintree_Configuration::privateKey(Configuration::get('PAYPAL_BRAINTREE_PRIVATE_KEY'));
-        Braintree_Configuration::environment((Configuration::get('PAYPAL_SANDBOX')?'sandbox':'production'));
+        $this->_checkToken();
+
+        $this->gateway = new Braintree_Gateway(['accessToken' => Configuration::get('PAYPAL_BRAINTREE_ACCESS_TOKEN') ]);
+        $this->error = '';
     }
 
     /**
@@ -49,9 +52,8 @@ class PrestaBraintree{
         try{
             $this->initConfig();
 
-            $clientToken = Braintree_ClientToken::generate([
-                'merchantAccountId'=>$id_account_braintree,
-            ]);
+            $clientToken = $this->gateway->clientToken()->generate();
+            
             return $clientToken;
         }catch(Exception $e){
             PrestaShopLogger::addLog($e->getCode().'=>'.$e->getMessage());
@@ -76,7 +78,7 @@ class PrestaBraintree{
         try{
             $data = [
                 'amount'                => $cart->getOrderTotal(),
-                'paymentMethodNonce'    => $token_payment,
+                'paymentMethodNonce'    => $token_payment,//'fake-processor-declined-visa-nonce',//
                 'merchantAccountId'     => $id_account_braintree,
                 'orderId'               => $cart->id,
                 'channel'               => 'PrestaShop_Cart_Braintree',
@@ -109,13 +111,20 @@ class PrestaBraintree{
                     ]
                 ]
             ];
-            $result = Braintree_Transaction::sale($data);
-            if(($result instanceof Braintree_Result_Successful) && $result->success)
+            
+            $result = $this->gateway->transaction()->sale($data);
+
+            if(($result instanceof Braintree_Result_Successful) && $result->success && $this->isValidStatus($result->transaction->status))
             {
                 return $result->transaction;
             }
+            else
+            {
+                $this->error = $result->transaction->status;
+            }
 
         }catch(Exception $e){
+            $this->error = $e->getCode().' : '.$e->getMessage();
             return false;
         }
 
@@ -125,7 +134,7 @@ class PrestaBraintree{
     public function saveTransaction($data)
     {
         Db::getInstance()->Execute('INSERT INTO `'._DB_PREFIX_.'paypal_braintree`(`id_cart`,`nonce_payment_token`,`client_token`,`datas`)
-			VALUES (\''.pSQL($data['id_cart']).'\',\''.pSQL($data['nonce_payment_token']).'\',\''.pSQL($data['client_token']).'\',\''.pSQL($data['datas']).'\')');
+            VALUES (\''.pSQL($data['id_cart']).'\',\''.pSQL($data['nonce_payment_token']).'\',\''.pSQL($data['client_token']).'\',\''.pSQL($data['datas']).'\')');
         return Db::getInstance()->Insert_ID();
     }
 
@@ -138,16 +147,15 @@ class PrestaBraintree{
     {
         $this->initConfig();
         try{
-            $collection = Braintree_Transaction::search(
+            $collection = $this->gateway->transaction()->search(
                 array(
                     Braintree_TransactionSearch::orderId()->is($id_cart)
                 )
             );
 
-            $transaction = Braintree_Transaction::find($collection->_ids[0]);
-
+            $transaction = $this->gateway->transaction()->find($collection->_ids[0]);
         }catch(Exception $e){
-            PrestaShopLogger::addLog($e->getCode().'=>'.$e->getMessage());
+            $this->error = $e->getCode().' : '.$e->getMessage();
             return false;
         }
         return $transaction;
@@ -186,7 +194,7 @@ class PrestaBraintree{
     {
         $this->initConfig();
         try{
-            $result = Braintree_Transaction::refund($transactionId,$amount);
+            $result = $this->gateway->transaction()->refund($transactionId,$amount);
             if($result->success)
             {
                 return true;
@@ -201,7 +209,6 @@ class PrestaBraintree{
                     {
                         return true;
                     }
-
                 }
                 return false;
             }
@@ -216,7 +223,7 @@ class PrestaBraintree{
     {
         $this->initConfig();
         try{
-            $result = Braintree_Transaction::submitForSettlement($transaction_id,$amount);
+            $result = $this->gateway->transaction()->submitForSettlement($transaction_id,$amount);
             if($result instanceof Braintree_Result_Successful && $result->success)
             {
                 return true;
@@ -232,6 +239,11 @@ class PrestaBraintree{
                         return true;
                     }
                 }
+                if($result->transaction->status == 'Authorization_expired')
+                {
+
+                    $this->error = $result->transaction->status;
+                }
             }
         }catch(Exception $e){
             PrestaShopLogger::addLog($e->getCode().'=>'.$e->getMessage());
@@ -245,7 +257,7 @@ class PrestaBraintree{
     {
         $this->initConfig();
         try{
-            $result = Braintree_Transaction::void($transaction_id);
+            $result = $this->gateway->transaction()->void($transaction_id);
             if($result instanceof Braintree_Result_Successful && $result->success)
             {
                 return true;
@@ -254,5 +266,50 @@ class PrestaBraintree{
             PrestaShopLogger::addLog($e->getCode().'=>'.$e->getMessage());
             return false;
         }
+    }
+
+    public function isValidStatus($status)
+    {
+        return in_array($status,array('submitted_for_settlement','authorized','settled'));
+    }
+
+    /**
+     * Check if token is still valid by comparing the "expiresAt" parameter to the time
+     */
+    private function _checkToken() {
+
+        if( Configuration::get('PAYPAL_BRAINTREE_EXPIRES_AT') && Configuration::get('PAYPAL_BRAINTREE_REFRESH_TOKEN') ) {
+        
+            $datetime_bt = DateTime::createFromFormat(DateTime::ISO8601, Configuration::get('PAYPAL_BRAINTREE_EXPIRES_AT'));
+            $datetime_now = new DateTime();
+
+            $datetime_bt->format(DateTime::ISO8601);
+            $datetime_now->format(DateTime::ISO8601);
+
+            if( $datetime_now->getTimestamp() >= $datetime_bt->getTimestamp() ){
+                $ch = curl_init();
+
+                curl_setopt($ch, CURLOPT_URL, PROXY_HOST.'prestashop/refreshToken?refreshToken='.urlencode(Configuration::get('PAYPAL_BRAINTREE_REFRESH_TOKEN')) );
+                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                curl_setopt($ch, CURLOPT_ENCODING, '');
+
+                $resp = curl_exec($ch);
+
+                curl_close($ch);
+
+                $json = Tools::jsonDecode($resp);
+
+                Configuration::updateValue('PAYPAL_BRAINTREE_ACCESS_TOKEN', $json->data->accessToken);
+                Configuration::updateValue('PAYPAL_BRAINTREE_REFRESH_TOKEN', $json->data->refreshToken);
+                Configuration::updateValue('PAYPAL_BRAINTREE_EXPIRES_AT', $json->data->expiresAt);
+
+                return true;
+            }
+
+            return true;
+        
+        } else {
+            return false;
+        } 
     }
 }

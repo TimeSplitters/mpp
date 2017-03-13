@@ -1,5 +1,5 @@
 {*
-* 2007-2016 PrestaShop
+* 2007-2017 PrestaShop
 *
 * NOTICE OF LICENSE
 *
@@ -18,7 +18,7 @@
 * needs please refer to http://www.prestashop.com for more information.
 *
 *  @author    PrestaShop SA <contact@prestashop.com>
-*  @copyright 2007-2016 PrestaShop SA
+*  @copyright 2007-2017 PrestaShop SA
 *  @license	http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
@@ -120,7 +120,7 @@
 			<div class="box">
 
 				<div class="box right half" id="paypal-call-button">
-					<div id="paypal-call" class="box right"><span style="font-weight: bold">{l s='Need help ?' mod='paypal'}</span> {l s='Give us a call : xxxx' mod='paypal'} <img src="../modules/paypal/views/img/call.png" width="14px" alt="Phone" /></div>
+					<div id="paypal-call" class="box right"><span style="font-weight: bold">{l s='Need help ?' mod='paypal'}</span> <a target="_blank" href="https://www.paypal.com/webapps/mpp/contact-us">{l s='Contact us' mod='paypal'}</a></div>
 					<div id="paypal-call-foonote" class="box right paypal-clear">{l s=' ' mod='paypal'}</div>
 				</div>
 
@@ -177,19 +177,29 @@
 					</label>
 				</div>
 				{/if}
+
                 {if (in_array($PayPal_PVZ, $PayPal_allowed_methods))}
                     {if version_compare($smarty.const.PHP_VERSION, '5.4.0', '<')}
-                        {l s='You can\'t use braintree because your PHP version is too old (PHP 5.4 min)' mod='paypal'}
-                    {else}
+						<strong class="braintree_title_bo">{l s='Want to use Braintree as card processor ?' mod='paypal'}</strong> &nbsp;<a href="{l s='https://www.braintreepayments.com/' mod='paypal'}" target="_blank" class="braintree_link"><img src="{$PayPal_module_dir}/views/img/logos/BRAINTREE.png" class="braintree_logo"> &nbsp;&nbsp;&nbsp;<div class="bo_paypal_help">?</div></a><br/>
+						<p id="error_version_php">{l s='You can\'t use braintree because your PHP version is too old (PHP 5.4 min)' mod='paypal'}</p>
+                    {elseif !$ps_ssl_active}
+						<strong class="braintree_title_bo">{l s='Want to use Braintree as card processor ?' mod='paypal'}</strong> &nbsp;<a href="{l s='https://www.braintreepayments.com/' mod='paypal'}" target="_blank" class="braintree_link"><img src="{$PayPal_module_dir}/views/img/logos/BRAINTREE.png" class="braintree_logo"> &nbsp;&nbsp;&nbsp;<div class="bo_paypal_help">?</div></a><br/>
+						<p id="error_version_php">{l s='You can\'t use braintree because you haven\'t enabled https' mod='paypal'}</p>
+					{else}
                     {* WEBSITE PAYMENT PLUS *}
                         <br />
-                        <strong class="braintree_title_bo">{l s='Want to use Braintree as card processor ?' mod='paypal'}</strong> &nbsp;<a href="{l s='https://www.braintreepayments.com/' mod='paypal'}" target="_blank" class="braintree_link"><img src="{$PayPal_module_dir}/views/img/logos/BRAINTREE.png" class="braintree_logo"> &nbsp;&nbsp;&nbsp;<div class="bo_paypal_help">?</div></a><br/>
-                        <label for="braintree_enabled">
-                            <input type="checkbox" name="braintree_enabled" id="braintree_enabled" value='{$PayPal_PVZ|escape:'htmlall':'UTF-8'}' {if $PayPal_braintree_enabled == $PayPal_PVZ}checked="checked"{/if} />
+                        <strong class="braintree_title_bo">{l s='Want to use Braintree as card processor ?' mod='paypal'} {l s='(Euro only)' mod='paypal'}</strong> &nbsp;<a href="{l s='https://www.braintreepayments.com/' mod='paypal'}" target="_blank" class="braintree_link"><img src="{$PayPal_module_dir}/views/img/logos/BRAINTREE.png" class="braintree_logo"> &nbsp;&nbsp;&nbsp;<div class="bo_paypal_help">?</div></a><br/>
+
+						<label for="braintree_enabled">
+                            <input type="checkbox" name="braintree_enabled" id="braintree_enabled" value='{$PayPal_PVZ|escape:'htmlall':'UTF-8'}' {if $PayPal_braintree_enabled}checked="checked"{/if} />
                             {l s='Choose' mod='paypal'} {l s='Braintree' mod='paypal'}<br />
                             <span class="description"></span>
                             <!-- <p class="toolbox"></p> -->
                         </label>
+                        <span id="braintree_message" style="{$Braintree_Style}">{$Braintree_Message|escape:'htmlall':'UTF-8'}</span>
+                        <div id="paypal_braintree">
+							{include './button_braintree.tpl'}
+						</div>
                     {/if}
                 {/if}
 				<hr />
@@ -400,8 +410,8 @@
 					<p class="description">{l s='Choose your way of processing payments (automatically vs.manual authorization).' mod='paypal'}</p>
 					<input type="radio" name="payment_capture" id="paypal_direct_sale" value="0" {if $PayPal_payment_capture == 0}checked="checked"{/if} /> <label for="paypal_direct_sale">{l s='Direct sales (recommended)' mod='paypal'}</label><br />
 					<input type="radio" name="payment_capture" id="paypal_manual_capture" value="1" {if $PayPal_payment_capture == 1}checked="checked"{/if} /> <label for="paypal_manual_capture">{l s='Authorization/Manual capture (payment shipping)' mod='paypal'}</label>
-
 					<div id="braintree-credentials" class="paypal-hide">
+						{*
 						<h3>{l s='Braintree Configuration' mod='paypal'} <a href="http://202-ecommerce.com/d/braintree-{$default_lang_iso}.pdf" class="bo_paypal_help">?</a></h3>
 						<h4>{l s='Please make sure you configure the currency to be used on your account. If the wrong currency is selected conversion will take place at withdrawal.' mod='paypal'}</h4>
 
@@ -415,8 +425,10 @@
 						</dl>
 						<div class="clear"></div>
 						<span class="description">{l s='Please check once more that you pasted all the characters.' mod='paypal'}</span>
+						*}
 					</div>
 					<div class="paypal-hide" id="braintree">
+						{*
 						<dl>
 
 							{foreach from=$Currencies item=currency}
@@ -424,14 +436,9 @@
 								<dd><input type='text' name="account_braintree[{$currency.iso_code|escape:'html':'UTF-8'}]" id="account_braintree_{$currency.iso_code|escape:'html':'UTF-8'}" value="{if isset($PayPal_account_braintree.{$currency.iso_code})}{$PayPal_account_braintree.{$currency.iso_code}|escape:'html':'UTF-8'}{/if}" autocomplete="off" size="85"/></dd>
 							{/foreach}
 						</dl>
+						*}
 					</div>
 					<div class="clear"></div>
-					<div id="paypal_3D_secure" style="display: none;">
-						<p>{l s='Enabled 3D secure ?' mod='paypal'}</p>
-						<input type="radio" name="check3Dsecure" id="paypal_3Dsecure_enabled" value="1" {if $PayPal_check3Dsecure == 1}checked="checked"{/if} /> <label for="paypal_3Dsecure_enabled">{l s='yes' mod='paypal'}</label><br />
-						<input type="radio" name="check3Dsecure" id="paypal_3Dsecure_disabled" value="0" {if $PayPal_check3Dsecure == 0}checked="checked"{/if} /> <label for="paypal_3Dsecure_disabled">{l s='no' mod='paypal'}</label>
-					</div>
-
 					<br /><br />
 				</div>
 
@@ -450,8 +457,8 @@
 					<h4>{l s='Are you sure you want to activate the test mode ?' mod='paypal'}</h4>
 
 					<div id="buttons">
-						<button class="fancy_confirm" name="fancy_confirm" value="0">{l s='No' mod='paypal'}</button>
-						<button class="fancy_confirm" name="fancy_confirm" value="1">{l s='Yes' mod='paypal'}</button>
+						<button class="sandbox_confirm" value="0">{l s='No' mod='paypal'}</button>
+						<button class="sandbox_confirm" value="1">{l s='Yes' mod='paypal'}</button>
 					</div>
 				</div>
 

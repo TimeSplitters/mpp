@@ -5,6 +5,7 @@
 <module name="dmuassocprodcat" position="2"/>
 <module name="etranslation" position="3"/>
 <module name="apiway" position="4"/>
+<module name="prestashoptoquickbooks" position="5"/>
 </tab>
 <tab class_name="AdminCategories" display_type="slider_list">
 <module name="innovativemenu" position="1"/>
@@ -27,20 +28,22 @@
 <module name="steerfox" position="3"/>
 <module name="selldorado" position="4"/>
 <module name="pilipay" position="5"/>
-<module name="shoppingfluxexport" position="6"/>
-<module name="iziflux" position="7"/>
-<module name="lengow" position="8"/>
-<module name="amazon" position="9"/>
-<module name="twenga" position="10"/>
-<module name="googleshopping" position="11"/>
-<module name="cdiscount" position="12"/>
-<module name="gmerchantcenter" position="13"/>
-<module name="leguide" position="14"/>
-<module name="productsbybrandslider" position="15"/>
-<module name="apiway" position="16"/>
+<module name="prestashoptoquickbooks" position="6"/>
+<module name="shoppingfluxexport" position="7"/>
+<module name="iziflux" position="8"/>
+<module name="lengow" position="9"/>
+<module name="amazon" position="10"/>
+<module name="twenga" position="11"/>
+<module name="googleshopping" position="12"/>
+<module name="cdiscount" position="13"/>
+<module name="gmerchantcenter" position="14"/>
+<module name="leguide" position="15"/>
+<module name="productsbybrandslider" position="16"/>
+<module name="apiway" position="17"/>
 </tab>
 <tab class_name="AdminSuppliers" display_type="slider_list">
 <module name="apiway" position="1"/>
+<module name="prestashoptoquickbooks" position="2"/>
 </tab>
 <tab class_name="AdminTags" display_type="slider_list">
 <module name="etranslation" position="1"/>
@@ -54,27 +57,30 @@
 <module name="magnalister" position="5"/>
 <module name="selldorado" position="6"/>
 <module name="fianetfraud" position="7"/>
-<module name="shoppingfluxexport" position="8"/>
-<module name="iziflux" position="9"/>
-<module name="lengow" position="10"/>
-<module name="twenga" position="11"/>
-<module name="googleshopping" position="12"/>
-<module name="cdiscount" position="13"/>
-<module name="orlique" position="14"/>
-<module name="printlabels" position="15"/>
-<module name="pushoncart" position="16"/>
-<module name="prestafraud" position="17"/>
-<module name="stampsdotcom" position="18"/>
-<module name="smartsupp" position="19"/>
-<module name="apiway" position="20"/>
-<module name="zendesk" position="21"/>
+<module name="prestashoptoquickbooks" position="8"/>
+<module name="shoppingfluxexport" position="9"/>
+<module name="iziflux" position="10"/>
+<module name="lengow" position="11"/>
+<module name="twenga" position="12"/>
+<module name="googleshopping" position="13"/>
+<module name="cartsguru" position="14"/>
+<module name="cdiscount" position="15"/>
+<module name="orlique" position="16"/>
+<module name="printlabels" position="17"/>
+<module name="pushoncart" position="18"/>
+<module name="prestafraud" position="19"/>
+<module name="stampsdotcom" position="20"/>
+<module name="smartsupp" position="21"/>
+<module name="apiway" position="22"/>
+<module name="zendesk" position="23"/>
 </tab>
 <tab class_name="AdminInvoices" display_type="slider_list">
-<module name="neotaxesupdater" position="1"/>
-<module name="ordertaxprofitreport" position="2"/>
-<module name="avalaratax" position="3"/>
-<module name="stampsdotcom" position="4"/>
-<module name="apiway" position="5"/>
+<module name="prestashoptoquickbooks" position="1"/>
+<module name="neotaxesupdater" position="2"/>
+<module name="ordertaxprofitreport" position="3"/>
+<module name="avalaratax" position="4"/>
+<module name="stampsdotcom" position="5"/>
+<module name="apiway" position="6"/>
 </tab>
 <tab class_name="AdminReturn" display_type="slider_list">
 <module name="apiway" position="1"/>
@@ -104,8 +110,9 @@
 <module name="apiway" position="22"/>
 </tab>
 <tab class_name="AdminSlip" display_type="slider_list">
-<module name="lgabonos" position="1"/>
-<module name="dmulistecommandes" position="2"/>
+<module name="prestashoptoquickbooks" position="1"/>
+<module name="lgabonos" position="2"/>
+<module name="dmulistecommandes" position="3"/>
 </tab>
 <tab class_name="AdminStatuses" display_type="slider_list">
 <module name="bpostshm" position="1"/>
@@ -163,46 +170,54 @@
 <module name="reforestaction" position="2"/>
 <module name="miwo" position="3"/>
 <module name="salesmanago" position="4"/>
-<module name="followup" position="5"/>
-<module name="ps_followup" position="6"/>
-<module name="cartabandonmentpro" position="7"/>
+<module name="cartsguru" position="5"/>
+<module name="rees46" position="6"/>
+<module name="followup" position="7"/>
+<module name="ps_followup" position="8"/>
+<module name="cartabandonmentpro" position="9"/>
 </tab>
 <tab class_name="AdminCustomerThreads" display_type="slider_list">
 <module name="sendinblue" position="1"/>
-<module name="skebby" position="2"/>
-<module name="expressmailing" position="3"/>
-<module name="salesmanago" position="4"/>
-<module name="fianetsceau" position="5"/>
-<module name="veplatform" position="6"/>
-<module name="smartsupp" position="7"/>
-<module name="onehopsmsservice" position="8"/>
-<module name="zendesk" position="9"/>
+<module name="digitaleo" position="2"/>
+<module name="skebby" position="3"/>
+<module name="expressmailing" position="4"/>
+<module name="salesmanago" position="5"/>
+<module name="fianetsceau" position="6"/>
+<module name="veplatform" position="7"/>
+<module name="smartsupp" position="8"/>
+<module name="onehopsmsservice" position="9"/>
+<module name="zendesk" position="10"/>
 </tab>
 <tab class_name="AdminContacts" display_type="slider_list">
 <module name="sendinblue" position="1"/>
-<module name="skebby" position="2"/>
-<module name="expressmailing" position="3"/>
-<module name="salesmanago" position="4"/>
-<module name="iadvize" position="5"/>
-<module name="webcallback" position="6"/>
-<module name="smartsupp" position="7"/>
-<module name="veplatform" position="8"/>
-<module name="onehopsmsservice" position="9"/>
-<module name="zendesk" position="10"/>
+<module name="digitaleo" position="2"/>
+<module name="skebby" position="3"/>
+<module name="expressmailing" position="4"/>
+<module name="salesmanago" position="5"/>
+<module name="iadvize" position="6"/>
+<module name="webcallback" position="7"/>
+<module name="smartsupp" position="8"/>
+<module name="veplatform" position="9"/>
+<module name="onehopsmsservice" position="10"/>
+<module name="zendesk" position="11"/>
 </tab>
 <tab class_name="AdminCartRules" display_type="slider_list">
 <module name="nostotagging" position="1"/>
 <module name="miwo" position="2"/>
 <module name="salesmanago" position="3"/>
 <module name="pushoncart" position="4"/>
-<module name="cartabandonmentpro" position="5"/>
-<module name="smartsupp" position="6"/>
-<module name="apiway" position="7"/>
+<module name="cartsguru" position="5"/>
+<module name="rees46" position="6"/>
+<module name="cartabandonmentpro" position="7"/>
+<module name="smartsupp" position="8"/>
+<module name="apiway" position="9"/>
+<module name="prestashoptoquickbooks" position="10"/>
 </tab>
 <tab class_name="AdminSpecificPriceRule" display_type="slider_list">
 <module name="pushoncart" position="1"/>
 <module name="vente_flash" position="2"/>
 <module name="privatesale" position="3"/>
+<module name="prestashoptoquickbooks" position="4"/>
 </tab>
 <tab class_name="AdminMarketing" display_type="default_list">
 <module name="ebay" position="1"/>
@@ -215,23 +230,25 @@
 <module name="themoneytizer" position="8"/>
 <module name="magnalister" position="9"/>
 <module name="easymarketing" position="10"/>
-<module name="shoppingfluxexport" position="11"/>
-<module name="iziflux" position="12"/>
-<module name="lengow" position="13"/>
-<module name="fianetsceau" position="14"/>
-<module name="twenga" position="15"/>
-<module name="googleshopping" position="16"/>
-<module name="cdiscount" position="17"/>
-<module name="innovativemenu" position="18"/>
-<module name="pushoncart" position="19"/>
-<module name="prestanotify" position="20"/>
-<module name="pushslide" position="21"/>
-<module name="smartsupp" position="22"/>
-<module name="seohelping" position="23"/>
-<module name="vente_flash" position="24"/>
-<module name="privatesale" position="25"/>
-<module name="veplatform" position="26"/>
-<module name="referralprogram" position="27"/>
+<module name="cartsguru" position="11"/>
+<module name="rees46" position="12"/>
+<module name="shoppingfluxexport" position="13"/>
+<module name="iziflux" position="14"/>
+<module name="lengow" position="15"/>
+<module name="fianetsceau" position="16"/>
+<module name="twenga" position="17"/>
+<module name="googleshopping" position="18"/>
+<module name="cdiscount" position="19"/>
+<module name="innovativemenu" position="20"/>
+<module name="pushoncart" position="21"/>
+<module name="prestanotify" position="22"/>
+<module name="pushslide" position="23"/>
+<module name="smartsupp" position="24"/>
+<module name="seohelping" position="25"/>
+<module name="vente_flash" position="26"/>
+<module name="privatesale" position="27"/>
+<module name="veplatform" position="28"/>
+<module name="referralprogram" position="29"/>
 </tab>
 <tab class_name="AdminPayment" display_type="default_list">
 <module name="psphipay" position="1"/>
@@ -354,15 +371,18 @@
 </tab>
 <tab class_name="AdminCurrencies" display_type="slider_list">
 <module name="avalaratax" position="1"/>
+<module name="prestashoptoquickbooks" position="2"/>
 </tab>
 <tab class_name="AdminTaxes" display_type="slider_list">
 <module name="avalaratax" position="1"/>
 <module name="vatnumber" position="2"/>
+<module name="prestashoptoquickbooks" position="3"/>
 </tab>
 <tab class_name="AdminTaxRulesGroup" display_type="slider_list">
 <module name="vatnumber" position="1"/>
 <module name="banipmod" position="2"/>
 <module name="avalaratax" position="3"/>
+<module name="prestashoptoquickbooks" position="4"/>
 </tab>
 <tab class_name="AdminTranslations" display_type="slider_list">
 <module name="etranslation" position="1"/>
@@ -426,16 +446,17 @@
 </tab>
 <tab class_name="AdminEmails" display_type="slider_list">
 <module name="sendinblue" position="1"/>
-<module name="expressmailing" position="2"/>
-<module name="newsletter" position="3"/>
-<module name="mynewsletter" position="4"/>
-<module name="mailchimp" position="5"/>
-<module name="salesmanago" position="6"/>
-<module name="etranslation" position="7"/>
-<module name="bablic" position="8"/>
-<module name="smartsupp" position="9"/>
-<module name="onehopsmsservice" position="10"/>
-<module name="ps_emailalerts" position="11"/>
+<module name="digitaleo" position="2"/>
+<module name="expressmailing" position="3"/>
+<module name="newsletter" position="4"/>
+<module name="mynewsletter" position="5"/>
+<module name="mailchimp" position="6"/>
+<module name="salesmanago" position="7"/>
+<module name="etranslation" position="8"/>
+<module name="bablic" position="9"/>
+<module name="smartsupp" position="10"/>
+<module name="onehopsmsservice" position="11"/>
+<module name="ps_emailalerts" position="12"/>
 </tab>
 <tab class_name="AdminImport" display_type="slider_list">
 </tab>

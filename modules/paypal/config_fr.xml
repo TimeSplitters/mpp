@@ -2,8 +2,8 @@
 <module>
 	<name>paypal</name>
 	<displayName><![CDATA[PayPal]]></displayName>
-	<version><![CDATA[3.11.1]]></version>
-	<description><![CDATA[Acceptez le paiements par cartes de cr&eacute;dits  (CB, Visa, MasterCard, Amex, Aurore, Cofinoga, 4 stars)  avec PayPal.]]></description>
+	<version><![CDATA[3.11.3]]></version>
+	<description><![CDATA[D&eacute;veloppez votre activit&eacute; avec PayPal et b&eacute;n&eacute;ficiez d&rsquo;une solution cl&eacute; en main pour votre activit&eacute; en ligne, sur mobile et &agrave; l&rsquo;international et d&eacute;couvrez une nouvelle exp&eacute;rience de paiement avec Braintree.  Acceptez de nombreuses m&eacute;thodes de paiements via PayPal et Braintree]]></description>
 	<author><![CDATA[PrestaShop]]></author>
 	<tab><![CDATA[payments_gateways]]></tab>
 	<confirmUninstall><![CDATA[Êtes-vous certain de vouloir supprimer vos informations ?]]></confirmUninstall>

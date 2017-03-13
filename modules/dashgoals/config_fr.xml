@@ -2,7 +2,7 @@
 <module>
 	<name>dashgoals</name>
 	<displayName><![CDATA[Tableau de bord des objectifs]]></displayName>
-	<version><![CDATA[0.7.0]]></version>
+	<version><![CDATA[1.0.0]]></version>
 	<description><![CDATA[Affiche un bloc avec les pr&eacute;visions de votre boutique.]]></description>
 	<author><![CDATA[PrestaShop]]></author>
 	<tab><![CDATA[dashboard]]></tab>
