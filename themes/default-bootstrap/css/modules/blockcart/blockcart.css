@@ -15,13 +15,15 @@ POT POURRI STYLES
     float: right;
     font-size: 18px;
     color: #fff;
-    padding: 2px 0 0 0; }
+    padding: 0;
+    line-height: 22px; }
   #header .shopping_cart > a:first-child:hover:after {
     content: "\f0d8";
-    padding: 2px 0 0 0; }
+    padding: 0;
+    line-height: 22px; }
 
 .shopping_cart {
-  width: 270px; }
+  width: 170px; }
   @media (max-width: 480px) {
     .shopping_cart {
       padding-top: 20px; } }
@@ -31,10 +33,9 @@ POT POURRI STYLES
       float: none;
       width: 100%; } }
   .shopping_cart > a:first-child {
-    padding: 7px 15px 4px 15px;
+    padding: 7px 15px;
     background: #008b94;
     display: block;
-    font-weight: bold;
     color: #fff;
     overflow: hidden; }
     @media (min-width: 768px) and (max-width: 991px) {
@@ -42,14 +43,14 @@ POT POURRI STYLES
         display: none !important; } }
     .shopping_cart > a:first-child b {
       color: #fff;
-      font: 100 14px/18px "Caviar Dreams", "Open Sans", sans-serif;
+      font: 100 14px/22px "Open Sans", sans-serif;
       padding-right: 5px; }
     .shopping_cart > a:first-child:before {
       content: "\f07a";
       font-family: "FontAwesome";
       display: inline-block;
-      font-size: 20px;
-      line-height: 20px;
+      font-size: 16px;
+      line-height: 22px;
       color: #fff;
       padding-right: 15px; }
   .shopping_cart .ajax_cart_total {
@@ -70,6 +71,7 @@ POT POURRI STYLES
   position: absolute;
   right: 10px;
   top: 19px; }
+
 .cart_block .cart_block_list .remove_link a,
 .cart_block .cart_block_list .ajax_cart_block_remove_link {
   color: #00737a;
@@ -86,9 +88,11 @@ POT POURRI STYLES
   .cart_block .cart_block_list .remove_link a:hover,
   .cart_block .cart_block_list .ajax_cart_block_remove_link:hover {
     color: #008b94; }
+
 .cart_block .cart-images {
   float: left;
   margin-right: 20px; }
+
 .cart_block .cart-info {
   overflow: hidden;
   position: relative;
@@ -108,11 +112,13 @@ POT POURRI STYLES
     padding-right: 5px; }
     .cart_block .cart-info .quantity-formated .quantity {
       font-size: 15px; }
+
 .cart_block dt {
   font-weight: normal;
   overflow: hidden;
   padding: 20px 10px 16px 20px;
   position: relative; }
+
 .cart_block dd {
   position: relative; }
   .cart_block dd .cart_block_customizations {
@@ -122,11 +128,13 @@ POT POURRI STYLES
       .cart_block dd .cart_block_customizations li .deleteCustomizableProduct {
         position: absolute;
         right: 10px; }
+
 .cart_block .cart_block_no_products {
   margin: 0;
   padding: 10px 20px; }
+
 .cart_block .cart-prices {
-  border-top: 1px solid #d6d4d4;
+  border-top: 1px solid #ededed;
   font-weight: bold;
   padding: 10px 20px 22px 20px; }
   .cart_block .cart-prices .cart-prices-line {
@@ -135,6 +143,7 @@ POT POURRI STYLES
     padding: 7px 0; }
     .cart_block .cart-prices .cart-prices-line.last-line {
       border: none; }
+
 .cart_block .cart-buttons {
   overflow: hidden;
   padding: 20px 20px 10px 20px;
@@ -208,6 +217,7 @@ POT POURRI STYLES
     background: url(../../../img/cart-shadow.png) repeat-x #3d3d3d; }
   #header .cart_block .cart-buttons {
     background: url(../../../img/cart-shadow.png) repeat-x #008b94; }
+
 #header .block_content {
   margin-bottom: 0; }
 
@@ -252,25 +262,24 @@ POT POURRI STYLES
   top: 0;
   width: 100%;
   z-index: 98;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
-  opacity: 0.2; }
+  opacity: 0.2;
+  filter: alpha(opacity=20); }
 
 * html .layer_cart_overlay {
   position: absolute;
   left: 0;
   margin-left: -160px;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
-  opacity: 0.2; }
+  opacity: 0.2;
+  filter: alpha(opacity=20); }
 
 #layer_cart {
-  background-color: #fff;
+  background-color: #fafafa;
   position: absolute;
   display: none;
   z-index: 99;
   width: 84%;
   margin-right: 8%;
   margin-left: 8%;
-  -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px; }
   #layer_cart .layer_cart_product {
@@ -298,7 +307,7 @@ POT POURRI STYLES
             line-height: 22px; } }
     #layer_cart .layer_cart_product .product-image-container {
       max-width: 178px;
-      border: 1px solid #d6d4d4;
+      border: 1px solid #ededed;
       padding: 5px;
       float: left;
       margin-right: 30px; }
@@ -318,10 +327,9 @@ POT POURRI STYLES
           padding-right: 3px; }
   #layer_cart .layer_cart_cart {
     background: #fafafa;
-    border-left: 1px solid #d6d4d4;
+    border-left: 1px solid #ededed;
     padding: 21px 30px 170px 30px;
-    -moz-border-radius: 0px 4px 4px 0px;
-    -webkit-border-radius: 0px;
+    -webkit-border-radius: 0px 4px 4px 0px;
     border-radius: 0px 4px 4px 0px;
     position: relative; }
     @media (min-width: 1200px) {
@@ -332,16 +340,15 @@ POT POURRI STYLES
         min-height: 360px; } }
     @media (max-width: 991px) {
       #layer_cart .layer_cart_cart {
-        -moz-border-radius: 0px 0 4px 4px;
-        -webkit-border-radius: 0px;
+        -webkit-border-radius: 0px 0 4px 4px;
         border-radius: 0px 0 4px 4px;
         border-left: none;
-        border-top: 1px solid #d6d4d4; } }
+        border-top: 1px solid #ededed; } }
     #layer_cart .layer_cart_cart .title {
       display: block;
       font: 400 23px/29px "Open Sans", sans-serif;
       color: #353535;
-      border-bottom: 1px solid #d6d4d4;
+      border-bottom: 1px solid #ededed;
       padding-bottom: 13px;
       margin-bottom: 17px; }
       @media (max-width: 767px) {
@@ -388,13 +395,15 @@ POT POURRI STYLES
 						Layer Cart Caroucel
 *************************************************************************/
 #layer_cart .crossseling .crossseling-content {
-  border-top: 1px solid #d6d4d4;
+  border-top: 1px solid #ededed;
   padding: 26px 30px 40px 30px;
   position: relative; }
+
 #layer_cart .crossseling h2 {
   font: 400 23px/26px "Open Sans", sans-serif;
   color: #353535;
   margin-bottom: 25px; }
+
 #layer_cart .crossseling #blockcart_list {
   max-width: 773px;
   width: 84%;
@@ -407,7 +416,7 @@ POT POURRI STYLES
       width: 178px;
       margin: 0 0px 0 0; }
       #layer_cart .crossseling #blockcart_list ul li .product-image-container {
-        border: 1px solid #d6d4d4;
+        border: 1px solid #ededed;
         text-align: center;
         padding: 5px;
         margin-bottom: 15px; }
@@ -451,5 +460,3 @@ POT POURRI STYLES
       content: "\f138"; }
   #layer_cart .crossseling #blockcart_list .bx-controls {
     overflow: hidden; }
-
-/*# sourceMappingURL=blockcart.css.map */

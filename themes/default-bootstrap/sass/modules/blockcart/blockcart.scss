@@ -1,5 +1,4 @@
-@import "compass";
-@import "theme_variables";
+@import "../../theme_variables";
 /*******************************************************************
 					Cart Block Styles
 ********************************************************************/
@@ -28,7 +27,7 @@
 	}
 }
 .shopping_cart {
-	width: 200px;
+	width: 170px;
 	@media (max-width: $screen-xs) {
 		padding-top: 20px;
 	}

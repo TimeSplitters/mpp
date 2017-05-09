@@ -10,7 +10,7 @@ SetEnv HTTP_MOD_REWRITE On
 RewriteEngine on
 
 
-#Domain: potpourri.local
+#Domain: potpourri.dev
 RewriteRule . - [E=REWRITEBASE:/]
 RewriteRule ^api$ api/ [L]
 
