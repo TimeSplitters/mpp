@@ -100,13 +100,12 @@
 								<div class="col-md-2">
 									<div id="header_logo">
 										<a href="{if isset($force_ssl) && $force_ssl}{$base_dir_ssl}{else}{$base_dir}{/if}" title="{$shop_name|escape:'html':'UTF-8'}">
-											<img class="logo img-responsive" src="/themes/default-bootstrap/img/mpp_logo.png" alt="{$shop_name|escape:'html':'UTF-8'}" />
+											{*<img class="logo img-responsive" src="/themes/default-bootstrap/img/mpp_logo.png" alt="{$shop_name|escape:'html':'UTF-8'}" />*}
+                                            <span class="logo">{$shop_name|escape:'html':'UTF-8'}</span>
 										</a>
 									</div>
 								</div>
-								<div class="col-md-10">
 								{if isset($HOOK_TOP)}{$HOOK_TOP}{/if}
-								</div>
 							</div>
 						</div>
 					</div>

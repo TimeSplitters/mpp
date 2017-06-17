@@ -9,21 +9,24 @@ POT POURRI STYLES
   float: right;
   padding: 20px 0; }
   #header .shopping_cart > a:first-child:after {
-    content: "\f0d7";
-    font-family: "FontAwesome";
-    display: inline-block;
-    float: right;
-    font-size: 18px;
-    color: #fff;
-    padding: 0;
-    line-height: 22px; }
+    /*content: "\f0d7";
+			font-family: $font-icon;
+			display: inline-block;
+			float: right;
+			font-size: 18px;
+			color: $light-text-color;
+			padding: 0;
+			line-height: 22px;*/
+    display: none; }
+  #header .shopping_cart > a:first-child .ajax_cart_quantity {
+    font-family: "Lobster 1.4", "Birds of Paradise Personal use",Ballpark,Blacksword; }
   #header .shopping_cart > a:first-child:hover:after {
     content: "\f0d8";
     padding: 0;
     line-height: 22px; }
 
 .shopping_cart {
-  width: 170px; }
+  width: 100px; }
   @media (max-width: 480px) {
     .shopping_cart {
       padding-top: 20px; } }
@@ -33,11 +36,13 @@ POT POURRI STYLES
       float: none;
       width: 100%; } }
   .shopping_cart > a:first-child {
-    padding: 7px 15px;
-    background: #008b94;
+    padding: 9px 2px 9px 0;
+    text-align: right;
+    background: none;
     display: block;
-    color: #fff;
-    overflow: hidden; }
+    color: #008b94;
+    overflow: hidden;
+    font-size: 16px; }
     @media (min-width: 768px) and (max-width: 991px) {
       .shopping_cart > a:first-child span.ajax_cart_product_txt, .shopping_cart > a:first-child span.ajax_cart_product_txt_s {
         display: none !important; } }
@@ -46,13 +51,14 @@ POT POURRI STYLES
       font: 100 14px/22px "Open Sans", sans-serif;
       padding-right: 5px; }
     .shopping_cart > a:first-child:before {
-      content: "\f07a";
+      content: "\f291";
       font-family: "FontAwesome";
       display: inline-block;
-      font-size: 16px;
+      font-size: 24px;
       line-height: 22px;
-      color: #fff;
-      padding-right: 15px; }
+      color: #008b94;
+      padding-right: 10px;
+      text-shadow: -1px 1px #ccc; }
   .shopping_cart .ajax_cart_total {
     display: none !important; }
   .shopping_cart .block_cart_expand:after, .shopping_cart .block_cart_collapse:after {

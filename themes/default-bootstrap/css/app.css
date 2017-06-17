@@ -1,0 +1,11 @@
+#header_logo .logo {
+  font-family: "Lobster 1.4", "Birds of Paradise Personal use",Ballpark,Blacksword;
+  font-size: 18px;
+  font-weight: 100;
+  padding: 10px;
+  background: #fff;
+  box-shadow: -2px 2px 5px 2px #eee;
+  border-radius: 5px; }
+
+header .row #header_logo {
+  margin-top: 10px; }

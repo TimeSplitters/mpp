@@ -1,5 +1,4 @@
-@import "compass";
-@import "theme_variables";
+@import "../../../theme_variables";
 /*** ESSENTIAL STYLES ***/
 .sf-contener {
 	display: inline-block;
@@ -15,7 +14,7 @@
 	position: relative;
 	padding: 0;
 	width: 100%;
-	margin-top: 20px;
+	margin-top: 23px;
 	@media (max-width: $screen-xs-max) { // max 767px
 		display: none;
 	}
@@ -37,6 +36,9 @@
 .sf-menu > li {
 	float: left;
 	border-right: 1px solid $base-border-color;
+	&:last-child {
+		border-right: none;
+	}
 	@media (max-width: $screen-xs-max) { // max 767px
 		float: none;
 		position: relative;
