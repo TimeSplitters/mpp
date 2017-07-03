@@ -1014,7 +1014,6 @@ function refreshProductImages(id_product_attribute)
 	else
 		$('#wrapResetImages').stop(true, true).hide();
 
-	$('#thumbs_list_frame').width(parseInt($('#thumbs_list_frame >li').outerWidth(true) * $('#thumbs_list_frame >li').length) + 'px');
 	$('#thumbs_list').trigger('goto', 0);
 	serialScrollFixLock('', '', '', '', 0);
 }

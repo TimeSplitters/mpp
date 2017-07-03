@@ -117,10 +117,6 @@
 			}
 		}
 	}
-	.cart-images {
-		float: left;
-		margin-right: 20px;
-	}
 	.cart-info {
 		overflow: hidden;
 		position: relative;
@@ -148,7 +144,7 @@
 	dt {
 		font-weight: normal;
 		overflow: hidden;
-		padding: 20px 10px 16px 20px;
+		padding: 15px;
 		position: relative;
 	}
 	dd {
@@ -218,14 +214,15 @@
 #header {
 	.cart_block {
 		position: absolute;
-		top: 95px;
+		top: 84px;
 		right: 0;
 		z-index: 100;
 		display: none;
 		height: auto;
-		background: #484848;
-		color: $light-text-color;
-		width: 270px;
+		background: #fff;
+		color: $gray;
+		width: 300px;
+		box-shadow: 0 4px 7px #ededed;
 		@media (max-width: $screen-xs) {
 			width: 100%;
 		}
@@ -233,10 +230,7 @@
 			width: 100%;
 		}
 		a {
-			color: $light-text-color;
-			&:hover {
-				color: #9c9b9b;
-			}
+			color: $green;
 		}
 		.cart_block_list {
 			.remove_link a,
@@ -339,12 +333,14 @@
 
 #layer_cart {
 	background-color: $light-background;
-	position: absolute;
+	position: fixed;
 	display: none;
 	z-index: 99;
-	width: 84%;
-	margin-right: 8%;
-	margin-left: 8%;
+	width: 50%;
+	margin: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
 	@include border-radius(4px);
 	.layer_cart_product {
 		padding: 30px 30px 30px 30px;
@@ -353,7 +349,7 @@
 		.title {
 			display: block;
 			font: 400 23px/29px $font-family;
-			color: #46a74e;
+			color: rgba(0,139,148, 0.8);
 			margin-bottom: 22px;
 			@media (max-width: $screen-xs-max) { // max 767px
 				font-size: 18px;

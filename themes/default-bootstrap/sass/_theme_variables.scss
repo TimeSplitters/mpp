@@ -21,6 +21,7 @@ $font:						  		100 $font-size-base $font-family;
 $font-custom:                 		'Caviar Dreams', 'Open Sans', sans-serif;
 $font-icon:                   		"FontAwesome";
 $fa-css-prefix:       				icon !default;
+$font-titles:						"Lobster 1.4","Birds of Paradise Personal use",Ballpark,Blacksword;
 
 
 //-------- BORDERS
@@ -96,16 +97,9 @@ $tr-even-bg:										#fdfdfd;
 
 //sub heading (h2,h3) define
 @mixin sub-heading {
-	color: $base-heading-color;
-	text-transform: uppercase;
-	font-family: $font-custom;
-	font-weight: 600;
-	font-size: 18px;
-	line-height: 20px;
-	padding: 14px 20px 17px;
-	margin: 0 0 20px;
-	position: relative;
-	border: 1px solid $base-border-color;
-	border-bottom: none;
-	background: $base-box-bg;
+	color: $gray;
+	font-size: 24px;
+	line-height: 30px;
+	padding: 18px 0;
+	font-family: $font-titles;
 }

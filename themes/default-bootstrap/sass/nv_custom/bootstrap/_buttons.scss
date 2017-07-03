@@ -9,49 +9,19 @@
 
 // Core styles
 .btn {
-  display: inline-block;
-  padding: $padding-base-vertical $padding-base-horizontal;
-  margin-bottom: 0; // For input.btn
-  font-size: $btn-font-size;
-  font-weight: $btn-font-weight;
-  line-height: $line-height-base;
+  background: rgba(0,139,148, 0.8);
+  border: none;
+  color: #fff;
   text-transform: uppercase;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  border: 1px solid transparent;
-  white-space: nowrap;
-  @include user-select(none);
-  transition: background 0.6s;
-  font-family: Lato;
-  font-size: 10px;
+  font-size: 13px;
+  padding: 10px 20px;
+  width: 100%;
+  transition: all 0.3s;
   letter-spacing: 2px;
 
-  &:focus {
-    @include tab-focus-nv();
+  &:hover {
+    background: rgba(0,139,148, 1);
   }
-
-  &:hover,
-  &:focus {
-    color: $btn-default-color;
-    text-decoration: none;
-  }
-
-  &:active,
-  &.active {
-    outline: 0;
-    background-image: none;
-  }
-
-  &.disabled,
-  &[disabled],
-  fieldset[disabled] & {
-    cursor: not-allowed;
-    pointer-events: none; // Future-proof disabling of clicks
-    @include opacity(.65);
-    @include box-shadow(none);
-  }
-
 }
 
 
