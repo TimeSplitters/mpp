@@ -38,8 +38,8 @@
 			width: 100%;
 		}
 		h4 {
+			float: none;
 			background: none;
-			float: left;
 			padding: 7px 16px 5px 0;
 			text-transform: none;
 			border: none;
@@ -83,7 +83,6 @@
 		.warning_inline {
 			display: block;
 			color: #f13340;
-			font-size: 13px;
 			line-height :26px;
 			clear: both;
 			@media (min-width: $screen-lg) { // min 1200px
@@ -95,8 +94,5 @@
 				clear: none;
 			}
 		}
-		.newsletter-input {
-  			max-width: 300px !important;
-  		}
 	}
 }
