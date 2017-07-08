@@ -1,5 +1,5 @@
 
-[{shop_url}] 
+[/{shop_url}] 
 
 Bonjour, 
 
@@ -31,6 +31,6 @@ Message du client :
 
 {message} 
 
-{shop_name} [{shop_url}] réalisé avec
-PrestaShop(tm) [http://www.prestashop.com/] 
+{shop_name} [/{shop_url}] réalisé avec PrestaShop(tm)
+[http://www.prestashop.com/] 
 

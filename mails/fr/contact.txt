@@ -1,5 +1,5 @@
 
-[{shop_url}] 
+[/{shop_url}] 
 
 Message de la part d'un client de {shop_name} 
 
@@ -11,6 +11,6 @@ COMMANDE # : {order_name}
 
 PIÈCE JOINTE : {attached_file} 		 
 
-{shop_name} [{shop_url}] réalisé avec
-PrestaShop(tm) [http://www.prestashop.com/] 
+{shop_name} [/{shop_url}] réalisé avec PrestaShop(tm)
+[http://www.prestashop.com/] 
 

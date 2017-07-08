@@ -70,7 +70,7 @@ $_LANGMAIL['Your order with the reference <span><strong>{order_name}</strong></s
 $_LANGMAIL['You can track your package using the following link:'] = 'Vous pouvez suivre la progression de votre livraison à l\'adresse suivante:';
 $_LANGMAIL['{followup}'] = '{followup}';
 $_LANGMAIL['You have received a new log alert'] = 'Nouveau message d\'alerte enregistré';
-$_LANGMAIL['<span><strong>Warning:</strong></span> you have received a new log alert in your Back Office.'] = '<span><strong>Attention :</strong></span> vous avez reçu un nouveau message d\'alerte dans votre Back-Office.';
+$_LANGMAIL['<span><strong>Warning:</strong></span> you have received a new log alert in your Back Office.'] = '<span><strong>Attention :</strong></span> vous avez reçu un nouveau message d\'alerte dans votre back-office.';
 $_LANGMAIL['You can check for it in the <span><strong>"Tools" &gt; "Logs"</strong></span> section of your Back Office.'] = 'Vous pouvez voir ce message dans votre Panneau d\'administration dans <span><strong>Outils &gt; Log</strong></span>.';
 $_LANGMAIL['Order canceled'] = 'Commande annulée';
 $_LANGMAIL['Your order with the reference <span><strong>{order_name}</strong></span> from <span><strong>{shop_name}</strong></span> has been canceled.'] = 'Votre commande sur  <span><strong>{shop_name}</strong></span> ayant pour référence <span><strong>{order_name}</strong></span> a été annulée.';
@@ -180,7 +180,9 @@ $_LANGMAIL['We have created a voucher in your name for referring a friend.'] = '
 $_LANGMAIL[', with an amount of'] = ', d\'un montant total de';
 $_LANGMAIL['Hi {name},'] = 'Bonjour {name},';
 $_LANGMAIL['{customer} has sent you a link to a product that (s)he thinks may interest you.'] = '{customer} vous envoie un lien vers un produit qui pourrait vous int&eacute;resser.';
-$_LANGMAIL['Click here to view this item:'] = 'Il s&#039;agit de:';
+$_LANGMAIL['Click here to view this item:'] = 'Il s\'agit de :';
+$_LANGMAIL['Order edited'] = 'Commande modifiée';
+$_LANGMAIL['Your order with the reference <span><strong>{order_name}</strong></span> has been modified.'] = 'Votre commande référence <span><strong>{order_name}</strong></span> a été modifiée.';
 
 
 return $_LANGMAIL;

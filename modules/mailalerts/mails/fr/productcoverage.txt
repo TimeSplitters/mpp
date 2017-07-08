@@ -1,5 +1,5 @@
 
-[{shop_url}] 
+[/{shop_url}] 
 
 Bonjour, 
 
@@ -8,6 +8,6 @@ minimum de : {warning_coverage}.
 
 COUVERTURE ACTUELLE : {current_coverage} 		 
 
-{shop_name} [{shop_url}] réalisé avec
-PrestaShop(tm) [http://www.prestashop.com/] 
+{shop_name} [/{shop_url}] réalisé avec PrestaShop(tm)
+[http://www.prestashop.com/] 
 

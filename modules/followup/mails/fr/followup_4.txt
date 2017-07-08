@@ -1,5 +1,5 @@
 
-[{shop_url}] 
+[/{shop_url}] 
 
 Bonjour {firstname} {lastname}, 
 
@@ -7,8 +7,7 @@ Vous faites partie de nos meilleurs clients cependant vous n'avez pas
 passé de commande depuis {days_threshold} jours.
 
 Vous panier a été conservé, vous pouvez reprendre votre commande
-en vous rendant sur notre boutique : {shop_url}
-[{shop_url}]
+en vous rendant sur notre boutique : {shop_url} [/{shop_url}]
 
 Nous souhaitons vous remercier pour la confiance dont vous nous
 faites part et à ce titre, nous vous accordons une remise de
@@ -19,6 +18,6 @@ VOICI VOTRE BON DE RÉDUCTION : {voucher_num}
 
 Saisissez ce code dans votre panier afin d'obtenir votre réduction.
 
-{shop_name} [{shop_url}] réalisé avec
-PrestaShop(tm) [http://www.prestashop.com/] 
+{shop_name} [/{shop_url}] réalisé avec PrestaShop(tm)
+[http://www.prestashop.com/] 
 

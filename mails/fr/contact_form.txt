@@ -1,5 +1,5 @@
 
-[{shop_url}] 
+[/{shop_url}] 
 
 Votre message à l'attention du service client de {shop_name} 
 
@@ -15,6 +15,6 @@ PIÈCE JOINTE : {attached_file}
 
 Nous vous répondrons dans les meilleurs délais. 
 
-{shop_name} [{shop_url}] réalisé avec
-PrestaShop(tm) [http://www.prestashop.com/] 
+{shop_name} [/{shop_url}] réalisé avec PrestaShop(tm)
+[http://www.prestashop.com/] 
 
