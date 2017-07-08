@@ -383,6 +383,18 @@ class AdminControllerCore extends Controller
     /** @var bool if logged employee has access to AdminImport */
     protected $can_import = false;
 
+    /** @var int level for permissions Delete */
+    const LEVEL_DELETE = 4;
+
+    /** @var int level for permissions edit/update */
+    const LEVEL_EDIT = 2;
+
+    /** @var int level for permissions add/create */
+    const LEVEL_ADD = 3;
+
+    /** @var int level for permissions View/read */
+    const LEVEL_VIEW = 1;
+
     public function __construct()
     {
         global $timer_start;
@@ -903,7 +915,7 @@ class AdminControllerCore extends Controller
                 }
 
                 if (isset($_POST) && count($_POST) && (int)Tools::getValue('submitFilter'.$this->list_id) || Tools::isSubmit('submitReset'.$this->list_id)) {
-                    $this->setRedirectAfter(self::$currentIndex.'&token='.$this->token.(Tools::isSubmit('submitFilter'.$this->list_id) ? '&submitFilter'.$this->list_id.'='.(int)Tools::getValue('submitFilter'.$this->list_id) : ''));
+                    $this->setRedirectAfter(self::$currentIndex.'&token='.$this->token.(Tools::isSubmit('submitFilter'.$this->list_id) ? '&submitFilter'.$this->list_id.'='.(int)Tools::getValue('submitFilter'.$this->list_id) : '').(isset($_GET['id_'.$this->list_id]) ? '&id_'.$this->list_id.'='.(int)$_GET['id_'.$this->list_id] : ''));
                 }
 
                 // If the method named after the action exists, call "before" hooks, then call action method, then call "after" hooks
@@ -921,7 +933,7 @@ class AdminControllerCore extends Controller
             }
         } catch (PrestaShopException $e) {
             $this->errors[] = $e->getMessage();
-        };
+        }
         return false;
     }
 
@@ -968,10 +980,14 @@ class AdminControllerCore extends Controller
 
         $headers = array();
         foreach ($this->fields_list as $key => $datas) {
-            if ($datas['title'] == 'PDF') {
+            if ('PDF' === $datas['title']) {
                 unset($this->fields_list[$key]);
             } else {
-                $headers[] = Tools::htmlentitiesDecodeUTF8($datas['title']);
+                if ('ID' === $datas['title']) {
+                    $headers[] = strtolower(Tools::htmlentitiesDecodeUTF8($datas['title']));
+                } else {
+                    $headers[] = Tools::htmlentitiesDecodeUTF8($datas['title']);
+                }
             }
         }
         $content = array();
@@ -3417,7 +3433,7 @@ class AdminControllerCore extends Controller
             if (isset($def['lang']) && $def['lang']) {
                 if (isset($def['required']) && $def['required']) {
                     $value = Tools::getValue($field.'_'.$default_language->id);
-                    if (empty($value)) {
+                    if (!isset($value) || "" == $value) {
                         $this->errors[$field.'_'.$default_language->id] = sprintf(
                                 Tools::displayError('The field %1$s is required at least in %2$s.'),
                                 $object->displayFieldName($field, $class_name),
@@ -4392,6 +4408,26 @@ class AdminControllerCore extends Controller
     {
         if (!isset($this->list_id)) {
             $this->list_id = $this->table;
+        }
+    }
+
+    /**
+     * Return the type of authorization on permissions page and option.
+     *
+     * @return int(integer)
+     */
+    public function authorizationLevel()
+    {
+        if($this->tabAccess['delete']) {
+            return AdminController::LEVEL_DELETE;
+        } elseif($this->tabAccess['add']) {
+            return AdminController::LEVEL_ADD;
+        } elseif($this->tabAccess['edit']){
+            return AdminController::LEVEL_EDIT;
+        } elseif($this->tabAccess['view']){
+            return AdminController::LEVEL_VIEW;
+        } else {
+            return 0;
         }
     }
 }

@@ -130,7 +130,7 @@ class OrderInvoiceCore extends ObjectModel
     {
         $order = new Order($this->id_order);
 
-        $this->shop_address = self::getCurrentFormattedShopAddress($order->id_shop);
+        $this->shop_address = OrderInvoice::getCurrentFormattedShopAddress($order->id_shop);
 
         return parent::add();
     }
@@ -716,7 +716,7 @@ class OrderInvoiceCore extends ObjectModel
         $query->innerJoin(
             'order_invoice_payment',
             'oip2',
-            'oip2.id_order_payment = oip1.id_order_payment AND oip2.id_order_invoice <> oip1.id_order_invoice'
+            'oip2.id_order_payment = oip1.id_order_payment AND oip2.id_order_invoice <> oip1.id_order_invoice AND oip1.id_order = oip2.id_order'  
         );
         $query->where('oip1.id_order_invoice = '.$this->id);
 
@@ -752,7 +752,7 @@ class OrderInvoiceCore extends ObjectModel
         $query->innerJoin(
             'order_invoice_payment',
             'oip2',
-            'oip2.id_order_payment = oip1.id_order_payment AND oip2.id_order_invoice <> oip1.id_order_invoice'
+            'oip2.id_order_payment = oip1.id_order_payment AND oip2.id_order_invoice <> oip1.id_order_invoice AND oip1.id_order = oip2.id_order'
         );
         $query->leftJoin(
             'order_invoice',
@@ -904,7 +904,7 @@ class OrderInvoiceCore extends ObjectModel
         $shop_ids = Shop::getShops(false, null, true);
         $db = Db::getInstance();
         foreach ($shop_ids as $id_shop) {
-            $address = self::getCurrentFormattedShopAddress($id_shop);
+            $address = OrderInvoice::getCurrentFormattedShopAddress($id_shop);
             $escaped_address = $db->escape($address, true, true);
 
             $db->execute('UPDATE `'._DB_PREFIX_.'order_invoice` INNER JOIN `'._DB_PREFIX_.'orders` USING (`id_order`)
