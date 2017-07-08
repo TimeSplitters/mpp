@@ -7,3 +7,5 @@ cache/
 #config/xml
 upload/
 img/
+/themes/default-bootstrap/.sass-cache/
+/themes/default-bootstrap/mobile/.sass-cache/
