@@ -1,0 +1,13 @@
+@import "compass";
+@import "theme_variables";
+
+#block_contact_infos {
+  ul {
+    li {
+      padding: 7px 0;
+      i {
+        margin-right: 10px;
+      }
+    }
+  }
+}

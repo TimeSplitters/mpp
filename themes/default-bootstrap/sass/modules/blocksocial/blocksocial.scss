@@ -1,0 +1,14 @@
+@import "compass";
+@import "theme_variables";
+
+#social_block {
+  ul {
+    li {
+      padding: 10px;
+      display: inline-block;
+      a {
+        color: $gray;
+      }
+    }
+  }
+}

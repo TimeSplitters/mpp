@@ -1,7 +1,8 @@
 <hr />
 <div id="newsletter_block_left" class="block col-md-3 text-center">
 	<div class="icon-envelope icon-3x"></div>
-	<h4>{l s='Newsletter' mod='blocknewsletter'}</h4>
+	<br />
+	<span>{l s='Newsletter' mod='blocknewsletter'}</span>
 	<div class="block_content">
 		<form action="{$link->getPageLink('index', null, null, null, false, null, true)|escape:'html':'UTF-8'}" method="post">
 			<div class="form-group{if isset($msg) && $msg } {if $nw_error}form-error{else}form-ok{/if}{/if}" >
