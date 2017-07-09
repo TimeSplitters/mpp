@@ -2,7 +2,7 @@
 <module>
 	<name>followup</name>
 	<displayName><![CDATA[Relancez vos clients]]></displayName>
-	<version><![CDATA[1.7.0]]></version>
+	<version><![CDATA[1.7.1]]></version>
 	<description><![CDATA[Relancez vos clients gr&acirc;ce &agrave; des envoi d&#039;e-mails quotidiens]]></description>
 	<author><![CDATA[PrestaShop]]></author>
 	<tab><![CDATA[advertising_marketing]]></tab>

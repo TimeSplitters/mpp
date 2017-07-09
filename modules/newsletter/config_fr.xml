@@ -2,7 +2,7 @@
 <module>
 	<name>newsletter</name>
 	<displayName><![CDATA[Lettre d&#039;informations]]></displayName>
-	<version><![CDATA[2.5.2]]></version>
+	<version><![CDATA[2.5.3]]></version>
 	<description><![CDATA[G&eacute;n&egrave;re un fichier .CSV pour vos envois d&#039;e-mails]]></description>
 	<author><![CDATA[PrestaShop]]></author>
 	<tab><![CDATA[administration]]></tab>
