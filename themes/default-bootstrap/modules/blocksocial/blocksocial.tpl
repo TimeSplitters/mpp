@@ -52,7 +52,7 @@
         {if isset($youtube_url) && $youtube_url != ''}
             <li class="youtube">
                 <a class="_blank" href="{$youtube_url|escape:html:'UTF-8'}">
-                    <span>{l s='Youtube' mod='blocksocial'}</span>
+                    <span class="icon-youtube-square icon-2x"></span>
                 </a>
             </li>
         {/if}
