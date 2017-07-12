@@ -1,0 +1,8 @@
+@import "../../theme_variables";
+
+span {
+  &.aeuc_tax_label {
+    color: $gray;
+    font-size: 11px;
+  }
+}

@@ -142,5 +142,9 @@ class ProductController extends ProductControllerCore
                 }
             }
         }
+
+        $this->context->smarty->assign(array(
+            'shippingCost' => $this->context->cart->getOrderTotal(true, Cart::ONLY_SHIPPING)
+        ));
     }
 }
