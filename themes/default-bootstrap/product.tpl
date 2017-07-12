@@ -257,6 +257,12 @@
 										{/if}
 										<meta itemprop="priceCurrency" content="{$currency->iso_code}" />
 										{hook h="displayProductPriceBlock" product=$product type="price"}
+										{if $shippingCost > 0}
+											<div class="text-center">
+												<small> {l s='Livraison'}: {convertPrice
+													price=$shippingCost|floatval}</small>
+											</div>
+                                        {/if}
 									{/if}
 								{/strip}</p>
 								<p id="reduction_percent" {if $productPriceWithoutReduction <= 0 || !$product->specificPrice || $product->specificPrice.reduction_type != 'percentage'} style="display:none;"{/if}>{strip}
@@ -477,14 +483,6 @@
 				<div  class="rte">{$product->description}</div>
 			</section>
 		{/if}
-		<div class="product_choice row gutter-10">
-			<div class="col-sm-6">
-				<h3>{l s='Je remplis le questionnaire'}</h3>
-			</div>
-			<div class="col-sm-6">
-				<h3>{l s='Je choisis moi-même le livre'}</h3>
-			</div>
-		</div>
 		{if isset($packItems) && $packItems|@count > 0}
 		<section id="blockpack">
 			<h3 class="page-product-heading">{l s='Pack content'}</h3>
