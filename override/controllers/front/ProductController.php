@@ -143,8 +143,18 @@ class ProductController extends ProductControllerCore
             }
         }
 
+        $minCarrierPrice = 0;
+        foreach(Carrier::getAvailableCarrierList($this->product, null) as $carrier) {
+            $theCarrier = new Carrier($carrier);
+            $theCarrierPrice = $theCarrier->getDeliveryPriceByWeight($this->product->weight,
+                $this->context->country->id_zone);
+            if($minCarrierPrice == 0 || $minCarrierPrice > $theCarrierPrice) {
+                $minCarrierPrice = $theCarrierPrice;
+            }
+        }
+
         $this->context->smarty->assign(array(
-            'shippingCost' => $this->context->cart->getOrderTotal(true, Cart::ONLY_SHIPPING)
+            'shippingCost' => (float)$theCarrierPrice
         ));
     }
 }
