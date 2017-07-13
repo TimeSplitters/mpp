@@ -75,12 +75,12 @@ h6 {
   margin-bottom: ($line-height-computed / 2);
 }
 
-h1, .h1 { font-size: floor($font-size-base * 2.5); } // ~36px
-h2, .h2 { font-size: floor($font-size-base * 2.5 * 0.8); } // ~30px
-h3, .h3 { font-size: floor($font-size-base * 2.5 * 0.8 * 0.8); } // ~24px
-h4, .h4 { font-size: floor($font-size-base * 2.5 * 0.8 * 0.8 * 0.8); } // ~18px
-h5, .h5 { font-size: floor($font-size-base * 2.5 * 0.8 * 0.8 * 0.8 * 0.8); }
-h6, .h6 { font-size: floor($font-size-base * 2.5 * 0.8 * 0.8 * 0.8 * 0.8 * 0.8); } // ~12px
+h1, .h1 { font-size: floor($font-size-base * 2); } // ~26px
+h2, .h2 { font-size: floor($font-size-base * 2 * 0.8); } // ~20px
+h3, .h3 { font-size: floor($font-size-base * 2 * 0.8 * 0.8); } // ~16px
+h4, .h4 { font-size: floor($font-size-base * 2 * 0.8 * 0.8 * 0.8); } // ~13px
+h5, .h5 { font-size: floor($font-size-base * 2 * 0.8 * 0.8 * 0.8 * 0.8); } // 10px
+h6, .h6 { font-size: floor($font-size-base * 2 * 0.8 * 0.8 * 0.8 * 0.8 * 0.8); } // ~8px
 
 h1 small, .h1 small { font-size: ceil($font-size-base * 1.70); } // ~24px
 h2 small, .h2 small { font-size: ceil($font-size-base * 1.25); } // ~18px

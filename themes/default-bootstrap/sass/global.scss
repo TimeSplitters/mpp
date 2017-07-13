@@ -9,9 +9,11 @@
 @import "icons";
 @import "types";
 
-a:hover {
-	text-decoration: none;
+a {
 	transition: all 0.6s;
+	&:hover {
+		text-decoration: none;
+	}
 }
 
 
@@ -625,13 +627,14 @@ table.table_block td {
 
 //product elements
 .product-name {
-	font-size: 17px;
-	line-height: 23px;
+	font-size: 13px;
+	line-height: 26px;
 	color: $product-name-color;
 	margin-bottom: 0;
+	font-family:$font-titles;
 	a {
-		font-size: 17px;
-		line-height: 23px;
+		font-size: 13px;
+		line-height: 26px;
 		color: $product-name-color;
 		&:hover {
 			color: $product-name-hover-color;
@@ -1930,14 +1933,10 @@ a.price_discount_delete {
 	}
 	tbody {
 		td {
-			padding: 7px 8px 9px 8px;
+			padding: 0;
 			&.cart_product {
 				@extend .text-center;
-				padding: 7px;
 				width: 137px;
-				img {
-					border: 1px solid $table-border-color;
-				}
 			}
 			&.cart_unit {
 				@extend .text-right;

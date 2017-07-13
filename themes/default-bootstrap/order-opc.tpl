@@ -36,8 +36,8 @@
 {else}
 	{if $productNumber}
 		<!-- Shopping Cart -->
-
-		{include file="$tpl_dir./shopping-cart.tpl"}
+	<div class="row">
+		<div class="col-xs-12 col-md-8">
 		<!-- End Shopping Cart -->
 		{if $is_logged AND !$is_guest}
 			{include file="$tpl_dir./order-address.tpl"}
@@ -52,7 +52,12 @@
 	
 		<!-- Payment -->
 		{include file="$tpl_dir./order-payment.tpl"}
+		</div>
 		<!-- END Payment -->
+		<div class="col-xs-12 col-md-4">
+            {include file="$tpl_dir./shopping-cart.tpl"}
+		</div>
+	</div>
 	{else}
 		{capture name=path}{l s='Your shopping cart'}{/capture}
 		<h2 class="page-heading">{l s='Your shopping cart'}</h2>

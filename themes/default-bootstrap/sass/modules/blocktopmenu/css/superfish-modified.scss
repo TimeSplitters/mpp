@@ -3,7 +3,6 @@
 .sf-contener {
 	display: inline-block;
 }
-.sf-right {}
 .sf-menu,
 .sf-menu * {
 	margin: 0;
@@ -63,9 +62,10 @@
 		}
 	}
 	> a {
-		font: 100 12px/16px $font-custom;
-		text-transform: uppercase;
-		color: #484848;
+		font: 100 14px/18px $font-custom;
+		color: $gray;
+		text-transform: none;
+		letter-spacing: 1px;
 		display: block;
 		padding: 10px 18px;
 	}

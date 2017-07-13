@@ -25,13 +25,13 @@
 
 {capture name=path}{l s='Your shopping cart'}{/capture}
 
-<h1 id="cart_title" class="page-heading">{l s='Shopping-cart summary'}
-	{if !isset($empty) && !$PS_CATALOG_MODE}
+<h4 id="cart_title" class="text-uppercase">{l s='Shopping-cart summary'}
+	{*if !isset($empty) && !$PS_CATALOG_MODE}
 		<span class="heading-counter">{l s='Your shopping cart contains:'}
 			<span id="summary_products_quantity">{$productNumber} {if $productNumber == 1}{l s='product'}{else}{l s='products'}{/if}</span>
 		</span>
-	{/if}
-</h1>
+	{/if*}
+</h4>
 
 {if isset($account_created)}
 	<p class="alert alert-success">
@@ -79,17 +79,18 @@
 	{* eu-legal *}
 	{hook h="displayBeforeShoppingCartBlock"}
 	<div id="order-detail-content" class="table_block table-responsive">
-		<table id="cart_summary" class="table table-bordered {if $PS_STOCK_MANAGEMENT}stock-management-on{else}stock-management-off{/if}">
-			<thead>
+		<table id="cart_summary" class="table {if $PS_STOCK_MANAGEMENT}stock-management-on{else}stock-management-off{/if}">
+			<thead class="hidden">
 				<tr>
 					<th class="cart_product first_item">{l s='Product'}</th>
 					<th class="cart_description item">{l s='Description'}</th>
-					{if $PS_STOCK_MANAGEMENT}
+					{*if $PS_STOCK_MANAGEMENT}
 						{assign var='col_span_subtotal' value='3'}
 						<th class="cart_avail item text-center">{l s='Availability'}</th>
 					{else}
 						{assign var='col_span_subtotal' value='2'}
-					{/if}
+					{/if*}
+                    {assign var='col_span_subtotal' value='2'}
 					<th class="cart_unit item text-right">{l s='Unit price'}</th>
 					<th class="cart_quantity item text-center">{l s='Qty'}</th>
 					<th class="cart_delete last_item">&nbsp;</th>
@@ -149,7 +150,7 @@
 						</tr>
 					{else}
 						<tr class="cart_total_price">
-							<td rowspan="{$rowspan_total}" colspan="2" id="cart_voucher" class="cart_voucher">
+							<td rowspan="{$rowspan_total}" colspan="1" id="cart_voucher" class="cart_voucher">
 								{if $voucherAllowed}
 									<form action="{if $opc}{$link->getPageLink('order-opc', true)}{else}{$link->getPageLink('order', true)}{/if}" method="post" id="voucher">
 										<fieldset>
@@ -175,7 +176,7 @@
 					{/if}
 				{else}
 					<tr class="cart_total_price">
-						<td rowspan="{$rowspan_total}" colspan="2" id="cart_voucher" class="cart_voucher">
+						<td rowspan="{$rowspan_total}" colspan="1" id="cart_voucher" class="cart_voucher">
 							{if $voucherAllowed}
 								<form action="{if $opc}{$link->getPageLink('order-opc', true)}{else}{$link->getPageLink('order', true)}{/if}" method="post" id="voucher">
 									<fieldset>
