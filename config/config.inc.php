@@ -36,6 +36,7 @@ $start_time = microtime(true);
 
 /* SSL configuration */
 define('_PS_SSL_PORT_', 443);
+ini_set('memory_limit', '2048M');
 
 /* Improve PHP configuration to prevent issues */
 ini_set('default_charset', 'utf-8');
