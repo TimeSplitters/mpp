@@ -26,13 +26,13 @@
 	{assign var='current_step' value='address'}
 	{capture name=path}{l s='Addresses'}{/capture}
 	{assign var="back_order_page" value="order.php"}
-	<h1 class="page-heading">{l s='Addresses'}</h1>
+	<h2 class="page-heading">{l s='Addresses'}</h2>
 	{include file="$tpl_dir./order-steps.tpl"}
 	{include file="$tpl_dir./errors.tpl"}
 		<form action="{$link->getPageLink($back_order_page, true)|escape:'html':'UTF-8'}" method="post">
 {else}
 	{assign var="back_order_page" value="order-opc.php"}
-	<h1 class="page-heading step-num"><span>1</span> {l s='Addresses'}</h1>
+	<h2 class="page-heading step-num"><span>1</span> {l s='Addresses'}</h2>
 	<div id="opc_account" class="opc-main-block">
 		<div id="opc_account-overlay" class="opc-overlay" style="display: none;"></div>
 {/if}

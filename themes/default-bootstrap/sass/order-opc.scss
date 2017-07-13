@@ -17,14 +17,17 @@
 		padding-left: 45px;
 		overflow: visible;
 		span {
-			font-weight: bold;
-			font-size: 42px;
-			line-height: 51px;
-			font-style: italic;
-			color: $base-text-color;
+			font-size: 14px;
+			line-height: 26px;
+			color: $white;
 			position: absolute;
 			left: 10px;
-			top: -14px;
+			top: 0;
+			background: $green;
+			width: 26px;
+			height: 26px;
+			border-radius: 50%;
+			text-align: center;
 		}
 	}
 	.form-group {

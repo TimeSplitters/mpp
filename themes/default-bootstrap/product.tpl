@@ -259,8 +259,8 @@
 										{hook h="displayProductPriceBlock" product=$product type="price"}
 										{if $shippingCost > 0}
 											<div class="text-center">
-												<small> {l s='Livraison'}: {convertPrice
-													price=$shippingCost|floatval}</small>
+												<small> {l s='+ %s de frais de livraison' sprintf={convertPrice
+                                                    price=$shippingCost|floatval}}</small>
 											</div>
                                         {/if}
 									{/if}

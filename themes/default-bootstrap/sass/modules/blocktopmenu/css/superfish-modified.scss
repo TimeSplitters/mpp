@@ -62,11 +62,11 @@
 		}
 	}
 	> a {
-		font: 100 14px/18px $font-custom;
+		font: 100 12px/18px $font-custom;
 		color: $gray;
 		text-transform: none;
-		letter-spacing: 1px;
 		display: block;
+		letter-spacing: 0;
 		padding: 10px 18px;
 	}
 	&.sfHover > a,
