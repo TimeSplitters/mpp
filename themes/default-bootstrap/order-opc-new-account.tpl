@@ -1,11 +1,11 @@
 <div id="opc_new_account" class="opc-main-block">
+	<div class="row">
 	<div id="opc_new_account-overlay" class="opc-overlay" style="display: none;"></div>
-	<h2 class="page-heading step-num"><span>1</span> {l s='Account'}</h2>
-	<form action="{$link->getPageLink('authentication', true, NULL, "back=order-opc")|escape:'html':'UTF-8'}" method="post" id="login_form" class="box">
+	<h3 class="page-heading step-num"><span>1</span> {l s='Account'}</h3>
+	<form action="{$link->getPageLink('authentication', true, NULL, "back=order-opc")|escape:'html':'UTF-8'}" method="post" id="login_form" class="box col-md-6">
 		<fieldset>
-			<h3 class="page-subheading">{l s='Already registered?'}</h3>
-			<p><a href="{$link->getPageLink('authentication', true)|escape:'html':'UTF-8'}" id="openLoginFormBlock">&raquo; {l s='Click here'}</a></p>
-			<div id="login_form_content" style="display:none;">
+			<h4 class="page-subheading">{l s='Already registered?'}</h4>
+			<div id="login_form_content">
 				<!-- Error return block -->
 				<div id="opc_login_errors" class="alert alert-danger" style="display:none;"></div>
 				<!-- END Error return block -->
@@ -17,26 +17,30 @@
 					<label for="login_passwd">{l s='Password'}</label>
 					<input class="form-control validate" type="password" id="login_passwd" name="login_passwd" data-validate="isPasswd" />
 				</p>
-				<a href="{$link->getPageLink('password', true)|escape:'html':'UTF-8'}" class="lost_password">{l s='Forgot your password?'}</a>
 				<p class="submit">
 					{if isset($back)}<input type="hidden" class="hidden" name="back" value="{$back|escape:'html':'UTF-8'}" />{/if}
-					<button type="submit" id="SubmitLogin" name="SubmitLogin" class="button btn btn-default button-medium"><span><i class="icon-lock left"></i>{l s='Sign in'}</span></button>
+					<button type="submit" id="SubmitLogin" name="SubmitLogin" class="btn btn-default text-uppercase"><span><i class="icon-lock left"></i> {l s='Sign in'}</span></button>
+				</p>
+				<p class="text-right">
+					<a href="{$link->getPageLink('password', true)|escape:'html':'UTF-8'}" class="lost_password">{l s='Forgot your password?'}</a>
 				</p>
 			</div>
 		</fieldset>
 	</form>
-	<form action="{$link->getPageLink('authentication', true)|escape:'html':'UTF-8'}" method="post" id="new_account_form" class="std" autocomplete="on" autofill="on">
+	<form action="{$link->getPageLink('authentication', true)|escape:'html':'UTF-8'}" method="post" id="new_account_form" class="std  col-md-6" autocomplete="on" autofill="on">
 		<fieldset>
 			<div class="box">
-				<h3 id="new_account_title" class="page-subheading">{l s='New Customer'}</h3>
+				<h4 id="new_account_title" class="page-subheading">{l s='New Customer'}</h4>
 				<div id="opc_account_choice" class="row">
-					<div class="col-xs-12 col-md-6">
+					<div class="col-xs-12">
 						<p class="title_block">{l s='Instant Checkout'}</p>
 						<p class="opc-button">
-							<button type="submit" class="btn btn-default button button-medium exclusive" id="opc_guestCheckout"><span>{l s='Guest checkout'}</span></button>
+							<button type="submit" class="btn btn-default" id="opc_guestCheckout">
+								<span><i class="icon-user-o left"></i> {l s='Guest checkout'}</span>
+							</button>
 						</p>
 					</div>
-					<div class="col-xs-12 col-md-6">
+					<div class="col-xs-12">
 						<p class="title_block">{l s='Create your account today and enjoy:'}</p>
 						<ul class="bullet">
 							<li>- {l s='Personalized and secure access'}</li>
@@ -44,7 +48,9 @@
 							<li>- {l s='Separate billing and shipping addresses'}</li>
 						</ul>
 						<p class="opc-button">
-							<button type="submit" class="btn btn-default button button-medium exclusive" id="opc_createAccount"><span><i class="icon-user left"></i>{l s='Create an account'}</span></button>
+							<button type="submit" class="btn btn-default text-uppercase" id="opc_createAccount">
+								<span><i class="icon-user left"></i> {l s='Create an account'}</span>
+							</button>
 						</p>
 					</div>
 				</div>
@@ -397,6 +403,7 @@
 			</div>
 		</fieldset>
 	</form>
+	</div>
 </div>
 {strip}
 {if isset($guestInformations) && isset($guestInformations.id_state) && $guestInformations.id_state}

@@ -10,7 +10,7 @@
 @import "types";
 
 a {
-	transition: all 0.6s;
+	transition: all 0.4s;
 	&:hover {
 		text-decoration: none;
 	}
@@ -550,7 +550,7 @@ span.exclusive {
 	background: $dark-background;
 	border: 1px solid $dark-background;
 	color: #fff;
-	font-size: ceil($font-size-base * 0.9);
+	font-size: $font-size-base;
 	padding: 10px 43px 10px 12px;
 	@include box-shadow(none);
 	&.grey {
@@ -628,14 +628,14 @@ table.table_block td {
 //product elements
 .product-name {
 	font-size: 12px;
-	line-height: 24px;
+	line-height: 18px;
 	color: $product-name-color;
 	margin-bottom: 0;
 	font-family: $font-custom;
 	a {
-		font-size: 13px;
-		line-height: 26px;
-		color: $product-name-color;
+		font-size: 12px;
+		line-height: 18px;
+		color: $green;
 		&:hover {
 			color: $product-name-hover-color;
 		}
@@ -826,7 +826,6 @@ table.table_block td {
 //BOXES
 .box {
 	background: $base-box-bg;
-	border: 1px solid $base-border-color;
 	padding: $base-box-padding;
 	margin: $base-box-indent;
 	line-height: 23px;
@@ -1060,7 +1059,7 @@ table.table_block td {
 .page-heading {
 	color: $base-heading-color;
 	text-transform: uppercase;
-	padding: 0px 0px 10px 0px;
+	padding: 2px 0 8px 0;
 	margin-bottom: 30px;
 	border-bottom: 1px solid $base-border-color;
 	overflow: hidden;
@@ -1089,11 +1088,10 @@ table.table_block td {
 
 .page-subheading {
 	font-family: $font-custom;
-	font-weight: 600;
+	font-weight: 100;
 	text-transform: uppercase;
 	color: $base-heading-color;
-	font-size: 18px;
-	padding: 0 0 15px;
+	padding: 0 0 6px 0px;
 	line-height: normal;
 	margin-bottom: 12px;
 	border-bottom: 1px solid $base-border-color;
@@ -1933,7 +1931,10 @@ a.price_discount_delete {
 	}
 	tbody {
 		td {
-			padding: 0;
+			padding: 5px;
+			&:first-child {
+				padding-left: 0;
+			}
 			&.cart_product {
 				@extend .text-center;
 				width: 137px;
@@ -1977,6 +1978,7 @@ a.price_discount_delete {
 	}
 	tfoot {
 		td {
+			padding: 10px 5px;
 			&.text-right {
 				font-weight: bold;
 				color: $base-text-color;
@@ -1995,6 +1997,9 @@ a.price_discount_delete {
 				background: $light-background;
 			}
 		}
+	}
+	.hookDisplayProductPriceBlock-price {
+		display: inline;
 	}
 }
 
@@ -2309,7 +2314,7 @@ table#cart_summary .gift-icon {
 				&.delivery_option_carrier {
 					margin-top: 10px;
 					width: 100%;
-					border: 1px solid $table-border-color;
+					border: 1px solid $gray-middle;
 					font-weight: bold;
 					td {
 						padding: 8px 11px 7px 11px;
@@ -2415,7 +2420,7 @@ p.payment_module {
 	margin-bottom: 10px;
 	a {
 		display: block;
-		border: 1px solid $table-border-color;
+		border: 1px solid $gray-middle;
 		@include border-radius(4px);
 		font-size: 17px;
 		line-height: 23px;

@@ -14,24 +14,24 @@
 	}
 	.page-heading.step-num {
 		position: relative;
-		padding-left: 45px;
+		padding-left: 35px;
 		overflow: visible;
 		span {
-			font-size: 14px;
-			line-height: 26px;
+			font-size: 12px;
+			line-height: 24px;
 			color: $white;
 			position: absolute;
-			left: 10px;
+			left: 0px;
 			top: 0;
 			background: $green;
-			width: 26px;
-			height: 26px;
+			width: 24px;
+			height: 24px;
 			border-radius: 50%;
 			text-align: center;
 		}
 	}
 	.form-group {
-		margin-bottom: 2px;
+		margin-bottom: 10px;
 			.form-control {
 				max-width: 271px;
 			}

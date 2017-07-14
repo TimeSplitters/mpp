@@ -11,6 +11,15 @@
 // mobile first defaults
 .row {
   @include make-row();
+
+  &.no-gutter {
+    margin-left: 0;
+    margin-right: 0;
+    [class^="col-"] {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 }
 
 // Common styles for small and large grid columns
