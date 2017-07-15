@@ -249,8 +249,8 @@ $(window).resize(function(){
 });
 
 $(window).bind('hashchange', function(){
-	checkUrl();
-	findCombination();
+	//checkUrl();
+	//findCombination();
 });
 
 //hover 'other views' images management

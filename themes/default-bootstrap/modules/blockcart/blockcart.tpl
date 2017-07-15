@@ -4,6 +4,7 @@
 {/if}
 	<div class="shopping_cart">
 		<a href="{$link->getPageLink($order_process, true)|escape:'html':'UTF-8'}" title="{l s='View my shopping cart' mod='blockcart'}" rel="nofollow">
+			<span class="icon-shopping-bag icon-2x"></span>
 			{l s='Panier'}
 			{*<b>{l s='Cart' mod='blockcart'}</b>*}
 			<span class="ajax_cart_quantity hidden">{$cart_qties}</span>
