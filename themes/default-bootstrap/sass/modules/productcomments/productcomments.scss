@@ -2,12 +2,9 @@
 @import "theme_variables";
 
 #product_comments_block_extra {
-	padding: 8px 10px 10px;
-	font-weight: bold;
-	line-height: 18px;
-	border: 1px solid $base-border-color;
-	background: $base-box-bg;
-	margin: 39px 0 22px;
+	position: absolute;
+	right: 0;
+	top: 10px;
 	.comments_note {
 		margin-bottom: 5px;
 	}

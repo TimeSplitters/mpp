@@ -88,7 +88,7 @@
 			{/foreach}
 			{if (!$too_early AND ($is_logged OR $allow_guests))}
 			<p class="align_center">
-				<a id="new_comment_tab_btn" class="btn btn-default button button-small open-comment-form" href="#new_comment_form">
+				<a id="new_comment_tab_btn" class="btn btn-default open-comment-form" href="#new_comment_form">
 					<span>{l s='Write your review!' mod='productcomments'}</span>
 				</a>
 			</p>
@@ -96,7 +96,7 @@
 		{else}
 			{if (!$too_early AND ($is_logged OR $allow_guests))}
 			<p class="align_center">
-				<a id="new_comment_tab_btn" class="btn btn-default button button-small open-comment-form" href="#new_comment_form">
+				<a id="new_comment_tab_btn" class="btn btn-default open-comment-form" href="#new_comment_form">
 					<span>{l s='Be the first to write your review!' mod='productcomments'}</span>
 				</a>
 			</p>

@@ -1626,6 +1626,34 @@ div.star a:hover {
 
 .header-container {
 	background: $light-background;
+	position: relative;
+	&:before {
+		display: block;
+		width: 50%;
+		height: 1px;
+		z-index: 9;
+		content: "";
+		transform: rotate(-1deg);
+		position: absolute;
+		bottom: 5px;
+		background: none;
+		box-shadow: 0 0px 14px 7px #ededed;
+		left: 0;
+	}
+
+	&:after {
+		display: block;
+		width: 50%;
+		height: 1px;
+		z-index: 9;
+		content: "";
+		transform: rotate(1deg);
+		position: absolute;
+		bottom: 5px;
+		background: none;
+		box-shadow: 0 0px 14px 7px #ededed;
+		right: 0;
+	}
 }
 
 // BREADCRUMB
