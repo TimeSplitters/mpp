@@ -3375,16 +3375,18 @@ div.star.star_hover {
 
 
 .row {
-	[class^="col-"]:first-child {
-		//padding-left: 0;
+	margin-left: 0;
+	margin-right: 0;
+	[class*="col-"]:first-child {
+		padding-left: 0;
 	}
-	[class^="col-"]:last-child {
-		//padding-right: 0;
+	[class*="col-"]:last-child {
+		padding-right: 0;
 	}
 }
 
 
-@import "modules/blockcart/blockcart";
-@import "modules/blocktopmenu/css/blocktopmenu";
-@import "modules/blocktopmenu/css/superfish-modified";
+//@import "modules/blockcart/blockcart";
+//@import "modules/blocktopmenu/css/blocktopmenu";
+//@import "modules/blocktopmenu/css/superfish-modified";
 @import "modules/blocknewsletter/blocknewsletter";

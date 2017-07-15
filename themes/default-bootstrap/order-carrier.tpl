@@ -26,13 +26,13 @@
 	{capture name=path}{l s='Shipping:'}{/capture}
 	{assign var='current_step' value='shipping'}
 	<div id="carrier_area">
-		<h1 class="page-heading">{l s='Shipping:'}</h1>
+		<h3 class="page-heading">{l s='Shipping:'}</h3>
 		{include file="$tpl_dir./order-steps.tpl"}
 		{include file="$tpl_dir./errors.tpl"}
 		<form id="form" action="{$link->getPageLink('order', true, NULL, "{if $multi_shipping}multi-shipping={$multi_shipping}{/if}")|escape:'html':'UTF-8'}" method="post" name="carrier_area">
 {else}
 	<div id="carrier_area" class="opc-main-block">
-		<h1 class="page-heading step-num"><span>2</span> {l s='Delivery methods'}</h1>
+		<h3 class="page-heading step-num"><span>2</span> {l s='Delivery methods'}</h3>
 			<div id="opc_delivery_methods" class="opc-main-block">
 				<div id="opc_delivery_methods-overlay" class="opc-overlay" style="display: none;"></div>
 {/if}

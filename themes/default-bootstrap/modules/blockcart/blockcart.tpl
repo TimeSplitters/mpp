@@ -1,4 +1,4 @@
-<div class="col-md-2">
+<div>
 {if isset($blockcart_top) && $blockcart_top}
 <div class="{if $PS_CATALOG_MODE} header_user_catalog{/if}">
 {/if}
@@ -190,7 +190,6 @@ mod='blockcart'}</span>*}
 {if isset($blockcart_top) && $blockcart_top}
 </div>
 {/if}
-</div>
 {counter name=active_overlay assign=active_overlay}
 {if !$PS_CATALOG_MODE && $active_overlay == 1}
 	<div id="layer_cart">
@@ -324,6 +323,7 @@ mod='blockcart'}</span>*}
 	</div> <!-- #layer_cart -->
 	<div class="layer_cart_overlay"></div>
 {/if}
+</div>
 {strip}
 {addJsDef CUSTOMIZE_TEXTFIELD=$CUSTOMIZE_TEXTFIELD}
 {addJsDef img_dir=$img_dir|escape:'quotes':'UTF-8'}

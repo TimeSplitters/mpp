@@ -353,3 +353,16 @@
   .col-lg-offset-10 { margin-left: percentage((10/ $grid-columns)); }
   .col-lg-offset-11 { margin-left: percentage((11/ $grid-columns)); }
 }
+
+
+@media (max-width: $screen-tablet) {
+  .col-xs-12 {
+    padding: 0;
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .col-md-12, col-lg-12 {
+    padding: 0;
+  }
+}
