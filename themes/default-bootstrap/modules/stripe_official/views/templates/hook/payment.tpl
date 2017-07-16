@@ -52,13 +52,13 @@
 
                 <h3 class="stripe_title">{l s='Pay by card' mod='stripe_official'}</h3>
 
-                <img class="cc-icon disable"  id="visa"       rel="Visa"       alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/cc-visa.png" />
-                <img class="cc-icon disable"  id="mastercard" rel="MasterCard" alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/cc-mastercard.png" />
-                <img class="cc-icon disable"  id="amex"       rel="Amex"       alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/cc-amex.png" />
+                <img class="cc-icon disable"  id="visa"       rel="Visa"       alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/crca-visa.png" />
+                <img class="cc-icon disable"  id="mastercard" rel="MasterCard" alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/crca-mastercard.png" />
+                <img class="cc-icon disable"  id="amex"       rel="Amex"       alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/crca-amex.png" />
                 {if $country_merchant == "us"}
-            <img class="cc-icon disable"  id="discover"   rel="Discover"   alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/cc-discover.png" />
-            <img class="cc-icon disable"  id="diners"     rel="Diners"     alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/cc-diners.png" />
-            <img class="cc-icon disable"  id="jcb"        rel="Jcb"        alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/cc-jcb.png" />
+            <img class="cc-icon disable"  id="discover"   rel="Discover"   alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/crca-discover.png" />
+            <img class="cc-icon disable"  id="diners"     rel="Diners"     alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/crca-diners.png" />
+            <img class="cc-icon disable"  id="jcb"        rel="Jcb"        alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/crca-jcb.png" />
                 {/if}<br><br>
 
                 <div class="stripe-payment-errors">{if isset($smarty.get.stripe_error)}{$smarty.get.stripe_error|escape:'htmlall':'UTF-8'}{/if}</div>
@@ -81,12 +81,12 @@
 					{if $mode == 1}
 						<p>{l s='Click on any of the credit card buttons below in order to fill automatically the required fields to submit a test payment.' mod='stripe_official'}</p>
 					{/if}
-					<img class="cc-icon disable"  id="visa"       rel="Visa"       alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/cc-visa.png" />
-					<img class="cc-icon disable"  id="mastercard" rel="MasterCard" alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/cc-mastercard.png" />
-					<img class="cc-icon disable"  id="discover"   rel="Discover"   alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/cc-discover.png" />
-					<img class="cc-icon disable"  id="amex"       rel="Amex"       alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/cc-amex.png" />
-					<img class="cc-icon disable"  id="jcb"        rel="Jcb"        alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/cc-jcb.png" />
-					<img class="cc-icon disable"  id="diners"     rel="Diners"     alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/cc-diners.png" />
+					<img class="cc-icon disable"  id="visa"       rel="Visa"       alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/crca-visa.png" />
+					<img class="cc-icon disable"  id="mastercard" rel="MasterCard" alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/crca-mastercard.png" />
+					<img class="cc-icon disable"  id="discover"   rel="Discover"   alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/crca-discover.png" />
+					<img class="cc-icon disable"  id="amex"       rel="Amex"       alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/crca-amex.png" />
+					<img class="cc-icon disable"  id="jcb"        rel="Jcb"        alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/crca-jcb.png" />
+					<img class="cc-icon disable"  id="diners"     rel="Diners"     alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/crca-diners.png" />
 				</div>
                 <br />-->
                 <div class="block-left">
@@ -241,9 +241,9 @@
 
                 var card_logo = document.createElement('img');
                 if (ps_version)
-                    card_logo.src = baseDir + '/modules/stripe_official/views/img/cc-' + cardType.toLowerCase() +'.png';
+                    card_logo.src = baseDir + '/modules/stripe_official/views/img/crca-' + cardType.toLowerCase() +'.png';
                 else
-                    card_logo.src = baseDir + 'modules/stripe_official/views/img/cc-' + cardType.toLowerCase() +'.png';
+                    card_logo.src = baseDir + 'modules/stripe_official/views/img/crca-' + cardType.toLowerCase() +'.png';
                 card_logo.id = "img-"+cardType;
                 card_logo.className = "img-card";
                 $(card_logo).insertAfter('.stripe-card-number');
