@@ -47,18 +47,18 @@
             <input type="hidden" id="stripe-rate_limit" value="{l s='An error occurred due to requests hitting the API too quickly. Please let us know if you\'re consistently running into this error.' mod='stripe_official'}">
             <input type="hidden" id="stripe-3d_declined" value="{l s='The card doesn\'t support 3DS.' mod='stripe_official'}">
             <input type="hidden" id="stripe-no_api_key" value="{l s='There\'s an error with your API keys. If you\'re the administrator of this website, please go on the "Connection" tab of your plugin.' mod='stripe_official'}">
-            <div id="stripe-ajax-loader"><img src="../img/ajax-loader.gif" alt="" />&nbsp; {l s='Transaction in progress, please wait.' mod='stripe_official'}</div>
+            <div id="stripe-ajax-loader"><img src="/themes/default-bootstrap/modules/stripe_official/views/img/ajax-loader.gif" alt="" />&nbsp; {l s='Transaction in progress, please wait.' mod='stripe_official'}</div>
             <form id="stripe-payment-form"{if isset($stripe_save_tokens_ask) && $stripe_save_tokens_ask && isset($stripe_credit_card)} style="display: none;"{/if}>
 
                 <h3 class="stripe_title">{l s='Pay by card' mod='stripe_official'}</h3>
 
-                <img class="cc-icon disable"  id="visa"       rel="Visa"       alt="" src="../img/cc-visa.png" />
-                <img class="cc-icon disable"  id="mastercard" rel="MasterCard" alt="" src="../img/cc-mastercard.png" />
-                <img class="cc-icon disable"  id="amex"       rel="Amex"       alt="" src="../img/cc-amex.png" />
+                <img class="cc-icon disable"  id="visa"       rel="Visa"       alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/cc-visa.png" />
+                <img class="cc-icon disable"  id="mastercard" rel="MasterCard" alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/cc-mastercard.png" />
+                <img class="cc-icon disable"  id="amex"       rel="Amex"       alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/cc-amex.png" />
                 {if $country_merchant == "us"}
-            <img class="cc-icon disable"  id="discover"   rel="Discover"   alt="" src="../img/cc-discover.png" />
-            <img class="cc-icon disable"  id="diners"     rel="Diners"     alt="" src="../img/cc-diners.png" />
-            <img class="cc-icon disable"  id="jcb"        rel="Jcb"        alt="" src="../img/cc-jcb.png" />
+            <img class="cc-icon disable"  id="discover"   rel="Discover"   alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/cc-discover.png" />
+            <img class="cc-icon disable"  id="diners"     rel="Diners"     alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/cc-diners.png" />
+            <img class="cc-icon disable"  id="jcb"        rel="Jcb"        alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/cc-jcb.png" />
                 {/if}<br><br>
 
                 <div class="stripe-payment-errors">{if isset($smarty.get.stripe_error)}{$smarty.get.stripe_error|escape:'htmlall':'UTF-8'}{/if}</div>
@@ -81,12 +81,12 @@
 					{if $mode == 1}
 						<p>{l s='Click on any of the credit card buttons below in order to fill automatically the required fields to submit a test payment.' mod='stripe_official'}</p>
 					{/if}
-					<img class="cc-icon disable"  id="visa"       rel="Visa"       alt="" src="../img/cc-visa.png" />
-					<img class="cc-icon disable"  id="mastercard" rel="MasterCard" alt="" src="../img/cc-mastercard.png" />
-					<img class="cc-icon disable"  id="discover"   rel="Discover"   alt="" src="../img/cc-discover.png" />
-					<img class="cc-icon disable"  id="amex"       rel="Amex"       alt="" src="../img/cc-amex.png" />
-					<img class="cc-icon disable"  id="jcb"        rel="Jcb"        alt="" src="../img/cc-jcb.png" />
-					<img class="cc-icon disable"  id="diners"     rel="Diners"     alt="" src="../img/cc-diners.png" />
+					<img class="cc-icon disable"  id="visa"       rel="Visa"       alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/cc-visa.png" />
+					<img class="cc-icon disable"  id="mastercard" rel="MasterCard" alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/cc-mastercard.png" />
+					<img class="cc-icon disable"  id="discover"   rel="Discover"   alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/cc-discover.png" />
+					<img class="cc-icon disable"  id="amex"       rel="Amex"       alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/cc-amex.png" />
+					<img class="cc-icon disable"  id="jcb"        rel="Jcb"        alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/cc-jcb.png" />
+					<img class="cc-icon disable"  id="diners"     rel="Diners"     alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/cc-diners.png" />
 				</div>
                 <br />-->
                 <div class="block-left">
@@ -109,14 +109,14 @@
                 <div class="clear"></div>
 
                 <input type="submit" class="stripe-submit-button" value="{l s='Buy now' mod='stripe_official'}" />
-                <!--<img alt="" src="../img/lock-locked.png"/>-->
+                <!--<img alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/lock-locked.png"/>-->
 
 
 
                 <div class="clear"></div>
-                <img class="powered_stripe" alt="" src="../img/verified_by_visa.png"/>
-                <img class="powered_stripe" alt="" src="../img/mastercard_securecode.png"/>
-                <img class="powered_stripe" alt="" src="../img/powered_by_stripe.png"/>
+                <img class="powered_stripe" alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/verified_by_visa.png"/>
+                <img class="powered_stripe" alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/mastercard_securecode.png"/>
+                <img class="powered_stripe" alt="" src="/themes/default-bootstrap/modules/stripe_official/views/img/powered_by_stripe.png"/>
             </form>
             <div id="stripe-translations">
                 <span id="stripe-wrong-cvc">{l s='Wrong CVC.' mod='stripe_official'}</span>
