@@ -1,0 +1,86 @@
+/**
+* 2007-2017 PrestaShop
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/afl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@prestashop.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+* versions in the future. If you wish to customize PrestaShop for your
+* needs please refer to http://www.prestashop.com for more information.
+*
+*  @author    PrestaShop SA <contact@prestashop.com>
+*  @copyright 2007-2017 PrestaShop SA
+*  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*  International Registered Trademark & Property of PrestaShop SA
+*
+* Don't forget to prefix your containers with your own identifier
+* to avoid any conflicts with others containers.
+*/
+#ts_wrapper .ts-val { padding-top: 7px; padding-left: 5px; padding-right: 5px; height: 25px; overflow: visible; }
+#ts_wrapper button.help, #ts_overview button.help { border: 1px solid #c7d6db; background: #FFF; border-radius: 3px; height: 30px; width: 30px; float: left; cursor: default; }
+#ts_wrapper button.help:focus, #ts_wrapper button.help:active, #ts_overview button.help:focus, #ts_overview button.help:active { padding: 0px; }
+#ts_wrapper button.delete { border: none; background-color: transparent; background-image: url('../img/icon-trash.png'); background-repeat: no-repeat; width: 25px; height: 23px; background-position: 7px -1px;}
+#ts_wrapper .help-addon { float: left; margin-right: 10px; }
+#ts_wrapper div.subbed { padding-left: 50px; }
+#ts_wrapper .control-label.checkbox { text-align: left; }
+#ts_wrapper hr.ts-style { display: block; border-bottom: 1px solid #c7d6db; margin-bottom: 30px; }
+#ts_wrapper label.control-label.ts-checkbox { line-height: 30px;}
+#ts_wrapper label.control-label.ts-checkbox input { margin-top: 8px; }
+#ts_wrapper label.control-label.ts-checkbox button.help { margin-left: 10px;}
+#ts_wrapper textarea.resizable-vertical { resize: vertical; }
+#ts_wrapper hr.divide { width: 66%; border-color: #c7d6db; }
+#ts_wrapper .help-link { height: 50px; line-height: 50px; display: block; }
+
+#ts_info a#overlay-image { width: 585px; height: 391px; display: block; margin-top: -391px; }
+
+/* New tooltip css to fit long texts */
+.tooltip-ts {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-ts .tooltiptext {
+    visibility: hidden;
+    width: 260px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 40%;
+    margin-left: -100px;
+    line-height: 20px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 9999;
+}
+
+.tooltip-ts .tooltiptext::after {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip-ts:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
