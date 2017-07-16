@@ -32,7 +32,7 @@
 						<span>{l s='Grade' mod='productcomments'}&nbsp;</span>
 						<div class="star_content clearfix"  itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
 							{section name="i" start=0 loop=5 step=1}
-								{if $comment.grade le $smarty.section.i.index}
+								{if $comment.grade|round le $smarty.section.i.index}
 									<div class="star"></div>
 								{else}
 									<div class="star star_on"></div>
@@ -64,10 +64,10 @@
 								{if !$comment.customer_advice}
 								<li>
 									{l s='Was this comment useful to you?' mod='productcomments'}
-									<button class="usefulness_btn btn btn-default button button-small" data-is-usefull="1" data-id-product-comment="{$comment.id_product_comment}">
+									<button class="usefulness_btn btn btn-default" data-is-usefull="1" data-id-product-comment="{$comment.id_product_comment}">
 										<span>{l s='Yes' mod='productcomments'}</span>
 									</button>
-									<button class="usefulness_btn btn btn-default button button-small" data-is-usefull="0" data-id-product-comment="{$comment.id_product_comment}">
+									<button class="usefulness_btn btn btn-default" data-is-usefull="0" data-id-product-comment="{$comment.id_product_comment}">
 										<span>{l s='No' mod='productcomments'}</span>
 									</button>
 								</li>
