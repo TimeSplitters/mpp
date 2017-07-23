@@ -18,7 +18,7 @@
   vertical-align: middle;
   cursor: pointer;
   border: 1px solid transparent;
-  border-radius: $border-radius-base;
+  border-radius: 3px;
   white-space: nowrap;
   transition: all 0.4s;
   @include user-select(none);

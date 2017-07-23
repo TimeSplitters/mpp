@@ -86,4 +86,3 @@
         {/if}
     </ul>
 </section>
-<div class="clearfix"></div>

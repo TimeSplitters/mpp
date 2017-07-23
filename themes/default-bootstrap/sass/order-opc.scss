@@ -83,6 +83,11 @@
 	#address_invoice_form.form-group {
 		margin-bottom: 30px;
 	}
+	.cart_quantity_input {
+		color: $gray;
+		background: none;
+		border: none;
+	}
 }
 
 #new_account_form .id_state,

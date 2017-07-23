@@ -27,15 +27,32 @@
 		position: relative;
 	}
 }
-.sf-menu ul li {
-	width: 100%;
-}
 .sf-menu li:hover {
 	visibility: inherit; /* fixes IE7 'sticky bug' */
 }
 .sf-menu > li {
+	&:hover {
+		ul {
+			display: block;
+			position: absolute;
+			width: 200px;
+			padding: 10px;
+			border: 1px solid $white;
+			margin: 0;
+			top: 42px;
+			left: 0;
+			background: $white;
+			text-align: left;
+		}
+	}
 	display: inline-block;
 	margin: 0 5px;
+	position: relative;
+	&:before {
+		display: block;
+		height: 2px;
+		content: "";
+	}
 	&:last-child {
 		border-right: none;
 	}
@@ -62,24 +79,37 @@
 			}
 		}
 	}
-	> a {
-		font: 100 12px/18px $font-custom;
+	a {
 		color: $gray;
+		&:hover {
+			color: $green;
+		}
+	}
+	> a {
+		font: 100 $font-size-base/18px $font-custom;
 		text-transform: none;
 		display: block;
 		letter-spacing: 0;
 		padding: 10px 18px;
 		border: 1px solid $gray-light;
-		border-radius: 5px 5px 0 0;
+		border-top: 1px solid $gray-light;
+		//border-radius: 5px 5px 0 0;
+	}
+	&.sfHover {
+		&:before {
+			display: block;
+			height: 2px;
+			content: "";
+			background: linear-gradient(to right, #00737a 0%, #00737a 70%, #ff9815 70%, #ff9815 85%, #c70d00 85%, #c70d00 100%);
+		}
 	}
 	&.sfHover > a,
 	> a:hover,
 	&.sfHoverForce > a {
 		background: $white;
-		color: $green;
-		border: 1px solid $gray-middle;
-		border-bottom: 1px solid $white;
-		border-radius: 5px 5px 0 0;
+		border: 1px solid $white;
+		//border-top: 2px solid $green;
+		//border-radius: 5px 5px 0 0;
 	}
 }
 .sf-menu li li li a {
@@ -102,11 +132,12 @@
 }
 .sf-menu li ul {
 	display: none;
+	transition: all 0.4s;
 	left: 0;
 	top: 59px; /* match top ul list item height */
 	z-index: 99;
 	padding: 12px 0px 18px 0px;
-	@include box-shadow(rgba(black, 0.20) 0px 5px 13px);
+	@include box-shadow($gray-middle 0px 5px 13px);
 	@media (max-width: $screen-xs-max) { // max 767px
 		top: 0;
 	}
@@ -147,34 +178,7 @@ ul.sf-menu li li li.sfHover ul {
 	width: 100%;
 	> li {
 		> a {
-			text-transform: uppercase;
-			font: 600 16px/20px $font-custom;
-			color: $base-text-color;
-			&:hover {
-				color: $link-hover-color;
-			}
-		}
-	}
-}
-.sf-menu > li > ul > li {
-	float: left;
-	width: 20%;
-	padding-right: 15px;
-	@media (max-width: $screen-xs-max) { // max 767px
-		width: 50%;
-	}
-	@media (max-width: $screen-xs - 1) { // max 479px
-		width: 100%;
-		padding-bottom: 20px;
-	}
-	@media (min-width: $screen-sm) { // min 768px
-		&.first-in-line-lg {
-			clear: left;
-		}
-	}
-	@media (min-width: $screen-xs) and (max-width: $screen-xs-max) { // min 480px max 767px
-		&.first-in-line-xs {
-			clear: left;
+
 		}
 	}
 }

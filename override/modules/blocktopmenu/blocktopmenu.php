@@ -34,6 +34,13 @@ class BlocktopmenuOverride extends Blocktopmenu
         $id_lang = (int)$this->context->language->id;
         $id_shop = (int)Shop::getContextShopID();
 
+        $selected = ($this->page_name == 'index') ? ' class="sfHover sfHoverForce"' : '';
+        $this->_menu .= '<li'.$selected.'>
+                        <a href="/" title="'.$this->l('Home').'">
+                        <span class="icon-home icon-2x"></span>
+                        </a>
+                        </li>'.PHP_EOL;
+
         foreach ($menu_items as $item) {
             if (!$item) {
                 continue;
@@ -48,7 +55,7 @@ class BlocktopmenuOverride extends Blocktopmenu
                     break;
 
                 case 'PRD':
-                    $selected = ($this->page_name == 'product' && (Tools::getValue('id_product') == $id)) ? ' class="sfHover"' : '';
+                    $selected = ($this->page_name == 'product' && (Tools::getValue('id_product') == $id)) ? ' class="sfHover sfHoverForce"' : '';
                     $product = new Product((int)$id, true, (int)$id_lang);
                     $icon = '';
                     if (!is_null($product->id)) {
@@ -69,17 +76,52 @@ class BlocktopmenuOverride extends Blocktopmenu
                     break;
 
                 case 'CMS':
-                    $selected = ($this->page_name == 'cms' && (Tools::getValue('id_cms') == $id)) ? ' class="sfHover"' : '';
+                    $selected = ($this->page_name == 'cms' && (Tools::getValue('id_cms') == $id)) ? ' class="sfHover sfHoverForce"' : '';
                     $cms = CMS::getLinks((int)$id_lang, array($id));
+                    $icon = '';
                     if (count($cms)) {
-                        $this->_menu .= '<li'.$selected.'><a href="'.Tools::HtmlEntitiesUTF8($cms[0]['link']).'" title="'.Tools::safeOutput($cms[0]['meta_title']).'">'.Tools::safeOutput($cms[0]['meta_title']).'</a></li>'.PHP_EOL;
+                        if($cms[0]['link_rewrite'] == 'faq') {
+                            $icon = '<span class="icon-question-circle"></span>';
+                        } elseif($cms[0]['link_rewrite'] == 'nous-contacter') {
+                            $icon = '<span class="icon-at"></span>';
+                        }
+                        $this->_menu .= '<li'.$selected.'><a href="'.Tools::HtmlEntitiesUTF8($cms[0]['link']).'" title="'.Tools::safeOutput($cms[0]['meta_title']).'">
+                        '.$icon.'
+                        '.Tools::safeOutput($cms[0]['meta_title']).'</a></li>'.PHP_EOL;
                     }
                     break;
 
                 case 'CMS_CAT':
+                    $selected = '';
+                    if(($this->page_name == 'cms_category' && (Tools::getValue('id_cms_category') == $id))) {
+                        $selected = ' class="sfHover sfHoverForce"';
+                    } elseif($this->page_name == 'cms') {
+                        if(is_numeric(Tools::getValue('id_cms'))) {
+                            $theCmsPage = new CMS(Tools::getValue('id_cms'));
+                            if($theCmsPage->id_cms_category != 1) {
+                                $CmsCat = new CMSCategory($theCmsPage->id_cms_category);
+                                $CmsCatList = $CmsCat->getParentsCategories($this->context->language->id);
+                                if(isset($CmsCatList) && $CmsCatList[count($CmsCatList)-1]['id_cms_category'] == 2) {
+                                    $selected = ' class="sfHover sfHoverForce"';
+                                }
+                            }
+                        } elseif(is_numeric(Tools::getValue('id_cms_category'))) {
+                            $CmsCat = new CMSCategory(Tools::getValue('id_cms_category'));
+                            $CmsCatList = $CmsCat->getParentsCategories($this->context->language->id);
+                            if(isset($CmsCatList) && $CmsCatList[count($CmsCatList)-1]['id_cms_category'] == 2) {
+                                $selected = ' class="sfHover sfHoverForce"';
+                            }
+                        }
+                    }
+
                     $category = new CMSCategory((int)$id, (int)$id_lang);
                     if (count($category)) {
-                        $this->_menu .= '<li><a href="'.Tools::HtmlEntitiesUTF8($category->getLink()).'" title="'.$category->name.'">'.$category->name.'</a>';
+                        if($category->link_rewrite == 'blog') {
+                            $icon = '<span class="icon-desktop"></span>';
+                        }
+                        $this->_menu .= '<li'.$selected.'><a href="'.Tools::HtmlEntitiesUTF8($category->getLink()).'" title="'.$category->name.'">
+                        '.$icon.'
+                        '.$category->name.'</a>';
                         $this->getCMSMenuItems($category->id);
                         $this->_menu .= '</li>'.PHP_EOL;
                     }

@@ -108,11 +108,11 @@
 {capture name=addressUrlAdd}{$smarty.capture.addressUrl|cat:'&id_address='}{/capture}
 {addJsDef addressUrlAdd=$smarty.capture.addressUrlAdd}
 {addJsDef opc=$opc|boolval}
-{capture}<h3 class="page-subheading">{l s='Your billing address' js=1}</h3>{/capture}
+{capture}<h4 class="page-subheading">{l s='Your billing address' js=1}</h4>{/capture}
 {addJsDefL name=titleInvoice}{$smarty.capture.default|@addcslashes:'\''}{/addJsDefL}
-{capture}<h3 class="page-subheading">{l s='Your delivery address' js=1}</h3>{/capture}
+{capture}<h4 class="page-subheading">{l s='Your delivery address' js=1}</h4>{/capture}
 {addJsDefL name=titleDelivery}{$smarty.capture.default|@addcslashes:'\''}{/addJsDefL}
-{capture}<a class="button button-small btn btn-default" href="{$smarty.capture.addressUrlAdd}" title="{l s='Update' js=1}"><span>{l s='Update' js=1}<i class="icon-chevron-right right"></i></span></a>{/capture}
+{capture}<a class="button button-small btn btn-default" href="{$smarty.capture.addressUrlAdd}" title="{l s='Update' js=1}"><span class="icon-pencil"></span> <span>{l s='Update' js=1}</span></a>{/capture}
 {addJsDefL name=liUpdate}{$smarty.capture.default|@addcslashes:'\''}{/addJsDefL}
 {/strip}
 {/if}

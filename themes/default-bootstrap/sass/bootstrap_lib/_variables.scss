@@ -45,7 +45,7 @@ $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
 
-$font-size-base:          12px !default;
+$font-size-base:          13px !default;
 $font-size-large:         ceil($font-size-base * 1.25) !default; // ~18px
 $font-size-small:         ceil($font-size-base * 0.85) !default; // ~12px
 
@@ -67,7 +67,7 @@ $icon-font-name:          "glyphicons-halflings-regular" !default;
 // -------------------------
 // Based on 14px font-size and 1.428 line-height (~20px to start)
 
-$padding-base-vertical:          6px !default;
+$padding-base-vertical:          4px !default;
 $padding-base-horizontal:        12px !default;
 
 $padding-large-vertical:         10px !default;

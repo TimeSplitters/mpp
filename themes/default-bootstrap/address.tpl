@@ -199,7 +199,6 @@
 			<button type="submit" name="submitAddress" id="submitAddress" class="btn btn-default button button-medium">
 				<span>
 					{l s='Save'}
-					<i class="icon-chevron-right right"></i>
 				</span>
 			</button>
 		</p>
@@ -208,7 +207,7 @@
 <ul class="footer_links clearfix">
 	<li>
 		<a class="btn btn-defaul button button-small" href="{$link->getPageLink('addresses', true)|escape:'html':'UTF-8'}">
-			<span><i class="icon-chevron-left"></i> {l s='Back to your addresses'}</span>
+			<span> {l s='Back to your addresses'}</span>
 		</a>
 	</li>
 </ul>

@@ -41,7 +41,7 @@
 		<div class="col-xs-12 col-sm-6">
 			<div class="address_delivery select form-group selector1">
 				<label for="id_address_delivery">{if $cart->isVirtualCart()}{l s='Choose a billing address:'}{else}{l s='Choose a delivery address:'}{/if}</label>
-				<select name="id_address_delivery" id="id_address_delivery" class="address_select form-control">
+				<select name="id_address_delivery" id="id_address_delivery" class="address_select form-control custom-select">
 					{foreach from=$addresses key=k item=address}
 						<option value="{$address.id_address|intval}"{if $address.id_address == $cart->id_address_delivery} selected="selected"{/if}>
 							{$address.alias|escape:'html':'UTF-8'}
@@ -49,12 +49,18 @@
 					{/foreach}
 				</select><span class="waitimage"></span>
 			</div>
-			<p class="checkbox addressesAreEquals"{if $cart->isVirtualCart()} style="display:none;"{/if}>
-				<input type="checkbox" name="same" id="addressesAreEquals" value="1"{if $cart->id_address_invoice == $cart->id_address_delivery || $addresses|@count == 1} checked="checked"{/if} />
-				<label for="addressesAreEquals">{l s='Use the delivery address as the billing address.'}</label>
-			</p>
+			<p class="address_add submit">
+                <a href="{$link->getPageLink('address', true, NULL, "back={$back_order_page}?step=1{if $back}&mod={$back}{/if}")|escape:'html':'UTF-8'}" title="{l s='Add'}" class="button button-small btn btn-default">
+                    <span class="icon-plus"></span> <span>{l s='Add a new address'}</span>
+                </a>
+            </p>
 		</div>
 		<div class="col-xs-12 col-sm-6">
+		    <p class="checkbox addressesAreEquals"{if $cart->isVirtualCart()} style="display:none;"{/if}>
+                <input type="checkbox" name="same" id="addressesAreEquals" value="1"{if $cart->id_address_invoice == $cart->id_address_delivery || $addresses|@count == 1} checked="checked"{/if} /> &nbsp;
+                <label for="addressesAreEquals">{l s='L\'adresse de facturation est identique à l\'adresse de
+                livraison'}</label>
+            </p>
 			<div id="address_invoice_form" class="select form-group selector1"{if $cart->id_address_invoice == $cart->id_address_delivery} style="display: none;"{/if}>
 				{if $addresses|@count > 1}
 					<label for="id_address_invoice" class="strong">{l s='Choose a billing address:'}</label>
@@ -67,9 +73,8 @@
 					</select><span class="waitimage"></span>
 				{else}
 					<a href="{$link->getPageLink('address', true, NULL, "back={$back_order_page}?step=1&select_address=1{if $back}&mod={$back}{/if}")|escape:'html':'UTF-8'}" title="{l s='Add'}" class="button button-small btn btn-default">
-						<span>
+						<span class="icon-plus"></span> <span>
 							{l s='Add a new address'}
-							<i class="icon-chevron-right right"></i>
 						</span>
 					</a>
 				{/if}
@@ -86,11 +91,6 @@
 			</ul>
 		</div>
 	</div> <!-- end row -->
-	<p class="address_add submit">
-		<a href="{$link->getPageLink('address', true, NULL, "back={$back_order_page}?step=1{if $back}&mod={$back}{/if}")|escape:'html':'UTF-8'}" title="{l s='Add'}" class="button button-small btn btn-default">
-			<span>{l s='Add a new address'}<i class="icon-chevron-right right"></i></span>
-		</a>
-	</p>
 	{if !$opc}
 		<div id="ordermsg" class="form-group">
 			<label>{l s='If you would like to add a comment about your order, please write it in the field below.'}</label>
@@ -103,11 +103,10 @@
 				<input type="hidden" class="hidden" name="step" value="2" />
 				<input type="hidden" name="back" value="{$back}" />
 				<a href="{$link->getPageLink($back_order_page, true, NULL, "{if $back}back={$back}{/if}")|escape:'html':'UTF-8'}" title="{l s='Previous'}" class="button-exclusive btn btn-default">
-					<i class="icon-chevron-left"></i>
 					{l s='Continue Shopping'}
 				</a>
 				<button type="submit" name="processAddress" class="button btn btn-default button-medium">
-					<span>{l s='Proceed to checkout'}<i class="icon-chevron-right right"></i></span>
+					<span>{l s='Proceed to checkout'}</span>
 				</button>
 			</p>
 		</form>
@@ -134,6 +133,6 @@
 {addJsDefL name=titleInvoice}{$smarty.capture.default|@addcslashes:'\''}{/addJsDefL}
 {capture}<h4 class="page-subheading">{l s='Your delivery address' js=1}</h4>{/capture}
 {addJsDefL name=titleDelivery}{$smarty.capture.default|@addcslashes:'\''}{/addJsDefL}
-{capture}<a class="button button-small btn btn-default" href="{$smarty.capture.addressUrlAdd}" title="{l s='Update' js=1}"><span>{l s='Update' js=1}<i class="icon-chevron-right right"></i></span></a>{/capture}
+{capture}<a class="button button-small btn btn-default" href="{$smarty.capture.addressUrlAdd}" title="{l s='Update' js=1}"><span class="icon-pencil"></span> <span>{l s='Update' js=1}</span></a>{/capture}
 {addJsDefL name=liUpdate}{$smarty.capture.default|@addcslashes:'\''}{/addJsDefL}
 {/strip}
